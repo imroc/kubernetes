@@ -17,6 +17,7 @@ limitations under the License.
 package genericclioptions
 
 import (
+	"github.com/imroc/req/v3"
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
@@ -37,6 +38,7 @@ To view or setup config directly use the 'config' command.`)
 var _ = clientcmd.ClientConfig(&clientConfig{})
 
 type clientConfig struct {
+	debug               bool
 	defaultClientConfig clientcmd.ClientConfig
 }
 
@@ -49,11 +51,30 @@ func (c *clientConfig) RawConfig() (clientcmdapi.Config, error) {
 	return config, err
 }
 
+// replace client-go's Transport with *req.Transport
+func replaceTransport(config *restclient.Config, t *req.Transport) {
+	// Extract tls.Config from rest.Config
+	tlsConfig, err := restclient.TLSConfigFor(config)
+	if err != nil {
+		panic(err.Error())
+	}
+	// Set TLSClientConfig to req's Transport.
+	t.TLSClientConfig = tlsConfig
+	// Override with req's Transport.
+	config.Transport = t
+	// rest.Config.TLSClientConfig should be empty if
+	// custom Transport been set.
+	config.TLSClientConfig = restclient.TLSClientConfig{}
+}
+
 func (c *clientConfig) ClientConfig() (*restclient.Config, error) {
 	config, err := c.defaultClientConfig.ClientConfig()
 	// replace client-go's ErrEmptyConfig error with our custom, more verbose version
 	if clientcmd.IsEmptyConfig(err) {
 		return config, ErrEmptyConfig
+	}
+	if c.debug {
+		replaceTransport(config, req.C().DevMode().GetTransport())
 	}
 	return config, err
 }

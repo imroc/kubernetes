@@ -44,6 +44,7 @@ const (
 	flagAPIServer        = "server"
 	flagTLSServerName    = "tls-server-name"
 	flagInsecure         = "insecure-skip-tls-verify"
+	flagDebug            = "debug"
 	flagCertFile         = "client-certificate"
 	flagKeyFile          = "client-key"
 	flagCAFile           = "certificate-authority"
@@ -87,6 +88,7 @@ type ConfigFlags struct {
 	APIServer        *string
 	TLSServerName    *string
 	Insecure         *bool
+	Debug            *bool
 	CertFile         *string
 	KeyFile          *string
 	CAFile           *string
@@ -200,6 +202,11 @@ func (f *ConfigFlags) toRawKubeConfigLoader() clientcmd.ClientConfig {
 		overrides.ClusterInfo.InsecureSkipTLSVerify = *f.Insecure
 	}
 
+	debug := false
+	if f.Debug != nil {
+		debug = *f.Debug
+	}
+
 	// bind context flags
 	if f.Context != nil {
 		overrides.CurrentContext = *f.Context
@@ -220,9 +227,9 @@ func (f *ConfigFlags) toRawKubeConfigLoader() clientcmd.ClientConfig {
 
 	// we only have an interactive prompt when a password is allowed
 	if f.Password == nil {
-		return &clientConfig{clientcmd.NewNonInteractiveDeferredLoadingClientConfig(loadingRules, overrides)}
+		return &clientConfig{debug, clientcmd.NewNonInteractiveDeferredLoadingClientConfig(loadingRules, overrides)}
 	}
-	return &clientConfig{clientcmd.NewInteractiveDeferredLoadingClientConfig(loadingRules, overrides, os.Stdin)}
+	return &clientConfig{debug, clientcmd.NewInteractiveDeferredLoadingClientConfig(loadingRules, overrides, os.Stdin)}
 }
 
 // toRawKubePersistentConfigLoader binds config flag values to config overrides
@@ -387,6 +394,9 @@ func (f *ConfigFlags) AddFlags(flags *pflag.FlagSet) {
 	if f.Insecure != nil {
 		flags.BoolVar(f.Insecure, flagInsecure, *f.Insecure, "If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure")
 	}
+	if f.Debug != nil {
+		flags.BoolVar(f.Debug, flagDebug, *f.Insecure, "If true, enable debug mode")
+	}
 	if f.CAFile != nil {
 		flags.StringVar(f.CAFile, flagCAFile, *f.CAFile, "Path to a cert file for the certificate authority")
 	}
@@ -424,9 +434,11 @@ func (f *ConfigFlags) WithWrapConfigFn(wrapConfigFn func(*rest.Config) *rest.Con
 func NewConfigFlags(usePersistentConfig bool) *ConfigFlags {
 	impersonateGroup := []string{}
 	insecure := false
+	debug := false
 
 	return &ConfigFlags{
 		Insecure:   &insecure,
+		Debug:      &debug,
 		Timeout:    utilpointer.String("0"),
 		KubeConfig: utilpointer.String(""),
 
