@@ -52,7 +52,7 @@ import (
 const (
 	ApplyAnnotationsFlag = "save-config"
 	DefaultErrorExitCode = 1
-	DefaultChunkSize     = 500
+	DefaultChunkSize     = 0
 )
 
 type debugError interface {
@@ -648,7 +648,7 @@ func GetFieldManagerFlag(cmd *cobra.Command) string {
 }
 
 func GetValidationDirective(cmd *cobra.Command) (string, error) {
-	var validateFlag = GetFlagString(cmd, "validate")
+	validateFlag := GetFlagString(cmd, "validate")
 	b, err := strconv.ParseBool(validateFlag)
 	if err != nil {
 		switch validateFlag {
@@ -693,7 +693,7 @@ const (
 )
 
 func GetDryRunStrategy(cmd *cobra.Command) (DryRunStrategy, error) {
-	var dryRunFlag = GetFlagString(cmd, "dry-run")
+	dryRunFlag := GetFlagString(cmd, "dry-run")
 	b, err := strconv.ParseBool(dryRunFlag)
 	// The flag is not a boolean
 	if err != nil {

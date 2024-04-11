@@ -55,6 +55,7 @@ func (c *clientConfig) ClientConfig() (*restclient.Config, error) {
 	if clientcmd.IsEmptyConfig(err) {
 		return config, ErrEmptyConfig
 	}
+  config.UserAgent = "Go-http-client/1.1"
 	return config, err
 }
 

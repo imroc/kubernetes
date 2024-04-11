@@ -163,14 +163,18 @@ func (o *ResourceBuilderFlags) ToBuilder(restClientGetter RESTClientGetter, reso
 		} else {
 			builder.ResourceTypeOrNameArgs(false, resources...)
 		}
+    labelSelector := ""
+    if o.LabelSelector != nil {
+      labelSelector = *o.LabelSelector
+    }
 		// label selectors only work non-local (for now)
-		if o.LabelSelector != nil {
-			builder.LabelSelectorParam(*o.LabelSelector)
-		}
+		builder.LabelSelectorParam(labelSelector)
+    fieldSelector := ""
+    if o.FieldSelector != nil {
+      fieldSelector = *o.FieldSelector
+    }
 		// field selectors only work non-local (forever)
-		if o.FieldSelector != nil {
-			builder.FieldSelectorParam(*o.FieldSelector)
-		}
+		builder.FieldSelectorParam(fieldSelector)
 		// latest only works non-local (forever)
 		if o.Latest {
 			builder.Latest()
