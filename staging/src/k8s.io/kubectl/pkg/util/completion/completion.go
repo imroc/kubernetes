@@ -193,7 +193,7 @@ func CompGetResource(f cmdutil.Factory, resourceName string, toComplete string) 
 
 // CompGetContainers gets the list of containers of the specified pod which begin with `toComplete`.
 func CompGetContainers(f cmdutil.Factory, podName string, toComplete string) []string {
-	template := "{{ range .spec.initContainers }}{{ .name }} {{end}}{{ range .spec.containers  }}{{ .name }} {{ end }}"
+	template := "{{ range .spec.initContainers }}{{ .name }} {{end}}{{ range .status.containerStatuses  }}{{ .name }} {{ end }}"
 	return CompGetFromTemplate(&template, f, "", []string{"pod", podName}, toComplete)
 }
 
@@ -449,7 +449,8 @@ func doPodResourceCompletion(f cmdutil.Factory, toComplete string) ([]string, co
 			"replicasets",
 			"replicationcontrollers",
 			"services",
-			"statefulsets"}
+			"statefulsets",
+		}
 
 		if len(comps) == 0 {
 			// If there are no pods to complete, we will only be completing
