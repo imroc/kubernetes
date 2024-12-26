@@ -186,6 +186,7 @@ func NewCmdLogs(f cmdutil.Factory, streams genericiooptions.IOStreams) *cobra.Co
 		},
 	}
 	o.AddFlags(cmd)
+	cmdutil.CheckErr(cmd.RegisterFlagCompletionFunc("container", completion.ContainerCompletionFunc(f)))
 	return cmd
 }
 
@@ -408,7 +409,6 @@ func (o LogsOptions) parallelConsumeRequest(ctx context.Context, requests map[co
 
 				fmt.Fprintf(writer, "error: %v\n", err)
 			}
-
 		}(objRef, request)
 	}
 
