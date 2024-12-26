@@ -114,7 +114,7 @@ func logsForObjectWithClient(clientset corev1client.CoreV1Interface, object, opt
 				}
 			}
 
-		_, fieldPath := podcmd.FindContainerByName(t, currOpts.Container)
+			_, fieldPath := podcmd.FindContainerByName(t, currOpts.Container)
 			ref, err := reference.GetPartialReference(scheme.Scheme, t, fieldPath)
 			if err != nil {
 				return nil, fmt.Errorf("Unable to construct reference to '%#v': %v", t, err)
