@@ -1278,6 +1278,56 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/kubelet/config/v1beta1.MemorySwapConfiguration":                                                 schema_k8sio_kubelet_config_v1beta1_MemorySwapConfiguration(ref),
 		"k8s.io/kubelet/config/v1beta1.SerializedNodeConfigSource":                                              schema_k8sio_kubelet_config_v1beta1_SerializedNodeConfigSource(ref),
 		"k8s.io/kubelet/config/v1beta1.ShutdownGracePeriodByPodPriority":                                        schema_k8sio_kubelet_config_v1beta1_ShutdownGracePeriodByPodPriority(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapToken":                               schema_app_apis_bootstraptoken_v1_BootstrapToken(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapTokenString":                         schema_app_apis_bootstraptoken_v1_BootstrapTokenString(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIEndpoint":                                    schema_app_apis_kubeadm_v1beta3_APIEndpoint(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIServer":                                      schema_app_apis_kubeadm_v1beta3_APIServer(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.BootstrapTokenDiscovery":                        schema_app_apis_kubeadm_v1beta3_BootstrapTokenDiscovery(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ClusterConfiguration":                           schema_app_apis_kubeadm_v1beta3_ClusterConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ControlPlaneComponent":                          schema_app_apis_kubeadm_v1beta3_ControlPlaneComponent(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.DNS":                                            schema_app_apis_kubeadm_v1beta3_DNS(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Discovery":                                      schema_app_apis_kubeadm_v1beta3_Discovery(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Etcd":                                           schema_app_apis_kubeadm_v1beta3_Etcd(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ExternalEtcd":                                   schema_app_apis_kubeadm_v1beta3_ExternalEtcd(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.FileDiscovery":                                  schema_app_apis_kubeadm_v1beta3_FileDiscovery(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.HostPathMount":                                  schema_app_apis_kubeadm_v1beta3_HostPathMount(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ImageMeta":                                      schema_app_apis_kubeadm_v1beta3_ImageMeta(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.InitConfiguration":                              schema_app_apis_kubeadm_v1beta3_InitConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.JoinConfiguration":                              schema_app_apis_kubeadm_v1beta3_JoinConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.JoinControlPlane":                               schema_app_apis_kubeadm_v1beta3_JoinControlPlane(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.LocalEtcd":                                      schema_app_apis_kubeadm_v1beta3_LocalEtcd(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Networking":                                     schema_app_apis_kubeadm_v1beta3_Networking(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.NodeRegistrationOptions":                        schema_app_apis_kubeadm_v1beta3_NodeRegistrationOptions(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Patches":                                        schema_app_apis_kubeadm_v1beta3_Patches(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIEndpoint":                                    schema_app_apis_kubeadm_v1beta4_APIEndpoint(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIServer":                                      schema_app_apis_kubeadm_v1beta4_APIServer(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg":                                            schema_app_apis_kubeadm_v1beta4_Arg(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.BootstrapTokenDiscovery":                        schema_app_apis_kubeadm_v1beta4_BootstrapTokenDiscovery(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ClusterConfiguration":                           schema_app_apis_kubeadm_v1beta4_ClusterConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ControlPlaneComponent":                          schema_app_apis_kubeadm_v1beta4_ControlPlaneComponent(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.DNS":                                            schema_app_apis_kubeadm_v1beta4_DNS(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Discovery":                                      schema_app_apis_kubeadm_v1beta4_Discovery(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar":                                         schema_app_apis_kubeadm_v1beta4_EnvVar(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Etcd":                                           schema_app_apis_kubeadm_v1beta4_Etcd(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ExternalEtcd":                                   schema_app_apis_kubeadm_v1beta4_ExternalEtcd(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.FileDiscovery":                                  schema_app_apis_kubeadm_v1beta4_FileDiscovery(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.HostPathMount":                                  schema_app_apis_kubeadm_v1beta4_HostPathMount(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ImageMeta":                                      schema_app_apis_kubeadm_v1beta4_ImageMeta(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.InitConfiguration":                              schema_app_apis_kubeadm_v1beta4_InitConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.JoinConfiguration":                              schema_app_apis_kubeadm_v1beta4_JoinConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.JoinControlPlane":                               schema_app_apis_kubeadm_v1beta4_JoinControlPlane(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.LocalEtcd":                                      schema_app_apis_kubeadm_v1beta4_LocalEtcd(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Networking":                                     schema_app_apis_kubeadm_v1beta4_Networking(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.NodeRegistrationOptions":                        schema_app_apis_kubeadm_v1beta4_NodeRegistrationOptions(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches":                                        schema_app_apis_kubeadm_v1beta4_Patches(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Proxy":                                          schema_app_apis_kubeadm_v1beta4_Proxy(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ResetConfiguration":                             schema_app_apis_kubeadm_v1beta4_ResetConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts":                                       schema_app_apis_kubeadm_v1beta4_Timeouts(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeApplyConfiguration":                      schema_app_apis_kubeadm_v1beta4_UpgradeApplyConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeConfiguration":                           schema_app_apis_kubeadm_v1beta4_UpgradeConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeDiffConfiguration":                       schema_app_apis_kubeadm_v1beta4_UpgradeDiffConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeNodeConfiguration":                       schema_app_apis_kubeadm_v1beta4_UpgradeNodeConfiguration(ref),
+		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradePlanConfiguration":                       schema_app_apis_kubeadm_v1beta4_UpgradePlanConfiguration(ref),
 		"k8s.io/kubernetes/pkg/apis/abac/v1beta1.Policy":                                                        schema_pkg_apis_abac_v1beta1_Policy(ref),
 		"k8s.io/kubernetes/pkg/apis/abac/v1beta1.PolicySpec":                                                    schema_pkg_apis_abac_v1beta1_PolicySpec(ref),
 		"k8s.io/metrics/pkg/apis/custom_metrics/v1beta1.MetricListOptions":                                      schema_pkg_apis_custom_metrics_v1beta1_MetricListOptions(ref),
@@ -66047,6 +66097,2739 @@ func schema_k8sio_kubelet_config_v1beta1_ShutdownGracePeriodByPodPriority(ref co
 					},
 				},
 				Required: []string{"priority", "shutdownGracePeriodSeconds"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_bootstraptoken_v1_BootstrapToken(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BootstrapToken describes one bootstrap token, stored as a Secret in the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"token": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Token is used for establishing bidirectional trust between nodes and control-planes. Used for joining nodes in the cluster.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapTokenString"),
+						},
+					},
+					"description": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Description sets a human-friendly message why this token exists and what it's used for, so other administrators can know its purpose.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"ttl": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TTL defines the time to live for this token. Defaults to 24h. Expires and TTL are mutually exclusive.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"expires": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Expires specifies the timestamp when this token expires. Defaults to being set dynamically at runtime based on the TTL. Expires and TTL are mutually exclusive.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Time"),
+						},
+					},
+					"usages": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Usages describes the ways in which this token can be used. Can by default be used for establishing bidirectional trust, but that can be changed here.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"groups": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Groups specifies the extra groups that this token will authenticate as when/if used for authentication",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"token"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/apimachinery/pkg/apis/meta/v1.Time", "k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapTokenString"},
+	}
+}
+
+func schema_app_apis_bootstraptoken_v1_BootstrapTokenString(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BootstrapTokenString is a token of the format abcdef.abcdef0123456789 that is used for both validation of the practically of the API server from a joining node's point of view and as an authentication method for the node in the bootstrap phase of \"kubeadm join\". This token is and should be short-lived",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_APIEndpoint(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "APIEndpoint struct contains elements of API server instance deployed on a node.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"advertiseAddress": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AdvertiseAddress sets the IP address for the API server to advertise.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"bindPort": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BindPort sets the secure port for the API Server to bind to. Defaults to 6443.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_APIServer(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "APIServer holds settings necessary for API server deployments in the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs is an extra set of flags to pass to the control plane component. A key in this map is the flag name as it appears on the command line except without leading dash(es). use ComponentConfig + ConfigMaps.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"extraVolumes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraVolumes is an extra set of host volumes, mounted to the control plane component.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.HostPathMount"),
+									},
+								},
+							},
+						},
+					},
+					"certSANs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertSANs sets extra Subject Alternative Names for the API Server signing cert.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"timeoutForControlPlane": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TimeoutForControlPlane controls the timeout that we use for API server to appear",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.HostPathMount"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_BootstrapTokenDiscovery(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BootstrapTokenDiscovery is used to set the options for bootstrap token based discovery",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"token": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Token is a token used to validate cluster information fetched from the control-plane.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiServerEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIServerEndpoint is an IP or domain name to the API server from which info will be fetched.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"caCertHashes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertHashes specifies a set of public key pins to verify when token-based discovery is used. The root CA found during discovery must match one of these values. Specifying an empty set disables root CA pinning, which can be unsafe. Each hash is specified as \"<type>:<value>\", where the only currently supported type is \"sha256\". This is a hex-encoded SHA-256 hash of the Subject Public Key Info (SPKI) object in DER-encoded ASN.1. These hashes can be calculated using, for example, OpenSSL.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"unsafeSkipCAVerification": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UnsafeSkipCAVerification allows token-based discovery without CA verification via CACertHashes. This can weaken the security of kubeadm since other nodes can impersonate the control-plane.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"token"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_ClusterConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClusterConfiguration contains cluster-wide configuration for a kubeadm cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"etcd": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Etcd holds configuration for etcd.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Etcd"),
+						},
+					},
+					"networking": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Networking holds configuration for the networking topology of the cluster.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Networking"),
+						},
+					},
+					"kubernetesVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubernetesVersion is the target version of the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"controlPlaneEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControlPlaneEndpoint sets a stable IP address or DNS name for the control plane; it can be a valid IP address or a RFC-1123 DNS subdomain, both with optional TCP port. In case the ControlPlaneEndpoint is not specified, the AdvertiseAddress + BindPort are used; in case the ControlPlaneEndpoint is specified but without a TCP port, the BindPort is used. Possible usages are: e.g. In a cluster with more than one control plane instances, this field should be assigned the address of the external load balancer in front of the control plane instances. e.g.  in environments with enforced node recycling, the ControlPlaneEndpoint could be used for assigning a stable DNS to the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiServer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIServer contains extra settings for the API server control plane component",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIServer"),
+						},
+					},
+					"controllerManager": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControllerManager contains extra settings for the controller manager control plane component",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ControlPlaneComponent"),
+						},
+					},
+					"scheduler": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Scheduler contains extra settings for the scheduler control plane component",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ControlPlaneComponent"),
+						},
+					},
+					"dns": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNS defines the options for the DNS add-on installed in the cluster.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.DNS"),
+						},
+					},
+					"certificatesDir": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificatesDir specifies where to store or look for all required certificates.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. If empty, `registry.k8s.io` will be used by default; in case of kubernetes version is a CI build (kubernetes version starts with `ci/`) `gcr.io/k8s-staging-ci-images` will be used as a default for control plane components and for kube-proxy, while `registry.k8s.io` will be used for all the other images.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"featureGates": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FeatureGates enabled by the user.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: false,
+										Type:    []string{"boolean"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"clusterName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The cluster name",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIServer", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ControlPlaneComponent", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.DNS", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Etcd", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Networking"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_ControlPlaneComponent(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ControlPlaneComponent holds settings common to control plane component of the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs is an extra set of flags to pass to the control plane component. A key in this map is the flag name as it appears on the command line except without leading dash(es). use ComponentConfig + ConfigMaps.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"extraVolumes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraVolumes is an extra set of host volumes, mounted to the control plane component.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.HostPathMount"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.HostPathMount"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_DNS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "DNS defines the DNS addon that should be used in the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. if not set, the ImageRepository defined in ClusterConfiguration will be used instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageTag": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageTag allows to specify a tag for the image. In case this value is set, kubeadm does not change automatically the version of the above components during upgrades.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_Discovery(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Discovery specifies the options for the kubelet to use during the TLS Bootstrap process",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"bootstrapToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BootstrapToken is used to set the options for bootstrap token based discovery BootstrapToken and File are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.BootstrapTokenDiscovery"),
+						},
+					},
+					"file": {
+						SchemaProps: spec.SchemaProps{
+							Description: "File is used to specify a file or URL to a kubeconfig file from which to load cluster information BootstrapToken and File are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.FileDiscovery"),
+						},
+					},
+					"tlsBootstrapToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLSBootstrapToken is a token used for TLS bootstrapping. If .BootstrapToken is set, this field is defaulted to .BootstrapToken.Token, but can be overridden. If .File is set, this field **must be set** in case the KubeConfigFile does not contain any other authentication information",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout modifies the discovery timeout",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.BootstrapTokenDiscovery", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.FileDiscovery"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_Etcd(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Etcd contains elements describing Etcd configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"local": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Local provides configuration knobs for configuring the local etcd instance Local and External are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.LocalEtcd"),
+						},
+					},
+					"external": {
+						SchemaProps: spec.SchemaProps{
+							Description: "External describes how to connect to an external etcd cluster Local and External are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ExternalEtcd"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.ExternalEtcd", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.LocalEtcd"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_ExternalEtcd(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExternalEtcd describes an external etcd cluster. Kubeadm has no knowledge of where certificate files live and they must be supplied.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"endpoints": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Endpoints of etcd members. Required for ExternalEtcd.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"caFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CAFile is an SSL Certificate Authority file used to secure etcd communication. Required if using a TLS connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertFile is an SSL certification file used to secure etcd communication. Required if using a TLS connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"keyFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KeyFile is an SSL key file used to secure etcd communication. Required if using a TLS connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"endpoints", "caFile", "certFile", "keyFile"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_FileDiscovery(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FileDiscovery is used to specify a file or URL to a kubeconfig file from which to load cluster information",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kubeConfigPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubeConfigPath is used to specify the actual file path or URL to the kubeconfig file from which to load cluster information",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"kubeConfigPath"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_HostPathMount(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HostPathMount contains elements describing volumes that are mounted from the host.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the volume inside the pod template.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"hostPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HostPath is the path in the host that will be mounted inside the pod.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"mountPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MountPath is the path inside the pod where hostPath will be mounted.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"readOnly": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ReadOnly controls write access to the volume",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"pathType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PathType is the type of the HostPath.\n\nPossible enum values:\n - `\"\"` For backwards compatible, leave it empty if unset\n - `\"BlockDevice\"` A block device must exist at the given path\n - `\"CharDevice\"` A character device must exist at the given path\n - `\"Directory\"` A directory must exist at the given path\n - `\"DirectoryOrCreate\"` If nothing exists at the given path, an empty directory will be created there as needed with file mode 0755, having the same group and ownership with Kubelet.\n - `\"File\"` A file must exist at the given path\n - `\"FileOrCreate\"` If nothing exists at the given path, an empty file will be created there as needed with file mode 0644, having the same group and ownership with Kubelet.\n - `\"Socket\"` A UNIX socket must exist at the given path",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"", "BlockDevice", "CharDevice", "Directory", "DirectoryOrCreate", "File", "FileOrCreate", "Socket"},
+						},
+					},
+				},
+				Required: []string{"name", "hostPath", "mountPath"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_ImageMeta(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ImageMeta allows to customize the image used for components that are not originated from the Kubernetes/Kubernetes release process",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. if not set, the ImageRepository defined in ClusterConfiguration will be used instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageTag": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageTag allows to specify a tag for the image. In case this value is set, kubeadm does not change automatically the version of the above components during upgrades.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_InitConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "InitConfiguration contains a list of elements that is specific \"kubeadm init\"-only runtime information.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"bootstrapTokens": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BootstrapTokens is respected at `kubeadm init` time and describes a set of Bootstrap Tokens to create. This information IS NOT uploaded to the kubeadm cluster configmap, partly because of its sensitive nature",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapToken"),
+									},
+								},
+							},
+						},
+					},
+					"nodeRegistration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NodeRegistration holds fields that relate to registering the new control-plane node to the cluster",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.NodeRegistrationOptions"),
+						},
+					},
+					"localAPIEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LocalAPIEndpoint represents the endpoint of the API server instance that's deployed on this control plane node In HA setups, this differs from ClusterConfiguration.ControlPlaneEndpoint in the sense that ControlPlaneEndpoint is the global endpoint for the cluster, which then loadbalances the requests to each individual API server. This configuration object lets you customize what IP/DNS name and port the local API server advertises it's accessible on. By default, kubeadm tries to auto-detect the IP of the default interface and use that, but in case that process fails you may set the desired value here.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIEndpoint"),
+						},
+					},
+					"certificateKey": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateKey sets the key with which certificates and keys are encrypted prior to being uploaded in a secret in the cluster during the uploadcerts init phase. The certificate key is a hex encoded string that is an AES key of size 32 bytes.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. The list of phases can be obtained with the \"kubeadm init --help\" command. The flag \"--skip-phases\" takes precedence over this field.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"patches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patches contains options related to applying patches to components deployed by kubeadm during \"kubeadm init\".",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Patches"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapToken", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIEndpoint", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.NodeRegistrationOptions", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Patches"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_JoinConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JoinConfiguration contains elements describing a particular node.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"nodeRegistration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NodeRegistration holds fields that relate to registering the new control-plane node to the cluster",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.NodeRegistrationOptions"),
+						},
+					},
+					"caCertPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertPath is the path to the SSL certificate authority used to secure communications between node and control-plane. Defaults to \"/etc/kubernetes/pki/ca.crt\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"discovery": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Discovery specifies the options for the kubelet to use during the TLS Bootstrap process",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Discovery"),
+						},
+					},
+					"controlPlane": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControlPlane defines the additional control plane instance to be deployed on the joining node. If nil, no additional control plane instance will be deployed.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.JoinControlPlane"),
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. The list of phases can be obtained with the \"kubeadm join --help\" command. The flag \"--skip-phases\" takes precedence over this field.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"patches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patches contains options related to applying patches to components deployed by kubeadm during \"kubeadm join\".",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Patches"),
+						},
+					},
+				},
+				Required: []string{"discovery"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Discovery", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.JoinControlPlane", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.NodeRegistrationOptions", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.Patches"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_JoinControlPlane(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JoinControlPlane contains elements describing an additional control plane instance to be deployed on the joining node.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"localAPIEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LocalAPIEndpoint represents the endpoint of the API server instance to be deployed on this node.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIEndpoint"),
+						},
+					},
+					"certificateKey": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateKey is the key that is used for decryption of certificates after they are downloaded from the secret upon joining a new control plane node. The corresponding encryption key is in the InitConfiguration. The certificate key is a hex encoded string that is an AES key of size 32 bytes.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3.APIEndpoint"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_LocalEtcd(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalEtcd describes that kubeadm should run an etcd cluster locally",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. if not set, the ImageRepository defined in ClusterConfiguration will be used instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageTag": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageTag allows to specify a tag for the image. In case this value is set, kubeadm does not change automatically the version of the above components during upgrades.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"dataDir": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DataDir is the directory etcd will place its data. Defaults to \"/var/lib/etcd\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs are extra arguments provided to the etcd binary when run inside a static pod. A key in this map is the flag name as it appears on the command line except without leading dash(es).",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"serverCertSANs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ServerCertSANs sets extra Subject Alternative Names for the etcd server signing cert.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"peerCertSANs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PeerCertSANs sets extra Subject Alternative Names for the etcd peer signing cert.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"dataDir"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_Networking(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Networking contains elements describing cluster's networking configuration",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"serviceSubnet": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ServiceSubnet is the subnet used by k8s services. Defaults to \"10.96.0.0/12\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"podSubnet": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PodSubnet is the subnet used by pods.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"dnsDomain": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNSDomain is the dns domain used by k8s services. Defaults to \"cluster.local\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_NodeRegistrationOptions(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "NodeRegistrationOptions holds fields that relate to registering a new control-plane or node to the cluster, either via \"kubeadm init\" or \"kubeadm join\"",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the `.Metadata.Name` field of the Node API object that will be created in this `kubeadm init` or `kubeadm join` operation. This field is also used in the CommonName field of the kubelet's client certificate to the API server. Defaults to the hostname of the node if not provided.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"criSocket": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CRISocket is used to retrieve container runtime info. This information will be annotated to the Node API object, for later re-use",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"taints": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Taints specifies the taints the Node API object should be registered with. If this field is unset, i.e. nil, it will be defaulted with a control-plane taint for control-plane nodes. If you don't want to taint your control-plane node, set this field to an empty slice, i.e. `taints: []` in the YAML file. This field is solely used for Node registration.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.Taint"),
+									},
+								},
+							},
+						},
+					},
+					"kubeletExtraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubeletExtraArgs passes through extra arguments to the kubelet. The arguments here are passed to the kubelet command line via the environment file kubeadm writes at runtime for the kubelet to source. This overrides the generic base-level configuration in the kubelet-config ConfigMap Flags have higher priority when parsing. These values are local and specific to the node kubeadm is executing on. A key in this map is the flag name as it appears on the command line except without leading dash(es).",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"ignorePreflightErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IgnorePreflightErrors provides a slice of pre-flight errors to be ignored when the current node is registered, e.g. 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"imagePullPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullPolicy specifies the policy for image pulling during kubeadm \"init\" and \"join\" operations. The value of this field must be one of \"Always\", \"IfNotPresent\" or \"Never\". If this field is unset kubeadm will default it to \"IfNotPresent\", or pull the required images if not present on the host.\n\nPossible enum values:\n - `\"Always\"` means that kubelet always attempts to pull the latest image. Container will fail If the pull fails.\n - `\"IfNotPresent\"` means that kubelet pulls if the image isn't present on disk. Container will fail if the image isn't present and the pull fails.\n - `\"Never\"` means that kubelet never pulls an image, but only uses a local image. Container will fail if the image isn't present",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"Always", "IfNotPresent", "Never"},
+						},
+					},
+				},
+				Required: []string{"taints"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/core/v1.Taint"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta3_Patches(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Patches contains options related to applying patches to components deployed by kubeadm.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"directory": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Directory is a path to a directory that contains files named \"target[suffix][+patchtype].extension\". For example, \"kube-apiserver0+merge.yaml\" or just \"etcd.json\". \"target\" can be one of \"kube-apiserver\", \"kube-controller-manager\", \"kube-scheduler\", \"etcd\", \"kubeletconfiguration\", \"corednsdeployment\". \"patchtype\" can be one of \"strategic\" \"merge\" or \"json\" and they match the patch formats supported by kubectl. The default \"patchtype\" is \"strategic\". \"extension\" must be either \"json\" or \"yaml\". \"suffix\" is an optional string that can be used to determine which patches are applied first alpha-numerically.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_APIEndpoint(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "APIEndpoint struct contains elements of API server instance deployed on a node.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"advertiseAddress": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AdvertiseAddress sets the IP address for the API server to advertise.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"bindPort": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BindPort sets the secure port for the API Server to bind to. Defaults to 6443.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_APIServer(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "APIServer holds settings necessary for API server deployments in the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs is an extra set of flags to pass to the control plane component. An argument name in this list is the flag name as it appears on the command line except without leading dash(es). Extra arguments will override existing default arguments. Duplicate extra arguments are allowed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg"),
+									},
+								},
+							},
+						},
+					},
+					"extraVolumes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraVolumes is an extra set of host volumes, mounted to the control plane component.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.HostPathMount"),
+									},
+								},
+							},
+						},
+					},
+					"extraEnvs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraEnvs is an extra set of environment variables to pass to the control plane component. Environment variables passed using ExtraEnvs will override any existing environment variables, or *_proxy environment variables that kubeadm adds by default.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar"),
+									},
+								},
+							},
+						},
+					},
+					"certSANs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertSANs sets extra Subject Alternative Names for the API Server signing cert.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.HostPathMount"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Arg(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Arg represents an argument with a name and a value.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+				},
+				Required: []string{"name", "value"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_BootstrapTokenDiscovery(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BootstrapTokenDiscovery is used to set the options for bootstrap token based discovery",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"token": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Token is a token used to validate cluster information fetched from the control-plane.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiServerEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIServerEndpoint is an IP or domain name to the API server from which info will be fetched.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"caCertHashes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertHashes specifies a set of public key pins to verify when token-based discovery is used. The root CA found during discovery must match one of these values. Specifying an empty set disables root CA pinning, which can be unsafe. Each hash is specified as \"<type>:<value>\", where the only currently supported type is \"sha256\". This is a hex-encoded SHA-256 hash of the Subject Public Key Info (SPKI) object in DER-encoded ASN.1. These hashes can be calculated using, for example, OpenSSL.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"unsafeSkipCAVerification": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UnsafeSkipCAVerification allows token-based discovery without CA verification via CACertHashes. This can weaken the security of kubeadm since other nodes can impersonate the control-plane.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"token"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_ClusterConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClusterConfiguration contains cluster-wide configuration for a kubeadm cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"etcd": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Etcd holds configuration for etcd.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Etcd"),
+						},
+					},
+					"networking": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Networking holds configuration for the networking topology of the cluster.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Networking"),
+						},
+					},
+					"kubernetesVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubernetesVersion is the target version of the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"controlPlaneEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControlPlaneEndpoint sets a stable IP address or DNS name for the control plane; it can be a valid IP address or a RFC-1123 DNS subdomain, both with optional TCP port. In case the ControlPlaneEndpoint is not specified, the AdvertiseAddress + BindPort are used; in case the ControlPlaneEndpoint is specified but without a TCP port, the BindPort is used. Possible usages are: e.g. In a cluster with more than one control plane instances, this field should be assigned the address of the external load balancer in front of the control plane instances. e.g.  in environments with enforced node recycling, the ControlPlaneEndpoint could be used for assigning a stable DNS to the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiServer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIServer contains extra settings for the API server control plane component",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIServer"),
+						},
+					},
+					"controllerManager": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControllerManager contains extra settings for the controller manager control plane component",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ControlPlaneComponent"),
+						},
+					},
+					"scheduler": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Scheduler contains extra settings for the scheduler control plane component",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ControlPlaneComponent"),
+						},
+					},
+					"dns": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNS defines the options for the DNS add-on installed in the cluster.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.DNS"),
+						},
+					},
+					"proxy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Proxy defines the options for the proxy add-on installed in the cluster.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Proxy"),
+						},
+					},
+					"certificatesDir": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificatesDir specifies where to store or look for all required certificates.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. If empty, `registry.k8s.io` will be used by default; in case of kubernetes version is a CI build (kubernetes version starts with `ci/`) `gcr.io/k8s-staging-ci-images` will be used as a default for control plane components and for kube-proxy, while `registry.k8s.io` will be used for all the other images.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"featureGates": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FeatureGates enabled by the user.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: false,
+										Type:    []string{"boolean"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"clusterName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The cluster name",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"encryptionAlgorithm": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EncryptionAlgorithm holds the type of asymmetric encryption algorithm used for keys and certificates. Can be one of \"RSA-2048\" (default), \"RSA-3072\", \"RSA-4096\" or \"ECDSA-P256\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certificateValidityPeriod": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateValidityPeriod specifies the validity period for a non-CA certificate generated by kubeadm. Default value: 8760h (365 days * 24 hours = 1 year)",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"caCertificateValidityPeriod": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertificateValidityPeriod specifies the validity period for a CA certificate generated by kubeadm. Default value: 87600h (365 days * 24 hours * 10 = 10 years)",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIServer", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ControlPlaneComponent", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.DNS", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Etcd", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Networking", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Proxy"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_ControlPlaneComponent(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ControlPlaneComponent holds settings common to control plane component of the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs is an extra set of flags to pass to the control plane component. An argument name in this list is the flag name as it appears on the command line except without leading dash(es). Extra arguments will override existing default arguments. Duplicate extra arguments are allowed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg"),
+									},
+								},
+							},
+						},
+					},
+					"extraVolumes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraVolumes is an extra set of host volumes, mounted to the control plane component.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.HostPathMount"),
+									},
+								},
+							},
+						},
+					},
+					"extraEnvs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraEnvs is an extra set of environment variables to pass to the control plane component. Environment variables passed using ExtraEnvs will override any existing environment variables, or *_proxy environment variables that kubeadm adds by default.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.HostPathMount"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_DNS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "DNS defines the DNS addon that should be used in the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. if not set, the ImageRepository defined in ClusterConfiguration will be used instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageTag": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageTag allows to specify a tag for the image. In case this value is set, kubeadm does not change automatically the version of the above components during upgrades.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"disabled": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disabled specifies whether to disable this addon in the cluster",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Discovery(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Discovery specifies the options for the kubelet to use during the TLS Bootstrap process",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"bootstrapToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BootstrapToken is used to set the options for bootstrap token based discovery BootstrapToken and File are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.BootstrapTokenDiscovery"),
+						},
+					},
+					"file": {
+						SchemaProps: spec.SchemaProps{
+							Description: "File is used to specify a file or URL to a kubeconfig file from which to load cluster information BootstrapToken and File are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.FileDiscovery"),
+						},
+					},
+					"tlsBootstrapToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLSBootstrapToken is a token used for TLS bootstrapping. If .BootstrapToken is set, this field is defaulted to .BootstrapToken.Token, but can be overridden. If .File is set, this field **must be set** in case the KubeConfigFile does not contain any other authentication information",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.BootstrapTokenDiscovery", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.FileDiscovery"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_EnvVar(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvVar represents an environment variable present in a Container.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the environment variable. Must be a C_IDENTIFIER.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. \"$$(VAR_NAME)\" will produce the string literal \"$(VAR_NAME)\". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to \"\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valueFrom": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Source for the environment variable's value. Cannot be used if value is not empty.",
+							Ref:         ref("k8s.io/api/core/v1.EnvVarSource"),
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/core/v1.EnvVarSource"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Etcd(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Etcd contains elements describing Etcd configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"local": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Local provides configuration knobs for configuring the local etcd instance Local and External are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.LocalEtcd"),
+						},
+					},
+					"external": {
+						SchemaProps: spec.SchemaProps{
+							Description: "External describes how to connect to an external etcd cluster Local and External are mutually exclusive",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ExternalEtcd"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.ExternalEtcd", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.LocalEtcd"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_ExternalEtcd(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExternalEtcd describes an external etcd cluster. Kubeadm has no knowledge of where certificate files live and they must be supplied.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"endpoints": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Endpoints of etcd members. Required for ExternalEtcd.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"caFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CAFile is an SSL Certificate Authority file used to secure etcd communication. Required if using a TLS connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertFile is an SSL certification file used to secure etcd communication. Required if using a TLS connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"keyFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KeyFile is an SSL key file used to secure etcd communication. Required if using a TLS connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"endpoints", "caFile", "certFile", "keyFile"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_FileDiscovery(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FileDiscovery is used to specify a file or URL to a kubeconfig file from which to load cluster information",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kubeConfigPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubeConfigPath is used to specify the actual file path or URL to the kubeconfig file from which to load cluster information",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"kubeConfigPath"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_HostPathMount(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HostPathMount contains elements describing volumes that are mounted from the host.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the volume inside the pod template.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"hostPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HostPath is the path in the host that will be mounted inside the pod.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"mountPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MountPath is the path inside the pod where hostPath will be mounted.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"readOnly": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ReadOnly controls write access to the volume",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"pathType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PathType is the type of the HostPath.\n\nPossible enum values:\n - `\"\"` For backwards compatible, leave it empty if unset\n - `\"BlockDevice\"` A block device must exist at the given path\n - `\"CharDevice\"` A character device must exist at the given path\n - `\"Directory\"` A directory must exist at the given path\n - `\"DirectoryOrCreate\"` If nothing exists at the given path, an empty directory will be created there as needed with file mode 0755, having the same group and ownership with Kubelet.\n - `\"File\"` A file must exist at the given path\n - `\"FileOrCreate\"` If nothing exists at the given path, an empty file will be created there as needed with file mode 0644, having the same group and ownership with Kubelet.\n - `\"Socket\"` A UNIX socket must exist at the given path",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"", "BlockDevice", "CharDevice", "Directory", "DirectoryOrCreate", "File", "FileOrCreate", "Socket"},
+						},
+					},
+				},
+				Required: []string{"name", "hostPath", "mountPath"},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_ImageMeta(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ImageMeta allows to customize the image used for components that are not originated from the Kubernetes/Kubernetes release process",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. if not set, the ImageRepository defined in ClusterConfiguration will be used instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageTag": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageTag allows to specify a tag for the image. In case this value is set, kubeadm does not change automatically the version of the above components during upgrades.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_InitConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "InitConfiguration contains a list of elements that is specific \"kubeadm init\"-only runtime information.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"bootstrapTokens": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BootstrapTokens is respected at `kubeadm init` time and describes a set of Bootstrap Tokens to create. This information IS NOT uploaded to the kubeadm cluster configmap, partly because of its sensitive nature",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapToken"),
+									},
+								},
+							},
+						},
+					},
+					"dryRun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DryRun tells if the dry run mode is enabled, don't apply any change if it is and just output what would be done.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"nodeRegistration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NodeRegistration holds fields that relate to registering the new control-plane node to the cluster",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.NodeRegistrationOptions"),
+						},
+					},
+					"localAPIEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LocalAPIEndpoint represents the endpoint of the API server instance that's deployed on this control plane node In HA setups, this differs from ClusterConfiguration.ControlPlaneEndpoint in the sense that ControlPlaneEndpoint is the global endpoint for the cluster, which then loadbalances the requests to each individual API server. This configuration object lets you customize what IP/DNS name and port the local API server advertises it's accessible on. By default, kubeadm tries to auto-detect the IP of the default interface and use that, but in case that process fails you may set the desired value here.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIEndpoint"),
+						},
+					},
+					"certificateKey": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateKey sets the key with which certificates and keys are encrypted prior to being uploaded in a secret in the cluster during the uploadcerts init phase. The certificate key is a hex encoded string that is an AES key of size 32 bytes.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. The list of phases can be obtained with the \"kubeadm init --help\" command. The flag \"--skip-phases\" takes precedence over this field.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"patches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patches contains options related to applying patches to components deployed by kubeadm during \"kubeadm init\".",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches"),
+						},
+					},
+					"timeouts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeouts holds various timeouts that apply to kubeadm commands.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapToken", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIEndpoint", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.NodeRegistrationOptions", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_JoinConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JoinConfiguration contains elements describing a particular node.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"dryRun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DryRun tells if the dry run mode is enabled, don't apply any change if it is and just output what would be done.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"nodeRegistration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NodeRegistration holds fields that relate to registering the new control-plane node to the cluster",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.NodeRegistrationOptions"),
+						},
+					},
+					"caCertPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertPath is the path to the SSL certificate authority used to secure communications between node and control-plane. Defaults to \"/etc/kubernetes/pki/ca.crt\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"discovery": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Discovery specifies the options for the kubelet to use during the TLS Bootstrap process",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Discovery"),
+						},
+					},
+					"controlPlane": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControlPlane defines the additional control plane instance to be deployed on the joining node. If nil, no additional control plane instance will be deployed.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.JoinControlPlane"),
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. The list of phases can be obtained with the \"kubeadm join --help\" command. The flag \"--skip-phases\" takes precedence over this field.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"patches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patches contains options related to applying patches to components deployed by kubeadm during \"kubeadm join\".",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches"),
+						},
+					},
+					"timeouts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeouts holds various timeouts that apply to kubeadm commands.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"),
+						},
+					},
+				},
+				Required: []string{"discovery"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Discovery", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.JoinControlPlane", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.NodeRegistrationOptions", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_JoinControlPlane(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JoinControlPlane contains elements describing an additional control plane instance to be deployed on the joining node.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"localAPIEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LocalAPIEndpoint represents the endpoint of the API server instance to be deployed on this node.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIEndpoint"),
+						},
+					},
+					"certificateKey": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateKey is the key that is used for decryption of certificates after they are downloaded from the secret upon joining a new control plane node. The corresponding encryption key is in the InitConfiguration. The certificate key is a hex encoded string that is an AES key of size 32 bytes.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.APIEndpoint"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_LocalEtcd(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalEtcd describes that kubeadm should run an etcd cluster locally",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"imageRepository": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageRepository sets the container registry to pull images from. if not set, the ImageRepository defined in ClusterConfiguration will be used instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"imageTag": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImageTag allows to specify a tag for the image. In case this value is set, kubeadm does not change automatically the version of the above components during upgrades.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"dataDir": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DataDir is the directory etcd will place its data. Defaults to \"/var/lib/etcd\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs are extra arguments provided to the etcd binary when run inside a static pod. An argument name in this list is the flag name as it appears on the command line except without leading dash(es). Extra arguments will override existing default arguments. Duplicate extra arguments are allowed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg"),
+									},
+								},
+							},
+						},
+					},
+					"extraEnvs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraEnvs is an extra set of environment variables to pass to the control plane component. Environment variables passed using ExtraEnvs will override any existing environment variables, or *_proxy environment variables that kubeadm adds by default.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar"),
+									},
+								},
+							},
+						},
+					},
+					"serverCertSANs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ServerCertSANs sets extra Subject Alternative Names for the etcd server signing cert.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"peerCertSANs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PeerCertSANs sets extra Subject Alternative Names for the etcd peer signing cert.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"dataDir"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.EnvVar"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Networking(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Networking contains elements describing cluster's networking configuration",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"serviceSubnet": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ServiceSubnet is the subnet used by k8s services. Defaults to \"10.96.0.0/12\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"podSubnet": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PodSubnet is the subnet used by pods.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"dnsDomain": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNSDomain is the dns domain used by k8s services. Defaults to \"cluster.local\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_NodeRegistrationOptions(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "NodeRegistrationOptions holds fields that relate to registering a new control-plane or node to the cluster, either via \"kubeadm init\" or \"kubeadm join\"",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the `.Metadata.Name` field of the Node API object that will be created in this `kubeadm init` or `kubeadm join` operation. This field is also used in the CommonName field of the kubelet's client certificate to the API server. Defaults to the hostname of the node if not provided.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"criSocket": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CRISocket is used to retrieve container runtime info. This information will be annotated to the Node API object, for later re-use",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"taints": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Taints specifies the taints the Node API object should be registered with. If this field is unset, i.e. nil, it will be defaulted with a control-plane taint for control-plane nodes. If you don't want to taint your control-plane node, set this field to an empty slice, i.e. `taints: []` in the YAML file. This field is solely used for Node registration.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.Taint"),
+									},
+								},
+							},
+						},
+					},
+					"kubeletExtraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubeletExtraArgs passes through extra arguments to the kubelet. The arguments here are passed to the kubelet command line via the environment file kubeadm writes at runtime for the kubelet to source. This overrides the generic base-level configuration in the kubelet-config ConfigMap Flags have higher priority when parsing. These values are local and specific to the node kubeadm is executing on. An argument name in this list is the flag name as it appears on the command line except without leading dash(es). Extra arguments will override existing default arguments. Duplicate extra arguments are allowed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg"),
+									},
+								},
+							},
+						},
+					},
+					"ignorePreflightErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IgnorePreflightErrors provides a slice of pre-flight errors to be ignored when the current node is registered, e.g. 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"imagePullPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullPolicy specifies the policy for image pulling during kubeadm \"init\" and \"join\" operations. The value of this field must be one of \"Always\", \"IfNotPresent\" or \"Never\". If this field is unset kubeadm will default it to \"IfNotPresent\", or pull the required images if not present on the host.\n\nPossible enum values:\n - `\"Always\"` means that kubelet always attempts to pull the latest image. Container will fail If the pull fails.\n - `\"IfNotPresent\"` means that kubelet pulls if the image isn't present on disk. Container will fail if the image isn't present and the pull fails.\n - `\"Never\"` means that kubelet never pulls an image, but only uses a local image. Container will fail if the image isn't present",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"Always", "IfNotPresent", "Never"},
+						},
+					},
+					"imagePullSerial": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullSerial specifies if image pulling performed by kubeadm must be done serially or in parallel. Default: true",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"taints"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/core/v1.Taint", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Arg"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Patches(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Patches contains options related to applying patches to components deployed by kubeadm.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"directory": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Directory is a path to a directory that contains files named \"target[suffix][+patchtype].extension\". For example, \"kube-apiserver0+merge.yaml\" or just \"etcd.json\". \"target\" can be one of \"kube-apiserver\", \"kube-controller-manager\", \"kube-scheduler\", \"etcd\", \"kubeletconfiguration\", \"corednsdeployment\". \"patchtype\" can be one of \"strategic\" \"merge\" or \"json\" and they match the patch formats supported by kubectl. The default \"patchtype\" is \"strategic\". \"extension\" must be either \"json\" or \"yaml\". \"suffix\" is an optional string that can be used to determine which patches are applied first alpha-numerically.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Proxy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Proxy defines the proxy addon that should be used in the cluster",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"disabled": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disabled specifies whether to disable this addon in the cluster",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_ResetConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ResetConfiguration contains a list of fields that are specifically \"kubeadm reset\"-only runtime information.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"cleanupTmpDir": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CleanupTmpDir specifies whether the \"/etc/kubernetes/tmp\" directory should be cleaned during the reset process.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"certificatesDir": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificatesDir specifies the directory where the certificates are stored. If specified, it will be cleaned during the reset process.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"criSocket": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CRISocket is used to retrieve container runtime info and used for the removal of the containers. If CRISocket is not specified by flag or config file, kubeadm will try to detect one valid CRISocket instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"dryRun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DryRun tells if the dry run mode is enabled, don't apply any change if it is and just output what would be done.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"force": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Force flag instructs kubeadm to reset the node without prompting for confirmation.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"ignorePreflightErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IgnorePreflightErrors provides a slice of pre-flight errors to be ignored during the reset process, e.g. 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. The list of phases can be obtained with the \"kubeadm reset phase --help\" command.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"unmountFlags": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UnmountFlags is a list of unmount2() syscall flags that kubeadm can use when unmounting directories during \"reset\". A flag can be one of: MNT_FORCE, MNT_DETACH, MNT_EXPIRE, UMOUNT_NOFOLLOW. By default this list is empty.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"timeouts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeouts holds various timeouts that apply to kubeadm commands.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_Timeouts(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Timeouts holds various timeouts that apply to kubeadm commands.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"controlPlaneComponentHealthCheck": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControlPlaneComponentHealthCheck is the amount of time to wait for a control plane component, such as the API server, to be healthy during \"kubeadm init\" and \"kubeadm join\". Default: 4m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"kubeletHealthCheck": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubeletHealthCheck is the amount of time to wait for the kubelet to be healthy during \"kubeadm init\" and \"kubeadm join\". Default: 4m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"kubernetesAPICall": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubernetesAPICall is the amount of time to wait for the kubeadm client to complete a request to the API server. This applies to all types of methods (GET, POST, etc). Default: 1m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"etcdAPICall": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EtcdAPICall is the amount of time to wait for the kubeadm etcd client to complete a request to the etcd cluster. Default: 2m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"tlsBootstrap": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLSBootstrap is the amount of time to wait for the kubelet to complete TLS bootstrap for a joining node. Default: 5m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"discovery": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Discovery is the amount of time to wait for kubeadm to validate the API server identity for a joining node. Default: 5m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"upgradeManifests": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UpgradeManifests is the timeout for upgrading static Pod manifests. Default: 5m",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_UpgradeApplyConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UpgradeApplyConfiguration contains a list of configurable options which are specific to the  \"kubeadm upgrade apply\" command.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kubernetesVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubernetesVersion is the target version of the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"allowExperimentalUpgrades": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowExperimentalUpgrades instructs kubeadm to show unstable versions of Kubernetes as an upgrade alternative and allows upgrading to an alpha/beta/release candidate version of Kubernetes. Default: false",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"allowRCUpgrades": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Enable AllowRCUpgrades will show release candidate versions of Kubernetes as an upgrade alternative and allows upgrading to a release candidate version of Kubernetes.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"certificateRenewal": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateRenewal instructs kubeadm to execute certificate renewal during upgrades. Defaults to true.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"dryRun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DryRun tells if the dry run mode is enabled, don't apply any change if it is and just output what would be done.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"etcdUpgrade": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EtcdUpgrade instructs kubeadm to execute etcd upgrade during upgrades. Defaults to true.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"forceUpgrade": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ForceUpgrade flag instructs kubeadm to upgrade the cluster without prompting for confirmation.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"ignorePreflightErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IgnorePreflightErrors provides a slice of pre-flight errors to be ignored during the upgrade process, e.g. 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"patches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patches contains options related to applying patches to components deployed by kubeadm during \"kubeadm upgrade\".",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches"),
+						},
+					},
+					"printConfig": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PrintConfig specifies whether the configuration file that will be used in the upgrade should be printed or not.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. NOTE: This field is currently ignored for \"kubeadm upgrade apply\", but in the future it will be supported.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"imagePullPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullPolicy specifies the policy for image pulling during kubeadm \"upgrade apply\" operations. The value of this field must be one of \"Always\", \"IfNotPresent\" or \"Never\". If this field is unset kubeadm will default it to \"IfNotPresent\", or pull the required images if not present on the host.\n\nPossible enum values:\n - `\"Always\"` means that kubelet always attempts to pull the latest image. Container will fail If the pull fails.\n - `\"IfNotPresent\"` means that kubelet pulls if the image isn't present on disk. Container will fail if the image isn't present and the pull fails.\n - `\"Never\"` means that kubelet never pulls an image, but only uses a local image. Container will fail if the image isn't present",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"Always", "IfNotPresent", "Never"},
+						},
+					},
+					"imagePullSerial": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullSerial specifies if image pulling performed by kubeadm must be done serially or in parallel. Default: true",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_UpgradeConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UpgradeConfiguration contains a list of options that are specific to \"kubeadm upgrade\" subcommands.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apply": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Apply holds a list of options that are specific to the \"kubeadm upgrade apply\" command.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeApplyConfiguration"),
+						},
+					},
+					"diff": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Diff holds a list of options that are specific to the \"kubeadm upgrade diff\" command.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeDiffConfiguration"),
+						},
+					},
+					"node": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Node holds a list of options that are specific to the \"kubeadm upgrade node\" command.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeNodeConfiguration"),
+						},
+					},
+					"plan": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Plan holds a list of options that are specific to the \"kubeadm upgrade plan\" command.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradePlanConfiguration"),
+						},
+					},
+					"timeouts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeouts holds various timeouts that apply to kubeadm commands.",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Timeouts", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeApplyConfiguration", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeDiffConfiguration", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradeNodeConfiguration", "k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradePlanConfiguration"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_UpgradeDiffConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UpgradeDiffConfiguration contains a list of configurable options which are specific to the \"kubeadm upgrade diff\" command.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kubernetesVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubernetesVersion is the target version of the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"contextLines": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DiffContextLines is the number of lines of context in the diff.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_UpgradeNodeConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UpgradeNodeConfiguration contains a list of configurable options which are specific to the \"kubeadm upgrade node\" command.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"certificateRenewal": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateRenewal instructs kubeadm to execute certificate renewal during upgrades. Defaults to true.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"dryRun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DryRun tells if the dry run mode is enabled, don't apply any change if it is and just output what would be done.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"etcdUpgrade": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EtcdUpgrade instructs kubeadm to execute etcd upgrade during upgrades. Defaults to true.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"ignorePreflightErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IgnorePreflightErrors provides a slice of pre-flight errors to be ignored during the upgrade process, e.g. 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"skipPhases": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SkipPhases is a list of phases to skip during command execution. The list of phases can be obtained with the \"kubeadm upgrade node phase --help\" command.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"patches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patches contains options related to applying patches to components deployed by kubeadm during \"kubeadm upgrade\".",
+							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches"),
+						},
+					},
+					"imagePullPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullPolicy specifies the policy for image pulling during kubeadm \"upgrade node\" operations. The value of this field must be one of \"Always\", \"IfNotPresent\" or \"Never\". If this field is unset kubeadm will default it to \"IfNotPresent\", or pull the required images if not present on the host.\n\nPossible enum values:\n - `\"Always\"` means that kubelet always attempts to pull the latest image. Container will fail If the pull fails.\n - `\"IfNotPresent\"` means that kubelet pulls if the image isn't present on disk. Container will fail if the image isn't present and the pull fails.\n - `\"Never\"` means that kubelet never pulls an image, but only uses a local image. Container will fail if the image isn't present",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"Always", "IfNotPresent", "Never"},
+						},
+					},
+					"imagePullSerial": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullSerial specifies if image pulling performed by kubeadm must be done serially or in parallel. Default: true",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.Patches"},
+	}
+}
+
+func schema_app_apis_kubeadm_v1beta4_UpgradePlanConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UpgradePlanConfiguration contains a list of configurable options which are specific to the \"kubeadm upgrade plan\" command.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kubernetesVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "KubernetesVersion is the target version of the control plane.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"allowExperimentalUpgrades": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowExperimentalUpgrades instructs kubeadm to show unstable versions of Kubernetes as an upgrade alternative and allows upgrading to an alpha/beta/release candidate version of Kubernetes. Default: false",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"allowRCUpgrades": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Enable AllowRCUpgrades will show release candidate versions of Kubernetes as an upgrade alternative and allows upgrading to a release candidate version of Kubernetes.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"dryRun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DryRun tells if the dry run mode is enabled, don't apply any change if it is and just output what would be done.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"ignorePreflightErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IgnorePreflightErrors provides a slice of pre-flight errors to be ignored during the upgrade process, e.g. 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"printConfig": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PrintConfig specifies whether the configuration file that will be used in the upgrade should be printed or not.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
 			},
 		},
 	}

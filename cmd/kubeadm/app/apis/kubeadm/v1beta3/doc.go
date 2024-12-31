@@ -282,4 +282,5 @@ limitations under the License.
 // node only (e.g. the node ip).
 //
 // - APIEndpoint, that represents the endpoint of the instance of the API server to be eventually deployed on this node.
+// +k8s:openapi-gen=true
 package v1beta3

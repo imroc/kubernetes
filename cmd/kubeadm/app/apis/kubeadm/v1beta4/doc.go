@@ -351,4 +351,5 @@ limitations under the License.
 // The UpgradeConfiguration structure includes a few substructures that only apply to different subcommands of "kubeadm upgrade".
 // For example, the "apply" substructure will be used with the "kubeadm upgrade apply" subcommand and all other substructures
 // will be ignored in such a case.
+// +k8s:openapi-gen=true
 package v1beta4

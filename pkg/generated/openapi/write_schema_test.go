@@ -51,16 +51,18 @@ func parseNameRef(name string) (group, kind, version string) {
 }
 
 var APIs = map[string]string{
-	"k8s.io/kubelet/config":                              "kubelet.config.k8s.io",
-	"k8s.io/client-go/tools/clientcmd/api":               "core.api.k8s.io",
-	"k8s.io/kube-controller-manager/config":              "kubecontrollermanager.config.k8s.io",
-	"k8s.io/component-base/tracing/api":                  "",
-	"k8s.io/component-base/logs/api":                     "",
-	"k8s.io/component-base/config":                       "",
-	"k8s.io/apimachinery/pkg/api/resource.QuantityValue": "api.pkg.apimachinery.k8s.io/resource.Quantity",
-	"k8s.io/cloud-provider/controllers/service/config":   "",
-	"k8s.io/cloud-provider/config":                       "",
-	"k8s.io/controller-manager/config":                   "",
+	"k8s.io/kubelet/config":                                 "kubelet.config.k8s.io",
+	"k8s.io/client-go/tools/clientcmd/api":                  "core.api.k8s.io",
+	"k8s.io/kube-controller-manager/config":                 "kubecontrollermanager.config.k8s.io",
+	"k8s.io/component-base/tracing/api":                     "",
+	"k8s.io/component-base/logs/api":                        "",
+	"k8s.io/component-base/config":                          "",
+	"k8s.io/apimachinery/pkg/api/resource.QuantityValue":    "api.pkg.apimachinery.k8s.io/resource.Quantity",
+	"k8s.io/cloud-provider/controllers/service/config":      "",
+	"k8s.io/cloud-provider/config":                          "",
+	"k8s.io/controller-manager/config":                      "",
+	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm":        "kubeadm.k8s.io",
+	"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken": "",
 }
 
 func TestWriteSchema(t *testing.T) {
