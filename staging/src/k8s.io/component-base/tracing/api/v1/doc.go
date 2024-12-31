@@ -25,5 +25,6 @@ limitations under the License.
 //
 // The "v1" package name is just a reminder that API compatibility rules apply,
 // not an indication of the stability of all features covered by it.
+// +k8s:openapi-gen=true
 
 package v1

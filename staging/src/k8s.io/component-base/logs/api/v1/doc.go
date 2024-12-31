@@ -29,4 +29,6 @@ limitations under the License.
 // The LoggingAlphaOptions and LoggingBetaOptions feature gates control whether
 // these unstable features can get enabled. This can be used to ensure that
 // command invocations do not accidentally rely on unstable features.
+// +k8s:openapi-gen=true
+
 package v1
