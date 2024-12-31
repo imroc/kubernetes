@@ -20,6 +20,5 @@ limitations under the License.
 // +k8s:defaulter-gen-input=k8s.io/api/admission/v1beta1
 
 // +groupName=admission.k8s.io
-// +k8s:openapi-gen=true
 
 package v1beta1

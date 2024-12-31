@@ -63,6 +63,8 @@ var APIs = map[string]string{
 	"k8s.io/controller-manager/config":                      "",
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm":        "kubeadm.k8s.io",
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken": "",
+	"k8s.io/api/admission/":                                 "admission.k8s.io/",
+	"k8s.io/apimachinery/pkg/apis/meta":                     "",
 }
 
 func TestWriteSchema(t *testing.T) {
@@ -133,6 +135,16 @@ func TestWriteSchema(t *testing.T) {
 			return
 		}
 		filename := filepath.Join(dir, fmt.Sprintf("%s_%s.json", strings.ToLower(kind), version))
+		if group == "meta.apis.pkg.apimachinery.k8s.io" { // not override existed meta api
+			if _, err := os.Stat(filename); err != nil {
+				if !os.IsNotExist(err) {
+					t.Error(err)
+					return
+				}
+			} else {
+				continue
+			}
+		}
 		fmt.Println("write", filename)
 		err = os.WriteFile(filename, data, 0644)
 		if err != nil {
