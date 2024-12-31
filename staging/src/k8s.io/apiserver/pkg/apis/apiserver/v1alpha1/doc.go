@@ -19,6 +19,7 @@ limitations under the License.
 // +k8s:defaulter-gen=TypeMeta
 // +groupName=apiserver.k8s.io
 // +groupName=apiserver.config.k8s.io
+// +k8s:openapi-gen=true
 
 // Package v1alpha1 is the v1alpha1 version of the API.
 package v1alpha1

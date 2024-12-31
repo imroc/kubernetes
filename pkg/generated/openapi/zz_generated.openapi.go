@@ -1145,6 +1145,71 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/apimachinery/pkg/runtime.Unknown":                                                               schema_k8sio_apimachinery_pkg_runtime_Unknown(ref),
 		"k8s.io/apimachinery/pkg/util/intstr.IntOrString":                                                       schema_apimachinery_pkg_util_intstr_IntOrString(ref),
 		"k8s.io/apimachinery/pkg/version.Info":                                                                  schema_k8sio_apimachinery_pkg_version_Info(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.AESConfiguration":                                               schema_pkg_apis_apiserver_v1_AESConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.AdmissionConfiguration":                                         schema_pkg_apis_apiserver_v1_AdmissionConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.AdmissionPluginConfiguration":                                   schema_pkg_apis_apiserver_v1_AdmissionPluginConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.AuthorizationConfiguration":                                     schema_pkg_apis_apiserver_v1_AuthorizationConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.AuthorizerConfiguration":                                        schema_pkg_apis_apiserver_v1_AuthorizerConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.EncryptionConfiguration":                                        schema_pkg_apis_apiserver_v1_EncryptionConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.IdentityConfiguration":                                          schema_pkg_apis_apiserver_v1_IdentityConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.KMSConfiguration":                                               schema_pkg_apis_apiserver_v1_KMSConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.Key":                                                            schema_pkg_apis_apiserver_v1_Key(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.ProviderConfiguration":                                          schema_pkg_apis_apiserver_v1_ProviderConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.ResourceConfiguration":                                          schema_pkg_apis_apiserver_v1_ResourceConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.SecretboxConfiguration":                                         schema_pkg_apis_apiserver_v1_SecretboxConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookConfiguration":                                           schema_pkg_apis_apiserver_v1_WebhookConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookConnectionInfo":                                          schema_pkg_apis_apiserver_v1_WebhookConnectionInfo(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookMatchCondition":                                          schema_pkg_apis_apiserver_v1_WebhookMatchCondition(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AdmissionConfiguration":                                   schema_pkg_apis_apiserver_v1alpha1_AdmissionConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AdmissionPluginConfiguration":                             schema_pkg_apis_apiserver_v1alpha1_AdmissionPluginConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AnonymousAuthCondition":                                   schema_pkg_apis_apiserver_v1alpha1_AnonymousAuthCondition(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AnonymousAuthConfig":                                      schema_pkg_apis_apiserver_v1alpha1_AnonymousAuthConfig(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AuthenticationConfiguration":                              schema_pkg_apis_apiserver_v1alpha1_AuthenticationConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AuthorizationConfiguration":                               schema_pkg_apis_apiserver_v1alpha1_AuthorizationConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AuthorizerConfiguration":                                  schema_pkg_apis_apiserver_v1alpha1_AuthorizerConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimMappings":                                            schema_pkg_apis_apiserver_v1alpha1_ClaimMappings(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimOrExpression":                                        schema_pkg_apis_apiserver_v1alpha1_ClaimOrExpression(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimValidationRule":                                      schema_pkg_apis_apiserver_v1alpha1_ClaimValidationRule(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Connection":                                               schema_pkg_apis_apiserver_v1alpha1_Connection(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.EgressSelection":                                          schema_pkg_apis_apiserver_v1alpha1_EgressSelection(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.EgressSelectorConfiguration":                              schema_pkg_apis_apiserver_v1alpha1_EgressSelectorConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ExtraMapping":                                             schema_pkg_apis_apiserver_v1alpha1_ExtraMapping(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Issuer":                                                   schema_pkg_apis_apiserver_v1alpha1_Issuer(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.JWTAuthenticator":                                         schema_pkg_apis_apiserver_v1alpha1_JWTAuthenticator(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.PrefixedClaimOrExpression":                                schema_pkg_apis_apiserver_v1alpha1_PrefixedClaimOrExpression(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TCPTransport":                                             schema_pkg_apis_apiserver_v1alpha1_TCPTransport(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TLSConfig":                                                schema_pkg_apis_apiserver_v1alpha1_TLSConfig(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TracingConfiguration":                                     schema_pkg_apis_apiserver_v1alpha1_TracingConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Transport":                                                schema_pkg_apis_apiserver_v1alpha1_Transport(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.UDSTransport":                                             schema_pkg_apis_apiserver_v1alpha1_UDSTransport(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.UserValidationRule":                                       schema_pkg_apis_apiserver_v1alpha1_UserValidationRule(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookConfiguration":                                     schema_pkg_apis_apiserver_v1alpha1_WebhookConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookConnectionInfo":                                    schema_pkg_apis_apiserver_v1alpha1_WebhookConnectionInfo(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookMatchCondition":                                    schema_pkg_apis_apiserver_v1alpha1_WebhookMatchCondition(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AnonymousAuthCondition":                                    schema_pkg_apis_apiserver_v1beta1_AnonymousAuthCondition(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AnonymousAuthConfig":                                       schema_pkg_apis_apiserver_v1beta1_AnonymousAuthConfig(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AuthenticationConfiguration":                               schema_pkg_apis_apiserver_v1beta1_AuthenticationConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AuthorizationConfiguration":                                schema_pkg_apis_apiserver_v1beta1_AuthorizationConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AuthorizerConfiguration":                                   schema_pkg_apis_apiserver_v1beta1_AuthorizerConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimMappings":                                             schema_pkg_apis_apiserver_v1beta1_ClaimMappings(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimOrExpression":                                         schema_pkg_apis_apiserver_v1beta1_ClaimOrExpression(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimValidationRule":                                       schema_pkg_apis_apiserver_v1beta1_ClaimValidationRule(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Connection":                                                schema_pkg_apis_apiserver_v1beta1_Connection(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.EgressSelection":                                           schema_pkg_apis_apiserver_v1beta1_EgressSelection(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.EgressSelectorConfiguration":                               schema_pkg_apis_apiserver_v1beta1_EgressSelectorConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ExtraMapping":                                              schema_pkg_apis_apiserver_v1beta1_ExtraMapping(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Issuer":                                                    schema_pkg_apis_apiserver_v1beta1_Issuer(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.JWTAuthenticator":                                          schema_pkg_apis_apiserver_v1beta1_JWTAuthenticator(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.PrefixedClaimOrExpression":                                 schema_pkg_apis_apiserver_v1beta1_PrefixedClaimOrExpression(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TCPTransport":                                              schema_pkg_apis_apiserver_v1beta1_TCPTransport(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TLSConfig":                                                 schema_pkg_apis_apiserver_v1beta1_TLSConfig(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TracingConfiguration":                                      schema_pkg_apis_apiserver_v1beta1_TracingConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Transport":                                                 schema_pkg_apis_apiserver_v1beta1_Transport(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.UDSTransport":                                              schema_pkg_apis_apiserver_v1beta1_UDSTransport(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.UserValidationRule":                                        schema_pkg_apis_apiserver_v1beta1_UserValidationRule(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookConfiguration":                                      schema_pkg_apis_apiserver_v1beta1_WebhookConfiguration(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookConnectionInfo":                                     schema_pkg_apis_apiserver_v1beta1_WebhookConnectionInfo(ref),
+		"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookMatchCondition":                                     schema_pkg_apis_apiserver_v1beta1_WebhookMatchCondition(ref),
 		"k8s.io/apiserver/pkg/apis/audit/v1.Event":                                                              schema_pkg_apis_audit_v1_Event(ref),
 		"k8s.io/apiserver/pkg/apis/audit/v1.EventList":                                                          schema_pkg_apis_audit_v1_EventList(ref),
 		"k8s.io/apiserver/pkg/apis/audit/v1.GroupResources":                                                     schema_pkg_apis_audit_v1_GroupResources(ref),
@@ -58691,6 +58756,2457 @@ func schema_k8sio_apimachinery_pkg_version_Info(ref common.ReferenceCallback) co
 					},
 				},
 				Required: []string{"major", "minor", "gitVersion", "gitCommit", "gitTreeState", "buildDate", "goVersion", "compiler", "platform"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_AESConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AESConfiguration contains the API configuration for an AES transformer.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"keys": {
+						SchemaProps: spec.SchemaProps{
+							Description: "keys is a list of keys to be used for creating the AES transformer. Each key has to be 32 bytes long for AES-CBC and 16, 24 or 32 bytes for AES-GCM.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.Key"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"keys"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.Key"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_AdmissionConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AdmissionConfiguration provides versioned configuration for admission controllers.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"plugins": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Plugins allows specifying a configuration per admission control plugin.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.AdmissionPluginConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.AdmissionPluginConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_AdmissionPluginConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AdmissionPluginConfiguration provides the configuration for a single plug-in.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the admission controller. It must match the registered admission plugin name.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path is the path to a configuration file that contains the plugin's configuration",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"configuration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Configuration is an embedded configuration object to be used as the plugin's configuration. If present, it will be used instead of the path to the configuration file.",
+							Ref:         ref("k8s.io/apimachinery/pkg/runtime.Unknown"),
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/runtime.Unknown"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_AuthorizationConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"authorizers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Authorizers is an ordered list of authorizers to authorize requests against. This is similar to the --authorization-modes kube-apiserver flag Must be at least one.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.AuthorizerConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"authorizers"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.AuthorizerConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_AuthorizerConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type refers to the type of the authorizer \"Webhook\" is supported in the generic API server Other API servers may support additional authorizer types like Node, RBAC, ABAC, etc.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name used to describe the webhook This is explicitly used in monitoring machinery for metrics Note: Names must be DNS1123 labels like `myauthorizername` or\n\t\t subdomains like `myauthorizer.example.domain`\nRequired, with no default",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"webhook": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Webhook defines the configuration for a Webhook authorizer Must be defined when Type=Webhook Must not be defined when Type!=Webhook",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookConfiguration"),
+						},
+					},
+				},
+				Required: []string{"type", "name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_EncryptionConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EncryptionConfiguration stores the complete configuration for encryption providers. It also allows the use of wildcards to specify the resources that should be encrypted. Use '*.<group>' to encrypt all resources within a group or '*.*' to encrypt all resources. '*.' can be used to encrypt all resource in the core group.  '*.*' will encrypt all resources, even custom resources that are added after API server start. Use of wildcards that overlap within the same resource list or across multiple entries are not allowed since part of the configuration would be ineffective. Resource lists are processed in order, with earlier lists taking precedence.\n\nExample:\n\n\tkind: EncryptionConfiguration\n\tapiVersion: apiserver.config.k8s.io/v1\n\tresources:\n\t- resources:\n\t  - events\n\t  providers:\n\t  - identity: {}  # do not encrypt events even though *.* is specified below\n\t- resources:\n\t  - secrets\n\t  - configmaps\n\t  - pandas.awesome.bears.example\n\t  providers:\n\t  - aescbc:\n\t      keys:\n\t      - name: key1\n\t        secret: c2VjcmV0IGlzIHNlY3VyZQ==\n\t- resources:\n\t  - '*.apps'\n\t  providers:\n\t  - aescbc:\n\t      keys:\n\t      - name: key2\n\t        secret: c2VjcmV0IGlzIHNlY3VyZSwgb3IgaXMgaXQ/Cg==\n\t- resources:\n\t  - '*.*'\n\t  providers:\n\t  - aescbc:\n\t      keys:\n\t      - name: key3\n\t        secret: c2VjcmV0IGlzIHNlY3VyZSwgSSB0aGluaw==",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"resources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "resources is a list containing resources, and their corresponding encryption providers.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.ResourceConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"resources"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.ResourceConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_IdentityConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "IdentityConfiguration is an empty struct to allow identity transformer in provider configuration.",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_KMSConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KMSConfiguration contains the name, cache size and path to configuration file for a KMS based envelope transformer.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "apiVersion of KeyManagementService",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "name is the name of the KMS plugin to be used.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"cachesize": {
+						SchemaProps: spec.SchemaProps{
+							Description: "cachesize is the maximum number of secrets which are cached in memory. The default value is 1000. Set to a negative value to disable caching. This field is only allowed for KMS v1 providers.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"endpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "endpoint is the gRPC server listening address, for example \"unix:///var/run/kms-provider.sock\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "timeout for gRPC calls to kms-plugin (ex. 5s). The default is 3 seconds.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+				Required: []string{"name", "endpoint"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_Key(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Key contains name and secret of the provided key for a transformer.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "name is the name of the key to be used while storing data to disk.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"secret": {
+						SchemaProps: spec.SchemaProps{
+							Description: "secret is the actual key, encoded in base64.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name", "secret"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_ProviderConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProviderConfiguration stores the provided configuration for an encryption provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"aesgcm": {
+						SchemaProps: spec.SchemaProps{
+							Description: "aesgcm is the configuration for the AES-GCM transformer.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.AESConfiguration"),
+						},
+					},
+					"aescbc": {
+						SchemaProps: spec.SchemaProps{
+							Description: "aescbc is the configuration for the AES-CBC transformer.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.AESConfiguration"),
+						},
+					},
+					"secretbox": {
+						SchemaProps: spec.SchemaProps{
+							Description: "secretbox is the configuration for the Secretbox based transformer.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.SecretboxConfiguration"),
+						},
+					},
+					"identity": {
+						SchemaProps: spec.SchemaProps{
+							Description: "identity is the (empty) configuration for the identity transformer.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.IdentityConfiguration"),
+						},
+					},
+					"kms": {
+						SchemaProps: spec.SchemaProps{
+							Description: "kms contains the name, cache size and path to configuration file for a KMS based envelope transformer.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.KMSConfiguration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.AESConfiguration", "k8s.io/apiserver/pkg/apis/apiserver/v1.IdentityConfiguration", "k8s.io/apiserver/pkg/apis/apiserver/v1.KMSConfiguration", "k8s.io/apiserver/pkg/apis/apiserver/v1.SecretboxConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_ResourceConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ResourceConfiguration stores per resource configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"resources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "resources is a list of kubernetes resources which have to be encrypted. The resource names are derived from `resource` or `resource.group` of the group/version/resource. eg: pandas.awesome.bears.example is a custom resource with 'group': awesome.bears.example, 'resource': pandas. Use '*.*' to encrypt all resources and '*.<group>' to encrypt all resources in a specific group. eg: '*.awesome.bears.example' will encrypt all resources in the group 'awesome.bears.example'. eg: '*.' will encrypt all resources in the core group (such as pods, configmaps, etc).",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"providers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "providers is a list of transformers to be used for reading and writing the resources to disk. eg: aesgcm, aescbc, secretbox, identity, kms.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.ProviderConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"resources", "providers"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.ProviderConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_SecretboxConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SecretboxConfiguration contains the API configuration for an Secretbox transformer.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"keys": {
+						SchemaProps: spec.SchemaProps{
+							Description: "keys is a list of keys to be used for creating the Secretbox transformer. Each key has to be 32 bytes long.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.Key"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"keys"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1.Key"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_WebhookConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"authorizedTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration to cache 'authorized' responses from the webhook authorizer. Same as setting `--authorization-webhook-cache-authorized-ttl` flag Default: 5m0s",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"unauthorizedTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration to cache 'unauthorized' responses from the webhook authorizer. Same as setting `--authorization-webhook-cache-unauthorized-ttl` flag Default: 30s",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout for the webhook request Maximum allowed value is 30s. Required, no default value.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"subjectAccessReviewVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The API version of the authorization.k8s.io SubjectAccessReview to send to and expect from the webhook. Same as setting `--authorization-webhook-version` flag Valid values: v1beta1, v1 Required, no default value",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"matchConditionSubjectAccessReviewVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MatchConditionSubjectAccessReviewVersion specifies the SubjectAccessReview version the CEL expressions are evaluated against Valid values: v1 Required, no default value",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"failurePolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Controls the authorization decision when a webhook request fails to complete or returns a malformed response or errors evaluating matchConditions. Valid values:\n  - NoOpinion: continue to subsequent authorizers to see if one of\n    them allows the request\n  - Deny: reject the request without consulting subsequent authorizers\nRequired, with no default.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"connectionInfo": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConnectionInfo defines how we talk to the webhook",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookConnectionInfo"),
+						},
+					},
+					"matchConditions": {
+						SchemaProps: spec.SchemaProps{
+							Description: "matchConditions is a list of conditions that must be met for a request to be sent to this webhook. An empty list of matchConditions matches all requests. There are a maximum of 64 match conditions allowed.\n\nThe exact matching logic is (in order):\n  1. If at least one matchCondition evaluates to FALSE, then the webhook is skipped.\n  2. If ALL matchConditions evaluate to TRUE, then the webhook is called.\n  3. If at least one matchCondition evaluates to an error (but none are FALSE):\n     - If failurePolicy=Deny, then the webhook rejects the request\n     - If failurePolicy=NoOpinion, then the error is ignored and the webhook is skipped",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookMatchCondition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"authorizedTTL", "unauthorizedTTL", "timeout", "subjectAccessReviewVersion", "matchConditionSubjectAccessReviewVersion", "failurePolicy", "connectionInfo", "matchConditions"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookConnectionInfo", "k8s.io/apiserver/pkg/apis/apiserver/v1.WebhookMatchCondition"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_WebhookConnectionInfo(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Controls how the webhook should communicate with the server. Valid values: - KubeConfigFile: use the file specified in kubeConfigFile to locate the\n  server.\n- InClusterConfig: use the in-cluster configuration to call the\n  SubjectAccessReview API hosted by kube-apiserver. This mode is not\n  allowed for kube-apiserver.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kubeConfigFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path to KubeConfigFile for connection info Required, if connectionInfo.Type is KubeConfig",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"type", "kubeConfigFile"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1_WebhookMatchCondition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must evaluate to bool. CEL expressions have access to the contents of the SubjectAccessReview in v1 version. If version specified by subjectAccessReviewVersion in the request variable is v1beta1, the contents would be converted to the v1 version before evaluating the CEL expression.\n\n- 'resourceAttributes' describes information for a resource access request and is unset for non-resource requests. e.g. has(request.resourceAttributes) && request.resourceAttributes.namespace == 'default' - 'nonResourceAttributes' describes information for a non-resource access request and is unset for resource requests. e.g. has(request.nonResourceAttributes) && request.nonResourceAttributes.path == '/healthz'. - 'user' is the user to test for. e.g. request.user == 'alice' - 'groups' is the groups to test for. e.g. ('group1' in request.groups) - 'extra' corresponds to the user.Info.GetExtra() method from the authenticator. - 'uid' is the information about the requesting user. e.g. request.uid == '1'\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"expression"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AdmissionConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AdmissionConfiguration provides versioned configuration for admission controllers.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"plugins": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Plugins allows specifying a configuration per admission control plugin.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AdmissionPluginConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AdmissionPluginConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AdmissionPluginConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AdmissionPluginConfiguration provides the configuration for a single plug-in.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the admission controller. It must match the registered admission plugin name.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path is the path to a configuration file that contains the plugin's configuration",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"configuration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Configuration is an embedded configuration object to be used as the plugin's configuration. If present, it will be used instead of the path to the configuration file.",
+							Ref:         ref("k8s.io/apimachinery/pkg/runtime.Unknown"),
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/runtime.Unknown"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AnonymousAuthCondition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AnonymousAuthCondition describes the condition under which anonymous auth should be enabled.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path for which anonymous auth is enabled.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"path"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AnonymousAuthConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AnonymousAuthConfig provides the configuration for the anonymous authenticator.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"enabled": {
+						SchemaProps: spec.SchemaProps{
+							Default: false,
+							Type:    []string{"boolean"},
+							Format:  "",
+						},
+					},
+					"conditions": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If set, anonymous auth is only allowed if the request meets one of the conditions.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AnonymousAuthCondition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"enabled"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AnonymousAuthCondition"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AuthenticationConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AuthenticationConfiguration provides versioned configuration for authentication.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"jwt": {
+						SchemaProps: spec.SchemaProps{
+							Description: "jwt is a list of authenticator to authenticate Kubernetes users using JWT compliant tokens. The authenticator will attempt to parse a raw ID token, verify it's been signed by the configured issuer. The public key to verify the signature is discovered from the issuer's public endpoint using OIDC discovery. For an incoming token, each JWT authenticator will be attempted in the order in which it is specified in this list.  Note however that other authenticators may run before or after the JWT authenticators. The specific position of JWT authenticators in relation to other authenticators is neither defined nor stable across releases.  Since each JWT authenticator must have a unique issuer URL, at most one JWT authenticator will attempt to cryptographically validate the token.\n\nThe minimum valid JWT payload must contain the following claims: {\n\t\t\"iss\": \"https://issuer.example.com\",\n\t\t\"aud\": [\"audience\"],\n\t\t\"exp\": 1234567890,\n\t\t\"<username claim>\": \"username\"\n}",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.JWTAuthenticator"),
+									},
+								},
+							},
+						},
+					},
+					"anonymous": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If present --anonymous-auth must not be set",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AnonymousAuthConfig"),
+						},
+					},
+				},
+				Required: []string{"jwt"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AnonymousAuthConfig", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.JWTAuthenticator"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AuthorizationConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"authorizers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Authorizers is an ordered list of authorizers to authorize requests against. This is similar to the --authorization-modes kube-apiserver flag Must be at least one.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AuthorizerConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"authorizers"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.AuthorizerConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_AuthorizerConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type refers to the type of the authorizer \"Webhook\" is supported in the generic API server Other API servers may support additional authorizer types like Node, RBAC, ABAC, etc.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name used to describe the webhook This is explicitly used in monitoring machinery for metrics Note: Names must be DNS1123 labels like `myauthorizername` or\n\t\t subdomains like `myauthorizer.example.domain`\nRequired, with no default",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"webhook": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Webhook defines the configuration for a Webhook authorizer Must be defined when Type=Webhook Must not be defined when Type!=Webhook",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookConfiguration"),
+						},
+					},
+				},
+				Required: []string{"type", "name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_ClaimMappings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimMappings provides the configuration for claim mapping",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"username": {
+						SchemaProps: spec.SchemaProps{
+							Description: "username represents an option for the username attribute. The claim's value must be a singular string. Same as the --oidc-username-claim and --oidc-username-prefix flags. If username.expression is set, the expression must produce a string value. If username.expression uses 'claims.email', then 'claims.email_verified' must be used in username.expression or extra[*].valueExpression or claimValidationRules[*].expression. An example claim validation rule expression that matches the validation automatically applied when username.claim is set to 'email' is 'claims.?email_verified.orValue(true)'.\n\nIn the flag based approach, the --oidc-username-claim and --oidc-username-prefix are optional. If --oidc-username-claim is not set, the default value is \"sub\". For the authentication config, there is no defaulting for claim or prefix. The claim and prefix must be set explicitly. For claim, if --oidc-username-claim was not set with legacy flag approach, configure username.claim=\"sub\" in the authentication config. For prefix:\n    (1) --oidc-username-prefix=\"-\", no prefix was added to the username. For the same behavior using authentication config,\n        set username.prefix=\"\"\n    (2) --oidc-username-prefix=\"\" and  --oidc-username-claim != \"email\", prefix was \"<value of --oidc-issuer-url>#\". For the same\n        behavior using authentication config, set username.prefix=\"<value of issuer.url>#\"\n    (3) --oidc-username-prefix=\"<value>\". For the same behavior using authentication config, set username.prefix=\"<value>\"",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.PrefixedClaimOrExpression"),
+						},
+					},
+					"groups": {
+						SchemaProps: spec.SchemaProps{
+							Description: "groups represents an option for the groups attribute. The claim's value must be a string or string array claim. If groups.claim is set, the prefix must be specified (and can be the empty string). If groups.expression is set, the expression must produce a string or string array value.\n \"\", [], and null values are treated as the group mapping not being present.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.PrefixedClaimOrExpression"),
+						},
+					},
+					"uid": {
+						SchemaProps: spec.SchemaProps{
+							Description: "uid represents an option for the uid attribute. Claim must be a singular string claim. If uid.expression is set, the expression must produce a string value.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimOrExpression"),
+						},
+					},
+					"extra": {
+						SchemaProps: spec.SchemaProps{
+							Description: "extra represents an option for the extra attribute. expression must produce a string or string array value. If the value is empty, the extra mapping will not be present.\n\nhard-coded extra key/value - key: \"foo\"\n  valueExpression: \"'bar'\"\nThis will result in an extra attribute - foo: [\"bar\"]\n\nhard-coded key, value copying claim value - key: \"foo\"\n  valueExpression: \"claims.some_claim\"\nThis will result in an extra attribute - foo: [value of some_claim]\n\nhard-coded key, value derived from claim value - key: \"admin\"\n  valueExpression: '(has(claims.is_admin) && claims.is_admin) ? \"true\":\"\"'\nThis will result in:\n - if is_admin claim is present and true, extra attribute - admin: [\"true\"]\n - if is_admin claim is present and false or is_admin claim is not present, no extra attribute will be added",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ExtraMapping"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"username"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimOrExpression", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ExtraMapping", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.PrefixedClaimOrExpression"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_ClaimOrExpression(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimOrExpression provides the configuration for a single claim or expression.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claim is the JWT claim to use. Either claim or expression must be set. Mutually exclusive with expression.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nMutually exclusive with claim.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_ClaimValidationRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimValidationRule provides the configuration for a single claim validation rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claim is the name of a required claim. Same as --oidc-required-claim flag. Only string claim keys are supported. Mutually exclusive with expression and message.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"requiredValue": {
+						SchemaProps: spec.SchemaProps{
+							Description: "requiredValue is the value of a required claim. Same as --oidc-required-claim flag. Only string claim values are supported. If claim is set and requiredValue is not set, the claim must be present with a value set to the empty string. Mutually exclusive with expression and message.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must produce a boolean.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\nMust return true for the validation to pass.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nMutually exclusive with claim and requiredValue.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"message": {
+						SchemaProps: spec.SchemaProps{
+							Description: "message customizes the returned error message when expression returns false. message is a literal string. Mutually exclusive with claim and requiredValue.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_Connection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Connection provides the configuration for a single egress selection client.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"proxyProtocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Protocol is the protocol used to connect from client to the konnectivity server.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"transport": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Transport defines the transport configurations we use to dial to the konnectivity server. This is required if ProxyProtocol is HTTPConnect or GRPC.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Transport"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Transport"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_EgressSelection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EgressSelection provides the configuration for a single egress selection client.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "name is the name of the egress selection. Currently supported values are \"controlplane\", \"master\", \"etcd\" and \"cluster\" The \"master\" egress selector is deprecated in favor of \"controlplane\"",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"connection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "connection is the exact information used to configure the egress selection",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Connection"),
+						},
+					},
+				},
+				Required: []string{"name", "connection"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Connection"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_EgressSelectorConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EgressSelectorConfiguration provides versioned configuration for egress selector clients.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"egressSelections": {
+						SchemaProps: spec.SchemaProps{
+							Description: "connectionServices contains a list of egress selection client configurations",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.EgressSelection"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"egressSelections"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.EgressSelection"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_ExtraMapping(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtraMapping provides the configuration for a single extra mapping.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"key": {
+						SchemaProps: spec.SchemaProps{
+							Description: "key is a string to use as the extra attribute key. key must be a domain-prefix path (e.g. example.org/foo). All characters before the first \"/\" must be a valid subdomain as defined by RFC 1123. All characters trailing the first \"/\" must be valid HTTP Path characters as defined by RFC 3986. key must be lowercase. Required to be unique.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valueExpression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "valueExpression is a CEL expression to extract extra attribute value. valueExpression must produce a string or string array value. \"\", [], and null values are treated as the extra mapping not being present. Empty string values contained within a string array are filtered out.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"key", "valueExpression"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_Issuer(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Issuer provides the configuration for an external provider's specific settings.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "url points to the issuer URL in a format https://url or https://url/path. This must match the \"iss\" claim in the presented JWT, and the issuer returned from discovery. Same value as the --oidc-issuer-url flag. Discovery information is fetched from \"{url}/.well-known/openid-configuration\" unless overridden by discoveryURL. Required to be unique across all JWT authenticators. Note that egress selection configuration is not used for this network connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"discoveryURL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "discoveryURL, if specified, overrides the URL used to fetch discovery information instead of using \"{url}/.well-known/openid-configuration\". The exact value specified is used, so \"/.well-known/openid-configuration\" must be included in discoveryURL if needed.\n\nThe \"issuer\" field in the fetched discovery information must match the \"issuer.url\" field in the AuthenticationConfiguration and will be used to validate the \"iss\" claim in the presented JWT. This is for scenarios where the well-known and jwks endpoints are hosted at a different location than the issuer (such as locally in the cluster).\n\nExample: A discovery url that is exposed using kubernetes service 'oidc' in namespace 'oidc-namespace' and discovery information is available at '/.well-known/openid-configuration'. discoveryURL: \"https://oidc.oidc-namespace/.well-known/openid-configuration\" certificateAuthority is used to verify the TLS connection and the hostname on the leaf certificate must be set to 'oidc.oidc-namespace'.\n\ncurl https://oidc.oidc-namespace/.well-known/openid-configuration (.discoveryURL field) {\n    issuer: \"https://oidc.example.com\" (.url field)\n}\n\ndiscoveryURL must be different from url. Required to be unique across all JWT authenticators. Note that egress selection configuration is not used for this network connection.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certificateAuthority": {
+						SchemaProps: spec.SchemaProps{
+							Description: "certificateAuthority contains PEM-encoded certificate authority certificates used to validate the connection when fetching discovery information. If unset, the system verifier is used. Same value as the content of the file referenced by the --oidc-ca-file flag.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"audiences": {
+						SchemaProps: spec.SchemaProps{
+							Description: "audiences is the set of acceptable audiences the JWT must be issued to. At least one of the entries must match the \"aud\" claim in presented JWTs. Same value as the --oidc-client-id flag (though this field supports an array). Required to be non-empty.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"audienceMatchPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "audienceMatchPolicy defines how the \"audiences\" field is used to match the \"aud\" claim in the presented JWT. Allowed values are: 1. \"MatchAny\" when multiple audiences are specified and 2. empty (or unset) or \"MatchAny\" when a single audience is specified.\n\n- MatchAny: the \"aud\" claim in the presented JWT must match at least one of the entries in the \"audiences\" field. For example, if \"audiences\" is [\"foo\", \"bar\"], the \"aud\" claim in the presented JWT must contain either \"foo\" or \"bar\" (and may contain both).\n\n- \"\": The match policy can be empty (or unset) when a single audience is specified in the \"audiences\" field. The \"aud\" claim in the presented JWT must contain the single audience (and may contain others).\n\nFor more nuanced audience validation, use claimValidationRules.\n  example: claimValidationRule[].expression: 'sets.equivalent(claims.aud, [\"bar\", \"foo\", \"baz\"])' to require an exact match.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"url", "audiences"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_JWTAuthenticator(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTAuthenticator provides the configuration for a single JWT authenticator.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"issuer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "issuer contains the basic OIDC provider connection options.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Issuer"),
+						},
+					},
+					"claimValidationRules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claimValidationRules are rules that are applied to validate token claims to authenticate users.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimValidationRule"),
+									},
+								},
+							},
+						},
+					},
+					"claimMappings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claimMappings points claims of a token to be treated as user attributes.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimMappings"),
+						},
+					},
+					"userValidationRules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "userValidationRules are rules that are applied to final user before completing authentication. These allow invariants to be applied to incoming identities such as preventing the use of the system: prefix that is commonly used by Kubernetes components. The validation rules are logically ANDed together and must all return true for the validation to pass.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.UserValidationRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"issuer", "claimMappings"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimMappings", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.ClaimValidationRule", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.Issuer", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.UserValidationRule"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_PrefixedClaimOrExpression(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "PrefixedClaimOrExpression provides the configuration for a single prefixed claim or expression.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claim is the JWT claim to use. Mutually exclusive with expression.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"prefix": {
+						SchemaProps: spec.SchemaProps{
+							Description: "prefix is prepended to claim's value to prevent clashes with existing names. prefix needs to be set if claim is set and can be the empty string. Mutually exclusive with expression.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nMutually exclusive with claim and prefix.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_TCPTransport(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPTransport provides the information to connect to konnectivity server via TCP",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URL is the location of the konnectivity server to connect to. As an example it might be \"https://127.0.0.1:8131\"",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"tlsConfig": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLSConfig is the config needed to use TLS when connecting to konnectivity server",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TLSConfig"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TLSConfig"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_TLSConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TLSConfig provides the authentication information to connect to konnectivity server Only used with TCPTransport",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"caBundle": {
+						SchemaProps: spec.SchemaProps{
+							Description: "caBundle is the file location of the CA to be used to determine trust with the konnectivity server. Must be absent/empty if TCPTransport.URL is prefixed with http:// If absent while TCPTransport.URL is prefixed with https://, default to system trust roots.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"clientKey": {
+						SchemaProps: spec.SchemaProps{
+							Description: "clientKey is the file location of the client key to be used in mtls handshakes with the konnectivity server. Must be absent/empty if TCPTransport.URL is prefixed with http:// Must be configured if TCPTransport.URL is prefixed with https://",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"clientCert": {
+						SchemaProps: spec.SchemaProps{
+							Description: "clientCert is the file location of the client certificate to be used in mtls handshakes with the konnectivity server. Must be absent/empty if TCPTransport.URL is prefixed with http:// Must be configured if TCPTransport.URL is prefixed with https://",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_TracingConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TracingConfiguration provides versioned configuration for tracing clients.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"endpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Endpoint of the collector this component will report traces to. The connection is insecure, and does not currently support TLS. Recommended is unset, and endpoint is the otlp grpc default, localhost:4317.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"samplingRatePerMillion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SamplingRatePerMillion is the number of samples to collect per million spans. Recommended is unset. If unset, sampler respects its parent span's sampling rate, but otherwise never samples.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_Transport(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Transport defines the transport configurations we use to dial to the konnectivity server",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"tcp": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TCP is the TCP configuration for communicating with the konnectivity server via TCP ProxyProtocol of GRPC is not supported with TCP transport at the moment Requires at least one of TCP or UDS to be set",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TCPTransport"),
+						},
+					},
+					"uds": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UDS is the UDS configuration for communicating with the konnectivity server via UDS Requires at least one of TCP or UDS to be set",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.UDSTransport"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.TCPTransport", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.UDSTransport"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_UDSTransport(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDSTransport provides the information to connect to konnectivity server via UDS",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"udsName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UDSName is the name of the unix domain socket to connect to konnectivity server This does not use a unix:// prefix. (Eg: /etc/srv/kubernetes/konnectivity-server/konnectivity-server.socket)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_UserValidationRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UserValidationRule provides the configuration for a single user info validation rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must return true for the validation to pass.\n\nCEL expressions have access to the contents of UserInfo, organized into CEL variable: - 'user' - authentication.k8s.io/v1, Kind=UserInfo object\n   Refer to https://github.com/kubernetes/api/blob/release-1.28/authentication/v1/types.go#L105-L122 for the definition.\n   API documentation: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#userinfo-v1-authentication-k8s-io\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"message": {
+						SchemaProps: spec.SchemaProps{
+							Description: "message customizes the returned error message when rule returns false. message is a literal string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"expression"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_WebhookConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"authorizedTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration to cache 'authorized' responses from the webhook authorizer. Same as setting `--authorization-webhook-cache-authorized-ttl` flag Default: 5m0s",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"unauthorizedTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration to cache 'unauthorized' responses from the webhook authorizer. Same as setting `--authorization-webhook-cache-unauthorized-ttl` flag Default: 30s",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout for the webhook request Maximum allowed value is 30s. Required, no default value.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"subjectAccessReviewVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The API version of the authorization.k8s.io SubjectAccessReview to send to and expect from the webhook. Same as setting `--authorization-webhook-version` flag Valid values: v1beta1, v1 Required, no default value",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"matchConditionSubjectAccessReviewVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MatchConditionSubjectAccessReviewVersion specifies the SubjectAccessReview version the CEL expressions are evaluated against Valid values: v1 Required, no default value",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"failurePolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Controls the authorization decision when a webhook request fails to complete or returns a malformed response or errors evaluating matchConditions. Valid values:\n  - NoOpinion: continue to subsequent authorizers to see if one of\n    them allows the request\n  - Deny: reject the request without consulting subsequent authorizers\nRequired, with no default.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"connectionInfo": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConnectionInfo defines how we talk to the webhook",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookConnectionInfo"),
+						},
+					},
+					"matchConditions": {
+						SchemaProps: spec.SchemaProps{
+							Description: "matchConditions is a list of conditions that must be met for a request to be sent to this webhook. An empty list of matchConditions matches all requests. There are a maximum of 64 match conditions allowed.\n\nThe exact matching logic is (in order):\n  1. If at least one matchCondition evaluates to FALSE, then the webhook is skipped.\n  2. If ALL matchConditions evaluate to TRUE, then the webhook is called.\n  3. If at least one matchCondition evaluates to an error (but none are FALSE):\n     - If failurePolicy=Deny, then the webhook rejects the request\n     - If failurePolicy=NoOpinion, then the error is ignored and the webhook is skipped",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookMatchCondition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"authorizedTTL", "unauthorizedTTL", "timeout", "subjectAccessReviewVersion", "matchConditionSubjectAccessReviewVersion", "failurePolicy", "connectionInfo", "matchConditions"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookConnectionInfo", "k8s.io/apiserver/pkg/apis/apiserver/v1alpha1.WebhookMatchCondition"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_WebhookConnectionInfo(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Controls how the webhook should communicate with the server. Valid values: - KubeConfigFile: use the file specified in kubeConfigFile to locate the\n  server.\n- InClusterConfig: use the in-cluster configuration to call the\n  SubjectAccessReview API hosted by kube-apiserver. This mode is not\n  allowed for kube-apiserver.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kubeConfigFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path to KubeConfigFile for connection info Required, if connectionInfo.Type is KubeConfig",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"type", "kubeConfigFile"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1alpha1_WebhookMatchCondition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must evaluate to bool. CEL expressions have access to the contents of the SubjectAccessReview in v1 version. If version specified by subjectAccessReviewVersion in the request variable is v1beta1, the contents would be converted to the v1 version before evaluating the CEL expression.\n\n- 'resourceAttributes' describes information for a resource access request and is unset for non-resource requests. e.g. has(request.resourceAttributes) && request.resourceAttributes.namespace == 'default' - 'nonResourceAttributes' describes information for a non-resource access request and is unset for resource requests. e.g. has(request.nonResourceAttributes) && request.nonResourceAttributes.path == '/healthz'. - 'user' is the user to test for. e.g. request.user == 'alice' - 'groups' is the groups to test for. e.g. ('group1' in request.groups) - 'extra' corresponds to the user.Info.GetExtra() method from the authenticator. - 'uid' is the information about the requesting user. e.g. request.uid == '1'\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"expression"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_AnonymousAuthCondition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AnonymousAuthCondition describes the condition under which anonymous auth should be enabled.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path for which anonymous auth is enabled.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"path"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_AnonymousAuthConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AnonymousAuthConfig provides the configuration for the anonymous authenticator.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"enabled": {
+						SchemaProps: spec.SchemaProps{
+							Default: false,
+							Type:    []string{"boolean"},
+							Format:  "",
+						},
+					},
+					"conditions": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If set, anonymous auth is only allowed if the request meets one of the conditions.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AnonymousAuthCondition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"enabled"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AnonymousAuthCondition"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_AuthenticationConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AuthenticationConfiguration provides versioned configuration for authentication.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"jwt": {
+						SchemaProps: spec.SchemaProps{
+							Description: "jwt is a list of authenticator to authenticate Kubernetes users using JWT compliant tokens. The authenticator will attempt to parse a raw ID token, verify it's been signed by the configured issuer. The public key to verify the signature is discovered from the issuer's public endpoint using OIDC discovery. For an incoming token, each JWT authenticator will be attempted in the order in which it is specified in this list.  Note however that other authenticators may run before or after the JWT authenticators. The specific position of JWT authenticators in relation to other authenticators is neither defined nor stable across releases.  Since each JWT authenticator must have a unique issuer URL, at most one JWT authenticator will attempt to cryptographically validate the token.\n\nThe minimum valid JWT payload must contain the following claims: {\n\t\t\"iss\": \"https://issuer.example.com\",\n\t\t\"aud\": [\"audience\"],\n\t\t\"exp\": 1234567890,\n\t\t\"<username claim>\": \"username\"\n}",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.JWTAuthenticator"),
+									},
+								},
+							},
+						},
+					},
+					"anonymous": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If present --anonymous-auth must not be set",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AnonymousAuthConfig"),
+						},
+					},
+				},
+				Required: []string{"jwt"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AnonymousAuthConfig", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.JWTAuthenticator"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_AuthorizationConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"authorizers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Authorizers is an ordered list of authorizers to authorize requests against. This is similar to the --authorization-modes kube-apiserver flag Must be at least one.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AuthorizerConfiguration"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"authorizers"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.AuthorizerConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_AuthorizerConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type refers to the type of the authorizer \"Webhook\" is supported in the generic API server Other API servers may support additional authorizer types like Node, RBAC, ABAC, etc.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name used to describe the webhook This is explicitly used in monitoring machinery for metrics Note: Names must be DNS1123 labels like `myauthorizername` or\n\t\t subdomains like `myauthorizer.example.domain`\nRequired, with no default",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"webhook": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Webhook defines the configuration for a Webhook authorizer Must be defined when Type=Webhook Must not be defined when Type!=Webhook",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookConfiguration"),
+						},
+					},
+				},
+				Required: []string{"type", "name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookConfiguration"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_ClaimMappings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimMappings provides the configuration for claim mapping",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"username": {
+						SchemaProps: spec.SchemaProps{
+							Description: "username represents an option for the username attribute. The claim's value must be a singular string. Same as the --oidc-username-claim and --oidc-username-prefix flags. If username.expression is set, the expression must produce a string value. If username.expression uses 'claims.email', then 'claims.email_verified' must be used in username.expression or extra[*].valueExpression or claimValidationRules[*].expression. An example claim validation rule expression that matches the validation automatically applied when username.claim is set to 'email' is 'claims.?email_verified.orValue(true)'.\n\nIn the flag based approach, the --oidc-username-claim and --oidc-username-prefix are optional. If --oidc-username-claim is not set, the default value is \"sub\". For the authentication config, there is no defaulting for claim or prefix. The claim and prefix must be set explicitly. For claim, if --oidc-username-claim was not set with legacy flag approach, configure username.claim=\"sub\" in the authentication config. For prefix:\n    (1) --oidc-username-prefix=\"-\", no prefix was added to the username. For the same behavior using authentication config,\n        set username.prefix=\"\"\n    (2) --oidc-username-prefix=\"\" and  --oidc-username-claim != \"email\", prefix was \"<value of --oidc-issuer-url>#\". For the same\n        behavior using authentication config, set username.prefix=\"<value of issuer.url>#\"\n    (3) --oidc-username-prefix=\"<value>\". For the same behavior using authentication config, set username.prefix=\"<value>\"",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.PrefixedClaimOrExpression"),
+						},
+					},
+					"groups": {
+						SchemaProps: spec.SchemaProps{
+							Description: "groups represents an option for the groups attribute. The claim's value must be a string or string array claim. If groups.claim is set, the prefix must be specified (and can be the empty string). If groups.expression is set, the expression must produce a string or string array value.\n \"\", [], and null values are treated as the group mapping not being present.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.PrefixedClaimOrExpression"),
+						},
+					},
+					"uid": {
+						SchemaProps: spec.SchemaProps{
+							Description: "uid represents an option for the uid attribute. Claim must be a singular string claim. If uid.expression is set, the expression must produce a string value.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimOrExpression"),
+						},
+					},
+					"extra": {
+						SchemaProps: spec.SchemaProps{
+							Description: "extra represents an option for the extra attribute. expression must produce a string or string array value. If the value is empty, the extra mapping will not be present.\n\nhard-coded extra key/value - key: \"foo\"\n  valueExpression: \"'bar'\"\nThis will result in an extra attribute - foo: [\"bar\"]\n\nhard-coded key, value copying claim value - key: \"foo\"\n  valueExpression: \"claims.some_claim\"\nThis will result in an extra attribute - foo: [value of some_claim]\n\nhard-coded key, value derived from claim value - key: \"admin\"\n  valueExpression: '(has(claims.is_admin) && claims.is_admin) ? \"true\":\"\"'\nThis will result in:\n - if is_admin claim is present and true, extra attribute - admin: [\"true\"]\n - if is_admin claim is present and false or is_admin claim is not present, no extra attribute will be added",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ExtraMapping"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"username"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimOrExpression", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ExtraMapping", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.PrefixedClaimOrExpression"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_ClaimOrExpression(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimOrExpression provides the configuration for a single claim or expression.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claim is the JWT claim to use. Either claim or expression must be set. Mutually exclusive with expression.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nMutually exclusive with claim.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_ClaimValidationRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimValidationRule provides the configuration for a single claim validation rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claim is the name of a required claim. Same as --oidc-required-claim flag. Only string claim keys are supported. Mutually exclusive with expression and message.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"requiredValue": {
+						SchemaProps: spec.SchemaProps{
+							Description: "requiredValue is the value of a required claim. Same as --oidc-required-claim flag. Only string claim values are supported. If claim is set and requiredValue is not set, the claim must be present with a value set to the empty string. Mutually exclusive with expression and message.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must produce a boolean.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\nMust return true for the validation to pass.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nMutually exclusive with claim and requiredValue.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"message": {
+						SchemaProps: spec.SchemaProps{
+							Description: "message customizes the returned error message when expression returns false. message is a literal string. Mutually exclusive with claim and requiredValue.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_Connection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Connection provides the configuration for a single egress selection client.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"proxyProtocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Protocol is the protocol used to connect from client to the konnectivity server.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"transport": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Transport defines the transport configurations we use to dial to the konnectivity server. This is required if ProxyProtocol is HTTPConnect or GRPC.",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Transport"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Transport"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_EgressSelection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EgressSelection provides the configuration for a single egress selection client.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "name is the name of the egress selection. Currently supported values are \"controlplane\", \"master\", \"etcd\" and \"cluster\" The \"master\" egress selector is deprecated in favor of \"controlplane\"",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"connection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "connection is the exact information used to configure the egress selection",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Connection"),
+						},
+					},
+				},
+				Required: []string{"name", "connection"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Connection"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_EgressSelectorConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EgressSelectorConfiguration provides versioned configuration for egress selector clients.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"egressSelections": {
+						SchemaProps: spec.SchemaProps{
+							Description: "connectionServices contains a list of egress selection client configurations",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.EgressSelection"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"egressSelections"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.EgressSelection"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_ExtraMapping(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtraMapping provides the configuration for a single extra mapping.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"key": {
+						SchemaProps: spec.SchemaProps{
+							Description: "key is a string to use as the extra attribute key. key must be a domain-prefix path (e.g. example.org/foo). All characters before the first \"/\" must be a valid subdomain as defined by RFC 1123. All characters trailing the first \"/\" must be valid HTTP Path characters as defined by RFC 3986. key must be lowercase. Required to be unique.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valueExpression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "valueExpression is a CEL expression to extract extra attribute value. valueExpression must produce a string or string array value. \"\", [], and null values are treated as the extra mapping not being present. Empty string values contained within a string array are filtered out.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"key", "valueExpression"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_Issuer(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Issuer provides the configuration for an external provider's specific settings.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "url points to the issuer URL in a format https://url or https://url/path. This must match the \"iss\" claim in the presented JWT, and the issuer returned from discovery. Same value as the --oidc-issuer-url flag. Discovery information is fetched from \"{url}/.well-known/openid-configuration\" unless overridden by discoveryURL. Required to be unique across all JWT authenticators. Note that egress selection configuration is not used for this network connection.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"discoveryURL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "discoveryURL, if specified, overrides the URL used to fetch discovery information instead of using \"{url}/.well-known/openid-configuration\". The exact value specified is used, so \"/.well-known/openid-configuration\" must be included in discoveryURL if needed.\n\nThe \"issuer\" field in the fetched discovery information must match the \"issuer.url\" field in the AuthenticationConfiguration and will be used to validate the \"iss\" claim in the presented JWT. This is for scenarios where the well-known and jwks endpoints are hosted at a different location than the issuer (such as locally in the cluster).\n\nExample: A discovery url that is exposed using kubernetes service 'oidc' in namespace 'oidc-namespace' and discovery information is available at '/.well-known/openid-configuration'. discoveryURL: \"https://oidc.oidc-namespace/.well-known/openid-configuration\" certificateAuthority is used to verify the TLS connection and the hostname on the leaf certificate must be set to 'oidc.oidc-namespace'.\n\ncurl https://oidc.oidc-namespace/.well-known/openid-configuration (.discoveryURL field) {\n    issuer: \"https://oidc.example.com\" (.url field)\n}\n\ndiscoveryURL must be different from url. Required to be unique across all JWT authenticators. Note that egress selection configuration is not used for this network connection.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certificateAuthority": {
+						SchemaProps: spec.SchemaProps{
+							Description: "certificateAuthority contains PEM-encoded certificate authority certificates used to validate the connection when fetching discovery information. If unset, the system verifier is used. Same value as the content of the file referenced by the --oidc-ca-file flag.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"audiences": {
+						SchemaProps: spec.SchemaProps{
+							Description: "audiences is the set of acceptable audiences the JWT must be issued to. At least one of the entries must match the \"aud\" claim in presented JWTs. Same value as the --oidc-client-id flag (though this field supports an array). Required to be non-empty.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"audienceMatchPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "audienceMatchPolicy defines how the \"audiences\" field is used to match the \"aud\" claim in the presented JWT. Allowed values are: 1. \"MatchAny\" when multiple audiences are specified and 2. empty (or unset) or \"MatchAny\" when a single audience is specified.\n\n- MatchAny: the \"aud\" claim in the presented JWT must match at least one of the entries in the \"audiences\" field. For example, if \"audiences\" is [\"foo\", \"bar\"], the \"aud\" claim in the presented JWT must contain either \"foo\" or \"bar\" (and may contain both).\n\n- \"\": The match policy can be empty (or unset) when a single audience is specified in the \"audiences\" field. The \"aud\" claim in the presented JWT must contain the single audience (and may contain others).\n\nFor more nuanced audience validation, use claimValidationRules.\n  example: claimValidationRule[].expression: 'sets.equivalent(claims.aud, [\"bar\", \"foo\", \"baz\"])' to require an exact match.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"url", "audiences"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_JWTAuthenticator(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTAuthenticator provides the configuration for a single JWT authenticator.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"issuer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "issuer contains the basic OIDC provider connection options.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Issuer"),
+						},
+					},
+					"claimValidationRules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claimValidationRules are rules that are applied to validate token claims to authenticate users.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimValidationRule"),
+									},
+								},
+							},
+						},
+					},
+					"claimMappings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claimMappings points claims of a token to be treated as user attributes.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimMappings"),
+						},
+					},
+					"userValidationRules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "userValidationRules are rules that are applied to final user before completing authentication. These allow invariants to be applied to incoming identities such as preventing the use of the system: prefix that is commonly used by Kubernetes components. The validation rules are logically ANDed together and must all return true for the validation to pass.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.UserValidationRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"issuer", "claimMappings"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimMappings", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.ClaimValidationRule", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.Issuer", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.UserValidationRule"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_PrefixedClaimOrExpression(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "PrefixedClaimOrExpression provides the configuration for a single prefixed claim or expression.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "claim is the JWT claim to use. Mutually exclusive with expression.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"prefix": {
+						SchemaProps: spec.SchemaProps{
+							Description: "prefix is prepended to claim's value to prevent clashes with existing names. prefix needs to be set if claim is set and can be the empty string. Mutually exclusive with expression.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL.\n\nCEL expressions have access to the contents of the token claims, organized into CEL variable: - 'claims' is a map of claim names to claim values.\n  For example, a variable named 'sub' can be accessed as 'claims.sub'.\n  Nested claims can be accessed using dot notation, e.g. 'claims.foo.bar'.\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/\n\nMutually exclusive with claim and prefix.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_TCPTransport(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPTransport provides the information to connect to konnectivity server via TCP",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URL is the location of the konnectivity server to connect to. As an example it might be \"https://127.0.0.1:8131\"",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"tlsConfig": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLSConfig is the config needed to use TLS when connecting to konnectivity server",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TLSConfig"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TLSConfig"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_TLSConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TLSConfig provides the authentication information to connect to konnectivity server Only used with TCPTransport",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"caBundle": {
+						SchemaProps: spec.SchemaProps{
+							Description: "caBundle is the file location of the CA to be used to determine trust with the konnectivity server. Must be absent/empty if TCPTransport.URL is prefixed with http:// If absent while TCPTransport.URL is prefixed with https://, default to system trust roots.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"clientKey": {
+						SchemaProps: spec.SchemaProps{
+							Description: "clientKey is the file location of the client key to be used in mtls handshakes with the konnectivity server. Must be absent/empty if TCPTransport.URL is prefixed with http:// Must be configured if TCPTransport.URL is prefixed with https://",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"clientCert": {
+						SchemaProps: spec.SchemaProps{
+							Description: "clientCert is the file location of the client certificate to be used in mtls handshakes with the konnectivity server. Must be absent/empty if TCPTransport.URL is prefixed with http:// Must be configured if TCPTransport.URL is prefixed with https://",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_TracingConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TracingConfiguration provides versioned configuration for tracing clients.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"endpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Endpoint of the collector this component will report traces to. The connection is insecure, and does not currently support TLS. Recommended is unset, and endpoint is the otlp grpc default, localhost:4317.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"samplingRatePerMillion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SamplingRatePerMillion is the number of samples to collect per million spans. Recommended is unset. If unset, sampler respects its parent span's sampling rate, but otherwise never samples.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_Transport(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Transport defines the transport configurations we use to dial to the konnectivity server",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"tcp": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TCP is the TCP configuration for communicating with the konnectivity server via TCP ProxyProtocol of GRPC is not supported with TCP transport at the moment Requires at least one of TCP or UDS to be set",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TCPTransport"),
+						},
+					},
+					"uds": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UDS is the UDS configuration for communicating with the konnectivity server via UDS Requires at least one of TCP or UDS to be set",
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.UDSTransport"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiserver/pkg/apis/apiserver/v1beta1.TCPTransport", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.UDSTransport"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_UDSTransport(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDSTransport provides the information to connect to konnectivity server via UDS",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"udsName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UDSName is the name of the unix domain socket to connect to konnectivity server This does not use a unix:// prefix. (Eg: /etc/srv/kubernetes/konnectivity-server/konnectivity-server.socket)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_UserValidationRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UserValidationRule provides the configuration for a single user info validation rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must return true for the validation to pass.\n\nCEL expressions have access to the contents of UserInfo, organized into CEL variable: - 'user' - authentication.k8s.io/v1, Kind=UserInfo object\n   Refer to https://github.com/kubernetes/api/blob/release-1.28/authentication/v1/types.go#L105-L122 for the definition.\n   API documentation: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#userinfo-v1-authentication-k8s-io\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"message": {
+						SchemaProps: spec.SchemaProps{
+							Description: "message customizes the returned error message when rule returns false. message is a literal string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"expression"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_WebhookConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"authorizedTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration to cache 'authorized' responses from the webhook authorizer. Same as setting `--authorization-webhook-cache-authorized-ttl` flag Default: 5m0s",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"unauthorizedTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration to cache 'unauthorized' responses from the webhook authorizer. Same as setting `--authorization-webhook-cache-unauthorized-ttl` flag Default: 30s",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout for the webhook request Maximum allowed value is 30s. Required, no default value.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"subjectAccessReviewVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The API version of the authorization.k8s.io SubjectAccessReview to send to and expect from the webhook. Same as setting `--authorization-webhook-version` flag Valid values: v1beta1, v1 Required, no default value",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"matchConditionSubjectAccessReviewVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MatchConditionSubjectAccessReviewVersion specifies the SubjectAccessReview version the CEL expressions are evaluated against Valid values: v1 Required, no default value",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"failurePolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Controls the authorization decision when a webhook request fails to complete or returns a malformed response or errors evaluating matchConditions. Valid values:\n  - NoOpinion: continue to subsequent authorizers to see if one of\n    them allows the request\n  - Deny: reject the request without consulting subsequent authorizers\nRequired, with no default.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"connectionInfo": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConnectionInfo defines how we talk to the webhook",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookConnectionInfo"),
+						},
+					},
+					"matchConditions": {
+						SchemaProps: spec.SchemaProps{
+							Description: "matchConditions is a list of conditions that must be met for a request to be sent to this webhook. An empty list of matchConditions matches all requests. There are a maximum of 64 match conditions allowed.\n\nThe exact matching logic is (in order):\n  1. If at least one matchCondition evaluates to FALSE, then the webhook is skipped.\n  2. If ALL matchConditions evaluate to TRUE, then the webhook is called.\n  3. If at least one matchCondition evaluates to an error (but none are FALSE):\n     - If failurePolicy=Deny, then the webhook rejects the request\n     - If failurePolicy=NoOpinion, then the error is ignored and the webhook is skipped",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookMatchCondition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"authorizedTTL", "unauthorizedTTL", "timeout", "subjectAccessReviewVersion", "matchConditionSubjectAccessReviewVersion", "failurePolicy", "connectionInfo", "matchConditions"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookConnectionInfo", "k8s.io/apiserver/pkg/apis/apiserver/v1beta1.WebhookMatchCondition"},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_WebhookConnectionInfo(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Controls how the webhook should communicate with the server. Valid values: - KubeConfigFile: use the file specified in kubeConfigFile to locate the\n  server.\n- InClusterConfig: use the in-cluster configuration to call the\n  SubjectAccessReview API hosted by kube-apiserver. This mode is not\n  allowed for kube-apiserver.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kubeConfigFile": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path to KubeConfigFile for connection info Required, if connectionInfo.Type is KubeConfig",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"type", "kubeConfigFile"},
+			},
+		},
+	}
+}
+
+func schema_pkg_apis_apiserver_v1beta1_WebhookMatchCondition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"expression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "expression represents the expression which will be evaluated by CEL. Must evaluate to bool. CEL expressions have access to the contents of the SubjectAccessReview in v1 version. If version specified by subjectAccessReviewVersion in the request variable is v1beta1, the contents would be converted to the v1 version before evaluating the CEL expression.\n\n- 'resourceAttributes' describes information for a resource access request and is unset for non-resource requests. e.g. has(request.resourceAttributes) && request.resourceAttributes.namespace == 'default' - 'nonResourceAttributes' describes information for a non-resource access request and is unset for resource requests. e.g. has(request.nonResourceAttributes) && request.nonResourceAttributes.path == '/healthz'. - 'user' is the user to test for. e.g. request.user == 'alice' - 'groups' is the groups to test for. e.g. ('group1' in request.groups) - 'extra' corresponds to the user.Info.GetExtra() method from the authenticator. - 'uid' is the information about the requesting user. e.g. request.uid == '1'\n\nDocumentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"expression"},
 			},
 		},
 	}

@@ -68,7 +68,7 @@ Example:
 	        secret: c2VjcmV0IGlzIHNlY3VyZSwgSSB0aGluaw==
 */
 type EncryptionConfiguration struct {
-	metav1.TypeMeta
+	metav1.TypeMeta `json:",inline"`
 	// resources is a list containing resources, and their corresponding encryption providers.
 	Resources []ResourceConfiguration `json:"resources"`
 }

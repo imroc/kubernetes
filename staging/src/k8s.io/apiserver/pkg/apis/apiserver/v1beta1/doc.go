@@ -17,6 +17,7 @@ limitations under the License.
 // +k8s:deepcopy-gen=package
 // +k8s:conversion-gen=k8s.io/apiserver/pkg/apis/apiserver
 // +k8s:defaulter-gen=TypeMeta
+// +k8s:openapi-gen=true
 // +groupName=apiserver.k8s.io
 
 // Package v1beta1 is the v1beta1 version of the API.
