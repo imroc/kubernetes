@@ -1177,18 +1177,10 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/component-base/logs/api/v1.FormatOptions":                                                       schema_component_base_logs_api_v1_FormatOptions(ref),
 		"k8s.io/component-base/logs/api/v1.JSONOptions":                                                         schema_component_base_logs_api_v1_JSONOptions(ref),
 		"k8s.io/component-base/logs/api/v1.LoggingConfiguration":                                                schema_component_base_logs_api_v1_LoggingConfiguration(ref),
-		"k8s.io/component-base/logs/api/v1.LoggingOptions":                                                      schema_component_base_logs_api_v1_LoggingOptions(ref),
 		"k8s.io/component-base/logs/api/v1.OutputRoutingOptions":                                                schema_component_base_logs_api_v1_OutputRoutingOptions(ref),
 		"k8s.io/component-base/logs/api/v1.TextOptions":                                                         schema_component_base_logs_api_v1_TextOptions(ref),
 		"k8s.io/component-base/logs/api/v1.TimeOrMetaDuration":                                                  schema_component_base_logs_api_v1_TimeOrMetaDuration(ref),
 		"k8s.io/component-base/logs/api/v1.VModuleItem":                                                         schema_component_base_logs_api_v1_VModuleItem(ref),
-		"k8s.io/component-base/logs/api/v1.bufferedWriter":                                                      schema_component_base_logs_api_v1_bufferedWriter(ref),
-		"k8s.io/component-base/logs/api/v1.goFlagSet":                                                           schema_component_base_logs_api_v1_goFlagSet(ref),
-		"k8s.io/component-base/logs/api/v1.klogMsgRouter":                                                       schema_component_base_logs_api_v1_klogMsgRouter(ref),
-		"k8s.io/component-base/logs/api/v1.parameters":                                                          schema_component_base_logs_api_v1_parameters(ref),
-		"k8s.io/component-base/logs/api/v1.textFactory":                                                         schema_component_base_logs_api_v1_textFactory(ref),
-		"k8s.io/component-base/logs/api/v1.verbosityLevelPflag":                                                 schema_component_base_logs_api_v1_verbosityLevelPflag(ref),
-		"k8s.io/component-base/logs/api/v1.vmoduleConfigurationPFlag":                                           schema_component_base_logs_api_v1_vmoduleConfigurationPFlag(ref),
 		"k8s.io/component-base/tracing/api/v1.TracingConfiguration":                                             schema_component_base_tracing_api_v1_TracingConfiguration(ref),
 		"k8s.io/controller-manager/config/v1alpha1.ControllerLeaderConfiguration":                               schema_k8sio_controller_manager_config_v1alpha1_ControllerLeaderConfiguration(ref),
 		"k8s.io/controller-manager/config/v1alpha1.GenericControllerManagerConfiguration":                       schema_k8sio_controller_manager_config_v1alpha1_GenericControllerManagerConfiguration(ref),
@@ -60372,34 +60364,6 @@ func schema_component_base_logs_api_v1_LoggingConfiguration(ref common.Reference
 	}
 }
 
-func schema_component_base_logs_api_v1_LoggingOptions(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Description: "LoggingOptions can be used with ValidateAndApplyWithOptions to override certain global defaults.",
-				Type:        []string{"object"},
-				Properties: map[string]spec.Schema{
-					"ErrorStream": {
-						SchemaProps: spec.SchemaProps{
-							Description: "ErrorStream can be used to override the os.Stderr default.",
-							Ref:         ref("io.Writer"),
-						},
-					},
-					"InfoStream": {
-						SchemaProps: spec.SchemaProps{
-							Description: "InfoStream can be used to override the os.Stdout default.",
-							Ref:         ref("io.Writer"),
-						},
-					},
-				},
-				Required: []string{"ErrorStream", "InfoStream"},
-			},
-		},
-		Dependencies: []string{
-			"io.Writer"},
-	}
-}
-
 func schema_component_base_logs_api_v1_OutputRoutingOptions(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
@@ -60505,174 +60469,6 @@ func schema_component_base_logs_api_v1_VModuleItem(ref common.ReferenceCallback)
 				Required: []string{"filePattern", "verbosity"},
 			},
 		},
-	}
-}
-
-func schema_component_base_logs_api_v1_bufferedWriter(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Description: "bufferedWriter is an io.Writer that buffers writes in-memory before flushing them to a wrapped io.Writer after reaching some limit or getting flushed.",
-				Type:        []string{"object"},
-				Properties: map[string]spec.Schema{
-					"mu": {
-						SchemaProps: spec.SchemaProps{
-							Default: map[string]interface{}{},
-							Ref:     ref("sync.Mutex"),
-						},
-					},
-					"writer": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("bufio.Writer"),
-						},
-					},
-					"out": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("io.Writer"),
-						},
-					},
-				},
-				Required: []string{"mu", "writer", "out"},
-			},
-		},
-		Dependencies: []string{
-			"bufio.Writer", "io.Writer", "sync.Mutex"},
-	}
-}
-
-func schema_component_base_logs_api_v1_goFlagSet(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Description: "goFlagSet implements flagSet for a stdlib flag.FlagSet.",
-				Type:        []string{"object"},
-				Properties: map[string]spec.Schema{
-					"FlagSet": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("flag.FlagSet"),
-						},
-					},
-				},
-				Required: []string{"FlagSet"},
-			},
-		},
-		Dependencies: []string{
-			"flag.FlagSet"},
-	}
-}
-
-func schema_component_base_logs_api_v1_klogMsgRouter(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Type: []string{"object"},
-				Properties: map[string]spec.Schema{
-					"info": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("io.Writer"),
-						},
-					},
-					"error": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("io.Writer"),
-						},
-					},
-				},
-				Required: []string{"info", "error"},
-			},
-		},
-		Dependencies: []string{
-			"io.Writer"},
-	}
-}
-
-func schema_component_base_logs_api_v1_parameters(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Type: []string{"object"},
-				Properties: map[string]spec.Schema{
-					"C": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("k8s.io/component-base/logs/api/v1.LoggingConfiguration"),
-						},
-					},
-					"Options": {
-						SchemaProps: spec.SchemaProps{
-							Ref: ref("k8s.io/component-base/logs/api/v1.LoggingOptions"),
-						},
-					},
-					"ContextualLoggingEnabled": {
-						SchemaProps: spec.SchemaProps{
-							Default: false,
-							Type:    []string{"boolean"},
-							Format:  "",
-						},
-					},
-				},
-				Required: []string{"C", "Options", "ContextualLoggingEnabled"},
-			},
-		},
-		Dependencies: []string{
-			"k8s.io/component-base/logs/api/v1.LoggingConfiguration", "k8s.io/component-base/logs/api/v1.LoggingOptions"},
-	}
-}
-
-func schema_component_base_logs_api_v1_textFactory(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Description: "textFactory produces klog text logger instances.",
-				Type:        []string{"object"},
-			},
-		},
-	}
-}
-
-func schema_component_base_logs_api_v1_verbosityLevelPflag(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Type: []string{"object"},
-				Properties: map[string]spec.Schema{
-					"value": {
-						SchemaProps: spec.SchemaProps{
-							Type:   []string{"integer"},
-							Format: "int64",
-						},
-					},
-				},
-				Required: []string{"value"},
-			},
-		},
-	}
-}
-
-func schema_component_base_logs_api_v1_vmoduleConfigurationPFlag(ref common.ReferenceCallback) common.OpenAPIDefinition {
-	return common.OpenAPIDefinition{
-		Schema: spec.Schema{
-			SchemaProps: spec.SchemaProps{
-				Type: []string{"object"},
-				Properties: map[string]spec.Schema{
-					"value": {
-						SchemaProps: spec.SchemaProps{
-							Type: []string{"array"},
-							Items: &spec.SchemaOrArray{
-								Schema: &spec.Schema{
-									SchemaProps: spec.SchemaProps{
-										Default: map[string]interface{}{},
-										Ref:     ref("k8s.io/component-base/logs/api/v1.VModuleItem"),
-									},
-								},
-							},
-						},
-					},
-				},
-				Required: []string{"value"},
-			},
-		},
-		Dependencies: []string{
-			"k8s.io/component-base/logs/api/v1.VModuleItem"},
 	}
 }
 
