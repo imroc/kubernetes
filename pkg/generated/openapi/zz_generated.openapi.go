@@ -66112,7 +66112,9 @@ func schema_app_apis_bootstraptoken_v1_BootstrapToken(ref common.ReferenceCallba
 					"token": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Token is used for establishing bidirectional trust between nodes and control-planes. Used for joining nodes in the cluster.",
-							Ref:         ref("k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapTokenString"),
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
 						},
 					},
 					"description": {
@@ -66169,7 +66171,7 @@ func schema_app_apis_bootstraptoken_v1_BootstrapToken(ref common.ReferenceCallba
 			},
 		},
 		Dependencies: []string{
-			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/apimachinery/pkg/apis/meta/v1.Time", "k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1.BootstrapTokenString"},
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
