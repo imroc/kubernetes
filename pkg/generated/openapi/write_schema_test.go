@@ -72,6 +72,7 @@ var APIs = map[string]string{
 	"k8s.io/kube-proxy/config":                   "kubeproxy.config.k8s.io",
 	"k8s.io/kube-scheduler/config":               "kubescheduler.config.k8s.io",
 	"k8s.io/kubelet/pkg/apis/credentialprovider": "credentialprovider.kubelet.k8s.io",
+	"k8s.io/apiserver/pkg/admission/plugin/webhook/config/apis/webhookadmission": "apiserver.config.k8s.io",
 }
 
 func TestWriteSchema(t *testing.T) {

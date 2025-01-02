@@ -18,6 +18,7 @@ limitations under the License.
 // +k8s:conversion-gen=k8s.io/apiserver/pkg/admission/plugin/webhook/config/apis/webhookadmission
 // +k8s:defaulter-gen=TypeMeta
 // +groupName=apiserver.config.k8s.io
+// +k8s:openapi-gen=true
 
 // Package v1alpha1 is the v1alpha1 version of the API.
 package v1alpha1
