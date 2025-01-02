@@ -14,9 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +k8s:deepcopy-gen=package
-// +k8s:conversion-gen=k8s.io/cloud-provider/controllers/node/config
-// +k8s:conversion-gen=k8s.io/cloud-provider/controllers/node/config/v1alpha1
-// +k8s:openapi-gen=true
-
 package v1alpha1
+
+func RecommendedDefaultNodeControllerConfiguration(obj *NodeControllerConfiguration) {
+	if obj.ConcurrentNodeSyncs == 0 {
+		obj.ConcurrentNodeSyncs = 1
+	}
+}

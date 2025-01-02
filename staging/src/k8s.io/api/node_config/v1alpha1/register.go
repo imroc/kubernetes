@@ -14,9 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +k8s:deepcopy-gen=package
-// +k8s:conversion-gen=k8s.io/cloud-provider/controllers/node/config
-// +k8s:conversion-gen=k8s.io/cloud-provider/controllers/node/config/v1alpha1
-// +k8s:openapi-gen=true
-
 package v1alpha1
+
+import (
+	"k8s.io/apimachinery/pkg/runtime"
+)
+
+var (
+	// SchemeBuilder is the scheme builder with scheme init functions to run for this API package
+	SchemeBuilder runtime.SchemeBuilder
+	// localSchemeBuilder extends the SchemeBuilder instance with the external types. In this package,
+	// defaulting and conversion init funcs are registered as well.
+	localSchemeBuilder = &SchemeBuilder
+	// AddToScheme is a global function that registers this API group & version to a scheme
+	AddToScheme = localSchemeBuilder.AddToScheme
+)

@@ -59,14 +59,15 @@ var APIs = map[string]string{
 	"k8s.io/component-base/config":                          "",
 	"k8s.io/apimachinery/pkg/api/resource.QuantityValue":    "api.pkg.apimachinery.k8s.io/resource.Quantity",
 	"k8s.io/cloud-provider/controllers/service/config":      "",
-	"k8s.io/cloud-provider/config":                          "",
-	"k8s.io/controller-manager/config":                      "",
+	"k8s.io/cloud-provider/config":                          "cloudcontrollermanager.config.k8s.io",
+	"k8s.io/controller-manager/config":                      "controllermanager.config.k8s.io",
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm":        "kubeadm.k8s.io",
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken": "",
 	"k8s.io/api/admission/":                                 "admission.k8s.io/",
 	"k8s.io/apimachinery/pkg/apis/meta":                     "",
 	"k8s.io/apiserver/pkg/apis/audit":                       "audit.k8s.io",
 	"k8s.io/apiserver/pkg/apis/apiserver":                   "apiserver.config.k8s.io",
+	"k8s.io/api/node_config":                                "config.node.controllers.cloud-provider.k8s.io",
 }
 
 func TestWriteSchema(t *testing.T) {

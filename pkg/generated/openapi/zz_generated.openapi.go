@@ -862,6 +862,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/api/node/v1beta1.RuntimeClass":                                                                  schema_k8sio_api_node_v1beta1_RuntimeClass(ref),
 		"k8s.io/api/node/v1beta1.RuntimeClassList":                                                              schema_k8sio_api_node_v1beta1_RuntimeClassList(ref),
 		"k8s.io/api/node/v1beta1.Scheduling":                                                                    schema_k8sio_api_node_v1beta1_Scheduling(ref),
+		"k8s.io/api/node_config/v1alpha1.NodeControllerConfiguration":                                           schema_k8sio_api_node_config_v1alpha1_NodeControllerConfiguration(ref),
 		"k8s.io/api/policy/v1.Eviction":                                                                         schema_k8sio_api_policy_v1_Eviction(ref),
 		"k8s.io/api/policy/v1.PodDisruptionBudget":                                                              schema_k8sio_api_policy_v1_PodDisruptionBudget(ref),
 		"k8s.io/api/policy/v1.PodDisruptionBudgetList":                                                          schema_k8sio_api_policy_v1_PodDisruptionBudgetList(ref),
@@ -1243,6 +1244,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/cloud-provider/config/v1alpha1.CloudProviderConfiguration":                                      schema_k8sio_cloud_provider_config_v1alpha1_CloudProviderConfiguration(ref),
 		"k8s.io/cloud-provider/config/v1alpha1.KubeCloudSharedConfiguration":                                    schema_k8sio_cloud_provider_config_v1alpha1_KubeCloudSharedConfiguration(ref),
 		"k8s.io/cloud-provider/config/v1alpha1.WebhookConfiguration":                                            schema_k8sio_cloud_provider_config_v1alpha1_WebhookConfiguration(ref),
+		"k8s.io/cloud-provider/controllers/node/config/v1alpha1.NodeControllerConfiguration":                    schema_controllers_node_config_v1alpha1_NodeControllerConfiguration(ref),
 		"k8s.io/cloud-provider/controllers/service/config/v1alpha1.ServiceControllerConfiguration":              schema_controllers_service_config_v1alpha1_ServiceControllerConfiguration(ref),
 		"k8s.io/component-base/config/v1alpha1.ClientConnectionConfiguration":                                   schema_k8sio_component_base_config_v1alpha1_ClientConnectionConfiguration(ref),
 		"k8s.io/component-base/config/v1alpha1.DebuggingConfiguration":                                          schema_k8sio_component_base_config_v1alpha1_DebuggingConfiguration(ref),
@@ -44403,6 +44405,28 @@ func schema_k8sio_api_node_v1beta1_Scheduling(ref common.ReferenceCallback) comm
 	}
 }
 
+func schema_k8sio_api_node_config_v1alpha1_NodeControllerConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "NodeControllerConfiguration contains elements describing NodeController.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"ConcurrentNodeSyncs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConcurrentNodeSyncs is the number of workers concurrently synchronizing nodes",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"ConcurrentNodeSyncs"},
+			},
+		},
+	}
+}
+
 func schema_k8sio_api_policy_v1_Eviction(ref common.ReferenceCallback) common.OpenAPIDefinition {
 	return common.OpenAPIDefinition{
 		Schema: spec.Schema{
@@ -63200,6 +63224,28 @@ func schema_k8sio_cloud_provider_config_v1alpha1_WebhookConfiguration(ref common
 					},
 				},
 				Required: []string{"Webhooks"},
+			},
+		},
+	}
+}
+
+func schema_controllers_node_config_v1alpha1_NodeControllerConfiguration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "NodeControllerConfiguration contains elements describing NodeController.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"ConcurrentNodeSyncs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConcurrentNodeSyncs is the number of workers concurrently synchronizing nodes",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"ConcurrentNodeSyncs"},
 			},
 		},
 	}
