@@ -133,6 +133,7 @@ func TestWriteSchema(t *testing.T) {
 			propKind, ok2 := props["kind"].(map[string]any)
 			if ok1 && ok2 {
 				apiVersion := fmt.Sprintf("%s/%s", group, version)
+				apiVersion = strings.Replace(apiVersion, "core.api.k8s.io/", "", 1)
 				propApiVersion["enum"] = []string{apiVersion}
 				propKind["enum"] = []string{kind}
 				m["required"] = []string{"apiVersion", "kind"}
