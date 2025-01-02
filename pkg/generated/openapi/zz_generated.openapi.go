@@ -128,6 +128,8 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/api/apidiscovery/v2beta1.APIResourceDiscovery":                                                  schema_k8sio_api_apidiscovery_v2beta1_APIResourceDiscovery(ref),
 		"k8s.io/api/apidiscovery/v2beta1.APISubresourceDiscovery":                                               schema_k8sio_api_apidiscovery_v2beta1_APISubresourceDiscovery(ref),
 		"k8s.io/api/apidiscovery/v2beta1.APIVersionDiscovery":                                                   schema_k8sio_api_apidiscovery_v2beta1_APIVersionDiscovery(ref),
+		"k8s.io/api/apimachinery/runtime.TypeMeta":                                                              schema_k8sio_api_apimachinery_runtime_TypeMeta(ref),
+		"k8s.io/api/apimachinery/runtime.Unknown":                                                               schema_k8sio_api_apimachinery_runtime_Unknown(ref),
 		"k8s.io/api/apiserverinternal/v1alpha1.ServerStorageVersion":                                            schema_k8sio_api_apiserverinternal_v1alpha1_ServerStorageVersion(ref),
 		"k8s.io/api/apiserverinternal/v1alpha1.StorageVersion":                                                  schema_k8sio_api_apiserverinternal_v1alpha1_StorageVersion(ref),
 		"k8s.io/api/apiserverinternal/v1alpha1.StorageVersionCondition":                                         schema_k8sio_api_apiserverinternal_v1alpha1_StorageVersionCondition(ref),
@@ -7091,6 +7093,73 @@ func schema_k8sio_api_apidiscovery_v2beta1_APIVersionDiscovery(ref common.Refere
 		},
 		Dependencies: []string{
 			"k8s.io/api/apidiscovery/v2beta1.APIResourceDiscovery"},
+	}
+}
+
+func schema_k8sio_api_apimachinery_runtime_TypeMeta(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TypeMeta is shared by all top level objects. The proper way to use it is to inline it in your type, like this:\n\n\ttype MyAwesomeAPIObject struct {\n\t     runtime.TypeMeta    `json:\",inline\"`\n\t     ... // other fields\n\t}\n\nfunc (obj *MyAwesomeAPIObject) SetGroupVersionKind(gvk *metav1.GroupVersionKind) { metav1.UpdateTypeMeta(obj,gvk) }; GroupVersionKind() *GroupVersionKind\n\nTypeMeta is provided here for convenience. You may use it directly from this package or define your own with the same fields.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_api_apimachinery_runtime_Unknown(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Unknown allows api objects with unknown types to be passed-through. This can be used to deal with the API objects from a plug-in. Unknown objects still have functioning TypeMeta features-- kind, version, etc. metadata and field mutatation.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"ContentEncoding": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ContentEncoding is encoding used to encode 'Raw' data. Unspecified means no encoding.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"ContentType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ContentType  is serialization method used to serialize 'Raw'. Unspecified means ContentTypeJSON.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"ContentEncoding", "ContentType"},
+			},
+		},
 	}
 }
 
