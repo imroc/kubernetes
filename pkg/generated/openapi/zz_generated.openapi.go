@@ -1415,6 +1415,8 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta4.UpgradePlanConfiguration":                       schema_app_apis_kubeadm_v1beta4_UpgradePlanConfiguration(ref),
 		"k8s.io/kubernetes/pkg/apis/abac/v1beta1.Policy":                                                        schema_pkg_apis_abac_v1beta1_Policy(ref),
 		"k8s.io/kubernetes/pkg/apis/abac/v1beta1.PolicySpec":                                                    schema_pkg_apis_abac_v1beta1_PolicySpec(ref),
+		"k8s.io/kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit/v1alpha1.Configuration":      schema_eventratelimit_apis_eventratelimit_v1alpha1_Configuration(ref),
+		"k8s.io/kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit/v1alpha1.Limit":              schema_eventratelimit_apis_eventratelimit_v1alpha1_Limit(ref),
 		"k8s.io/metrics/pkg/apis/custom_metrics/v1beta1.MetricListOptions":                                      schema_pkg_apis_custom_metrics_v1beta1_MetricListOptions(ref),
 		"k8s.io/metrics/pkg/apis/custom_metrics/v1beta1.MetricValue":                                            schema_pkg_apis_custom_metrics_v1beta1_MetricValue(ref),
 		"k8s.io/metrics/pkg/apis/custom_metrics/v1beta1.MetricValueList":                                        schema_pkg_apis_custom_metrics_v1beta1_MetricValueList(ref),
@@ -72498,6 +72500,95 @@ func schema_pkg_apis_abac_v1beta1_PolicySpec(ref common.ReferenceCallback) commo
 						},
 					},
 				},
+			},
+		},
+	}
+}
+
+func schema_eventratelimit_apis_eventratelimit_v1alpha1_Configuration(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Configuration provides configuration for the EventRateLimit admission controller.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"limits": {
+						SchemaProps: spec.SchemaProps{
+							Description: "limits are the limits to place on event queries received. Limits can be placed on events received server-wide, per namespace, per user, and per source+object. At least one limit is required.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit/v1alpha1.Limit"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"limits"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit/v1alpha1.Limit"},
+	}
+}
+
+func schema_eventratelimit_apis_eventratelimit_v1alpha1_Limit(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Limit is the configuration for a particular limit type",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "type is the type of limit to which this configuration applies",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"qps": {
+						SchemaProps: spec.SchemaProps{
+							Description: "qps is the number of event queries per second that are allowed for this type of limit. The qps and burst fields are used together to determine if a particular event query is accepted. The qps determines how many queries are accepted once the burst amount of queries has been exhausted.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"burst": {
+						SchemaProps: spec.SchemaProps{
+							Description: "burst is the burst number of event queries that are allowed for this type of limit. The qps and burst fields are used together to determine if a particular event query is accepted. The burst determines the maximum size of the allowance granted for a particular bucket. For example, if the burst is 10 and the qps is 3, then the admission control will accept 10 queries before blocking any queries. Every second, 3 more queries will be allowed. If some of that allowance is not used, then it will roll over to the next second, until the maximum allowance of 10 is reached.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"cacheSize": {
+						SchemaProps: spec.SchemaProps{
+							Description: "cacheSize is the size of the LRU cache for this type of limit. If a bucket is evicted from the cache, then the allowance for that bucket is reset. If more queries are later received for an evicted bucket, then that bucket will re-enter the cache with a clean slate, giving that bucket a full allowance of burst queries.\n\nThe default cache size is 4096.\n\nIf limitType is 'server', then cacheSize is ignored.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"type", "qps", "burst"},
 			},
 		},
 	}
