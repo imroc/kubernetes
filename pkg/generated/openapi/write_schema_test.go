@@ -75,6 +75,7 @@ var APIs = map[string]string{
 	"k8s.io/apiserver/pkg/admission/plugin/webhook/config/apis/webhookadmission": "apiserver.config.k8s.io",
 	"k8s.io/client-go/pkg/apis/clientauthentication":                             "client.authentication.k8s.io",
 	"k8s.io/kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit":  "eventratelimit.admission.k8s.io",
+	"k8s.io/api/imagepolicy": "imagepolicy.k8s.io",
 }
 
 func TestWriteSchema(t *testing.T) {
