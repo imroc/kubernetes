@@ -68,6 +68,7 @@ var APIs = map[string]string{
 	"k8s.io/apiserver/pkg/apis/audit":                       "audit.k8s.io",
 	"k8s.io/apiserver/pkg/apis/apiserver":                   "apiserver.config.k8s.io",
 	"k8s.io/api/node_config":                                "config.node.controllers.cloud-provider.k8s.io",
+	"k8s.io/kube-proxy/config":                              "kubeproxy.config.k8s.io",
 }
 
 func TestWriteSchema(t *testing.T) {
