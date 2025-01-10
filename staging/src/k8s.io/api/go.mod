@@ -11,6 +11,7 @@ godebug winsymlink=0
 require (
 	github.com/gogo/protobuf v1.3.2
 	k8s.io/apimachinery v0.0.0
+	k8s.io/cloud-provider v0.0.0
 )
 
 require (
@@ -37,4 +38,13 @@ require (
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
-replace k8s.io/apimachinery => ../apimachinery
+replace (
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/cloud-provider => ../cloud-provider
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/controller-manager => ../controller-manager
+	k8s.io/kms => ../kms
+)

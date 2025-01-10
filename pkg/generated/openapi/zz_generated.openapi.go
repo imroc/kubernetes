@@ -1264,6 +1264,322 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/controller-manager/config/v1alpha1.LeaderMigrationConfiguration":                                schema_k8sio_controller_manager_config_v1alpha1_LeaderMigrationConfiguration(ref),
 		"k8s.io/controller-manager/config/v1beta1.ControllerLeaderConfiguration":                                schema_k8sio_controller_manager_config_v1beta1_ControllerLeaderConfiguration(ref),
 		"k8s.io/controller-manager/config/v1beta1.LeaderMigrationConfiguration":                                 schema_k8sio_controller_manager_config_v1beta1_LeaderMigrationConfiguration(ref),
+		"k8s.io/envoygateway/v1alpha1.ALSEnvoyProxyAccessLog":                                                   schema_k8sio_envoygateway_v1alpha1_ALSEnvoyProxyAccessLog(ref),
+		"k8s.io/envoygateway/v1alpha1.ALSEnvoyProxyHTTPAccessLogConfig":                                         schema_k8sio_envoygateway_v1alpha1_ALSEnvoyProxyHTTPAccessLogConfig(ref),
+		"k8s.io/envoygateway/v1alpha1.ActiveHealthCheck":                                                        schema_k8sio_envoygateway_v1alpha1_ActiveHealthCheck(ref),
+		"k8s.io/envoygateway/v1alpha1.ActiveHealthCheckPayload":                                                 schema_k8sio_envoygateway_v1alpha1_ActiveHealthCheckPayload(ref),
+		"k8s.io/envoygateway/v1alpha1.Authorization":                                                            schema_k8sio_envoygateway_v1alpha1_Authorization(ref),
+		"k8s.io/envoygateway/v1alpha1.AuthorizationRule":                                                        schema_k8sio_envoygateway_v1alpha1_AuthorizationRule(ref),
+		"k8s.io/envoygateway/v1alpha1.BackOffPolicy":                                                            schema_k8sio_envoygateway_v1alpha1_BackOffPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.Backend":                                                                  schema_k8sio_envoygateway_v1alpha1_Backend(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendCluster":                                                           schema_k8sio_envoygateway_v1alpha1_BackendCluster(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendConnection":                                                        schema_k8sio_envoygateway_v1alpha1_BackendConnection(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendEndpoint":                                                          schema_k8sio_envoygateway_v1alpha1_BackendEndpoint(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendList":                                                              schema_k8sio_envoygateway_v1alpha1_BackendList(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendRef":                                                               schema_k8sio_envoygateway_v1alpha1_BackendRef(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendSpec":                                                              schema_k8sio_envoygateway_v1alpha1_BackendSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendStatus":                                                            schema_k8sio_envoygateway_v1alpha1_BackendStatus(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendTLSConfig":                                                         schema_k8sio_envoygateway_v1alpha1_BackendTLSConfig(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendTrafficPolicy":                                                     schema_k8sio_envoygateway_v1alpha1_BackendTrafficPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendTrafficPolicyList":                                                 schema_k8sio_envoygateway_v1alpha1_BackendTrafficPolicyList(ref),
+		"k8s.io/envoygateway/v1alpha1.BackendTrafficPolicySpec":                                                 schema_k8sio_envoygateway_v1alpha1_BackendTrafficPolicySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.BasicAuth":                                                                schema_k8sio_envoygateway_v1alpha1_BasicAuth(ref),
+		"k8s.io/envoygateway/v1alpha1.BodyToExtAuth":                                                            schema_k8sio_envoygateway_v1alpha1_BodyToExtAuth(ref),
+		"k8s.io/envoygateway/v1alpha1.CORS":                                                                     schema_k8sio_envoygateway_v1alpha1_CORS(ref),
+		"k8s.io/envoygateway/v1alpha1.CircuitBreaker":                                                           schema_k8sio_envoygateway_v1alpha1_CircuitBreaker(ref),
+		"k8s.io/envoygateway/v1alpha1.ClaimToHeader":                                                            schema_k8sio_envoygateway_v1alpha1_ClaimToHeader(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientConnection":                                                         schema_k8sio_envoygateway_v1alpha1_ClientConnection(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientIPDetectionSettings":                                                schema_k8sio_envoygateway_v1alpha1_ClientIPDetectionSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientTLSSettings":                                                        schema_k8sio_envoygateway_v1alpha1_ClientTLSSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientTimeout":                                                            schema_k8sio_envoygateway_v1alpha1_ClientTimeout(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientTrafficPolicy":                                                      schema_k8sio_envoygateway_v1alpha1_ClientTrafficPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientTrafficPolicyList":                                                  schema_k8sio_envoygateway_v1alpha1_ClientTrafficPolicyList(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientTrafficPolicySpec":                                                  schema_k8sio_envoygateway_v1alpha1_ClientTrafficPolicySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.ClientValidationContext":                                                  schema_k8sio_envoygateway_v1alpha1_ClientValidationContext(ref),
+		"k8s.io/envoygateway/v1alpha1.ClusterSettings":                                                          schema_k8sio_envoygateway_v1alpha1_ClusterSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.Compression":                                                              schema_k8sio_envoygateway_v1alpha1_Compression(ref),
+		"k8s.io/envoygateway/v1alpha1.ConnectionLimit":                                                          schema_k8sio_envoygateway_v1alpha1_ConnectionLimit(ref),
+		"k8s.io/envoygateway/v1alpha1.ConsistentHash":                                                           schema_k8sio_envoygateway_v1alpha1_ConsistentHash(ref),
+		"k8s.io/envoygateway/v1alpha1.Cookie":                                                                   schema_k8sio_envoygateway_v1alpha1_Cookie(ref),
+		"k8s.io/envoygateway/v1alpha1.CustomHeaderExtensionSettings":                                            schema_k8sio_envoygateway_v1alpha1_CustomHeaderExtensionSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.CustomResponse":                                                           schema_k8sio_envoygateway_v1alpha1_CustomResponse(ref),
+		"k8s.io/envoygateway/v1alpha1.CustomResponseBody":                                                       schema_k8sio_envoygateway_v1alpha1_CustomResponseBody(ref),
+		"k8s.io/envoygateway/v1alpha1.CustomResponseMatch":                                                      schema_k8sio_envoygateway_v1alpha1_CustomResponseMatch(ref),
+		"k8s.io/envoygateway/v1alpha1.CustomTag":                                                                schema_k8sio_envoygateway_v1alpha1_CustomTag(ref),
+		"k8s.io/envoygateway/v1alpha1.DNS":                                                                      schema_k8sio_envoygateway_v1alpha1_DNS(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvironmentCustomTag":                                                     schema_k8sio_envoygateway_v1alpha1_EnvironmentCustomTag(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicy":                                                     schema_k8sio_envoygateway_v1alpha1_EnvoyExtensionPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicyList":                                                 schema_k8sio_envoygateway_v1alpha1_EnvoyExtensionPolicyList(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicySpec":                                                 schema_k8sio_envoygateway_v1alpha1_EnvoyExtensionPolicySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGateway":                                                             schema_k8sio_envoygateway_v1alpha1_EnvoyGateway(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdmin":                                                        schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayAdmin(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdminAddress":                                                 schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayAdminAddress(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayCustomProvider":                                               schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayCustomProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayFileResourceProvider":                                         schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayFileResourceProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayHostInfrastructureProvider":                                   schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayHostInfrastructureProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayInfrastructureProvider":                                       schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayInfrastructureProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayKubernetesProvider":                                           schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayKubernetesProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayLogging":                                                      schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayLogging(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayMetricSink":                                                   schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayMetricSink(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayMetrics":                                                      schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayMetrics(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayOpenTelemetrySink":                                            schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayOpenTelemetrySink(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayPrometheusProvider":                                           schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayPrometheusProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayProvider":                                                     schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayResourceProvider":                                             schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayResourceProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewaySpec":                                                         schema_k8sio_envoygateway_v1alpha1_EnvoyGatewaySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyGatewayTelemetry":                                                    schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayTelemetry(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyJSONPatchConfig":                                                     schema_k8sio_envoygateway_v1alpha1_EnvoyJSONPatchConfig(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicy":                                                         schema_k8sio_envoygateway_v1alpha1_EnvoyPatchPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicyList":                                                     schema_k8sio_envoygateway_v1alpha1_EnvoyPatchPolicyList(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicySpec":                                                     schema_k8sio_envoygateway_v1alpha1_EnvoyPatchPolicySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyProxy":                                                               schema_k8sio_envoygateway_v1alpha1_EnvoyProxy(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyProxyKubernetesProvider":                                             schema_k8sio_envoygateway_v1alpha1_EnvoyProxyKubernetesProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyProxyList":                                                           schema_k8sio_envoygateway_v1alpha1_EnvoyProxyList(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyProxyProvider":                                                       schema_k8sio_envoygateway_v1alpha1_EnvoyProxyProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyProxySpec":                                                           schema_k8sio_envoygateway_v1alpha1_EnvoyProxySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.EnvoyProxyStatus":                                                         schema_k8sio_envoygateway_v1alpha1_EnvoyProxyStatus(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtAuth":                                                                  schema_k8sio_envoygateway_v1alpha1_ExtAuth(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtProc":                                                                  schema_k8sio_envoygateway_v1alpha1_ExtProc(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtProcProcessingMode":                                                    schema_k8sio_envoygateway_v1alpha1_ExtProcProcessingMode(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtensionAPISettings":                                                     schema_k8sio_envoygateway_v1alpha1_ExtensionAPISettings(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtensionHooks":                                                           schema_k8sio_envoygateway_v1alpha1_ExtensionHooks(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtensionManager":                                                         schema_k8sio_envoygateway_v1alpha1_ExtensionManager(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtensionService":                                                         schema_k8sio_envoygateway_v1alpha1_ExtensionService(ref),
+		"k8s.io/envoygateway/v1alpha1.ExtensionTLS":                                                             schema_k8sio_envoygateway_v1alpha1_ExtensionTLS(ref),
+		"k8s.io/envoygateway/v1alpha1.FQDNEndpoint":                                                             schema_k8sio_envoygateway_v1alpha1_FQDNEndpoint(ref),
+		"k8s.io/envoygateway/v1alpha1.FaultInjection":                                                           schema_k8sio_envoygateway_v1alpha1_FaultInjection(ref),
+		"k8s.io/envoygateway/v1alpha1.FaultInjectionAbort":                                                      schema_k8sio_envoygateway_v1alpha1_FaultInjectionAbort(ref),
+		"k8s.io/envoygateway/v1alpha1.FaultInjectionDelay":                                                      schema_k8sio_envoygateway_v1alpha1_FaultInjectionDelay(ref),
+		"k8s.io/envoygateway/v1alpha1.FileEnvoyProxyAccessLog":                                                  schema_k8sio_envoygateway_v1alpha1_FileEnvoyProxyAccessLog(ref),
+		"k8s.io/envoygateway/v1alpha1.FilterPosition":                                                           schema_k8sio_envoygateway_v1alpha1_FilterPosition(ref),
+		"k8s.io/envoygateway/v1alpha1.GRPCActiveHealthChecker":                                                  schema_k8sio_envoygateway_v1alpha1_GRPCActiveHealthChecker(ref),
+		"k8s.io/envoygateway/v1alpha1.GRPCExtAuthService":                                                       schema_k8sio_envoygateway_v1alpha1_GRPCExtAuthService(ref),
+		"k8s.io/envoygateway/v1alpha1.Gateway":                                                                  schema_k8sio_envoygateway_v1alpha1_Gateway(ref),
+		"k8s.io/envoygateway/v1alpha1.GlobalRateLimit":                                                          schema_k8sio_envoygateway_v1alpha1_GlobalRateLimit(ref),
+		"k8s.io/envoygateway/v1alpha1.GroupVersionKind":                                                         schema_k8sio_envoygateway_v1alpha1_GroupVersionKind(ref),
+		"k8s.io/envoygateway/v1alpha1.GzipCompressor":                                                           schema_k8sio_envoygateway_v1alpha1_GzipCompressor(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTP10Settings":                                                           schema_k8sio_envoygateway_v1alpha1_HTTP10Settings(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTP1Settings":                                                            schema_k8sio_envoygateway_v1alpha1_HTTP1Settings(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTP2Settings":                                                            schema_k8sio_envoygateway_v1alpha1_HTTP2Settings(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTP3Settings":                                                            schema_k8sio_envoygateway_v1alpha1_HTTP3Settings(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPActiveHealthChecker":                                                  schema_k8sio_envoygateway_v1alpha1_HTTPActiveHealthChecker(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPClientTimeout":                                                        schema_k8sio_envoygateway_v1alpha1_HTTPClientTimeout(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPDirectResponseFilter":                                                 schema_k8sio_envoygateway_v1alpha1_HTTPDirectResponseFilter(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPExtAuthService":                                                       schema_k8sio_envoygateway_v1alpha1_HTTPExtAuthService(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPHostnameModifier":                                                     schema_k8sio_envoygateway_v1alpha1_HTTPHostnameModifier(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPPathModifier":                                                         schema_k8sio_envoygateway_v1alpha1_HTTPPathModifier(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPRouteFilter":                                                          schema_k8sio_envoygateway_v1alpha1_HTTPRouteFilter(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPRouteFilterList":                                                      schema_k8sio_envoygateway_v1alpha1_HTTPRouteFilterList(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPRouteFilterSpec":                                                      schema_k8sio_envoygateway_v1alpha1_HTTPRouteFilterSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPTimeout":                                                              schema_k8sio_envoygateway_v1alpha1_HTTPTimeout(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPURLRewriteFilter":                                                     schema_k8sio_envoygateway_v1alpha1_HTTPURLRewriteFilter(ref),
+		"k8s.io/envoygateway/v1alpha1.HTTPWasmCodeSource":                                                       schema_k8sio_envoygateway_v1alpha1_HTTPWasmCodeSource(ref),
+		"k8s.io/envoygateway/v1alpha1.Header":                                                                   schema_k8sio_envoygateway_v1alpha1_Header(ref),
+		"k8s.io/envoygateway/v1alpha1.HeaderMatch":                                                              schema_k8sio_envoygateway_v1alpha1_HeaderMatch(ref),
+		"k8s.io/envoygateway/v1alpha1.HeaderSettings":                                                           schema_k8sio_envoygateway_v1alpha1_HeaderSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.HealthCheck":                                                              schema_k8sio_envoygateway_v1alpha1_HealthCheck(ref),
+		"k8s.io/envoygateway/v1alpha1.HealthCheckSettings":                                                      schema_k8sio_envoygateway_v1alpha1_HealthCheckSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.IPEndpoint":                                                               schema_k8sio_envoygateway_v1alpha1_IPEndpoint(ref),
+		"k8s.io/envoygateway/v1alpha1.ImageWasmCodeSource":                                                      schema_k8sio_envoygateway_v1alpha1_ImageWasmCodeSource(ref),
+		"k8s.io/envoygateway/v1alpha1.JSONPatchOperation":                                                       schema_k8sio_envoygateway_v1alpha1_JSONPatchOperation(ref),
+		"k8s.io/envoygateway/v1alpha1.JWT":                                                                      schema_k8sio_envoygateway_v1alpha1_JWT(ref),
+		"k8s.io/envoygateway/v1alpha1.JWTClaim":                                                                 schema_k8sio_envoygateway_v1alpha1_JWTClaim(ref),
+		"k8s.io/envoygateway/v1alpha1.JWTExtractor":                                                             schema_k8sio_envoygateway_v1alpha1_JWTExtractor(ref),
+		"k8s.io/envoygateway/v1alpha1.JWTHeaderExtractor":                                                       schema_k8sio_envoygateway_v1alpha1_JWTHeaderExtractor(ref),
+		"k8s.io/envoygateway/v1alpha1.JWTPrincipal":                                                             schema_k8sio_envoygateway_v1alpha1_JWTPrincipal(ref),
+		"k8s.io/envoygateway/v1alpha1.JWTProvider":                                                              schema_k8sio_envoygateway_v1alpha1_JWTProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesContainerSpec":                                                  schema_k8sio_envoygateway_v1alpha1_KubernetesContainerSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesDaemonSetSpec":                                                  schema_k8sio_envoygateway_v1alpha1_KubernetesDaemonSetSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesDeployMode":                                                     schema_k8sio_envoygateway_v1alpha1_KubernetesDeployMode(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesDeploymentSpec":                                                 schema_k8sio_envoygateway_v1alpha1_KubernetesDeploymentSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesHorizontalPodAutoscalerSpec":                                    schema_k8sio_envoygateway_v1alpha1_KubernetesHorizontalPodAutoscalerSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec":                                                      schema_k8sio_envoygateway_v1alpha1_KubernetesPatchSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesPodDisruptionBudgetSpec":                                        schema_k8sio_envoygateway_v1alpha1_KubernetesPodDisruptionBudgetSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesPodSpec":                                                        schema_k8sio_envoygateway_v1alpha1_KubernetesPodSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesServiceSpec":                                                    schema_k8sio_envoygateway_v1alpha1_KubernetesServiceSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.KubernetesWatchMode":                                                      schema_k8sio_envoygateway_v1alpha1_KubernetesWatchMode(ref),
+		"k8s.io/envoygateway/v1alpha1.LeaderElection":                                                           schema_k8sio_envoygateway_v1alpha1_LeaderElection(ref),
+		"k8s.io/envoygateway/v1alpha1.LiteralCustomTag":                                                         schema_k8sio_envoygateway_v1alpha1_LiteralCustomTag(ref),
+		"k8s.io/envoygateway/v1alpha1.LoadBalancer":                                                             schema_k8sio_envoygateway_v1alpha1_LoadBalancer(ref),
+		"k8s.io/envoygateway/v1alpha1.LocalRateLimit":                                                           schema_k8sio_envoygateway_v1alpha1_LocalRateLimit(ref),
+		"k8s.io/envoygateway/v1alpha1.Lua":                                                                      schema_k8sio_envoygateway_v1alpha1_Lua(ref),
+		"k8s.io/envoygateway/v1alpha1.OIDC":                                                                     schema_k8sio_envoygateway_v1alpha1_OIDC(ref),
+		"k8s.io/envoygateway/v1alpha1.OIDCCookieNames":                                                          schema_k8sio_envoygateway_v1alpha1_OIDCCookieNames(ref),
+		"k8s.io/envoygateway/v1alpha1.OIDCProvider":                                                             schema_k8sio_envoygateway_v1alpha1_OIDCProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.OpenTelemetryEnvoyProxyAccessLog":                                         schema_k8sio_envoygateway_v1alpha1_OpenTelemetryEnvoyProxyAccessLog(ref),
+		"k8s.io/envoygateway/v1alpha1.PassiveHealthCheck":                                                       schema_k8sio_envoygateway_v1alpha1_PassiveHealthCheck(ref),
+		"k8s.io/envoygateway/v1alpha1.PathSettings":                                                             schema_k8sio_envoygateway_v1alpha1_PathSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.PerRetryPolicy":                                                           schema_k8sio_envoygateway_v1alpha1_PerRetryPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.PolicyTargetReferences":                                                   schema_k8sio_envoygateway_v1alpha1_PolicyTargetReferences(ref),
+		"k8s.io/envoygateway/v1alpha1.Principal":                                                                schema_k8sio_envoygateway_v1alpha1_Principal(ref),
+		"k8s.io/envoygateway/v1alpha1.ProcessingModeOptions":                                                    schema_k8sio_envoygateway_v1alpha1_ProcessingModeOptions(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyAccessLog":                                                           schema_k8sio_envoygateway_v1alpha1_ProxyAccessLog(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyAccessLogFormat":                                                     schema_k8sio_envoygateway_v1alpha1_ProxyAccessLogFormat(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyAccessLogSetting":                                                    schema_k8sio_envoygateway_v1alpha1_ProxyAccessLogSetting(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyAccessLogSink":                                                       schema_k8sio_envoygateway_v1alpha1_ProxyAccessLogSink(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyBootstrap":                                                           schema_k8sio_envoygateway_v1alpha1_ProxyBootstrap(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyLogging":                                                             schema_k8sio_envoygateway_v1alpha1_ProxyLogging(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyMetricSink":                                                          schema_k8sio_envoygateway_v1alpha1_ProxyMetricSink(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyMetrics":                                                             schema_k8sio_envoygateway_v1alpha1_ProxyMetrics(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyOpenTelemetrySink":                                                   schema_k8sio_envoygateway_v1alpha1_ProxyOpenTelemetrySink(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyPrometheusProvider":                                                  schema_k8sio_envoygateway_v1alpha1_ProxyPrometheusProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyProtocol":                                                            schema_k8sio_envoygateway_v1alpha1_ProxyProtocol(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyTelemetry":                                                           schema_k8sio_envoygateway_v1alpha1_ProxyTelemetry(ref),
+		"k8s.io/envoygateway/v1alpha1.ProxyTracing":                                                             schema_k8sio_envoygateway_v1alpha1_ProxyTracing(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimit":                                                                schema_k8sio_envoygateway_v1alpha1_RateLimit(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitCost":                                                            schema_k8sio_envoygateway_v1alpha1_RateLimitCost(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitCostMetadata":                                                    schema_k8sio_envoygateway_v1alpha1_RateLimitCostMetadata(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitCostSpecifier":                                                   schema_k8sio_envoygateway_v1alpha1_RateLimitCostSpecifier(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitDatabaseBackend":                                                 schema_k8sio_envoygateway_v1alpha1_RateLimitDatabaseBackend(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitMetrics":                                                         schema_k8sio_envoygateway_v1alpha1_RateLimitMetrics(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitMetricsPrometheusProvider":                                       schema_k8sio_envoygateway_v1alpha1_RateLimitMetricsPrometheusProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitRedisSettings":                                                   schema_k8sio_envoygateway_v1alpha1_RateLimitRedisSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitRule":                                                            schema_k8sio_envoygateway_v1alpha1_RateLimitRule(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitSelectCondition":                                                 schema_k8sio_envoygateway_v1alpha1_RateLimitSelectCondition(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitSpec":                                                            schema_k8sio_envoygateway_v1alpha1_RateLimitSpec(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitTelemetry":                                                       schema_k8sio_envoygateway_v1alpha1_RateLimitTelemetry(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitTracing":                                                         schema_k8sio_envoygateway_v1alpha1_RateLimitTracing(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitTracingProvider":                                                 schema_k8sio_envoygateway_v1alpha1_RateLimitTracingProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.RateLimitValue":                                                           schema_k8sio_envoygateway_v1alpha1_RateLimitValue(ref),
+		"k8s.io/envoygateway/v1alpha1.RedisTLSSettings":                                                         schema_k8sio_envoygateway_v1alpha1_RedisTLSSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.RemoteJWKS":                                                               schema_k8sio_envoygateway_v1alpha1_RemoteJWKS(ref),
+		"k8s.io/envoygateway/v1alpha1.ReplaceRegexMatch":                                                        schema_k8sio_envoygateway_v1alpha1_ReplaceRegexMatch(ref),
+		"k8s.io/envoygateway/v1alpha1.RequestHeaderCustomTag":                                                   schema_k8sio_envoygateway_v1alpha1_RequestHeaderCustomTag(ref),
+		"k8s.io/envoygateway/v1alpha1.ResponseOverride":                                                         schema_k8sio_envoygateway_v1alpha1_ResponseOverride(ref),
+		"k8s.io/envoygateway/v1alpha1.Retry":                                                                    schema_k8sio_envoygateway_v1alpha1_Retry(ref),
+		"k8s.io/envoygateway/v1alpha1.RetryOn":                                                                  schema_k8sio_envoygateway_v1alpha1_RetryOn(ref),
+		"k8s.io/envoygateway/v1alpha1.SecurityPolicy":                                                           schema_k8sio_envoygateway_v1alpha1_SecurityPolicy(ref),
+		"k8s.io/envoygateway/v1alpha1.SecurityPolicyList":                                                       schema_k8sio_envoygateway_v1alpha1_SecurityPolicyList(ref),
+		"k8s.io/envoygateway/v1alpha1.SecurityPolicySpec":                                                       schema_k8sio_envoygateway_v1alpha1_SecurityPolicySpec(ref),
+		"k8s.io/envoygateway/v1alpha1.Session":                                                                  schema_k8sio_envoygateway_v1alpha1_Session(ref),
+		"k8s.io/envoygateway/v1alpha1.SessionResumption":                                                        schema_k8sio_envoygateway_v1alpha1_SessionResumption(ref),
+		"k8s.io/envoygateway/v1alpha1.ShutdownConfig":                                                           schema_k8sio_envoygateway_v1alpha1_ShutdownConfig(ref),
+		"k8s.io/envoygateway/v1alpha1.ShutdownManager":                                                          schema_k8sio_envoygateway_v1alpha1_ShutdownManager(ref),
+		"k8s.io/envoygateway/v1alpha1.SlowStart":                                                                schema_k8sio_envoygateway_v1alpha1_SlowStart(ref),
+		"k8s.io/envoygateway/v1alpha1.SourceMatch":                                                              schema_k8sio_envoygateway_v1alpha1_SourceMatch(ref),
+		"k8s.io/envoygateway/v1alpha1.StatefulTLSSessionResumption":                                             schema_k8sio_envoygateway_v1alpha1_StatefulTLSSessionResumption(ref),
+		"k8s.io/envoygateway/v1alpha1.StatelessTLSSessionResumption":                                            schema_k8sio_envoygateway_v1alpha1_StatelessTLSSessionResumption(ref),
+		"k8s.io/envoygateway/v1alpha1.StatusCodeMatch":                                                          schema_k8sio_envoygateway_v1alpha1_StatusCodeMatch(ref),
+		"k8s.io/envoygateway/v1alpha1.StatusCodeRange":                                                          schema_k8sio_envoygateway_v1alpha1_StatusCodeRange(ref),
+		"k8s.io/envoygateway/v1alpha1.StringMatch":                                                              schema_k8sio_envoygateway_v1alpha1_StringMatch(ref),
+		"k8s.io/envoygateway/v1alpha1.TCPActiveHealthChecker":                                                   schema_k8sio_envoygateway_v1alpha1_TCPActiveHealthChecker(ref),
+		"k8s.io/envoygateway/v1alpha1.TCPClientTimeout":                                                         schema_k8sio_envoygateway_v1alpha1_TCPClientTimeout(ref),
+		"k8s.io/envoygateway/v1alpha1.TCPKeepalive":                                                             schema_k8sio_envoygateway_v1alpha1_TCPKeepalive(ref),
+		"k8s.io/envoygateway/v1alpha1.TCPTimeout":                                                               schema_k8sio_envoygateway_v1alpha1_TCPTimeout(ref),
+		"k8s.io/envoygateway/v1alpha1.TLSSettings":                                                              schema_k8sio_envoygateway_v1alpha1_TLSSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.TargetSelector":                                                           schema_k8sio_envoygateway_v1alpha1_TargetSelector(ref),
+		"k8s.io/envoygateway/v1alpha1.Timeout":                                                                  schema_k8sio_envoygateway_v1alpha1_Timeout(ref),
+		"k8s.io/envoygateway/v1alpha1.TracingProvider":                                                          schema_k8sio_envoygateway_v1alpha1_TracingProvider(ref),
+		"k8s.io/envoygateway/v1alpha1.UnixSocket":                                                               schema_k8sio_envoygateway_v1alpha1_UnixSocket(ref),
+		"k8s.io/envoygateway/v1alpha1.Wasm":                                                                     schema_k8sio_envoygateway_v1alpha1_Wasm(ref),
+		"k8s.io/envoygateway/v1alpha1.WasmCodeSource":                                                           schema_k8sio_envoygateway_v1alpha1_WasmCodeSource(ref),
+		"k8s.io/envoygateway/v1alpha1.WasmEnv":                                                                  schema_k8sio_envoygateway_v1alpha1_WasmEnv(ref),
+		"k8s.io/envoygateway/v1alpha1.XDSTranslatorHooks":                                                       schema_k8sio_envoygateway_v1alpha1_XDSTranslatorHooks(ref),
+		"k8s.io/envoygateway/v1alpha1.XForwardedClientCert":                                                     schema_k8sio_envoygateway_v1alpha1_XForwardedClientCert(ref),
+		"k8s.io/envoygateway/v1alpha1.XForwardedForSettings":                                                    schema_k8sio_envoygateway_v1alpha1_XForwardedForSettings(ref),
+		"k8s.io/envoygateway/v1alpha1.ZipkinTracingProvider":                                                    schema_k8sio_envoygateway_v1alpha1_ZipkinTracingProvider(ref),
+		"k8s.io/gateway-api/v1.AllowedRoutes":                                                                   schema_k8sio_gateway_api_v1_AllowedRoutes(ref),
+		"k8s.io/gateway-api/v1.BackendObjectReference":                                                          schema_k8sio_gateway_api_v1_BackendObjectReference(ref),
+		"k8s.io/gateway-api/v1.BackendRef":                                                                      schema_k8sio_gateway_api_v1_BackendRef(ref),
+		"k8s.io/gateway-api/v1.CommonRouteSpec":                                                                 schema_k8sio_gateway_api_v1_CommonRouteSpec(ref),
+		"k8s.io/gateway-api/v1.CookieConfig":                                                                    schema_k8sio_gateway_api_v1_CookieConfig(ref),
+		"k8s.io/gateway-api/v1.Fraction":                                                                        schema_k8sio_gateway_api_v1_Fraction(ref),
+		"k8s.io/gateway-api/v1.FrontendTLSValidation":                                                           schema_k8sio_gateway_api_v1_FrontendTLSValidation(ref),
+		"k8s.io/gateway-api/v1.GRPCBackendRef":                                                                  schema_k8sio_gateway_api_v1_GRPCBackendRef(ref),
+		"k8s.io/gateway-api/v1.GRPCHeaderMatch":                                                                 schema_k8sio_gateway_api_v1_GRPCHeaderMatch(ref),
+		"k8s.io/gateway-api/v1.GRPCMethodMatch":                                                                 schema_k8sio_gateway_api_v1_GRPCMethodMatch(ref),
+		"k8s.io/gateway-api/v1.GRPCRoute":                                                                       schema_k8sio_gateway_api_v1_GRPCRoute(ref),
+		"k8s.io/gateway-api/v1.GRPCRouteFilter":                                                                 schema_k8sio_gateway_api_v1_GRPCRouteFilter(ref),
+		"k8s.io/gateway-api/v1.GRPCRouteList":                                                                   schema_k8sio_gateway_api_v1_GRPCRouteList(ref),
+		"k8s.io/gateway-api/v1.GRPCRouteMatch":                                                                  schema_k8sio_gateway_api_v1_GRPCRouteMatch(ref),
+		"k8s.io/gateway-api/v1.GRPCRouteRule":                                                                   schema_k8sio_gateway_api_v1_GRPCRouteRule(ref),
+		"k8s.io/gateway-api/v1.GRPCRouteSpec":                                                                   schema_k8sio_gateway_api_v1_GRPCRouteSpec(ref),
+		"k8s.io/gateway-api/v1.GRPCRouteStatus":                                                                 schema_k8sio_gateway_api_v1_GRPCRouteStatus(ref),
+		"k8s.io/gateway-api/v1.Gateway":                                                                         schema_k8sio_gateway_api_v1_Gateway(ref),
+		"k8s.io/gateway-api/v1.GatewayAddress":                                                                  schema_k8sio_gateway_api_v1_GatewayAddress(ref),
+		"k8s.io/gateway-api/v1.GatewayBackendTLS":                                                               schema_k8sio_gateway_api_v1_GatewayBackendTLS(ref),
+		"k8s.io/gateway-api/v1.GatewayClass":                                                                    schema_k8sio_gateway_api_v1_GatewayClass(ref),
+		"k8s.io/gateway-api/v1.GatewayClassList":                                                                schema_k8sio_gateway_api_v1_GatewayClassList(ref),
+		"k8s.io/gateway-api/v1.GatewayClassSpec":                                                                schema_k8sio_gateway_api_v1_GatewayClassSpec(ref),
+		"k8s.io/gateway-api/v1.GatewayClassStatus":                                                              schema_k8sio_gateway_api_v1_GatewayClassStatus(ref),
+		"k8s.io/gateway-api/v1.GatewayInfrastructure":                                                           schema_k8sio_gateway_api_v1_GatewayInfrastructure(ref),
+		"k8s.io/gateway-api/v1.GatewayList":                                                                     schema_k8sio_gateway_api_v1_GatewayList(ref),
+		"k8s.io/gateway-api/v1.GatewaySpec":                                                                     schema_k8sio_gateway_api_v1_GatewaySpec(ref),
+		"k8s.io/gateway-api/v1.GatewayStatus":                                                                   schema_k8sio_gateway_api_v1_GatewayStatus(ref),
+		"k8s.io/gateway-api/v1.GatewayStatusAddress":                                                            schema_k8sio_gateway_api_v1_GatewayStatusAddress(ref),
+		"k8s.io/gateway-api/v1.GatewayTLSConfig":                                                                schema_k8sio_gateway_api_v1_GatewayTLSConfig(ref),
+		"k8s.io/gateway-api/v1.HTTPBackendRef":                                                                  schema_k8sio_gateway_api_v1_HTTPBackendRef(ref),
+		"k8s.io/gateway-api/v1.HTTPHeader":                                                                      schema_k8sio_gateway_api_v1_HTTPHeader(ref),
+		"k8s.io/gateway-api/v1.HTTPHeaderFilter":                                                                schema_k8sio_gateway_api_v1_HTTPHeaderFilter(ref),
+		"k8s.io/gateway-api/v1.HTTPHeaderMatch":                                                                 schema_k8sio_gateway_api_v1_HTTPHeaderMatch(ref),
+		"k8s.io/gateway-api/v1.HTTPPathMatch":                                                                   schema_k8sio_gateway_api_v1_HTTPPathMatch(ref),
+		"k8s.io/gateway-api/v1.HTTPPathModifier":                                                                schema_k8sio_gateway_api_v1_HTTPPathModifier(ref),
+		"k8s.io/gateway-api/v1.HTTPQueryParamMatch":                                                             schema_k8sio_gateway_api_v1_HTTPQueryParamMatch(ref),
+		"k8s.io/gateway-api/v1.HTTPRequestMirrorFilter":                                                         schema_k8sio_gateway_api_v1_HTTPRequestMirrorFilter(ref),
+		"k8s.io/gateway-api/v1.HTTPRequestRedirectFilter":                                                       schema_k8sio_gateway_api_v1_HTTPRequestRedirectFilter(ref),
+		"k8s.io/gateway-api/v1.HTTPRoute":                                                                       schema_k8sio_gateway_api_v1_HTTPRoute(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteFilter":                                                                 schema_k8sio_gateway_api_v1_HTTPRouteFilter(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteList":                                                                   schema_k8sio_gateway_api_v1_HTTPRouteList(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteMatch":                                                                  schema_k8sio_gateway_api_v1_HTTPRouteMatch(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteRetry":                                                                  schema_k8sio_gateway_api_v1_HTTPRouteRetry(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteRule":                                                                   schema_k8sio_gateway_api_v1_HTTPRouteRule(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteSpec":                                                                   schema_k8sio_gateway_api_v1_HTTPRouteSpec(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteStatus":                                                                 schema_k8sio_gateway_api_v1_HTTPRouteStatus(ref),
+		"k8s.io/gateway-api/v1.HTTPRouteTimeouts":                                                               schema_k8sio_gateway_api_v1_HTTPRouteTimeouts(ref),
+		"k8s.io/gateway-api/v1.HTTPURLRewriteFilter":                                                            schema_k8sio_gateway_api_v1_HTTPURLRewriteFilter(ref),
+		"k8s.io/gateway-api/v1.Listener":                                                                        schema_k8sio_gateway_api_v1_Listener(ref),
+		"k8s.io/gateway-api/v1.ListenerStatus":                                                                  schema_k8sio_gateway_api_v1_ListenerStatus(ref),
+		"k8s.io/gateway-api/v1.LocalObjectReference":                                                            schema_k8sio_gateway_api_v1_LocalObjectReference(ref),
+		"k8s.io/gateway-api/v1.LocalParametersReference":                                                        schema_k8sio_gateway_api_v1_LocalParametersReference(ref),
+		"k8s.io/gateway-api/v1.ObjectReference":                                                                 schema_k8sio_gateway_api_v1_ObjectReference(ref),
+		"k8s.io/gateway-api/v1.ParametersReference":                                                             schema_k8sio_gateway_api_v1_ParametersReference(ref),
+		"k8s.io/gateway-api/v1.ParentReference":                                                                 schema_k8sio_gateway_api_v1_ParentReference(ref),
+		"k8s.io/gateway-api/v1.RouteGroupKind":                                                                  schema_k8sio_gateway_api_v1_RouteGroupKind(ref),
+		"k8s.io/gateway-api/v1.RouteNamespaces":                                                                 schema_k8sio_gateway_api_v1_RouteNamespaces(ref),
+		"k8s.io/gateway-api/v1.RouteParentStatus":                                                               schema_k8sio_gateway_api_v1_RouteParentStatus(ref),
+		"k8s.io/gateway-api/v1.RouteStatus":                                                                     schema_k8sio_gateway_api_v1_RouteStatus(ref),
+		"k8s.io/gateway-api/v1.SecretObjectReference":                                                           schema_k8sio_gateway_api_v1_SecretObjectReference(ref),
+		"k8s.io/gateway-api/v1.SessionPersistence":                                                              schema_k8sio_gateway_api_v1_SessionPersistence(ref),
+		"k8s.io/gateway-api/v1.SupportedFeature":                                                                schema_k8sio_gateway_api_v1_SupportedFeature(ref),
+		"k8s.io/gateway-api/v1.supportedFeatureInternal":                                                        schema_k8sio_gateway_api_v1_supportedFeatureInternal(ref),
+		"k8s.io/gateway-api/v1alpha2.BackendLBPolicy":                                                           schema_k8sio_gateway_api_v1alpha2_BackendLBPolicy(ref),
+		"k8s.io/gateway-api/v1alpha2.BackendLBPolicyList":                                                       schema_k8sio_gateway_api_v1alpha2_BackendLBPolicyList(ref),
+		"k8s.io/gateway-api/v1alpha2.BackendLBPolicySpec":                                                       schema_k8sio_gateway_api_v1alpha2_BackendLBPolicySpec(ref),
+		"k8s.io/gateway-api/v1alpha2.GRPCRoute":                                                                 schema_k8sio_gateway_api_v1alpha2_GRPCRoute(ref),
+		"k8s.io/gateway-api/v1alpha2.GRPCRouteList":                                                             schema_k8sio_gateway_api_v1alpha2_GRPCRouteList(ref),
+		"k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReference":                                                schema_k8sio_gateway_api_v1alpha2_LocalPolicyTargetReference(ref),
+		"k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName":                                 schema_k8sio_gateway_api_v1alpha2_LocalPolicyTargetReferenceWithSectionName(ref),
+		"k8s.io/gateway-api/v1alpha2.NamespacedPolicyTargetReference":                                           schema_k8sio_gateway_api_v1alpha2_NamespacedPolicyTargetReference(ref),
+		"k8s.io/gateway-api/v1alpha2.PolicyAncestorStatus":                                                      schema_k8sio_gateway_api_v1alpha2_PolicyAncestorStatus(ref),
+		"k8s.io/gateway-api/v1alpha2.PolicyStatus":                                                              schema_k8sio_gateway_api_v1alpha2_PolicyStatus(ref),
+		"k8s.io/gateway-api/v1alpha2.ReferenceGrant":                                                            schema_k8sio_gateway_api_v1alpha2_ReferenceGrant(ref),
+		"k8s.io/gateway-api/v1alpha2.ReferenceGrantList":                                                        schema_k8sio_gateway_api_v1alpha2_ReferenceGrantList(ref),
+		"k8s.io/gateway-api/v1alpha2.TCPRoute":                                                                  schema_k8sio_gateway_api_v1alpha2_TCPRoute(ref),
+		"k8s.io/gateway-api/v1alpha2.TCPRouteList":                                                              schema_k8sio_gateway_api_v1alpha2_TCPRouteList(ref),
+		"k8s.io/gateway-api/v1alpha2.TCPRouteRule":                                                              schema_k8sio_gateway_api_v1alpha2_TCPRouteRule(ref),
+		"k8s.io/gateway-api/v1alpha2.TCPRouteSpec":                                                              schema_k8sio_gateway_api_v1alpha2_TCPRouteSpec(ref),
+		"k8s.io/gateway-api/v1alpha2.TCPRouteStatus":                                                            schema_k8sio_gateway_api_v1alpha2_TCPRouteStatus(ref),
+		"k8s.io/gateway-api/v1alpha2.TLSRoute":                                                                  schema_k8sio_gateway_api_v1alpha2_TLSRoute(ref),
+		"k8s.io/gateway-api/v1alpha2.TLSRouteList":                                                              schema_k8sio_gateway_api_v1alpha2_TLSRouteList(ref),
+		"k8s.io/gateway-api/v1alpha2.TLSRouteRule":                                                              schema_k8sio_gateway_api_v1alpha2_TLSRouteRule(ref),
+		"k8s.io/gateway-api/v1alpha2.TLSRouteSpec":                                                              schema_k8sio_gateway_api_v1alpha2_TLSRouteSpec(ref),
+		"k8s.io/gateway-api/v1alpha2.TLSRouteStatus":                                                            schema_k8sio_gateway_api_v1alpha2_TLSRouteStatus(ref),
+		"k8s.io/gateway-api/v1alpha2.UDPRoute":                                                                  schema_k8sio_gateway_api_v1alpha2_UDPRoute(ref),
+		"k8s.io/gateway-api/v1alpha2.UDPRouteList":                                                              schema_k8sio_gateway_api_v1alpha2_UDPRouteList(ref),
+		"k8s.io/gateway-api/v1alpha2.UDPRouteRule":                                                              schema_k8sio_gateway_api_v1alpha2_UDPRouteRule(ref),
+		"k8s.io/gateway-api/v1alpha2.UDPRouteSpec":                                                              schema_k8sio_gateway_api_v1alpha2_UDPRouteSpec(ref),
+		"k8s.io/gateway-api/v1alpha2.UDPRouteStatus":                                                            schema_k8sio_gateway_api_v1alpha2_UDPRouteStatus(ref),
+		"k8s.io/gateway-api/v1beta1.Gateway":                                                                    schema_k8sio_gateway_api_v1beta1_Gateway(ref),
+		"k8s.io/gateway-api/v1beta1.GatewayClass":                                                               schema_k8sio_gateway_api_v1beta1_GatewayClass(ref),
+		"k8s.io/gateway-api/v1beta1.GatewayClassList":                                                           schema_k8sio_gateway_api_v1beta1_GatewayClassList(ref),
+		"k8s.io/gateway-api/v1beta1.GatewayList":                                                                schema_k8sio_gateway_api_v1beta1_GatewayList(ref),
+		"k8s.io/gateway-api/v1beta1.HTTPRoute":                                                                  schema_k8sio_gateway_api_v1beta1_HTTPRoute(ref),
+		"k8s.io/gateway-api/v1beta1.HTTPRouteList":                                                              schema_k8sio_gateway_api_v1beta1_HTTPRouteList(ref),
+		"k8s.io/gateway-api/v1beta1.ReferenceGrant":                                                             schema_k8sio_gateway_api_v1beta1_ReferenceGrant(ref),
+		"k8s.io/gateway-api/v1beta1.ReferenceGrantFrom":                                                         schema_k8sio_gateway_api_v1beta1_ReferenceGrantFrom(ref),
+		"k8s.io/gateway-api/v1beta1.ReferenceGrantList":                                                         schema_k8sio_gateway_api_v1beta1_ReferenceGrantList(ref),
+		"k8s.io/gateway-api/v1beta1.ReferenceGrantSpec":                                                         schema_k8sio_gateway_api_v1beta1_ReferenceGrantSpec(ref),
+		"k8s.io/gateway-api/v1beta1.ReferenceGrantTo":                                                           schema_k8sio_gateway_api_v1beta1_ReferenceGrantTo(ref),
 		"k8s.io/kube-aggregator/pkg/apis/apiregistration/v1.APIService":                                         schema_pkg_apis_apiregistration_v1_APIService(ref),
 		"k8s.io/kube-aggregator/pkg/apis/apiregistration/v1.APIServiceCondition":                                schema_pkg_apis_apiregistration_v1_APIServiceCondition(ref),
 		"k8s.io/kube-aggregator/pkg/apis/apiregistration/v1.APIServiceList":                                     schema_pkg_apis_apiregistration_v1_APIServiceList(ref),
@@ -64031,6 +64347,13556 @@ func schema_k8sio_controller_manager_config_v1beta1_LeaderMigrationConfiguration
 		},
 		Dependencies: []string{
 			"k8s.io/controller-manager/config/v1beta1.ControllerLeaderConfiguration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ALSEnvoyProxyAccessLog(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ALSEnvoyProxyAccessLog defines the gRPC Access Log Service (ALS) sink. The service must implement the Envoy gRPC Access Log Service streaming API: https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto Access log format information is passed in the form of gRPC metadata when the stream is established.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"logName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LogName defines the friendly name of the access log to be returned in StreamAccessLogsMessage.Identifier. This allows the access log server to differentiate between different access logs coming from the same Envoy.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of accesslog. Supported types are \"HTTP\" and \"TCP\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"http": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP defines additional configuration specific to HTTP access logs.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ALSEnvoyProxyHTTPAccessLogConfig"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ALSEnvoyProxyHTTPAccessLogConfig", "k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ALSEnvoyProxyHTTPAccessLogConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"requestHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestHeaders defines request headers to include in log entries sent to the access log service.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"responseHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ResponseHeaders defines response headers to include in log entries sent to the access log service.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"responseTrailers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ResponseTrailers defines response trailers to include in log entries sent to the access log service.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ActiveHealthCheck(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ActiveHealthCheck defines the active health check configuration. EG supports various types of active health checking including HTTP, TCP.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout defines the time to wait for a health check response.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"interval": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Interval defines the time between active health checks.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"unhealthyThreshold": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UnhealthyThreshold defines the number of unhealthy health checks required before a backend host is marked unhealthy.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"healthyThreshold": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HealthyThreshold defines the number of healthy health checks required before a backend host is marked healthy.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of health checker.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"http": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP defines the configuration of http health checker. It's required while the health checker type is HTTP.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPActiveHealthChecker"),
+						},
+					},
+					"tcp": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TCP defines the configuration of tcp health checker. It's required while the health checker type is TCP.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TCPActiveHealthChecker"),
+						},
+					},
+					"grpc": {
+						SchemaProps: spec.SchemaProps{
+							Description: "GRPC defines the configuration of the GRPC health checker. It's optional, and can only be used if the specified type is GRPC.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.GRPCActiveHealthChecker"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"grpc":               "GRPC",
+								"healthyThreshold":   "HealthyThreshold",
+								"http":               "HTTP",
+								"interval":           "Interval",
+								"tcp":                "TCP",
+								"timeout":            "Timeout",
+								"unhealthyThreshold": "UnhealthyThreshold",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/envoygateway/v1alpha1.GRPCActiveHealthChecker", "k8s.io/envoygateway/v1alpha1.HTTPActiveHealthChecker", "k8s.io/envoygateway/v1alpha1.TCPActiveHealthChecker"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ActiveHealthCheckPayload(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ActiveHealthCheckPayload defines the encoding of the payload bytes in the payload.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of the payload.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"text": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Text payload in plain text.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"binary": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Binary payload base64 encoded.",
+							Type:        []string{"string"},
+							Format:      "byte",
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"binary": "Binary",
+								"text":   "Text",
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Authorization(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Authorization defines the authorization configuration.\n\nNote: if neither `Rules` nor `DefaultAction` is specified, the default action is to deny all requests.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules defines a list of authorization rules. These rules are evaluated in order, the first matching rule will be applied, and the rest will be skipped.\n\nFor example, if there are two rules: the first rule allows the request and the second rule denies it, when a request matches both rules, it will be allowed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.AuthorizationRule"),
+									},
+								},
+							},
+						},
+					},
+					"defaultAction": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DefaultAction defines the default action to be taken if no rules match. If not specified, the default action is Deny.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.AuthorizationRule"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_AuthorizationRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AuthorizationRule defines a single authorization rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is a user-friendly name for the rule. If not specified, Envoy Gateway will generate a unique name for the rule.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"action": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Action defines the action to be taken if the rule matches.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"principal": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Principal specifies the client identity of a request. If there are multiple principal types, all principals must match for the rule to match. For example, if there are two principals: one for client IP and one for JWT claim, the rule will match only if both the client IP and the JWT claim match.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Principal"),
+						},
+					},
+				},
+				Required: []string{"action", "principal"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.Principal"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackOffPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"baseInterval": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BaseInterval is the base interval between retries.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"maxInterval": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MaxInterval is the maximum interval between retries. This parameter is optional, but must be greater than or equal to the base_interval if set. The default is 10 times the base_interval",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Backend(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Backend allows the user to configure the endpoints of a backend and the behavior of the connection from Envoy Proxy to the backend.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of Backend.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackendSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current status of Backend.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackendStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.BackendSpec", "k8s.io/envoygateway/v1alpha1.BackendStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendCluster(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendCluster contains all the configuration required for configuring access to a backend. This can include multiple endpoints, and settings that apply for managing the connection to all these endpoints.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendConnection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendConnection allows users to configure connection-level settings of backend",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"bufferLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BufferLimit Soft limit on size of the cluster’s connections read and write buffers. BufferLimit applies to connection streaming (maybe non-streaming) channel between processes, it's in user space. If unspecified, an implementation defined default is applied (32768 bytes). For example, 20Mi, 1Gi, 256Ki etc. Note: that when the suffix is not provided, the value is interpreted as bytes.",
+							Ref:         ref("k8s.io/apimachinery/pkg/api/resource.Quantity"),
+						},
+					},
+					"socketBufferLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SocketBufferLimit provides configuration for the maximum buffer size in bytes for each socket to backend. SocketBufferLimit applies to socket streaming channel between TCP/IP stacks, it's in kernel space. For example, 20Mi, 1Gi, 256Ki etc. Note that when the suffix is not provided, the value is interpreted as bytes.",
+							Ref:         ref("k8s.io/apimachinery/pkg/api/resource.Quantity"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/api/resource.Quantity"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendEndpoint(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendEndpoint describes a backend endpoint, which can be either a fully-qualified domain name, IP address or unix domain socket corresponding to Envoy's Address: https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/address.proto#config-core-v3-address",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"fqdn": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FQDN defines a FQDN endpoint",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.FQDNEndpoint"),
+						},
+					},
+					"ip": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IP defines an IP endpoint. Supports both IPv4 and IPv6 addresses.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.IPEndpoint"),
+						},
+					},
+					"unix": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Unix defines the unix domain socket endpoint",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.UnixSocket"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.FQDNEndpoint", "k8s.io/envoygateway/v1alpha1.IPEndpoint", "k8s.io/envoygateway/v1alpha1.UnixSocket"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendList contains a list of Backend resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.Backend"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.Backend"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendRef(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendRef defines how an ObjectReference that is specific to BackendRef.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the Kubernetes resource kind of the referent. For example \"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live outside of the cluster and as such are difficult to reason about in terms of conformance. They also may not be safe to forward to (see CVE-2021-25740 for more information). Implementations SHOULD NOT support ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the backend. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port specifies the destination port number to use for this resource. Port is required when the referent is a Kubernetes Service. In this case, the port number is the service port number, not the target port. For other resources, destination port might be derived from the referent resource or this field.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"fallback": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Fallback indicates whether the backend is designated as a fallback. Multiple fallback backends can be configured. It is highly recommended to configure active or passive health checks to ensure that failover can be detected when the active backends become unhealthy and to automatically readjust once the primary backends are healthy again. The overprovisioning factor is set to 1.4, meaning the fallback backends will only start receiving traffic when the health of the active backends falls below 72%.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendSpec describes the desired state of BackendSpec.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"endpoints": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Endpoints defines the endpoints to be used when connecting to the backend.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendEndpoint"),
+									},
+								},
+							},
+						},
+					},
+					"appProtocols": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AppProtocols defines the application protocols to be supported when connecting to the backend.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"fallback": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Fallback indicates whether the backend is designated as a fallback. It is highly recommended to configure active or passive health checks to ensure that failover can be detected when the active backends become unhealthy and to automatically readjust once the primary backends are healthy again. The overprovisioning factor is set to 1.4, meaning the fallback backends will only start receiving traffic when the health of the active backends falls below 72%.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendEndpoint"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendStatus defines the state of Backend",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"conditions": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"type",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Conditions describe the current conditions of the Backend.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.Condition"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Condition"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendTLSConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendTLSConfig describes the BackendTLS configuration for Envoy Proxy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"clientCertificateRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClientCertificateRef defines the reference to a Kubernetes Secret that contains the client certificate and private key for Envoy to use when connecting to backend services and external services, such as ExtAuth, ALS, OpenTelemetry, etc. This secret should be located within the same namespace as the Envoy proxy resource that references it.",
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+					"minVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Min specifies the minimal TLS protocol version to allow. The default is TLS 1.2 if this is not specified.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"maxVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Max specifies the maximal TLS protocol version to allow The default is TLS 1.3 if this is not specified.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"ciphers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Ciphers specifies the set of cipher suites supported when negotiating TLS 1.0 - 1.2. This setting has no effect for TLS 1.3. In non-FIPS Envoy Proxy builds the default cipher list is: - [ECDHE-ECDSA-AES128-GCM-SHA256|ECDHE-ECDSA-CHACHA20-POLY1305] - [ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-CHACHA20-POLY1305] - ECDHE-ECDSA-AES256-GCM-SHA384 - ECDHE-RSA-AES256-GCM-SHA384 In builds using BoringSSL FIPS the default cipher list is: - ECDHE-ECDSA-AES128-GCM-SHA256 - ECDHE-RSA-AES128-GCM-SHA256 - ECDHE-ECDSA-AES256-GCM-SHA384 - ECDHE-RSA-AES256-GCM-SHA384",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"ecdhCurves": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ECDHCurves specifies the set of supported ECDH curves. In non-FIPS Envoy Proxy builds the default curves are: - X25519 - P-256 In builds using BoringSSL FIPS the default curve is: - P-256",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"signatureAlgorithms": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SignatureAlgorithms specifies which signature algorithms the listener should support.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"alpnProtocols": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ALPNProtocols supplies the list of ALPN protocols that should be exposed by the listener or used by the proxy to connect to the backend. Defaults: 1. HTTPS Routes: h2 and http/1.1 are enabled in listener context. 2. Other Routes: ALPN is disabled. 3. Backends: proxy uses the appropriate ALPN options for the backend protocol. When an empty list is provided, the ALPN TLS extension is disabled. Supported values are: - http/1.0 - http/1.1 - h2",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendTrafficPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendTrafficPolicy allows the user to configure the behavior of the connection between the Envoy Proxy listener and the backend service.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "spec defines the desired state of BackendTrafficPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackendTrafficPolicySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "status defines the current status of BackendTrafficPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.PolicyStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.BackendTrafficPolicySpec", "k8s.io/gateway-api/v1alpha2.PolicyStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendTrafficPolicyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendTrafficPolicyList contains a list of BackendTrafficPolicy resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendTrafficPolicy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.BackendTrafficPolicy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BackendTrafficPolicySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendTrafficPolicySpec defines the desired state of BackendTrafficPolicy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"targetRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef is the name of the resource this policy is being attached to. This policy and the TargetRef MUST be in the same namespace for this Policy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+						},
+					},
+					"targetRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRefs are the names of the Gateway resources this policy is being attached to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+									},
+								},
+							},
+						},
+					},
+					"targetSelectors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetSelectors allow targeting resources for this policy based on labels",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.TargetSelector"),
+									},
+								},
+							},
+						},
+					},
+					"loadBalancer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LoadBalancer policy to apply when routing traffic from the gateway to the backend endpoints. Defaults to `LeastRequest`.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.LoadBalancer"),
+						},
+					},
+					"retry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Retry provides more advanced usage, allowing users to customize the number of retries, retry fallback strategy, and retry triggering conditions. If not set, retry will be disabled.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Retry"),
+						},
+					},
+					"proxyProtocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ProxyProtocol enables the Proxy Protocol when communicating with the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyProtocol"),
+						},
+					},
+					"tcpKeepalive": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TcpKeepalive settings associated with the upstream client connection. Disabled by default.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TCPKeepalive"),
+						},
+					},
+					"healthCheck": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HealthCheck allows gateway to perform active health checking on backends.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HealthCheck"),
+						},
+					},
+					"circuitBreaker": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Circuit Breaker settings for the upstream connections and requests. If not set, circuit breakers will be enabled with the default thresholds",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CircuitBreaker"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for the backend connections.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Timeout"),
+						},
+					},
+					"connection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Connection includes backend connection settings.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackendConnection"),
+						},
+					},
+					"dns": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNS includes dns resolution settings.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.DNS"),
+						},
+					},
+					"http2": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP2 provides HTTP/2 configuration for backend connections.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTP2Settings"),
+						},
+					},
+					"rateLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RateLimit allows the user to limit the number of incoming requests to a predefined value based on attributes within the traffic flow.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitSpec"),
+						},
+					},
+					"faultInjection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FaultInjection defines the fault injection policy to be applied. This configuration can be used to inject delays and abort requests to mimic failure scenarios such as service failures and overloads",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.FaultInjection"),
+						},
+					},
+					"useClientProtocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UseClientProtocol configures Envoy to prefer sending requests to backends using the same HTTP protocol that the incoming request used. Defaults to false, which means that Envoy will use the protocol indicated by the attached BackendRef.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"compression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The compression config for the http streams.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Ref: ref("k8s.io/envoygateway/v1alpha1.Compression"),
+									},
+								},
+							},
+						},
+					},
+					"responseOverride": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ResponseOverride defines the configuration to override specific responses with a custom one. If multiple configurations are specified, the first one to match wins.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Ref: ref("k8s.io/envoygateway/v1alpha1.ResponseOverride"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendConnection", "k8s.io/envoygateway/v1alpha1.CircuitBreaker", "k8s.io/envoygateway/v1alpha1.Compression", "k8s.io/envoygateway/v1alpha1.DNS", "k8s.io/envoygateway/v1alpha1.FaultInjection", "k8s.io/envoygateway/v1alpha1.HTTP2Settings", "k8s.io/envoygateway/v1alpha1.HealthCheck", "k8s.io/envoygateway/v1alpha1.LoadBalancer", "k8s.io/envoygateway/v1alpha1.ProxyProtocol", "k8s.io/envoygateway/v1alpha1.RateLimitSpec", "k8s.io/envoygateway/v1alpha1.ResponseOverride", "k8s.io/envoygateway/v1alpha1.Retry", "k8s.io/envoygateway/v1alpha1.TCPKeepalive", "k8s.io/envoygateway/v1alpha1.TargetSelector", "k8s.io/envoygateway/v1alpha1.Timeout", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BasicAuth(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BasicAuth defines the configuration for \tthe HTTP Basic Authentication.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"users": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The Kubernetes secret which contains the username-password pairs in htpasswd format, used to verify user credentials in the \"Authorization\" header.\n\nThis is an Opaque secret. The username-password pairs should be stored in the key \".htpasswd\". As the key name indicates, the value needs to be the htpasswd format, for example: \"user1:{SHA}hashed_user1_password\". Right now, only SHA hash algorithm is supported. Reference to https://httpd.apache.org/docs/2.4/programs/htpasswd.html for more details.\n\nNote: The secret must be in the same namespace as the SecurityPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+				},
+				Required: []string{"users"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_BodyToExtAuth(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BodyToExtAuth defines the Body to Ext Auth configuration",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"maxRequestBytes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MaxRequestBytes is the maximum size of a message body that the filter will hold in memory. Envoy will return HTTP 413 and will not initiate the authorization process when buffer reaches the number set in this field. Note that this setting will have precedence over failOpen mode.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+				},
+				Required: []string{"maxRequestBytes"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CORS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CORS defines the configuration for Cross-Origin Resource Sharing (CORS).",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"allowOrigins": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowOrigins defines the origins that are allowed to make requests. It specifies the allowed origins in the Access-Control-Allow-Origin CORS response header. The value \"*\" allows any origin to make requests.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"allowMethods": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowMethods defines the methods that are allowed to make requests. It specifies the allowed methods in the Access-Control-Allow-Methods CORS response header.. The value \"*\" allows any method to be used.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"allowHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowHeaders defines the headers that are allowed to be sent with requests. It specifies the allowed headers in the Access-Control-Allow-Headers CORS response header.. The value \"*\" allows any header to be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"exposeHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExposeHeaders defines which response headers should be made accessible to scripts running in the browser. It specifies the headers in the Access-Control-Expose-Headers CORS response header.. The value \"*\" allows any header to be exposed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"maxAge": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MaxAge defines how long the results of a preflight request can be cached. It specifies the value in the Access-Control-Max-Age CORS response header..",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"allowCredentials": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowCredentials indicates whether a request can include user credentials like cookies, authentication headers, or TLS client certificates. It specifies the value in the Access-Control-Allow-Credentials CORS response header.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CircuitBreaker(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CircuitBreaker defines the Circuit Breaker configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"maxConnections": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The maximum number of connections that Envoy will establish to the referenced backend defined within a xRoute rule.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"maxPendingRequests": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The maximum number of pending requests that Envoy will queue to the referenced backend defined within a xRoute rule.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"maxParallelRequests": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The maximum number of parallel requests that Envoy will make to the referenced backend defined within a xRoute rule.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"maxParallelRetries": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The maximum number of parallel retries that Envoy will make to the referenced backend defined within a xRoute rule.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"maxRequestsPerConnection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The maximum number of requests that Envoy will make over a single connection to the referenced backend defined within a xRoute rule. Default: unlimited.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClaimToHeader(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClaimToHeader defines a configuration to convert JWT claims into HTTP headers",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"header": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Header defines the name of the HTTP request header that the JWT Claim will be saved into.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"claim": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Claim is the JWT Claim that should be saved into the header : it can be a nested claim of type (eg. \"claim.nested.key\", \"sub\"). The nested claim name must use dot \".\" to separate the JSON name path.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"header", "claim"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientConnection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClientConnection allows users to configure connection-level settings of client",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"connectionLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConnectionLimit defines limits related to connections",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ConnectionLimit"),
+						},
+					},
+					"bufferLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BufferLimit provides configuration for the maximum buffer size in bytes for each incoming connection. BufferLimit applies to connection streaming (maybe non-streaming) channel between processes, it's in user space. For example, 20Mi, 1Gi, 256Ki etc. Note that when the suffix is not provided, the value is interpreted as bytes. Default: 32768 bytes.",
+							Ref:         ref("k8s.io/apimachinery/pkg/api/resource.Quantity"),
+						},
+					},
+					"socketBufferLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SocketBufferLimit provides configuration for the maximum buffer size in bytes for each incoming socket. SocketBufferLimit applies to socket streaming channel between TCP/IP stacks, it's in kernel space. For example, 20Mi, 1Gi, 256Ki etc. Note that when the suffix is not provided, the value is interpreted as bytes.",
+							Ref:         ref("k8s.io/apimachinery/pkg/api/resource.Quantity"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/api/resource.Quantity", "k8s.io/envoygateway/v1alpha1.ConnectionLimit"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientIPDetectionSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClientIPDetectionSettings provides configuration for determining the original client IP address for requests.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"xForwardedFor": {
+						SchemaProps: spec.SchemaProps{
+							Description: "XForwardedForSettings provides configuration for using X-Forwarded-For headers for determining the client IP address.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.XForwardedForSettings"),
+						},
+					},
+					"customHeader": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CustomHeader provides configuration for determining the client IP address for a request based on a trusted custom HTTP header. This uses the custom_header original IP detection extension. Refer to https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/http/original_ip_detection/custom_header/v3/custom_header.proto for more details.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CustomHeaderExtensionSettings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.CustomHeaderExtensionSettings", "k8s.io/envoygateway/v1alpha1.XForwardedForSettings"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientTLSSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"clientValidation": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClientValidation specifies the configuration to validate the client initiating the TLS connection to the Gateway listener.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClientValidationContext"),
+						},
+					},
+					"minVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Min specifies the minimal TLS protocol version to allow. The default is TLS 1.2 if this is not specified.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"maxVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Max specifies the maximal TLS protocol version to allow The default is TLS 1.3 if this is not specified.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"ciphers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Ciphers specifies the set of cipher suites supported when negotiating TLS 1.0 - 1.2. This setting has no effect for TLS 1.3. In non-FIPS Envoy Proxy builds the default cipher list is: - [ECDHE-ECDSA-AES128-GCM-SHA256|ECDHE-ECDSA-CHACHA20-POLY1305] - [ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-CHACHA20-POLY1305] - ECDHE-ECDSA-AES256-GCM-SHA384 - ECDHE-RSA-AES256-GCM-SHA384 In builds using BoringSSL FIPS the default cipher list is: - ECDHE-ECDSA-AES128-GCM-SHA256 - ECDHE-RSA-AES128-GCM-SHA256 - ECDHE-ECDSA-AES256-GCM-SHA384 - ECDHE-RSA-AES256-GCM-SHA384",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"ecdhCurves": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ECDHCurves specifies the set of supported ECDH curves. In non-FIPS Envoy Proxy builds the default curves are: - X25519 - P-256 In builds using BoringSSL FIPS the default curve is: - P-256",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"signatureAlgorithms": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SignatureAlgorithms specifies which signature algorithms the listener should support.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"alpnProtocols": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ALPNProtocols supplies the list of ALPN protocols that should be exposed by the listener or used by the proxy to connect to the backend. Defaults: 1. HTTPS Routes: h2 and http/1.1 are enabled in listener context. 2. Other Routes: ALPN is disabled. 3. Backends: proxy uses the appropriate ALPN options for the backend protocol. When an empty list is provided, the ALPN TLS extension is disabled. Supported values are: - http/1.0 - http/1.1 - h2",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"session": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Session defines settings related to TLS session management.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Session"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ClientValidationContext", "k8s.io/envoygateway/v1alpha1.Session"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientTimeout(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"tcp": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for TCP.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TCPClientTimeout"),
+						},
+					},
+					"http": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for HTTP.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPClientTimeout"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HTTPClientTimeout", "k8s.io/envoygateway/v1alpha1.TCPClientTimeout"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientTrafficPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClientTrafficPolicy allows the user to configure the behavior of the connection between the downstream client and Envoy Proxy listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of ClientTrafficPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClientTrafficPolicySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current status of ClientTrafficPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.PolicyStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.ClientTrafficPolicySpec", "k8s.io/gateway-api/v1alpha2.PolicyStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientTrafficPolicyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClientTrafficPolicyList contains a list of ClientTrafficPolicy resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.ClientTrafficPolicy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.ClientTrafficPolicy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientTrafficPolicySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClientTrafficPolicySpec defines the desired state of ClientTrafficPolicy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"targetRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef is the name of the resource this policy is being attached to. This policy and the TargetRef MUST be in the same namespace for this Policy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+						},
+					},
+					"targetRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRefs are the names of the Gateway resources this policy is being attached to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+									},
+								},
+							},
+						},
+					},
+					"targetSelectors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetSelectors allow targeting resources for this policy based on labels",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.TargetSelector"),
+									},
+								},
+							},
+						},
+					},
+					"tcpKeepalive": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TcpKeepalive settings associated with the downstream client connection. If defined, sets SO_KEEPALIVE on the listener socket to enable TCP Keepalives. Disabled by default.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TCPKeepalive"),
+						},
+					},
+					"enableProxyProtocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableProxyProtocol interprets the ProxyProtocol header and adds the Client Address into the X-Forwarded-For header. Note Proxy Protocol must be present when this field is set, else the connection is closed.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"clientIPDetection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClientIPDetectionSettings provides configuration for determining the original client IP address for requests.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClientIPDetectionSettings"),
+						},
+					},
+					"tls": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLS settings configure TLS termination settings with the downstream client.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClientTLSSettings"),
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path enables managing how the incoming path set by clients can be normalized.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.PathSettings"),
+						},
+					},
+					"headers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HeaderSettings provides configuration for header management.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HeaderSettings"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for the client connections.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClientTimeout"),
+						},
+					},
+					"connection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Connection includes client connection settings.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClientConnection"),
+						},
+					},
+					"http1": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP1 provides HTTP/1 configuration on the listener.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTP1Settings"),
+						},
+					},
+					"http2": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP2 provides HTTP/2 configuration on the listener.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTP2Settings"),
+						},
+					},
+					"http3": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP3 provides HTTP/3 configuration on the listener.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTP3Settings"),
+						},
+					},
+					"healthCheck": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HealthCheck provides configuration for determining whether the HTTP/HTTPS listener is healthy.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HealthCheckSettings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ClientConnection", "k8s.io/envoygateway/v1alpha1.ClientIPDetectionSettings", "k8s.io/envoygateway/v1alpha1.ClientTLSSettings", "k8s.io/envoygateway/v1alpha1.ClientTimeout", "k8s.io/envoygateway/v1alpha1.HTTP1Settings", "k8s.io/envoygateway/v1alpha1.HTTP2Settings", "k8s.io/envoygateway/v1alpha1.HTTP3Settings", "k8s.io/envoygateway/v1alpha1.HeaderSettings", "k8s.io/envoygateway/v1alpha1.HealthCheckSettings", "k8s.io/envoygateway/v1alpha1.PathSettings", "k8s.io/envoygateway/v1alpha1.TCPKeepalive", "k8s.io/envoygateway/v1alpha1.TargetSelector", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClientValidationContext(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClientValidationContext holds configuration that can be used to validate the client initiating the TLS connection to the Gateway. By default, no client specific configuration is validated.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"optional": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Optional set to true accepts connections even when a client doesn't present a certificate. Defaults to false, which rejects connections without a valid client certificate.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"caCertificateRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertificateRefs contains one or more references to Kubernetes objects that contain TLS certificates of the Certificate Authorities that can be used as a trust anchor to validate the certificates presented by the client.\n\nA single reference to a Kubernetes ConfigMap or a Kubernetes Secret, with the CA certificate in a key named `ca.crt` is currently supported.\n\nReferences to a resource in different namespace are invalid UNLESS there is a ReferenceGrant in the target namespace that allows the certificate to be attached.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ClusterSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ClusterSettings provides the various knobs that can be set to control how traffic to a given backend will be configured.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"loadBalancer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LoadBalancer policy to apply when routing traffic from the gateway to the backend endpoints. Defaults to `LeastRequest`.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.LoadBalancer"),
+						},
+					},
+					"retry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Retry provides more advanced usage, allowing users to customize the number of retries, retry fallback strategy, and retry triggering conditions. If not set, retry will be disabled.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Retry"),
+						},
+					},
+					"proxyProtocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ProxyProtocol enables the Proxy Protocol when communicating with the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyProtocol"),
+						},
+					},
+					"tcpKeepalive": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TcpKeepalive settings associated with the upstream client connection. Disabled by default.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TCPKeepalive"),
+						},
+					},
+					"healthCheck": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HealthCheck allows gateway to perform active health checking on backends.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HealthCheck"),
+						},
+					},
+					"circuitBreaker": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Circuit Breaker settings for the upstream connections and requests. If not set, circuit breakers will be enabled with the default thresholds",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CircuitBreaker"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for the backend connections.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Timeout"),
+						},
+					},
+					"connection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Connection includes backend connection settings.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackendConnection"),
+						},
+					},
+					"dns": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNS includes dns resolution settings.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.DNS"),
+						},
+					},
+					"http2": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP2 provides HTTP/2 configuration for backend connections.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTP2Settings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendConnection", "k8s.io/envoygateway/v1alpha1.CircuitBreaker", "k8s.io/envoygateway/v1alpha1.DNS", "k8s.io/envoygateway/v1alpha1.HTTP2Settings", "k8s.io/envoygateway/v1alpha1.HealthCheck", "k8s.io/envoygateway/v1alpha1.LoadBalancer", "k8s.io/envoygateway/v1alpha1.ProxyProtocol", "k8s.io/envoygateway/v1alpha1.Retry", "k8s.io/envoygateway/v1alpha1.TCPKeepalive", "k8s.io/envoygateway/v1alpha1.Timeout"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Compression(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Compression defines the config of enabling compression. This can help reduce the bandwidth at the expense of higher CPU.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CompressorType defines the compressor type to use for compression.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"gzip": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The configuration for GZIP compressor.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.GzipCompressor"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.GzipCompressor"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ConnectionLimit(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value of the maximum concurrent connections limit. When the limit is reached, incoming connections will be closed after the CloseDelay duration.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"closeDelay": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CloseDelay defines the delay to use before closing connections that are rejected once the limit value is reached. Default: none.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ConsistentHash(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ConsistentHash defines the configuration related to the consistent hash load balancer policy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConsistentHashType defines the type of input to hash on. Valid Type values are \"SourceIP\", \"Header\", \"Cookie\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"header": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Header configures the header hash policy when the consistent hash type is set to Header.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Header"),
+						},
+					},
+					"cookie": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Cookie configures the cookie hash policy when the consistent hash type is set to Cookie.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Cookie"),
+						},
+					},
+					"tableSize": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The table size for consistent hashing, must be prime number limited to 5000011.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"cookie":    "Cookie",
+								"header":    "Header",
+								"tableSize": "TableSize",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.Cookie", "k8s.io/envoygateway/v1alpha1.Header"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Cookie(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Cookie defines the cookie hashing configuration for consistent hash based load balancing.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the cookie to hash. If this cookie does not exist in the request, Envoy will generate a cookie and set the TTL on the response back to the client based on Layer 4 attributes of the backend endpoint, to ensure that these future requests go to the same backend endpoint. Make sure to set the TTL field for this case.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"ttl": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TTL of the generated cookie if the cookie is not present. This value sets the Max-Age attribute value.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"attributes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Additional Attributes to set for the generated cookie.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CustomHeaderExtensionSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CustomHeaderExtensionSettings provides configuration for determining the client IP address for a request based on a trusted custom HTTP header. This uses the the custom_header original IP detection extension. Refer to https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/http/original_ip_detection/custom_header/v3/custom_header.proto for more details.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the header containing the original downstream remote address, if present.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"failClosed": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FailClosed is a switch used to control the flow of traffic when client IP detection fails. If set to true, the listener will respond with 403 Forbidden when the client IP address cannot be determined.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CustomResponse(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CustomResponse defines the configuration for returning a custom response.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"contentType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Content Type of the response. This will be set in the Content-Type header.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"body": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Body of the Custom Response",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CustomResponseBody"),
+						},
+					},
+				},
+				Required: []string{"body"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.CustomResponseBody"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CustomResponseBody(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CustomResponseBody",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of method to use to read the body value. Valid values are Inline and ValueRef, default is Inline.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"inline": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Inline contains the value as an inline string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valueRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ValueRef contains the contents of the body specified as a local object reference. Only a reference to ConfigMap is supported.\n\nThe value of key `response.body` in the ConfigMap will be used as the response body. If the key is not found, the first value in the ConfigMap will be used.",
+							Ref:         ref("k8s.io/gateway-api/v1.LocalObjectReference"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.LocalObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CustomResponseMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CustomResponseMatch defines the configuration for matching a user response to return a custom one.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"statusCodes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status code to match on. The match evaluates to true if any of the matches are successful.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.StatusCodeMatch"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"statusCodes"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.StatusCodeMatch"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_CustomTag(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of custom tag.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"literal": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Literal adds hard-coded value to each span. It's required when the type is \"Literal\".",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.LiteralCustomTag"),
+						},
+					},
+					"environment": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Environment adds value from environment variable to each span. It's required when the type is \"Environment\".",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvironmentCustomTag"),
+						},
+					},
+					"requestHeader": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestHeader adds value from request header to each span. It's required when the type is \"RequestHeader\".",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RequestHeaderCustomTag"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvironmentCustomTag", "k8s.io/envoygateway/v1alpha1.LiteralCustomTag", "k8s.io/envoygateway/v1alpha1.RequestHeaderCustomTag"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_DNS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"dnsRefreshRate": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DNSRefreshRate specifies the rate at which DNS records should be refreshed. Defaults to 30 seconds.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"respectDnsTtl": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RespectDNSTTL indicates whether the DNS Time-To-Live (TTL) should be respected. If the value is set to true, the DNS refresh rate will be set to the resource record’s TTL. Defaults to true.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvironmentCustomTag(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvironmentCustomTag adds value from environment variable to each span.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name defines the name of the environment variable which to extract the value from.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"defaultValue": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DefaultValue defines the default value to use if the environment variable is not set.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyExtensionPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyExtensionPolicy allows the user to configure various envoy extensibility options for the Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of EnvoyExtensionPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current status of EnvoyExtensionPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.PolicyStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicySpec", "k8s.io/gateway-api/v1alpha2.PolicyStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyExtensionPolicyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyExtensionPolicyList contains a list of EnvoyExtensionPolicy resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.EnvoyExtensionPolicy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyExtensionPolicySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyExtensionPolicySpec defines the desired state of EnvoyExtensionPolicy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"targetRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef is the name of the resource this policy is being attached to. This policy and the TargetRef MUST be in the same namespace for this Policy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+						},
+					},
+					"targetRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRefs are the names of the Gateway resources this policy is being attached to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+									},
+								},
+							},
+						},
+					},
+					"targetSelectors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetSelectors allow targeting resources for this policy based on labels",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.TargetSelector"),
+									},
+								},
+							},
+						},
+					},
+					"wasm": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Wasm is a list of Wasm extensions to be loaded by the Gateway. Order matters, as the extensions will be loaded in the order they are defined in this list.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.Wasm"),
+									},
+								},
+							},
+						},
+					},
+					"extProc": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtProc is an ordered list of external processing filters that should be added to the envoy filter chain",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.ExtProc"),
+									},
+								},
+							},
+						},
+					},
+					"lua": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Lua is an ordered list of Lua filters that should be added to the envoy filter chain",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.Lua"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ExtProc", "k8s.io/envoygateway/v1alpha1.Lua", "k8s.io/envoygateway/v1alpha1.TargetSelector", "k8s.io/envoygateway/v1alpha1.Wasm", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGateway(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGateway is the schema for the envoygateways API.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"gateway": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Gateway defines desired Gateway API specific configuration. If unset, default configuration parameters will apply.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Gateway"),
+						},
+					},
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Provider defines the desired provider and provider-specific configuration. If unspecified, the Kubernetes provider is used with default configuration parameters.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayProvider"),
+						},
+					},
+					"logging": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Logging defines logging parameters for Envoy Gateway.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayLogging"),
+						},
+					},
+					"admin": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Admin defines the desired admin related abilities. If unspecified, the Admin is used with default configuration parameters.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdmin"),
+						},
+					},
+					"telemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Telemetry defines the desired control plane telemetry related abilities. If unspecified, the telemetry is used with default configuration.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayTelemetry"),
+						},
+					},
+					"rateLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RateLimit defines the configuration associated with the Rate Limit service deployed by Envoy Gateway required to implement the Global Rate limiting functionality. The specific rate limit service used here is the reference implementation in Envoy. For more details visit https://github.com/envoyproxy/ratelimit. This configuration is unneeded for \"Local\" rate limiting.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimit"),
+						},
+					},
+					"extensionManager": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtensionManager defines an extension manager to register for the Envoy Gateway Control Plane.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionManager"),
+						},
+					},
+					"extensionApis": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtensionAPIs defines the settings related to specific Gateway API Extensions implemented by Envoy Gateway",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionAPISettings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdmin", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayLogging", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayProvider", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayTelemetry", "k8s.io/envoygateway/v1alpha1.ExtensionAPISettings", "k8s.io/envoygateway/v1alpha1.ExtensionManager", "k8s.io/envoygateway/v1alpha1.Gateway", "k8s.io/envoygateway/v1alpha1.RateLimit"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayAdmin(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayAdmin defines the Envoy Gateway Admin configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"address": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Address defines the address of Envoy Gateway Admin Server.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdminAddress"),
+						},
+					},
+					"enableDumpConfig": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableDumpConfig defines if enable dump config in Envoy Gateway logs.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"enablePprof": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnablePprof defines if enable pprof in Envoy Gateway Admin Server.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdminAddress"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayAdminAddress(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayAdminAddress defines the Envoy Gateway Admin Address configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port the admin server is exposed on.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host defines the admin server hostname.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayCustomProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayCustomProvider defines configuration for the Custom provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"resource": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Resource defines the desired resource provider. This provider is used to specify the provider to be used to retrieve the resource configurations such as Gateway API resources",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayResourceProvider"),
+						},
+					},
+					"infrastructure": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Infrastructure defines the desired infrastructure provider. This provider is used to specify the provider to be used to provide an environment to deploy the out resources like the Envoy Proxy data plane.\n\nInfrastructure is optional, if provider is not specified, No infrastructure provider is available.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayInfrastructureProvider"),
+						},
+					},
+				},
+				Required: []string{"resource"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayInfrastructureProvider", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayResourceProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayFileResourceProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayFileResourceProvider defines configuration for the File Resource provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"paths": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Paths are the paths to a directory or file containing the resource configuration. Recursive subdirectories are not currently supported.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"paths"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayHostInfrastructureProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayHostInfrastructureProvider defines configuration for the Host Infrastructure provider.",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayInfrastructureProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayInfrastructureProvider defines configuration for the Custom Infrastructure provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of infrastructure providers to use. Supported types are \"Host\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host defines the configuration of the Host provider. Host provides runtime deployment of the data plane as a child process on the host environment.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayHostInfrastructureProvider"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayHostInfrastructureProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayKubernetesProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayKubernetesProvider defines configuration for the Kubernetes provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"rateLimitDeployment": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RateLimitDeployment defines the desired state of the Envoy ratelimit deployment resource. If unspecified, default settings for the managed Envoy ratelimit deployment resource are applied.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesDeploymentSpec"),
+						},
+					},
+					"rateLimitHpa": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RateLimitHpa defines the Horizontal Pod Autoscaler settings for Envoy ratelimit Deployment. If the HPA is set, Replicas field from RateLimitDeployment will be ignored.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesHorizontalPodAutoscalerSpec"),
+						},
+					},
+					"watch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Watch holds configuration of which input resources should be watched and reconciled.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesWatchMode"),
+						},
+					},
+					"deploy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Deploy holds configuration of how output managed resources such as the Envoy Proxy data plane should be deployed",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesDeployMode"),
+						},
+					},
+					"overwriteControlPlaneCerts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "OverwriteControlPlaneCerts updates the secrets containing the control plane certs, when set.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"leaderElection": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LeaderElection specifies the configuration for leader election. If it's not set up, leader election will be active by default, using Kubernetes' standard settings.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.LeaderElection"),
+						},
+					},
+					"shutdownManager": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ShutdownManager defines the configuration for the shutdown manager.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ShutdownManager"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.KubernetesDeployMode", "k8s.io/envoygateway/v1alpha1.KubernetesDeploymentSpec", "k8s.io/envoygateway/v1alpha1.KubernetesHorizontalPodAutoscalerSpec", "k8s.io/envoygateway/v1alpha1.KubernetesWatchMode", "k8s.io/envoygateway/v1alpha1.LeaderElection", "k8s.io/envoygateway/v1alpha1.ShutdownManager"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayLogging(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayLogging defines logging for Envoy Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"level": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Level is the logging level. If unspecified, defaults to \"info\". EnvoyGatewayLogComponent options: default/provider/gateway-api/xds-translator/xds-server/infrastructure/global-ratelimit. LogLevel options: debug/info/error/warn.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayMetricSink(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayMetricSink defines control plane metric sinks where metrics are sent to.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the metric sink type. EG control plane currently supports OpenTelemetry.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"openTelemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "OpenTelemetry defines the configuration for OpenTelemetry sink. It's required if the sink type is OpenTelemetry.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayOpenTelemetrySink"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayOpenTelemetrySink"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayMetrics(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayMetrics defines control plane push/pull metrics configurations.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"sinks": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Sinks defines the metric sinks where metrics are sent to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayMetricSink"),
+									},
+								},
+							},
+						},
+					},
+					"prometheus": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Prometheus defines the configuration for prometheus endpoint.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayPrometheusProvider"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayMetricSink", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayPrometheusProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayOpenTelemetrySink(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host define the sink service hostname.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"protocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Protocol define the sink service protocol.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port the sink service is exposed on.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"exportInterval": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExportInterval configures the intervening time between exports for a Sink. This option overrides any value set for the OTEL_METRIC_EXPORT_INTERVAL environment variable. If ExportInterval is less than or equal to zero, 60 seconds is used as the default.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"exportTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExportTimeout configures the time a Sink waits for an export to complete before canceling it. This option overrides any value set for the OTEL_METRIC_EXPORT_TIMEOUT environment variable. If ExportTimeout is less than or equal to zero, 30 seconds is used as the default.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"host", "protocol"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayPrometheusProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayPrometheusProvider will expose prometheus endpoint in pull mode.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"disable": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disable defines if disables the prometheus metrics in pull mode.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayProvider defines the desired configuration of a provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of provider to use. Supported types are \"Kubernetes\", \"Custom\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kubernetes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kubernetes defines the configuration of the Kubernetes provider. Kubernetes provides runtime configuration via the Kubernetes API.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayKubernetesProvider"),
+						},
+					},
+					"custom": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Custom defines the configuration for the Custom provider. This provider allows you to define a specific resource provider and an infrastructure provider.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayCustomProvider"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"custom":     "Custom",
+								"kubernetes": "Kubernetes",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayCustomProvider", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayKubernetesProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayResourceProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayResourceProvider defines configuration for the Custom Resource provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of resource provider to use. Supported types are \"File\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"file": {
+						SchemaProps: spec.SchemaProps{
+							Description: "File defines the configuration of the File provider. File provides runtime configuration defined by one or more files.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayFileResourceProvider"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayFileResourceProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewaySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewaySpec defines the desired state of Envoy Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"gateway": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Gateway defines desired Gateway API specific configuration. If unset, default configuration parameters will apply.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Gateway"),
+						},
+					},
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Provider defines the desired provider and provider-specific configuration. If unspecified, the Kubernetes provider is used with default configuration parameters.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayProvider"),
+						},
+					},
+					"logging": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Logging defines logging parameters for Envoy Gateway.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayLogging"),
+						},
+					},
+					"admin": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Admin defines the desired admin related abilities. If unspecified, the Admin is used with default configuration parameters.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdmin"),
+						},
+					},
+					"telemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Telemetry defines the desired control plane telemetry related abilities. If unspecified, the telemetry is used with default configuration.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayTelemetry"),
+						},
+					},
+					"rateLimit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RateLimit defines the configuration associated with the Rate Limit service deployed by Envoy Gateway required to implement the Global Rate limiting functionality. The specific rate limit service used here is the reference implementation in Envoy. For more details visit https://github.com/envoyproxy/ratelimit. This configuration is unneeded for \"Local\" rate limiting.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimit"),
+						},
+					},
+					"extensionManager": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtensionManager defines an extension manager to register for the Envoy Gateway Control Plane.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionManager"),
+						},
+					},
+					"extensionApis": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtensionAPIs defines the settings related to specific Gateway API Extensions implemented by Envoy Gateway",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionAPISettings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayAdmin", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayLogging", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayProvider", "k8s.io/envoygateway/v1alpha1.EnvoyGatewayTelemetry", "k8s.io/envoygateway/v1alpha1.ExtensionAPISettings", "k8s.io/envoygateway/v1alpha1.ExtensionManager", "k8s.io/envoygateway/v1alpha1.Gateway", "k8s.io/envoygateway/v1alpha1.RateLimit"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyGatewayTelemetry(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyGatewayTelemetry defines telemetry configurations for envoy gateway control plane. Control plane will focus on metrics observability telemetry and tracing telemetry later.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"metrics": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Metrics defines metrics configuration for envoy gateway.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyGatewayMetrics"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyGatewayMetrics"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyJSONPatchConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyJSONPatchConfig defines the configuration for patching a Envoy xDS Resource using JSONPatch semantic",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the typed URL of the Envoy xDS Resource",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the resource",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"operation": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patch defines the JSON Patch Operation",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.JSONPatchOperation"),
+						},
+					},
+				},
+				Required: []string{"type", "name", "operation"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.JSONPatchOperation"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyPatchPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyPatchPolicy allows the user to modify the generated Envoy xDS resources by Envoy Gateway using this patch API",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of EnvoyPatchPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current status of EnvoyPatchPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.PolicyStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicySpec", "k8s.io/gateway-api/v1alpha2.PolicyStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyPatchPolicyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyPatchPolicyList contains a list of EnvoyPatchPolicy resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.EnvoyPatchPolicy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyPatchPolicySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyPatchPolicySpec defines the desired state of EnvoyPatchPolicy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type decides the type of patch. Valid EnvoyPatchType values are \"JSONPatch\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"jsonPatches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "JSONPatch defines the JSONPatch configuration.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.EnvoyJSONPatchConfig"),
+									},
+								},
+							},
+						},
+					},
+					"targetRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef is the name of the Gateway API resource this policy is being attached to. By default, attaching to Gateway is supported and when mergeGateways is enabled it should attach to GatewayClass. This Policy and the TargetRef MUST be in the same namespace for this Policy to have effect and be applied to the Gateway TargetRef",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReference"),
+						},
+					},
+					"priority": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Priority of the EnvoyPatchPolicy. If multiple EnvoyPatchPolicies are applied to the same TargetRef, they will be applied in the ascending order of the priority i.e. int32.min has the highest priority and int32.max has the lowest priority. Defaults to 0.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"type", "targetRef"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"jsonPatches": "JSONPatches",
+								"priority":    "Priority",
+								"targetRef":   "TargetRef",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyJSONPatchConfig", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyProxy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyProxy is the schema for the envoyproxies API.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyProxySpec defines the desired state of EnvoyProxy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyProxySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyProxyStatus defines the actual state of EnvoyProxy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyProxyStatus"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.EnvoyProxySpec", "k8s.io/envoygateway/v1alpha1.EnvoyProxyStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyProxyKubernetesProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyProxyKubernetesProvider defines configuration for the Kubernetes resource provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"envoyDeployment": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyDeployment defines the desired state of the Envoy deployment resource. If unspecified, default settings for the managed Envoy deployment resource are applied.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesDeploymentSpec"),
+						},
+					},
+					"envoyDaemonSet": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyDaemonSet defines the desired state of the Envoy daemonset resource. Disabled by default, a deployment resource is used instead to provision the Envoy Proxy fleet",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesDaemonSetSpec"),
+						},
+					},
+					"envoyService": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyService defines the desired state of the Envoy service resource. If unspecified, default settings for the managed Envoy service resource are applied.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesServiceSpec"),
+						},
+					},
+					"envoyHpa": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyHpa defines the Horizontal Pod Autoscaler settings for Envoy Proxy Deployment. Once the HPA is being set, Replicas field from EnvoyDeployment will be ignored.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesHorizontalPodAutoscalerSpec"),
+						},
+					},
+					"useListenerPortAsContainerPort": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UseListenerPortAsContainerPort disables the port shifting feature in the Envoy Proxy. When set to false (default value), if the service port is a privileged port (1-1023), add a constant to the value converting it into an ephemeral port. This allows the container to bind to the port without needing a CAP_NET_BIND_SERVICE capability.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"envoyPDB": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnvoyPDB allows to control the pod disruption budget of an Envoy Proxy.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPodDisruptionBudgetSpec"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.KubernetesDaemonSetSpec", "k8s.io/envoygateway/v1alpha1.KubernetesDeploymentSpec", "k8s.io/envoygateway/v1alpha1.KubernetesHorizontalPodAutoscalerSpec", "k8s.io/envoygateway/v1alpha1.KubernetesPodDisruptionBudgetSpec", "k8s.io/envoygateway/v1alpha1.KubernetesServiceSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyProxyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyProxyList contains a list of EnvoyProxy",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.EnvoyProxy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.EnvoyProxy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyProxyProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyProxyProvider defines the desired state of a resource provider.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of resource provider to use. A resource provider provides infrastructure resources for running the data plane, e.g. Envoy proxy, and optional auxiliary control planes. Supported types are \"Kubernetes\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kubernetes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kubernetes defines the desired state of the Kubernetes resource provider. Kubernetes provides infrastructure resources for running the data plane, e.g. Envoy proxy. If unspecified and type is \"Kubernetes\", default settings for managed Kubernetes resources are applied.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyProxyKubernetesProvider"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"kubernetes": "Kubernetes",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.EnvoyProxyKubernetesProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyProxySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyProxySpec defines the desired state of EnvoyProxy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Provider defines the desired resource provider and provider-specific configuration. If unspecified, the \"Kubernetes\" resource provider is used with default configuration parameters.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.EnvoyProxyProvider"),
+						},
+					},
+					"logging": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Logging defines logging parameters for managed proxies.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyLogging"),
+						},
+					},
+					"telemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Telemetry defines telemetry parameters for managed proxies.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyTelemetry"),
+						},
+					},
+					"bootstrap": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Bootstrap defines the Envoy Bootstrap as a YAML string. Visit https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/bootstrap/v3/bootstrap.proto#envoy-v3-api-msg-config-bootstrap-v3-bootstrap to learn more about the syntax. If set, this is the Bootstrap configuration used for the managed Envoy Proxy fleet instead of the default Bootstrap configuration set by Envoy Gateway. Some fields within the Bootstrap that are required to communicate with the xDS Server (Envoy Gateway) and receive xDS resources from it are not configurable and will result in the `EnvoyProxy` resource being rejected. Backward compatibility across minor versions is not guaranteed. We strongly recommend using `egctl x translate` to generate a `EnvoyProxy` resource with the `Bootstrap` field set to the default Bootstrap configuration used. You can edit this configuration, and rerun `egctl x translate` to ensure there are no validation errors.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyBootstrap"),
+						},
+					},
+					"concurrency": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Concurrency defines the number of worker threads to run. If unset, it defaults to the number of cpuset threads on the platform.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"routingType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RoutingType can be set to \"Service\" to use the Service Cluster IP for routing to the backend, or it can be set to \"Endpoint\" to use Endpoint routing. The default is \"Endpoint\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"extraArgs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtraArgs defines additional command line options that are provided to Envoy. More info: https://www.envoyproxy.io/docs/envoy/latest/operations/cli#command-line-options Note: some command line options are used internally(e.g. --log-level) so they cannot be provided here.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"mergeGateways": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MergeGateways defines if Gateway resources should be merged onto the same Envoy Proxy Infrastructure. Setting this field to true would merge all Gateway Listeners under the parent Gateway Class. This means that the port, protocol and hostname tuple must be unique for every listener. If a duplicate listener is detected, the newer listener (based on timestamp) will be rejected and its status will be updated with a \"Accepted=False\" condition.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"shutdown": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Shutdown defines configuration for graceful envoy shutdown process.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ShutdownConfig"),
+						},
+					},
+					"filterOrder": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FilterOrder defines the order of filters in the Envoy proxy's HTTP filter chain. The FilterPosition in the list will be applied in the order they are defined. If unspecified, the default filter order is applied. Default filter order is:\n\n- envoy.filters.http.health_check\n\n- envoy.filters.http.fault\n\n- envoy.filters.http.cors\n\n- envoy.filters.http.ext_authz\n\n- envoy.filters.http.basic_auth\n\n- envoy.filters.http.oauth2\n\n- envoy.filters.http.jwt_authn\n\n- envoy.filters.http.stateful_session\n\n- envoy.filters.http.ext_proc\n\n- envoy.filters.http.wasm\n\n- envoy.filters.http.rbac\n\n- envoy.filters.http.local_ratelimit\n\n- envoy.filters.http.ratelimit\n\n- envoy.filters.http.custom_response\n\n- envoy.filters.http.router\n\nNote: \"envoy.filters.http.router\" cannot be reordered, it's always the last filter in the chain.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.FilterPosition"),
+									},
+								},
+							},
+						},
+					},
+					"backendTLS": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendTLS is the TLS configuration for the Envoy proxy to use when connecting to backends. These settings are applied on backends for which TLS policies are specified.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackendTLSConfig"),
+						},
+					},
+					"ipFamily": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IPFamily specifies the IP family for the EnvoyProxy fleet. This setting only affects the Gateway listener port and does not impact other aspects of the Envoy proxy configuration. If not specified, the system will operate as follows: - It defaults to IPv4 only. - IPv6 and dual-stack environments are not supported in this default configuration. Note: To enable IPv6 or dual-stack functionality, explicit configuration is required.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"preserveRouteOrder": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PreserveRouteOrder determines if the order of matching for HTTPRoutes is determined by Gateway-API specification (https://gateway-api.sigs.k8s.io/reference/spec/#gateway.networking.k8s.io/v1.HTTPRouteRule) or preserves the order defined by users in the HTTPRoute's HTTPRouteRule list. Default: False",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendTLSConfig", "k8s.io/envoygateway/v1alpha1.EnvoyProxyProvider", "k8s.io/envoygateway/v1alpha1.FilterPosition", "k8s.io/envoygateway/v1alpha1.ProxyBootstrap", "k8s.io/envoygateway/v1alpha1.ProxyLogging", "k8s.io/envoygateway/v1alpha1.ProxyTelemetry", "k8s.io/envoygateway/v1alpha1.ShutdownConfig"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_EnvoyProxyStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "EnvoyProxyStatus defines the observed state of EnvoyProxy. This type is not implemented until https://github.com/envoyproxy/gateway/issues/1007 is fixed.",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtAuth(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtAuth defines the configuration for External Authorization.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"grpc": {
+						SchemaProps: spec.SchemaProps{
+							Description: "GRPC defines the gRPC External Authorization service. Either GRPCService or HTTPService must be specified, and only one of them can be provided.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.GRPCExtAuthService"),
+						},
+					},
+					"http": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP defines the HTTP External Authorization service. Either GRPCService or HTTPService must be specified, and only one of them can be provided.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPExtAuthService"),
+						},
+					},
+					"headersToExtAuth": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HeadersToExtAuth defines the client request headers that will be included in the request to the external authorization service. Note: If not specified, the default behavior for gRPC and HTTP external authorization services is different due to backward compatibility reasons. All headers will be included in the check request to a gRPC authorization server. Only the following headers will be included in the check request to an HTTP authorization server: Host, Method, Path, Content-Length, and Authorization. And these headers will always be included to the check request to an HTTP authorization server by default, no matter whether they are specified in HeadersToExtAuth or not.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"bodyToExtAuth": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BodyToExtAuth defines the Body to Ext Auth configuration.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BodyToExtAuth"),
+						},
+					},
+					"failOpen": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FailOpen is a switch used to control the behavior when a response from the External Authorization service cannot be obtained. If FailOpen is set to true, the system allows the traffic to pass through. Otherwise, if it is set to false or not set (defaulting to false), the system blocks the traffic and returns a HTTP 5xx error, reflecting a fail-closed approach. This setting determines whether to prioritize accessibility over strict security in case of authorization service failure.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"recomputeRoute": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RecomputeRoute clears the route cache and recalculates the routing decision. This field must be enabled if the headers added or modified by the ExtAuth are used for route matching decisions. If the recomputation selects a new route, features targeting the new matched route will be applied.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BodyToExtAuth", "k8s.io/envoygateway/v1alpha1.GRPCExtAuthService", "k8s.io/envoygateway/v1alpha1.HTTPExtAuthService"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtProc(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtProc defines the configuration for External Processing filter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"messageTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MessageTimeout is the timeout for a response to be returned from the external processor Default: 200ms",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"failOpen": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FailOpen defines if requests or responses that cannot be processed due to connectivity to the external processor are terminated or passed-through. Default: false",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"processingMode": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ProcessingMode defines how request and response body is processed Default: header and body are not sent to the external processor",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtProcProcessingMode"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/envoygateway/v1alpha1.ExtProcProcessingMode", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtProcProcessingMode(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtProcProcessingMode defines if and how headers and bodies are sent to the service. https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/http/ext_proc/v3/processing_mode.proto#envoy-v3-api-msg-extensions-filters-http-ext-proc-v3-processingmode",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"request": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Defines processing mode for requests. If present, request headers are sent. Request body is processed according to the specified mode.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProcessingModeOptions"),
+						},
+					},
+					"response": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Defines processing mode for responses. If present, response headers are sent. Response body is processed according to the specified mode.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProcessingModeOptions"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ProcessingModeOptions"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtensionAPISettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtensionAPISettings defines the settings specific to Gateway API Extensions.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"enableEnvoyPatchPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableEnvoyPatchPolicy enables Envoy Gateway to reconcile and implement the EnvoyPatchPolicy resources.",
+							Default:     false,
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"enableBackend": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableBackend enables Envoy Gateway to reconcile and implement the Backend resources.",
+							Default:     false,
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"enableEnvoyPatchPolicy", "enableBackend"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtensionHooks(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtensionHooks defines extension hooks across all supported runners",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"xdsTranslator": {
+						SchemaProps: spec.SchemaProps{
+							Description: "XDSTranslator defines all the supported extension hooks for the xds-translator runner",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.XDSTranslatorHooks"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.XDSTranslatorHooks"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtensionManager(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtensionManager defines the configuration for registering an extension manager to the Envoy Gateway control plane.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"resources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Resources defines the set of K8s resources the extension will handle as route filter resources",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.GroupVersionKind"),
+									},
+								},
+							},
+						},
+					},
+					"policyResources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PolicyResources defines the set of K8S resources the extension server will handle as directly attached GatewayAPI policies",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.GroupVersionKind"),
+									},
+								},
+							},
+						},
+					},
+					"hooks": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hooks defines the set of hooks the extension supports",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionHooks"),
+						},
+					},
+					"service": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Service defines the configuration of the extension service that the Envoy Gateway Control Plane will call through extension hooks.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionService"),
+						},
+					},
+					"failOpen": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FailOpen defines if Envoy Gateway should ignore errors returned from the Extension Service hooks. The default is false, which means Envoy Gateway will fail closed if the Extension Service returns an error.\n\nFail-close means that if the Extension Service hooks return an error, the relevant route/listener/resource will be replaced with a default configuration returning Internal Server Error (HTTP 500).\n\nFail-open means that if the Extension Service hooks return an error, no changes will be applied to the source of the configuration which was sent to the extension server.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ExtensionHooks", "k8s.io/envoygateway/v1alpha1.ExtensionService", "k8s.io/envoygateway/v1alpha1.GroupVersionKind"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtensionService(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtensionService defines the configuration for connecting to a registered extension service.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"fqdn": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FQDN defines a FQDN endpoint",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.FQDNEndpoint"),
+						},
+					},
+					"ip": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IP defines an IP endpoint. Supports both IPv4 and IPv6 addresses.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.IPEndpoint"),
+						},
+					},
+					"unix": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Unix defines the unix domain socket endpoint",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.UnixSocket"),
+						},
+					},
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host define the extension service hostname. Deprecated: use the appropriate transport attribute instead (FQDN,IP,Unix)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port the extension service is exposed on. Deprecated: use the appropriate transport attribute instead (FQDN,IP,Unix)",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"tls": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLS defines TLS configuration for communication between Envoy Gateway and the extension service.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtensionTLS"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ExtensionTLS", "k8s.io/envoygateway/v1alpha1.FQDNEndpoint", "k8s.io/envoygateway/v1alpha1.IPEndpoint", "k8s.io/envoygateway/v1alpha1.UnixSocket"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ExtensionTLS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ExtensionTLS defines the TLS configuration when connecting to an extension service",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"certificateRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateRef contains a references to objects (Kubernetes objects or otherwise) that contains a TLS certificate and private keys. These certificates are used to establish a TLS handshake to the extension server.\n\nCertificateRef can only reference a Kubernetes Secret at this time.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+				},
+				Required: []string{"certificateRef"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_FQDNEndpoint(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FQDNEndpoint describes TCP/UDP socket address, corresponding to Envoy's Socket Address https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/address.proto#config-core-v3-socketaddress",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"hostname": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostname defines the FQDN hostname of the backend endpoint.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port of the backend endpoint.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"hostname", "port"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_FaultInjection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FaultInjection defines the fault injection policy to be applied. This configuration can be used to inject delays and abort requests to mimic failure scenarios such as service failures and overloads",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"delay": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If specified, a delay will be injected into the request.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.FaultInjectionDelay"),
+						},
+					},
+					"abort": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If specified, the request will be aborted if it meets the configuration criteria.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.FaultInjectionAbort"),
+						},
+					},
+				},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"fields-to-discriminateBy": map[string]interface{}{
+								"abort": "Abort",
+								"delay": "Delay",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.FaultInjectionAbort", "k8s.io/envoygateway/v1alpha1.FaultInjectionDelay"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_FaultInjectionAbort(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FaultInjectionAbort defines the abort fault injection configuration",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"httpStatus": {
+						SchemaProps: spec.SchemaProps{
+							Description: "StatusCode specifies the HTTP status code to be returned",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"grpcStatus": {
+						SchemaProps: spec.SchemaProps{
+							Description: "GrpcStatus specifies the GRPC status code to be returned",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"percentage": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Percentage specifies the percentage of requests to be aborted. Default 100%, if set 0, no requests will be aborted. Accuracy to 0.0001%.",
+							Type:        []string{"number"},
+							Format:      "float",
+						},
+					},
+				},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"fields-to-discriminateBy": map[string]interface{}{
+								"grpcStatus": "GrpcStatus",
+								"httpStatus": "HTTPStatus",
+								"percentage": "Percentage",
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_FaultInjectionDelay(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FaultInjectionDelay defines the delay fault injection configuration",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"fixedDelay": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FixedDelay specifies the fixed delay duration",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"percentage": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Percentage specifies the percentage of requests to be delayed. Default 100%, if set 0, no requests will be delayed. Accuracy to 0.0001%.",
+							Type:        []string{"number"},
+							Format:      "float",
+						},
+					},
+				},
+				Required: []string{"fixedDelay"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_FileEnvoyProxyAccessLog(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path defines the file path used to expose envoy access log(e.g. /dev/stdout).",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_FilterPosition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FilterPosition defines the position of an Envoy HTTP filter in the filter chain.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the filter.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"before": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Before defines the filter that should come before the filter. Only one of Before or After must be set.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"after": {
+						SchemaProps: spec.SchemaProps{
+							Description: "After defines the filter that should come after the filter. Only one of Before or After must be set.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_GRPCActiveHealthChecker(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCActiveHealthChecker defines the settings of the GRPC health check.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"service": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Service to send in the health check request. If this is not specified, then the health check request applies to the entire server and not to a specific service.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_GRPCExtAuthService(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCExtAuthService defines the gRPC External Authorization service The authorization request message is defined in https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/auth/v3/external_auth.proto",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Gateway(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Gateway defines the desired Gateway API configuration of Envoy Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"controllerName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControllerName defines the name of the Gateway API controller. If unspecified, defaults to \"gateway.envoyproxy.io/gatewayclass-controller\". See the following for additional details:\n  https://gateway-api.sigs.k8s.io/reference/spec/#gateway.networking.k8s.io/v1.GatewayClass",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_GlobalRateLimit(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GlobalRateLimit defines global rate limit configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of RateLimit selectors and limits. Each rule and its associated limit is applied in a mutually exclusive way. If a request matches multiple rules, each of their associated limits get applied, so a single request might increase the rate limit counters for multiple rules if selected. The rate limit service will return a logical OR of the individual rate limit decisions of all matching rules. For example, if a request matches two rules, one rate limited and one not, the final decision will be to rate limit the request.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.RateLimitRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"rules"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitRule"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_GroupVersionKind(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GroupVersionKind unambiguously identifies a Kind. It can be converted to k8s.io/apimachinery/pkg/runtime/schema.GroupVersionKind",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+					"version": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+				},
+				Required: []string{"group", "version", "kind"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_GzipCompressor(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GzipCompressor defines the config for the Gzip compressor. The default values can be found here: https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/compression/gzip/compressor/v3/gzip.proto#extension-envoy-compression-gzip-compressor",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTP10Settings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTP10Settings provides HTTP/1.0 configuration on the listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"useDefaultHost": {
+						SchemaProps: spec.SchemaProps{
+							Description: "UseDefaultHost defines if the HTTP/1.0 request is missing the Host header, then the hostname associated with the listener should be injected into the request. If this is not set and an HTTP/1.0 request arrives without a host, then it will be rejected.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTP1Settings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTP1Settings provides HTTP/1 configuration on the listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"enableTrailers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableTrailers defines if HTTP/1 trailers should be proxied by Envoy.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"preserveHeaderCase": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PreserveHeaderCase defines if Envoy should preserve the letter case of headers. By default, Envoy will lowercase all the headers.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"http10": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP10 turns on support for HTTP/1.0 and HTTP/0.9 requests.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTP10Settings"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HTTP10Settings"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTP2Settings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTP2Settings provides HTTP/2 configuration for listeners and backends.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"initialStreamWindowSize": {
+						SchemaProps: spec.SchemaProps{
+							Description: "InitialStreamWindowSize sets the initial window size for HTTP/2 streams. If not set, the default value is 64 KiB(64*1024).",
+							Ref:         ref("k8s.io/apimachinery/pkg/api/resource.Quantity"),
+						},
+					},
+					"initialConnectionWindowSize": {
+						SchemaProps: spec.SchemaProps{
+							Description: "InitialConnectionWindowSize sets the initial window size for HTTP/2 connections. If not set, the default value is 1 MiB.",
+							Ref:         ref("k8s.io/apimachinery/pkg/api/resource.Quantity"),
+						},
+					},
+					"maxConcurrentStreams": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MaxConcurrentStreams sets the maximum number of concurrent streams allowed per connection. If not set, the default value is 100.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"onInvalidMessage": {
+						SchemaProps: spec.SchemaProps{
+							Description: "OnInvalidMessage determines if Envoy will terminate the connection or just the offending stream in the event of HTTP messaging error It's recommended for L2 Envoy deployments to set this value to TerminateStream. https://www.envoyproxy.io/docs/envoy/latest/configuration/best_practices/level_two Default: TerminateConnection",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/api/resource.Quantity"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTP3Settings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTP3Settings provides HTTP/3 configuration on the listener.",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPActiveHealthChecker(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPActiveHealthChecker defines the settings of http health check.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path defines the HTTP path that will be requested during health checking.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"method": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Method defines the HTTP method used for health checking. Defaults to GET",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"expectedStatuses": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExpectedStatuses defines a list of HTTP response statuses considered healthy. Defaults to 200 only",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: 0,
+										Type:    []string{"integer"},
+										Format:  "int32",
+									},
+								},
+							},
+						},
+					},
+					"expectedResponse": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExpectedResponse defines a list of HTTP expected responses to match.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ActiveHealthCheckPayload"),
+						},
+					},
+				},
+				Required: []string{"path"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ActiveHealthCheckPayload"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPClientTimeout(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"requestReceivedTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestReceivedTimeout is the duration envoy waits for the complete request reception. This timer starts upon request initiation and stops when either the last byte of the request is sent upstream or when the response begins.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"idleTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IdleTimeout for an HTTP connection. Idle time is defined as a period in which there are no active requests in the connection. Default: 1 hour.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPDirectResponseFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPDirectResponseFilter defines the configuration to return a fixed response.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"contentType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Content Type of the response. This will be set in the Content-Type header.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"body": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Body of the Response",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CustomResponseBody"),
+						},
+					},
+					"statusCode": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status Code of the HTTP response If unset, defaults to 200.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.CustomResponseBody"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPExtAuthService(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPExtAuthService defines the HTTP External Authorization service",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path is the path of the HTTP External Authorization service. If path is specified, the authorization request will be sent to that path, or else the authorization request will be sent to the root path.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"headersToBackend": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HeadersToBackend are the authorization response headers that will be added to the original client request before sending it to the backend server. Note that coexisting headers will be overridden. If not specified, no authorization response headers will be added to the original client request.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPHostnameModifier(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+					"header": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Header is the name of the header whose value would be used to rewrite the Host header",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPPathModifier(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+					"replaceRegexMatch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ReplaceRegexMatch defines a path regex rewrite. The path portions matched by the regex pattern are replaced by the defined substitution. https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/route/v3/route_components.proto#envoy-v3-api-field-config-route-v3-routeaction-regex-rewrite Some examples: (1) replaceRegexMatch:\n      pattern: ^/service/([^/]+)(/.*)$\n      substitution: \\2/instance/\\1\n    Would transform /service/foo/v1/api into /v1/api/instance/foo.\n(2) replaceRegexMatch:\n      pattern: one\n      substitution: two\n    Would transform /xxx/one/yyy/one/zzz into /xxx/two/yyy/two/zzz.\n(3) replaceRegexMatch:\n      pattern: ^(.*?)one(.*)$\n      substitution: \\1two\\2\n    Would transform /xxx/one/yyy/one/zzz into /xxx/two/yyy/one/zzz.\n(3) replaceRegexMatch:\n      pattern: (?i)/xxx/\n      substitution: /yyy/\n    Would transform path /aaa/XxX/bbb into /aaa/yyy/bbb (case-insensitive).",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ReplaceRegexMatch"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ReplaceRegexMatch"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPRouteFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteFilter is a custom Envoy Gateway HTTPRouteFilter which provides extended traffic processing options such as path regex rewrite, direct response and more.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of HTTPRouteFilter.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPRouteFilterSpec"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.HTTPRouteFilterSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPRouteFilterList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteFilterList contains a list of HTTPRouteFilter resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.HTTPRouteFilter"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.HTTPRouteFilter"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPRouteFilterSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteFilterSpec defines the desired state of HTTPRouteFilter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"urlRewrite": {
+						SchemaProps: spec.SchemaProps{
+							Ref: ref("k8s.io/envoygateway/v1alpha1.HTTPURLRewriteFilter"),
+						},
+					},
+					"directResponse": {
+						SchemaProps: spec.SchemaProps{
+							Ref: ref("k8s.io/envoygateway/v1alpha1.HTTPDirectResponseFilter"),
+						},
+					},
+				},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"fields-to-discriminateBy": map[string]interface{}{
+								"directResponse": "DirectResponse",
+								"urlRewrite":     "URLRewrite",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HTTPDirectResponseFilter", "k8s.io/envoygateway/v1alpha1.HTTPURLRewriteFilter"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPTimeout(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"connectionIdleTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The idle timeout for an HTTP connection. Idle time is defined as a period in which there are no active requests in the connection. Default: 1 hour.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"maxConnectionDuration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The maximum duration of an HTTP connection. Default: unlimited.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"requestTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestTimeout is the time until which entire response is received from the upstream.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPURLRewriteFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPURLRewriteFilter define rewrites of HTTP URL components such as path and host",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"hostname": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostname is the value to be used to replace the Host header value during forwarding.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPHostnameModifier"),
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path defines a path rewrite.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPPathModifier"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HTTPHostnameModifier", "k8s.io/envoygateway/v1alpha1.HTTPPathModifier"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HTTPWasmCodeSource(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPWasmCodeSource defines the HTTP URL containing the Wasm code.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URL is the URL containing the Wasm code.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"sha256": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SHA256 checksum that will be used to verify the Wasm code.\n\nIf not specified, Envoy Gateway will not verify the downloaded Wasm code. kubebuilder:validation:Pattern=`^[a-f0-9]{64}$`",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"url"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Header(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Header defines the header hashing configuration for consistent hash based load balancing.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the header to hash.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HeaderMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HeaderMatch defines the match attributes within the HTTP Headers of the request.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against the value of the header.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the HTTP header.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value within the HTTP header. Due to the case-insensitivity of header names, \"foo\" and \"Foo\" are considered equivalent. Do not set this field when Type=\"Distinct\", implying matching on any/all unique values within the header.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"invert": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Invert specifies whether the value match result will be inverted. Do not set this field when Type=\"Distinct\", implying matching on any/all unique values within the header.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HeaderSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HeaderSettings provides configuration options for headers on the listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"enableEnvoyHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableEnvoyHeaders configures Envoy Proxy to add the \"X-Envoy-\" headers to requests and responses.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"disableRateLimitHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DisableRateLimitHeaders configures Envoy Proxy to omit the \"X-RateLimit-\" response headers when rate limiting is enabled.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"xForwardedClientCert": {
+						SchemaProps: spec.SchemaProps{
+							Description: "XForwardedClientCert configures how Envoy Proxy handle the x-forwarded-client-cert (XFCC) HTTP header.\n\nx-forwarded-client-cert (XFCC) is an HTTP header used to forward the certificate information of part or all of the clients or proxies that a request has flowed through, on its way from the client to the server.\n\nEnvoy proxy may choose to sanitize/append/forward the XFCC header before proxying the request.\n\nIf not set, the default behavior is sanitizing the XFCC header.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.XForwardedClientCert"),
+						},
+					},
+					"withUnderscoresAction": {
+						SchemaProps: spec.SchemaProps{
+							Description: "WithUnderscoresAction configures the action to take when an HTTP header with underscores is encountered. The default action is to reject the request.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"preserveXRequestID": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PreserveXRequestID configures Envoy to keep the X-Request-ID header if passed for a request that is edge (Edge request is the request from external clients to front Envoy) and not reset it, which is the current Envoy behaviour. It defaults to false.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"earlyRequestHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EarlyRequestHeaders defines settings for early request header modification, before envoy performs routing, tracing and built-in header manipulation.",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPHeaderFilter"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.XForwardedClientCert", "k8s.io/gateway-api/v1.HTTPHeaderFilter"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HealthCheck(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HealthCheck configuration to decide which endpoints are healthy and can be used for routing.\n\nNote: Once the overall health of the backendRef drops below 50% (e.g. a backendRef having 10 endpoints with more than 5 unhealthy endpoints), Envoy will disregard health status and balance across all endpoints. This is called \"panic mode\". It's designed to prevent a situation in which host failures cascade throughout the cluster as load increases.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"active": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Active health check configuration",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ActiveHealthCheck"),
+						},
+					},
+					"passive": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Passive passive check configuration",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.PassiveHealthCheck"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ActiveHealthCheck", "k8s.io/envoygateway/v1alpha1.PassiveHealthCheck"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_HealthCheckSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HealthCheckSettings provides HealthCheck configuration on the HTTP/HTTPS listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path specifies the HTTP path to match on for health check requests.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"path"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_IPEndpoint(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "IPEndpoint describes TCP/UDP socket address, corresponding to Envoy's Socket Address https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/address.proto#config-core-v3-socketaddress",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"address": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Address defines the IP address of the backend endpoint. Supports both IPv4 and IPv6 addresses.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port of the backend endpoint.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"address", "port"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ImageWasmCodeSource(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ImageWasmCodeSource defines the OCI image containing the Wasm code.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URL is the URL of the OCI image. URL can be in the format of `registry/image:tag` or `registry/image@sha256:digest`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"sha256": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SHA256 checksum that will be used to verify the OCI image.\n\nIt must match the digest of the OCI image.\n\nIf not specified, Envoy Gateway will not verify the downloaded OCI image. kubebuilder:validation:Pattern=`^[a-f0-9]{64}$`",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"pullSecretRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PullSecretRef is a reference to the secret containing the credentials to pull the image. Only support Kubernetes Secret resource from the same namespace.",
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+				},
+				Required: []string{"url"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JSONPatchOperation(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JSONPatchOperation defines the JSON Patch Operation as defined in https://datatracker.ietf.org/doc/html/rfc6902",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"op": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Op is the type of operation to perform",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path is a JSONPointer expression. Refer to https://datatracker.ietf.org/doc/html/rfc6901 for more details. It specifies the location of the target document/field where the operation will be performed",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"jsonPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "JSONPath is a JSONPath expression. Refer to https://datatracker.ietf.org/doc/rfc9535/ for more details. It produces one or more JSONPointer expressions based on the given JSON document. If no JSONPointer is found, it will result in an error. If the 'Path' property is also set, it will be appended to the resulting JSONPointer expressions from the JSONPath evaluation. This is useful when creating a property that does not yet exist in the JSON document. The final JSONPointer expressions specifies the locations in the target document/field where the operation will be applied.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"from": {
+						SchemaProps: spec.SchemaProps{
+							Description: "From is the source location of the value to be copied or moved. Only valid for move or copy operations Refer to https://datatracker.ietf.org/doc/html/rfc6901 for more details.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is the new value of the path location. The value is only used by the `add` and `replace` operations.",
+							Ref:         ref("k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1.JSON"),
+						},
+					},
+				},
+				Required: []string{"op"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1.JSON"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JWT(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWT defines the configuration for JSON Web Token (JWT) authentication.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"optional": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Optional determines whether a missing JWT is acceptable, defaulting to false if not specified. Note: Even if optional is set to true, JWT authentication will still fail if an invalid JWT is presented.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"providers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Providers defines the JSON Web Token (JWT) authentication provider type. When multiple JWT providers are specified, the JWT is considered valid if any of the providers successfully validate the JWT. For additional details, see https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/jwt_authn_filter.html.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.JWTProvider"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"providers"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.JWTProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JWTClaim(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTClaim specifies a claim in a JWT token.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the claim. If it is a nested claim, use a dot (.) separated string as the name to represent the full path to the claim. For example, if the claim is in the \"department\" field in the \"organization\" field, the name should be \"organization.department\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valueType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ValueType is the type of the claim value. Only String and StringArray types are supported for now.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"values": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Values are the values that the claim must match. If the claim is a string type, the specified value must match exactly. If the claim is a string array type, the specified value must match one of the values in the array. If multiple values are specified, one of the values must match for the rule to match.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"name", "values"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JWTExtractor(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTExtractor defines a custom JWT token extraction from HTTP request. If specified, Envoy will extract the JWT token from the listed extractors (headers, cookies, or params) and validate each of them. If any value extracted is found to be an invalid JWT, a 401 error will be returned.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"headers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Headers represents a list of HTTP request headers to extract the JWT token from.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.JWTHeaderExtractor"),
+									},
+								},
+							},
+						},
+					},
+					"cookies": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Cookies represents a list of cookie names to extract the JWT token from.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"params": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Params represents a list of query parameters to extract the JWT token from.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.JWTHeaderExtractor"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JWTHeaderExtractor(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTHeaderExtractor defines an HTTP header location to extract JWT token",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the HTTP header name to retrieve the token",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valuePrefix": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ValuePrefix is the prefix that should be stripped before extracting the token. The format would be used by Envoy like \"{ValuePrefix}<TOKEN>\". For example, \"Authorization: Bearer <TOKEN>\", then the ValuePrefix=\"Bearer \" with a space at the end.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JWTPrincipal(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTPrincipal specifies the client identity of a request based on the JWT claims and scopes. At least one of the claims or scopes must be specified. Claims and scopes are And-ed together if both are specified.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Provider is the name of the JWT provider that used to verify the JWT token. In order to use JWT claims for authorization, you must configure the JWT authentication with the same provider in the same `SecurityPolicy`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"claims": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Claims are the claims in a JWT token.\n\nIf multiple claims are specified, all claims must match for the rule to match. For example, if there are two claims: one for the audience and one for the issuer, the rule will match only if both the audience and the issuer match.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.JWTClaim"),
+									},
+								},
+							},
+						},
+					},
+					"scopes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Scopes are a special type of claim in a JWT token that represents the permissions of the client.\n\nThe value of the scopes field should be a space delimited string that is expected in the scope parameter, as defined in RFC 6749: https://datatracker.ietf.org/doc/html/rfc6749#page-23.\n\nIf multiple scopes are specified, all scopes must match for the rule to match.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"provider"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.JWTClaim"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_JWTProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "JWTProvider defines how a JSON Web Token (JWT) can be verified.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name defines a unique name for the JWT provider. A name can have a variety of forms, including RFC1123 subdomains, RFC 1123 labels, or RFC 1035 labels.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"issuer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Issuer is the principal that issued the JWT and takes the form of a URL or email address. For additional details, see https://tools.ietf.org/html/rfc7519#section-4.1.1 for URL format and https://rfc-editor.org/rfc/rfc5322.html for email format. If not provided, the JWT issuer is not checked.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"audiences": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Audiences is a list of JWT audiences allowed access. For additional details, see https://tools.ietf.org/html/rfc7519#section-4.1.3. If not provided, JWT audiences are not checked.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"remoteJWKS": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RemoteJWKS defines how to fetch and cache JSON Web Key Sets (JWKS) from a remote HTTP/HTTPS endpoint.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RemoteJWKS"),
+						},
+					},
+					"claimToHeaders": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClaimToHeaders is a list of JWT claims that must be extracted into HTTP request headers For examples, following config: The claim must be of type; string, int, double, bool. Array type claims are not supported",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.ClaimToHeader"),
+									},
+								},
+							},
+						},
+					},
+					"recomputeRoute": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RecomputeRoute clears the route cache and recalculates the routing decision. This field must be enabled if the headers generated from the claim are used for route matching decisions. If the recomputation selects a new route, features targeting the new matched route will be applied.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"extractFrom": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtractFrom defines different ways to extract the JWT token from HTTP request. If empty, it defaults to extract JWT token from the Authorization HTTP request header using Bearer schema or access_token from query parameters.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.JWTExtractor"),
+						},
+					},
+				},
+				Required: []string{"name", "remoteJWKS"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ClaimToHeader", "k8s.io/envoygateway/v1alpha1.JWTExtractor", "k8s.io/envoygateway/v1alpha1.RemoteJWKS"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesContainerSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesContainerSpec defines the desired state of the Kubernetes container resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"env": {
+						SchemaProps: spec.SchemaProps{
+							Description: "List of environment variables to set in the container.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.EnvVar"),
+									},
+								},
+							},
+						},
+					},
+					"resources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Resources required by this container. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+							Ref:         ref("k8s.io/api/core/v1.ResourceRequirements"),
+						},
+					},
+					"securityContext": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SecurityContext defines the security options the container should be run with. If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext. More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+							Ref:         ref("k8s.io/api/core/v1.SecurityContext"),
+						},
+					},
+					"image": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Image specifies the EnvoyProxy container image to be used, instead of the default image.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"volumeMounts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "VolumeMounts are volumes to mount into the container's filesystem. Cannot be updated.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.VolumeMount"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/core/v1.EnvVar", "k8s.io/api/core/v1.ResourceRequirements", "k8s.io/api/core/v1.SecurityContext", "k8s.io/api/core/v1.VolumeMount"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesDaemonSetSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesDaemonSetSpec defines the desired state of the Kubernetes daemonset resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"patch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patch defines how to perform the patch operation to daemonset",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"),
+						},
+					},
+					"strategy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The daemonset strategy to use to replace existing pods with new ones.",
+							Ref:         ref("k8s.io/api/apps/v1.DaemonSetUpdateStrategy"),
+						},
+					},
+					"pod": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Pod defines the desired specification of pod.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPodSpec"),
+						},
+					},
+					"container": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Container defines the desired specification of main container.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesContainerSpec"),
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the daemonSet. When unset, this defaults to an autogenerated name.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/apps/v1.DaemonSetUpdateStrategy", "k8s.io/envoygateway/v1alpha1.KubernetesContainerSpec", "k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec", "k8s.io/envoygateway/v1alpha1.KubernetesPodSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesDeployMode(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesDeployMode holds configuration for how to deploy managed resources such as the Envoy Proxy data plane fleet.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type indicates what deployment mode to use. \"ControllerNamespace\" and \"GatewayNamespace\" are currently supported. By default, when this field is unset or empty, Envoy Gateway will deploy Envoy Proxy fleet in the Controller namespace.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesDeploymentSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesDeploymentSpec defines the desired state of the Kubernetes deployment resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"patch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patch defines how to perform the patch operation to deployment",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"),
+						},
+					},
+					"replicas": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Replicas is the number of desired pods. Defaults to 1.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"strategy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The deployment strategy to use to replace existing pods with new ones.",
+							Ref:         ref("k8s.io/api/apps/v1.DeploymentStrategy"),
+						},
+					},
+					"pod": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Pod defines the desired specification of pod.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPodSpec"),
+						},
+					},
+					"container": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Container defines the desired specification of main container.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesContainerSpec"),
+						},
+					},
+					"initContainers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "List of initialization containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.Container"),
+									},
+								},
+							},
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the deployment. When unset, this defaults to an autogenerated name.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/apps/v1.DeploymentStrategy", "k8s.io/api/core/v1.Container", "k8s.io/envoygateway/v1alpha1.KubernetesContainerSpec", "k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec", "k8s.io/envoygateway/v1alpha1.KubernetesPodSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesHorizontalPodAutoscalerSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesHorizontalPodAutoscalerSpec defines Kubernetes Horizontal Pod Autoscaler settings of Envoy Proxy Deployment. When HPA is enabled, it is recommended that the value in `KubernetesDeploymentSpec.replicas` be removed, otherwise Envoy Gateway will revert back to this value every time reconciliation occurs. See k8s.io.autoscaling.v2.HorizontalPodAutoScalerSpec.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"minReplicas": {
+						SchemaProps: spec.SchemaProps{
+							Description: "minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down. It defaults to 1 replica.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"maxReplicas": {
+						SchemaProps: spec.SchemaProps{
+							Description: "maxReplicas is the upper limit for the number of replicas to which the autoscaler can scale up. It cannot be less that minReplicas.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"metrics": {
+						SchemaProps: spec.SchemaProps{
+							Description: "metrics contains the specifications for which to use to calculate the desired replica count (the maximum replica count across all metrics will be used). If left empty, it defaults to being based on CPU utilization with average on 80% usage.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/autoscaling/v2.MetricSpec"),
+									},
+								},
+							},
+						},
+					},
+					"behavior": {
+						SchemaProps: spec.SchemaProps{
+							Description: "behavior configures the scaling behavior of the target in both Up and Down directions (scaleUp and scaleDown fields respectively). If not set, the default HPAScalingRules for scale up and scale down are used. See k8s.io.autoscaling.v2.HorizontalPodAutoScalerBehavior.",
+							Ref:         ref("k8s.io/api/autoscaling/v2.HorizontalPodAutoscalerBehavior"),
+						},
+					},
+					"patch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patch defines how to perform the patch operation to the HorizontalPodAutoscaler",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"),
+						},
+					},
+				},
+				Required: []string{"maxReplicas"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/autoscaling/v2.HorizontalPodAutoscalerBehavior", "k8s.io/api/autoscaling/v2.MetricSpec", "k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesPatchSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesPatchSpec defines how to perform the patch operation. Note that `value` can be an in-line YAML document, as can be seen in e.g. (the example of patching the Envoy proxy Deployment)[https://gateway.envoyproxy.io/docs/tasks/operations/customize-envoyproxy/#patching-deployment-for-envoyproxy]. Note also that, currently, strings containing literal JSON are _rejected_.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of merge operation to perform\n\nBy default, StrategicMerge is used as the patch type.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Object contains the raw configuration for merged object",
+							Ref:         ref("k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1.JSON"),
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1.JSON"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesPodDisruptionBudgetSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesPodDisruptionBudgetSpec defines Kubernetes PodDisruptionBudget settings of Envoy Proxy Deployment.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"minAvailable": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MinAvailable specifies the minimum number of pods that must be available at all times during voluntary disruptions, such as node drains or updates. This setting ensures that your envoy proxy maintains a certain level of availability and resilience during maintenance operations.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"patch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patch defines how to perform the patch operation to the PodDisruptionBudget",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesPodSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesPodSpec defines the desired state of the Kubernetes pod resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"annotations": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Annotations are the annotations that should be appended to the pods. By default, no pod annotations are appended.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"labels": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Labels are the additional labels that should be tagged to the pods. By default, no additional pod labels are tagged.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"securityContext": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SecurityContext holds pod-level security attributes and common container settings. Optional: Defaults to empty.  See type description for default values of each field.",
+							Ref:         ref("k8s.io/api/core/v1.PodSecurityContext"),
+						},
+					},
+					"affinity": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If specified, the pod's scheduling constraints.",
+							Ref:         ref("k8s.io/api/core/v1.Affinity"),
+						},
+					},
+					"tolerations": {
+						SchemaProps: spec.SchemaProps{
+							Description: "If specified, the pod's tolerations.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.Toleration"),
+									},
+								},
+							},
+						},
+					},
+					"volumes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.Volume"),
+									},
+								},
+							},
+						},
+					},
+					"imagePullSecrets": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.LocalObjectReference"),
+									},
+								},
+							},
+						},
+					},
+					"nodeSelector": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"topologySpreadConstraints": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TopologySpreadConstraints describes how a group of pods ought to spread across topology domains. Scheduler will schedule pods in a way which abides by the constraints. All topologySpreadConstraints are ANDed.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/api/core/v1.TopologySpreadConstraint"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/api/core/v1.Affinity", "k8s.io/api/core/v1.LocalObjectReference", "k8s.io/api/core/v1.PodSecurityContext", "k8s.io/api/core/v1.Toleration", "k8s.io/api/core/v1.TopologySpreadConstraint", "k8s.io/api/core/v1.Volume"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesServiceSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesServiceSpec defines the desired state of the Kubernetes service resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"annotations": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Annotations that should be appended to the service. By default, no annotations are appended.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"labels": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Labels that should be appended to the service. By default, no labels are appended.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type determines how the Service is exposed. Defaults to LoadBalancer. Valid options are ClusterIP, LoadBalancer and NodePort. \"LoadBalancer\" means a service will be exposed via an external load balancer (if the cloud provider supports it). \"ClusterIP\" means a service will only be accessible inside the cluster, via the cluster IP. \"NodePort\" means a service will be exposed on a static Port on all Nodes of the cluster.\n\nPossible enum values:\n - `\"ClusterIP\"` means a service will only be accessible inside the cluster, via the cluster IP.\n - `\"LoadBalancer\"` means a service will be exposed via an external load balancer (if the cloud provider supports it).\n - `\"NodePort\"` means a service will be exposed on each Kubernetes Node at a static Port, common across all Nodes.",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"ClusterIP", "LoadBalancer", "NodePort"},
+						},
+					},
+					"loadBalancerClass": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LoadBalancerClass, when specified, allows for choosing the LoadBalancer provider implementation if more than one are available or is otherwise expected to be specified",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"allocateLoadBalancerNodePorts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllocateLoadBalancerNodePorts defines if NodePorts will be automatically allocated for services with type LoadBalancer. Default is \"true\". It may be set to \"false\" if the cluster load-balancer does not rely on NodePorts. If the caller requests specific NodePorts (by specifying a value), those requests will be respected, regardless of this field. This field may only be set for services with type LoadBalancer and will be cleared if the type is changed to any other type.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"loadBalancerSourceRanges": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LoadBalancerSourceRanges defines a list of allowed IP addresses which will be configured as firewall rules on the platform providers load balancer. This is not guaranteed to be working as it happens outside of kubernetes and has to be supported and handled by the platform provider. This field may only be set for services with type LoadBalancer and will be cleared if the type is changed to any other type.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"loadBalancerIP": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LoadBalancerIP defines the IP Address of the underlying load balancer service. This field may be ignored if the load balancer provider does not support this feature. This field has been deprecated in Kubernetes, but it is still used for setting the IP Address in some cloud providers such as GCP.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"externalTrafficPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExternalTrafficPolicy determines the externalTrafficPolicy for the Envoy Service. Valid options are Local and Cluster. Default is \"Local\". \"Local\" means traffic will only go to pods on the node receiving the traffic. \"Cluster\" means connections are loadbalanced to all pods in the cluster.\n\nPossible enum values:\n - `\"Cluster\"` routes traffic to all endpoints.\n - `\"Local\"` preserves the source IP of the traffic by routing only to endpoints on the same node as the traffic was received on (dropping the traffic if there are no local endpoints).",
+							Type:        []string{"string"},
+							Format:      "",
+							Enum:        []interface{}{"Cluster", "Local"},
+						},
+					},
+					"patch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Patch defines how to perform the patch operation to the service",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"),
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name of the service. When unset, this defaults to an autogenerated name.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.KubernetesPatchSpec"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_KubernetesWatchMode(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "KubernetesWatchMode holds the configuration for which input resources to watch and reconcile.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type indicates what watch mode to use. KubernetesWatchModeTypeNamespaces and KubernetesWatchModeTypeNamespaceSelector are currently supported By default, when this field is unset or empty, Envoy Gateway will watch for input namespaced resources from all namespaces.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespaces": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespaces holds the list of namespaces that Envoy Gateway will watch for namespaced scoped resources such as Gateway, HTTPRoute and Service. Note that Envoy Gateway will continue to reconcile relevant cluster scoped resources such as GatewayClass that it is linked to. Precisely one of Namespaces and NamespaceSelector must be set.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"namespaceSelector": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NamespaceSelector holds the label selector used to dynamically select namespaces. Envoy Gateway will watch for namespaces matching the specified label selector. Precisely one of Namespaces and NamespaceSelector must be set.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_LeaderElection(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LeaderElection defines the desired leader election settings.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"leaseDuration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LeaseDuration defines the time non-leader contenders will wait before attempting to claim leadership. It's based on the timestamp of the last acknowledged signal. The default setting is 15 seconds.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"renewDeadline": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RenewDeadline represents the time frame within which the current leader will attempt to renew its leadership status before relinquishing its position. The default setting is 10 seconds.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"retryPeriod": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RetryPeriod denotes the interval at which LeaderElector clients should perform action retries. The default setting is 2 seconds.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"disable": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disable provides the option to turn off leader election, which is enabled by default.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_LiteralCustomTag(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LiteralCustomTag adds hard-coded value to each span.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value defines the hard-coded value to add to each span.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_LoadBalancer(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LoadBalancer defines the load balancer policy to be applied.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type decides the type of Load Balancer policy. Valid LoadBalancerType values are \"ConsistentHash\", \"LeastRequest\", \"Random\", \"RoundRobin\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"consistentHash": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConsistentHash defines the configuration when the load balancer type is set to ConsistentHash",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ConsistentHash"),
+						},
+					},
+					"slowStart": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SlowStart defines the configuration related to the slow start load balancer policy. If set, during slow start window, traffic sent to the newly added hosts will gradually increase. Currently this is only supported for RoundRobin and LeastRequest load balancers",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.SlowStart"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"consistentHash": "ConsistentHash",
+								"slowStart":      "SlowStart",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ConsistentHash", "k8s.io/envoygateway/v1alpha1.SlowStart"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_LocalRateLimit(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalRateLimit defines local rate limit configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of RateLimit selectors and limits. If a request matches multiple rules, the strictest limit is applied. For example, if a request matches two rules, one with 10rps and one with 20rps, the final limit will be based on the rule with 10rps.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.RateLimitRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitRule"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Lua(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Lua defines a Lua extension Only one of Inline or ValueRef must be set",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of method to use to read the Lua value. Valid values are Inline and ValueRef, default is Inline.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"inline": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Inline contains the source code as an inline string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"valueRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ValueRef has the source code specified as a local object reference. Only a reference to ConfigMap is supported. The value of key `lua` in the ConfigMap will be used. If the key is not found, the first value in the ConfigMap will be used.",
+							Ref:         ref("k8s.io/gateway-api/v1.LocalObjectReference"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.LocalObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_OIDC(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "OIDC defines the configuration for the OpenID Connect (OIDC) authentication.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The OIDC Provider configuration.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.OIDCProvider"),
+						},
+					},
+					"clientID": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The client ID to be used in the OIDC [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"clientSecret": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The Kubernetes secret which contains the OIDC client secret to be used in the [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).\n\nThis is an Opaque secret. The client secret should be stored in the key \"client-secret\".",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+					"cookieNames": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The optional cookie name overrides to be used for Bearer and IdToken cookies in the [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest). If not specified, uses a randomly generated suffix",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.OIDCCookieNames"),
+						},
+					},
+					"cookieDomain": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The optional domain to set the access and ID token cookies on. If not set, the cookies will default to the host of the request, not including the subdomains. If set, the cookies will be set on the specified domain and all subdomains. This means that requests to any subdomain will not require reauthentication after users log in to the parent domain.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"scopes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The OIDC scopes to be used in the [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest). The \"openid\" scope is always added to the list of scopes if not already specified.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"resources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The OIDC resources to be used in the [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"redirectURL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The redirect URL to be used in the OIDC [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest). If not specified, uses the default redirect URI \"%REQ(x-forwarded-proto)%://%REQ(:authority)%/oauth2/callback\"",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"logoutPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The path to log a user out, clearing their credential cookies.\n\nIf not specified, uses a default logout path \"/logout\"",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"forwardAccessToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ForwardAccessToken indicates whether the Envoy should forward the access token via the Authorization header Bearer scheme to the upstream. If not specified, defaults to false.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"defaultTokenTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DefaultTokenTTL is the default lifetime of the id token and access token. Please note that Envoy will always use the expiry time from the response of the authorization server if it is provided. This field is only used when the expiry time is not provided by the authorization.\n\nIf not specified, defaults to 0. In this case, the \"expires_in\" field in the authorization response must be set by the authorization server, or the OAuth flow will fail.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"refreshToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RefreshToken indicates whether the Envoy should automatically refresh the id token and access token when they expire. When set to true, the Envoy will use the refresh token to get a new id token and access token when they expire.\n\nIf not specified, defaults to false.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"defaultRefreshTokenTTL": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DefaultRefreshTokenTTL is the default lifetime of the refresh token. This field is only used when the exp (expiration time) claim is omitted in the refresh token or the refresh token is not JWT.\n\nIf not specified, defaults to 604800s (one week). Note: this field is only applicable when the \"refreshToken\" field is set to true.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+				Required: []string{"provider", "clientID", "clientSecret"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/envoygateway/v1alpha1.OIDCCookieNames", "k8s.io/envoygateway/v1alpha1.OIDCProvider", "k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_OIDCCookieNames(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "OIDCCookieNames defines the names of cookies to use in the Envoy OIDC filter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"accessToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The name of the cookie used to store the AccessToken in the [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest). If not specified, defaults to \"AccessToken-(randomly generated uid)\"",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"idToken": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The name of the cookie used to store the IdToken in the [Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest). If not specified, defaults to \"IdToken-(randomly generated uid)\"",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_OIDCProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "OIDCProvider defines the OIDC Provider configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"issuer": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The OIDC Provider's [issuer identifier](https://openid.net/specs/openid-connect-discovery-1_0.html#IssuerDiscovery). Issuer MUST be a URI RFC 3986 [RFC3986] with a scheme component that MUST be https, a host component, and optionally, port and path components and no query or fragment components.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"authorizationEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The OIDC Provider's [authorization endpoint](https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint). If not provided, EG will try to discover it from the provider's [Well-Known Configuration Endpoint](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationResponse).",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"tokenEndpoint": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The OIDC Provider's [token endpoint](https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint). If not provided, EG will try to discover it from the provider's [Well-Known Configuration Endpoint](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationResponse).",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"issuer"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_OpenTelemetryEnvoyProxyAccessLog(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "OpenTelemetryEnvoyProxyAccessLog defines the OpenTelemetry access log sink.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host define the extension service hostname. Deprecated: Use BackendRefs instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port the extension service is exposed on. Deprecated: Use BackendRefs instead.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"resources": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Resources is a set of labels that describe the source of a log entry, including envoy node info. It's recommended to follow [semantic conventions](https://opentelemetry.io/docs/reference/specification/resource/semantic_conventions/).",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_PassiveHealthCheck(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "PassiveHealthCheck defines the configuration for passive health checks in the context of Envoy's Outlier Detection, see https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/outlier",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"splitExternalLocalOriginErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SplitExternalLocalOriginErrors enables splitting of errors between external and local origin.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"interval": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Interval defines the time between passive health checks.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"consecutiveLocalOriginFailures": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConsecutiveLocalOriginFailures sets the number of consecutive local origin failures triggering ejection. Parameter takes effect only when split_external_local_origin_errors is set to true.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"consecutiveGatewayErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ConsecutiveGatewayErrors sets the number of consecutive gateway errors triggering ejection.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"consecutive5XxErrors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Consecutive5xxErrors sets the number of consecutive 5xx errors triggering ejection.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"baseEjectionTime": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BaseEjectionTime defines the base duration for which a host will be ejected on consecutive failures.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"maxEjectionPercent": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MaxEjectionPercent sets the maximum percentage of hosts in a cluster that can be ejected.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_PathSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "PathSettings provides settings that managing how the incoming path set by clients is handled.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"escapedSlashesAction": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EscapedSlashesAction determines how %2f, %2F, %5c, or %5C sequences in the path URI should be handled. The default is UnescapeAndRedirect.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"disableMergeSlashes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DisableMergeSlashes allows disabling the default configuration of merging adjacent slashes in the path. Note that slash merging is not part of the HTTP spec and is provided for convenience.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_PerRetryPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout is the timeout per retry attempt.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"backOff": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Backoff is the backoff policy to be applied per retry attempt. gateway uses a fully jittered exponential back-off algorithm for retries. For additional details, see https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/router_filter#config-http-filters-router-x-envoy-max-retries",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BackOffPolicy"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/envoygateway/v1alpha1.BackOffPolicy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_PolicyTargetReferences(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"targetRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef is the name of the resource this policy is being attached to. This policy and the TargetRef MUST be in the same namespace for this Policy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+						},
+					},
+					"targetRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRefs are the names of the Gateway resources this policy is being attached to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+									},
+								},
+							},
+						},
+					},
+					"targetSelectors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetSelectors allow targeting resources for this policy based on labels",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.TargetSelector"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.TargetSelector", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Principal(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "If there are multiple principal types, all principals must match for the rule to match.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"clientCIDRs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClientCIDRs are the IP CIDR ranges of the client. Valid examples are \"192.168.1.0/24\" or \"2001:db8::/64\"\n\nIf multiple CIDR ranges are specified, one of the CIDR ranges must match the client IP for the rule to match.\n\nThe client IP is inferred from the X-Forwarded-For header, a custom header, or the proxy protocol. You can use the `ClientIPDetection` or the `EnableProxyProtocol` field in the `ClientTrafficPolicy` to configure how the client IP is detected.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"jwt": {
+						SchemaProps: spec.SchemaProps{
+							Description: "JWT authorize the request based on the JWT claims and scopes. Note: in order to use JWT claims for authorization, you must configure the JWT authentication in the same `SecurityPolicy`.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.JWTPrincipal"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.JWTPrincipal"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProcessingModeOptions(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProcessingModeOptions defines if headers or body should be processed by the external service and which attributes are sent to the processor",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"body": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Defines body processing mode",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"attributes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Defines which attributes are sent to the external processor. Envoy Gateway currently supports only the following attribute prefixes: connection, source, destination, request, response, upstream and xds.route. https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/advanced/attributes",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyAccessLog(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"disable": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disable disables access logging for managed proxies if set to true.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"settings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Settings defines accesslog settings for managed proxies. If unspecified, will send default format to stdout.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.ProxyAccessLogSetting"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ProxyAccessLogSetting"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyAccessLogFormat(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyAccessLogFormat defines the format of accesslog. By default accesslogs are written to standard output.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of accesslog format.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"text": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Text defines the text accesslog format, following Envoy accesslog formatting, It's required when the format type is \"Text\". Envoy [command operators](https://www.envoyproxy.io/docs/envoy/latest/configuration/observability/access_log/usage#command-operators) may be used in the format. The [format string documentation](https://www.envoyproxy.io/docs/envoy/latest/configuration/observability/access_log/usage#config-access-log-format-strings) provides more information.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"json": {
+						SchemaProps: spec.SchemaProps{
+							Description: "JSON is additional attributes that describe the specific event occurrence. Structured format for the envoy access logs. Envoy [command operators](https://www.envoyproxy.io/docs/envoy/latest/configuration/observability/access_log/usage#command-operators) can be used as values for fields within the Struct. It's required when the format type is \"JSON\".",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"json": "JSON",
+								"text": "Text",
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyAccessLogSetting(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"format": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Format defines the format of accesslog. This will be ignored if sink type is ALS.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyAccessLogFormat"),
+						},
+					},
+					"matches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Matches defines the match conditions for accesslog in CEL expression. An accesslog will be emitted only when one or more match conditions are evaluated to true. Invalid [CEL](https://www.envoyproxy.io/docs/envoy/latest/xds/type/v3/cel.proto.html#common-expression-language-cel-proto) expressions will be ignored.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"sinks": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Sinks defines the sinks of accesslog.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.ProxyAccessLogSink"),
+									},
+								},
+							},
+						},
+					},
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the component emitting the accesslog, such as Listener and Route. If type not defined, the setting would apply to: (1) All Routes. (2) Listeners if and only if Envoy does not find a matching route for a request. If type is defined, the accesslog settings would apply to the relevant component (as-is).",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"sinks"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ProxyAccessLogFormat", "k8s.io/envoygateway/v1alpha1.ProxyAccessLogSink"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyAccessLogSink(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyAccessLogSink defines the sink of accesslog.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of accesslog sink.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"als": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ALS defines the gRPC Access Log Service (ALS) sink.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ALSEnvoyProxyAccessLog"),
+						},
+					},
+					"file": {
+						SchemaProps: spec.SchemaProps{
+							Description: "File defines the file accesslog sink.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.FileEnvoyProxyAccessLog"),
+						},
+					},
+					"openTelemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "OpenTelemetry defines the OpenTelemetry accesslog sink.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.OpenTelemetryEnvoyProxyAccessLog"),
+						},
+					},
+				},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"als":           "ALS",
+								"file":          "File",
+								"openTelemetry": "OpenTelemetry",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ALSEnvoyProxyAccessLog", "k8s.io/envoygateway/v1alpha1.FileEnvoyProxyAccessLog", "k8s.io/envoygateway/v1alpha1.OpenTelemetryEnvoyProxyAccessLog"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyBootstrap(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyBootstrap defines Envoy Bootstrap configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of the bootstrap configuration, it should be either Replace,  Merge, or JSONPatch. If unspecified, it defaults to Replace.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is a YAML string of the bootstrap.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"jsonPatches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "JSONPatches is an array of JSONPatches to be applied to the default bootstrap. Patches are applied in the order in which they are defined.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.JSONPatchOperation"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"jsonPatches": "JSONPatches",
+								"value":       "Value",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.JSONPatchOperation"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyLogging(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyLogging defines logging parameters for managed proxies.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"level": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Level is a map of logging level per component, where the component is the key and the log level is the value. If unspecified, defaults to \"default: warn\".",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyMetricSink(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyMetricSink defines the sink of metrics. Default metrics sink is OpenTelemetry.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the metric sink type. EG currently only supports OpenTelemetry.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"openTelemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "OpenTelemetry defines the configuration for OpenTelemetry sink. It's required if the sink type is OpenTelemetry.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyOpenTelemetrySink"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"openTelemetry": "OpenTelemetry",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ProxyOpenTelemetrySink"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyMetrics(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"prometheus": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Prometheus defines the configuration for Admin endpoint `/stats/prometheus`.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyPrometheusProvider"),
+						},
+					},
+					"sinks": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Sinks defines the metric sinks where metrics are sent to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.ProxyMetricSink"),
+									},
+								},
+							},
+						},
+					},
+					"matches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Matches defines configuration for selecting specific metrics instead of generating all metrics stats that are enabled by default. This helps reduce CPU and memory overhead in Envoy, but eliminating some stats may after critical functionality. Here are the stats that we strongly recommend not disabling: `cluster_manager.warming_clusters`, `cluster.<cluster_name>.membership_total`,`cluster.<cluster_name>.membership_healthy`, `cluster.<cluster_name>.membership_degraded`，reference  https://github.com/envoyproxy/envoy/issues/9856, https://github.com/envoyproxy/envoy/issues/14610",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.StringMatch"),
+									},
+								},
+							},
+						},
+					},
+					"enableVirtualHostStats": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableVirtualHostStats enables envoy stat metrics for virtual hosts.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"enablePerEndpointStats": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnablePerEndpointStats enables per endpoint envoy stats metrics. Please use with caution.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"enableRequestResponseSizesStats": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableRequestResponseSizesStats enables publishing of histograms tracking header and body sizes of requests and responses.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ProxyMetricSink", "k8s.io/envoygateway/v1alpha1.ProxyPrometheusProvider", "k8s.io/envoygateway/v1alpha1.StringMatch"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyOpenTelemetrySink(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyOpenTelemetrySink defines the configuration for OpenTelemetry sink.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host define the service hostname. Deprecated: Use BackendRefs instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port the service is exposed on. Deprecated: Use BackendRefs instead.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyPrometheusProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"disable": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disable the Prometheus endpoint.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"compression": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Configure the compression on Prometheus endpoint. Compression is useful in situations when bandwidth is scarce and large payloads can be effectively compressed at the expense of higher CPU load.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Compression"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.Compression"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyProtocol(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ProxyProtocol defines the configuration related to the proxy protocol when communicating with the backend.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"version": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Version of ProxyProtol Valid ProxyProtocolVersion values are \"V1\" \"V2\"",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"version"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyTelemetry(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"accessLog": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AccessLogs defines accesslog parameters for managed proxies. If unspecified, will send default format to stdout.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyAccessLog"),
+						},
+					},
+					"tracing": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Tracing defines tracing configuration for managed proxies. If unspecified, will not send tracing data.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyTracing"),
+						},
+					},
+					"metrics": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Metrics defines metrics configuration for managed proxies.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ProxyMetrics"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ProxyAccessLog", "k8s.io/envoygateway/v1alpha1.ProxyMetrics", "k8s.io/envoygateway/v1alpha1.ProxyTracing"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ProxyTracing(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"samplingRate": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SamplingRate controls the rate at which traffic will be selected for tracing if no prior sampling decision has been made. Defaults to 100, valid values [0-100]. 100 indicates 100% sampling.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"customTags": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CustomTags defines the custom tags to add to each span. If provider is kubernetes, pod name and namespace are added by default.",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.CustomTag"),
+									},
+								},
+							},
+						},
+					},
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Provider defines the tracing provider.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TracingProvider"),
+						},
+					},
+				},
+				Required: []string{"provider"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.CustomTag", "k8s.io/envoygateway/v1alpha1.TracingProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimit(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimit defines the configuration associated with the Rate Limit Service used for Global Rate Limiting.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backend": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Backend holds the configuration associated with the database backend used by the rate limit service to store state associated with global ratelimiting.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitDatabaseBackend"),
+						},
+					},
+					"timeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout specifies the timeout period for the proxy to access the ratelimit server If not set, timeout is 20ms.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"failClosed": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FailClosed is a switch used to control the flow of traffic when the response from the ratelimit server cannot be obtained. If FailClosed is false, let the traffic pass, otherwise, don't let the traffic pass and return 500. If not set, FailClosed is False.",
+							Default:     false,
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"telemetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Telemetry defines telemetry configuration for RateLimit.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitTelemetry"),
+						},
+					},
+				},
+				Required: []string{"backend", "failClosed"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration", "k8s.io/envoygateway/v1alpha1.RateLimitDatabaseBackend", "k8s.io/envoygateway/v1alpha1.RateLimitTelemetry"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitCost(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"request": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Request specifies the number to reduce the rate limit counters on the request path. If this is not specified, the default behavior is to reduce the rate limit counters by 1.\n\nWhen Envoy receives a request that matches the rule, it tries to reduce the rate limit counters by the specified number. If the counter doesn't have enough capacity, the request is rate limited.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitCostSpecifier"),
+						},
+					},
+					"response": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Response specifies the number to reduce the rate limit counters after the response is sent back to the client or the request stream is closed.\n\nThe cost is used to reduce the rate limit counters for the matching requests. Since the reduction happens after the request stream is complete, the rate limit won't be enforced for the current request, but for the subsequent matching requests.\n\nThis is optional and if not specified, the rate limit counters are not reduced on the response path.\n\nCurrently, this is only supported for HTTP Global Rate Limits.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitCostSpecifier"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitCostSpecifier"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitCostMetadata(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitCostMetadata specifies the filter metadata to retrieve the usage number from.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the dynamic metadata.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"key": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Key is the key to retrieve the usage number from the filter metadata.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"namespace", "key"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitCostSpecifier(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitCostSpecifier specifies where the Envoy retrieves the number to reduce the rate limit counters.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"from": {
+						SchemaProps: spec.SchemaProps{
+							Description: "From specifies where to get the rate limit cost. Currently, only \"Number\" and \"Metadata\" are supported.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"number": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Number specifies the fixed usage number to reduce the rate limit counters. Using zero can be used to only check the rate limit counters without reducing them.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Metadata specifies the per-request metadata to retrieve the usage number from.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitCostMetadata"),
+						},
+					},
+				},
+				Required: []string{"from"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitCostMetadata"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitDatabaseBackend(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitDatabaseBackend defines the configuration associated with the database backend used by the rate limit service.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of database backend to use. Supported types are:\n\t* Redis: Connects to a Redis database.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"redis": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Redis defines the settings needed to connect to a Redis database.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitRedisSettings"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"redis": "Redis",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitRedisSettings"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitMetrics(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"prometheus": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Prometheus defines the configuration for prometheus endpoint.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitMetricsPrometheusProvider"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitMetricsPrometheusProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitMetricsPrometheusProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"disable": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disable the Prometheus endpoint.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitRedisSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitRedisSettings defines the configuration for connecting to redis database.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URL of the Redis Database.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"tls": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLS defines TLS configuration for connecting to redis database.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RedisTLSSettings"),
+						},
+					},
+				},
+				Required: []string{"url"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RedisTLSSettings"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitRule defines the semantics for matching attributes from the incoming requests, and setting limits for them.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"clientSelectors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClientSelectors holds the list of select conditions to select specific clients using attributes from the traffic flow. All individual select conditions must hold True for this rule and its limit to be applied.\n\nIf no client selectors are specified, the rule applies to all traffic of the targeted Route.\n\nIf the policy targets a Gateway, the rule applies to each Route of the Gateway. Please note that each Route has its own rate limit counters. For example, if a Gateway has two Routes, and the policy has a rule with limit 10rps, each Route will have its own 10rps limit.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.RateLimitSelectCondition"),
+									},
+								},
+							},
+						},
+					},
+					"limit": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Limit holds the rate limit values. This limit is applied for traffic flows when the selectors compute to True, causing the request to be counted towards the limit. The limit is enforced and the request is ratelimited, i.e. a response with 429 HTTP status code is sent back to the client when the selected requests have reached the limit.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitValue"),
+						},
+					},
+					"cost": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Cost specifies the cost of requests and responses for the rule.\n\nThis is optional and if not specified, the default behavior is to reduce the rate limit counters by 1 on the request path and do not reduce the rate limit counters on the response path.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitCost"),
+						},
+					},
+				},
+				Required: []string{"limit"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitCost", "k8s.io/envoygateway/v1alpha1.RateLimitSelectCondition", "k8s.io/envoygateway/v1alpha1.RateLimitValue"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitSelectCondition(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitSelectCondition specifies the attributes within the traffic flow that can be used to select a subset of clients to be ratelimited. All the individual conditions must hold True for the overall condition to hold True.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"headers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Headers is a list of request headers to match. Multiple header values are ANDed together, meaning, a request MUST match all the specified headers. At least one of headers or sourceCIDR condition must be specified.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.HeaderMatch"),
+									},
+								},
+							},
+						},
+					},
+					"sourceCIDR": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SourceCIDR is the client IP Address range to match on. At least one of headers or sourceCIDR condition must be specified.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.SourceMatch"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HeaderMatch", "k8s.io/envoygateway/v1alpha1.SourceMatch"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitSpec defines the desired state of RateLimitSpec.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type decides the scope for the RateLimits. Valid RateLimitType values are \"Global\" or \"Local\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"global": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Global defines global rate limit configuration.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.GlobalRateLimit"),
+						},
+					},
+					"local": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Local defines local rate limit configuration.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.LocalRateLimit"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"global": "Global",
+								"local":  "Local",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.GlobalRateLimit", "k8s.io/envoygateway/v1alpha1.LocalRateLimit"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitTelemetry(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"metrics": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Metrics defines metrics configuration for RateLimit.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitMetrics"),
+						},
+					},
+					"tracing": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Tracing defines traces configuration for RateLimit.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitTracing"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitMetrics", "k8s.io/envoygateway/v1alpha1.RateLimitTracing"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitTracing(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"samplingRate": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SamplingRate controls the rate at which traffic will be selected for tracing if no prior sampling decision has been made. Defaults to 100, valid values [0-100]. 100 indicates 100% sampling.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"provider": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Provider defines the rateLimit tracing provider. Only OpenTelemetry is supported currently.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RateLimitTracingProvider"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.RateLimitTracingProvider"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitTracingProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitTracingProvider defines the tracing provider configuration of RateLimit",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the tracing provider type. Since to RateLimit Exporter currently using OpenTelemetry, only OpenTelemetry is supported",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"url": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URL is the endpoint of the trace collector that supports the OTLP protocol",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"url"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RateLimitValue(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RateLimitValue defines the limits for rate limiting.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"requests": {
+						SchemaProps: spec.SchemaProps{
+							Default: 0,
+							Type:    []string{"integer"},
+							Format:  "int32",
+						},
+					},
+					"unit": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+				},
+				Required: []string{"requests", "unit"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RedisTLSSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RedisTLSSettings defines the TLS configuration for connecting to redis database.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"certificateRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateRef defines the client certificate reference for TLS connections. Currently only a Kubernetes Secret of type TLS is supported.",
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RemoteJWKS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RemoteJWKS defines how to fetch and cache JSON Web Key Sets (JWKS) from a remote HTTP/HTTPS endpoint.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"uri": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URI is the HTTPS URI to fetch the JWKS. Envoy's system trust bundle is used to validate the server certificate.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"uri"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ReplaceRegexMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"pattern": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Pattern matches a regular expression against the value of the HTTP Path.The regex string must adhere to the syntax documented in https://github.com/google/re2/wiki/Syntax.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"substitution": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Substitution is an expression that replaces the matched portion.The expression may include numbered capture groups that adhere to syntax documented in https://github.com/google/re2/wiki/Syntax.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"pattern", "substitution"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RequestHeaderCustomTag(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RequestHeaderCustomTag adds value from request header to each span.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name defines the name of the request header which to extract the value from.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"defaultValue": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DefaultValue defines the default value to use if the request header is not set.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ResponseOverride(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ResponseOverride defines the configuration to override specific responses with a custom one.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"match": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Match configuration.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CustomResponseMatch"),
+						},
+					},
+					"response": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Response configuration.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CustomResponse"),
+						},
+					},
+				},
+				Required: []string{"match", "response"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.CustomResponse", "k8s.io/envoygateway/v1alpha1.CustomResponseMatch"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Retry(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Retry defines the retry strategy to be applied.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"numRetries": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NumRetries is the number of retries to be attempted. Defaults to 2.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"retryOn": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RetryOn specifies the retry trigger condition.\n\nIf not specified, the default is to retry on connect-failure,refused-stream,unavailable,cancelled,retriable-status-codes(503).",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.RetryOn"),
+						},
+					},
+					"perRetry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PerRetry is the retry policy to be applied per retry attempt.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.PerRetryPolicy"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.PerRetryPolicy", "k8s.io/envoygateway/v1alpha1.RetryOn"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_RetryOn(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"triggers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Triggers specifies the retry trigger condition(Http/Grpc).",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"httpStatusCodes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HttpStatusCodes specifies the http status codes to be retried. The retriable-status-codes trigger must also be configured for these status codes to trigger a retry.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: 0,
+										Type:    []string{"integer"},
+										Format:  "int32",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_SecurityPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SecurityPolicy allows the user to configure various security settings for a Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of SecurityPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.SecurityPolicySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current status of SecurityPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.PolicyStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/envoygateway/v1alpha1.SecurityPolicySpec", "k8s.io/gateway-api/v1alpha2.PolicyStatus"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_SecurityPolicyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SecurityPolicyList contains a list of SecurityPolicy resources.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.SecurityPolicy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/envoygateway/v1alpha1.SecurityPolicy"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_SecurityPolicySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SecurityPolicySpec defines the desired state of SecurityPolicy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"targetRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef is the name of the resource this policy is being attached to. This policy and the TargetRef MUST be in the same namespace for this Policy to have effect\n\nDeprecated: use targetRefs/targetSelectors instead",
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+						},
+					},
+					"targetRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRefs are the names of the Gateway resources this policy is being attached to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"),
+									},
+								},
+							},
+						},
+					},
+					"targetSelectors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetSelectors allow targeting resources for this policy based on labels",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.TargetSelector"),
+									},
+								},
+							},
+						},
+					},
+					"cors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CORS defines the configuration for Cross-Origin Resource Sharing (CORS).",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.CORS"),
+						},
+					},
+					"basicAuth": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BasicAuth defines the configuration for the HTTP Basic Authentication.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.BasicAuth"),
+						},
+					},
+					"jwt": {
+						SchemaProps: spec.SchemaProps{
+							Description: "JWT defines the configuration for JSON Web Token (JWT) authentication.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.JWT"),
+						},
+					},
+					"oidc": {
+						SchemaProps: spec.SchemaProps{
+							Description: "OIDC defines the configuration for the OpenID Connect (OIDC) authentication.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.OIDC"),
+						},
+					},
+					"extAuth": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtAuth defines the configuration for External Authorization.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ExtAuth"),
+						},
+					},
+					"authorization": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Authorization defines the authorization configuration.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.Authorization"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.Authorization", "k8s.io/envoygateway/v1alpha1.BasicAuth", "k8s.io/envoygateway/v1alpha1.CORS", "k8s.io/envoygateway/v1alpha1.ExtAuth", "k8s.io/envoygateway/v1alpha1.JWT", "k8s.io/envoygateway/v1alpha1.OIDC", "k8s.io/envoygateway/v1alpha1.TargetSelector", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReferenceWithSectionName"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Session(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Session defines settings related to TLS session management.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"resumption": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Resumption determines the proxy's supported TLS session resumption option. By default, Envoy Gateway does not enable session resumption. Use sessionResumption to enable stateful and stateless session resumption. Users should consider security impacts of different resumption methods. Performance gains from resumption are diminished when Envoy proxy is deployed with more than one replica.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.SessionResumption"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.SessionResumption"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_SessionResumption(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SessionResumption defines supported tls session resumption methods and their associated configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"stateless": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Stateless defines setting for stateless (session-ticket based) session resumption",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.StatelessTLSSessionResumption"),
+						},
+					},
+					"stateful": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Stateful defines setting for stateful (session-id based) session resumption",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.StatefulTLSSessionResumption"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.StatefulTLSSessionResumption", "k8s.io/envoygateway/v1alpha1.StatelessTLSSessionResumption"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ShutdownConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ShutdownConfig defines configuration for graceful envoy shutdown process.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"drainTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DrainTimeout defines the graceful drain timeout. This should be less than the pod's terminationGracePeriodSeconds. If unspecified, defaults to 60 seconds.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+					"minDrainDuration": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MinDrainDuration defines the minimum drain duration allowing time for endpoint deprogramming to complete. If unspecified, defaults to 10 seconds.",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ShutdownManager(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ShutdownManager defines the configuration for the shutdown manager.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"image": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Image specifies the ShutdownManager container image to be used, instead of the default image.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_SlowStart(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SlowStart defines the configuration related to the slow start load balancer policy.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"window": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Window defines the duration of the warm up period for newly added host. During slow start window, traffic sent to the newly added hosts will gradually increase. Currently only supports linear growth of traffic. For additional details, see https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/cluster/v3/cluster.proto#config-cluster-v3-cluster-slowstartconfig",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.Duration"),
+						},
+					},
+				},
+				Required: []string{"window"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Duration"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_SourceMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is the IP CIDR that represents the range of Source IP Addresses of the client. These could also be the intermediate addresses through which the request has flown through and is part of the  `X-Forwarded-For` header. For example, `192.168.0.1/32`, `192.168.0.0/24`, `001:db8::/64`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_StatefulTLSSessionResumption(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "StatefulTLSSessionResumption defines the stateful (session-id based) type of TLS session resumption. Note: When Envoy Proxy is deployed with more than one replica, session caches are not synchronized between instances, possibly leading to resumption failures. Envoy does not re-validate client certificates upon session resumption. https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/route/v3/route_components.proto#config-route-v3-routematch-tlscontextmatchoptions",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_StatelessTLSSessionResumption(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "StatelessTLSSessionResumption defines the stateless (session-ticket based) type of TLS session resumption. Note: When Envoy Proxy is deployed with more than one replica, session ticket encryption keys are not synchronized between instances, possibly leading to resumption failures. In-memory session ticket encryption keys are rotated every 48 hours. https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/transport_sockets/tls/v3/common.proto#extensions-transport-sockets-tls-v3-tlssessionticketkeys https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#Session-tickets",
+				Type:        []string{"object"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_StatusCodeMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "StatusCodeMatch defines the configuration for matching a status code.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of value. Valid values are Value and Range, default is Value.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value contains the value of the status code.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"range": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Range contains the range of status codes.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.StatusCodeRange"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.StatusCodeRange"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_StatusCodeRange(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "StatusCodeRange defines the configuration for define a range of status codes.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"start": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Start of the range, including the start value.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"end": {
+						SchemaProps: spec.SchemaProps{
+							Description: "End of the range, including the end value.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"start", "end"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_StringMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "StringMatch defines how to match any strings. This is a general purpose match condition that can be used by other EG APIs that need to match against a string.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against a string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value specifies the string value that the match must have.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TCPActiveHealthChecker(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPActiveHealthChecker defines the settings of tcp health check.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"send": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Send defines the request payload.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ActiveHealthCheckPayload"),
+						},
+					},
+					"receive": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Receive defines the expected response payload.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ActiveHealthCheckPayload"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.ActiveHealthCheckPayload"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TCPClientTimeout(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPClientTimeout only provides timeout configuration on the listener whose protocol is TCP or TLS.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"idleTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IdleTimeout for a TCP connection. Idle time is defined as a period in which there are no bytes sent or received on either the upstream or downstream connection. Default: 1 hour.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TCPKeepalive(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPKeepalive define the TCP Keepalive configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"probes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The total number of unacknowledged probes to send before deciding the connection is dead. Defaults to 9.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"idleTime": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration a connection needs to be idle before keep-alive probes start being sent. The duration format is Defaults to `7200s`.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"interval": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The duration between keep-alive probes. Defaults to `75s`.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TCPTimeout(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"connectTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "The timeout for network connection establishment, including TCP and TLS handshakes. Default: 10 seconds.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TLSSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"minVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Min specifies the minimal TLS protocol version to allow. The default is TLS 1.2 if this is not specified.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"maxVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Max specifies the maximal TLS protocol version to allow The default is TLS 1.3 if this is not specified.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"ciphers": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Ciphers specifies the set of cipher suites supported when negotiating TLS 1.0 - 1.2. This setting has no effect for TLS 1.3. In non-FIPS Envoy Proxy builds the default cipher list is: - [ECDHE-ECDSA-AES128-GCM-SHA256|ECDHE-ECDSA-CHACHA20-POLY1305] - [ECDHE-RSA-AES128-GCM-SHA256|ECDHE-RSA-CHACHA20-POLY1305] - ECDHE-ECDSA-AES256-GCM-SHA384 - ECDHE-RSA-AES256-GCM-SHA384 In builds using BoringSSL FIPS the default cipher list is: - ECDHE-ECDSA-AES128-GCM-SHA256 - ECDHE-RSA-AES128-GCM-SHA256 - ECDHE-ECDSA-AES256-GCM-SHA384 - ECDHE-RSA-AES256-GCM-SHA384",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"ecdhCurves": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ECDHCurves specifies the set of supported ECDH curves. In non-FIPS Envoy Proxy builds the default curves are: - X25519 - P-256 In builds using BoringSSL FIPS the default curve is: - P-256",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"signatureAlgorithms": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SignatureAlgorithms specifies which signature algorithms the listener should support.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"alpnProtocols": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ALPNProtocols supplies the list of ALPN protocols that should be exposed by the listener or used by the proxy to connect to the backend. Defaults: 1. HTTPS Routes: h2 and http/1.1 are enabled in listener context. 2. Other Routes: ALPN is disabled. 3. Backends: proxy uses the appropriate ALPN options for the backend protocol. When an empty list is provided, the ALPN TLS extension is disabled. Supported values are: - http/1.0 - http/1.1 - h2",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TargetSelector(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group that this selector targets. Defaults to gateway.networking.k8s.io",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the resource kind that this selector targets.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"matchLabels": {
+						SchemaProps: spec.SchemaProps{
+							Description: "MatchLabels are the set of label selectors for identifying the targeted resource",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"kind", "matchLabels"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Timeout(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Timeout defines configuration for timeouts related to connections.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"tcp": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for TCP.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.TCPTimeout"),
+						},
+					},
+					"http": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeout settings for HTTP.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPTimeout"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HTTPTimeout", "k8s.io/envoygateway/v1alpha1.TCPTimeout"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_TracingProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TracingProvider defines the tracing provider configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a Kubernetes object that represents the backend server to which the authorization request will be sent.\n\nDeprecated: Use BackendRefs instead.",
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs references a Kubernetes object that represents the backend server to which the authorization request will be sent.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/envoygateway/v1alpha1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"backendSettings": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendSettings holds configuration for managing the connection to the backend.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ClusterSettings"),
+						},
+					},
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the tracing provider type.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"host": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Host define the provider service hostname. Deprecated: Use BackendRefs instead.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port defines the port the provider service is exposed on. Deprecated: Use BackendRefs instead.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"zipkin": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Zipkin defines the Zipkin tracing provider configuration",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ZipkinTracingProvider"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.BackendRef", "k8s.io/envoygateway/v1alpha1.ClusterSettings", "k8s.io/envoygateway/v1alpha1.ZipkinTracingProvider", "k8s.io/gateway-api/v1.BackendObjectReference"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_UnixSocket(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UnixSocket describes TCP/UDP unix domain socket address, corresponding to Envoy's Pipe https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/core/v3/address.proto#config-core-v3-pipe",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path defines the unix domain socket path of the backend endpoint.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"path"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_Wasm(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Wasm defines a Wasm extension.\n\nNote: at the moment, Envoy Gateway does not support configuring Wasm runtime. v8 is used as the VM runtime for the Wasm extensions.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is a unique name for this Wasm extension. It is used to identify the Wasm extension if multiple extensions are handled by the same vm_id and root_id. It's also used for logging/debugging. If not specified, EG will generate a unique name for the Wasm extension.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"rootID": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RootID is a unique ID for a set of extensions in a VM which will share a RootContext and Contexts if applicable (e.g., an Wasm HttpFilter and an Wasm AccessLog). If left blank, all extensions with a blank root_id with the same vm_id will share Context(s).\n\nNote: RootID must match the root_id parameter used to register the Context in the Wasm code.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"code": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Code is the Wasm code for the extension.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.WasmCodeSource"),
+						},
+					},
+					"config": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Config is the configuration for the Wasm extension. This configuration will be passed as a JSON string to the Wasm extension.",
+							Ref:         ref("k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1.JSON"),
+						},
+					},
+					"failOpen": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FailOpen is a switch used to control the behavior when a fatal error occurs during the initialization or the execution of the Wasm extension. If FailOpen is set to true, the system bypasses the Wasm extension and allows the traffic to pass through. Otherwise, if it is set to false or not set (defaulting to false), the system blocks the traffic and returns an HTTP 5xx error.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"env": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Env configures the environment for the Wasm extension",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.WasmEnv"),
+						},
+					},
+				},
+				Required: []string{"code"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1.JSON", "k8s.io/envoygateway/v1alpha1.WasmCodeSource", "k8s.io/envoygateway/v1alpha1.WasmEnv"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_WasmCodeSource(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "WasmCodeSource defines the source of the Wasm code.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type is the type of the source of the Wasm code. Valid WasmCodeSourceType values are \"HTTP\" or \"Image\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"http": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HTTP is the HTTP URL containing the Wasm code.\n\nNote that the HTTP server must be accessible from the Envoy proxy.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.HTTPWasmCodeSource"),
+						},
+					},
+					"image": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Image is the OCI image containing the Wasm code.\n\nNote that the image must be accessible from the Envoy Gateway.",
+							Ref:         ref("k8s.io/envoygateway/v1alpha1.ImageWasmCodeSource"),
+						},
+					},
+					"pullPolicy": {
+						SchemaProps: spec.SchemaProps{
+							Description: "PullPolicy is the policy to use when pulling the Wasm module by either the HTTP or Image source. This field is only applicable when the SHA256 field is not set.\n\nIf not specified, the default policy is IfNotPresent except for OCI images whose tag is latest.\n\nNote: EG does not update the Wasm module every time an Envoy proxy requests the Wasm module even if the pull policy is set to Always. It only updates the Wasm module when the EnvoyExtension resource version changes.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+			VendorExtensible: spec.VendorExtensible{
+				Extensions: spec.Extensions{
+					"x-kubernetes-unions": []interface{}{
+						map[string]interface{}{
+							"discriminator": "type",
+							"fields-to-discriminateBy": map[string]interface{}{
+								"http":       "HTTP",
+								"image":      "Image",
+								"pullPolicy": "PullPolicy",
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/envoygateway/v1alpha1.HTTPWasmCodeSource", "k8s.io/envoygateway/v1alpha1.ImageWasmCodeSource"},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_WasmEnv(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "WasmEnv defines the environment variables for the VM of a Wasm extension",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"hostKeys": {
+						SchemaProps: spec.SchemaProps{
+							Description: "HostKeys is a list of keys for environment variables from the host envoy process that should be passed into the Wasm VM. This is useful for passing secrets to to Wasm extensions.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_XDSTranslatorHooks(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "XDSTranslatorHooks contains all the pre and post hooks for the xds-translator runner.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"pre": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"post": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_XForwardedClientCert(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "XForwardedClientCert configures how Envoy Proxy handle the x-forwarded-client-cert (XFCC) HTTP header.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"mode": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Mode defines how XFCC header is handled by Envoy Proxy. If not set, the default mode is `Sanitize`.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certDetailsToAdd": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertDetailsToAdd specifies the fields in the client certificate to be forwarded in the XFCC header.\n\nHash(the SHA 256 digest of the current client certificate) and By(the Subject Alternative Name) are always included if the client certificate is forwarded.\n\nThis field is only applicable when the mode is set to `AppendForward` or `SanitizeSet` and the client connection is mTLS.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_XForwardedForSettings(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "XForwardedForSettings provides configuration for using X-Forwarded-For headers for determining the client IP address. Refer to https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_conn_man/headers#x-forwarded-for for more details.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"numTrustedHops": {
+						SchemaProps: spec.SchemaProps{
+							Description: "NumTrustedHops controls the number of additional ingress proxy hops from the right side of XFF HTTP headers to trust when determining the origin client's IP address. Only one of NumTrustedHops and TrustedCIDRs must be set.",
+							Type:        []string{"integer"},
+							Format:      "int64",
+						},
+					},
+					"trustedCIDRs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TrustedCIDRs is a list of CIDR ranges to trust when evaluating the remote IP address to determine the original client’s IP address. When the remote IP address matches a trusted CIDR and the x-forwarded-for header was sent, each entry in the x-forwarded-for header is evaluated from right to left and the first public non-trusted address is used as the original client address. If all addresses in x-forwarded-for are within the trusted list, the first (leftmost) entry is used. Only one of NumTrustedHops and TrustedCIDRs must be set.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_envoygateway_v1alpha1_ZipkinTracingProvider(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ZipkinTracingProvider defines the Zipkin tracing provider configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"enable128BitTraceId": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Enable128BitTraceID determines whether a 128bit trace id will be used when creating a new trace instance. If set to false, a 64bit trace id will be used.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"disableSharedSpanContext": {
+						SchemaProps: spec.SchemaProps{
+							Description: "DisableSharedSpanContext determines whether the default Envoy behaviour of client and server spans sharing the same span context should be disabled.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_AllowedRoutes(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "AllowedRoutes defines which Routes may be attached to this Listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"namespaces": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespaces indicates namespaces from which Routes may be attached to this Listener. This is restricted to the namespace of this Gateway by default.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.RouteNamespaces"),
+						},
+					},
+					"kinds": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kinds specifies the groups and kinds of Routes that are allowed to bind to this Gateway Listener. When unspecified or empty, the kinds of Routes selected are determined using the Listener protocol.\n\nA RouteGroupKind MUST correspond to kinds of Routes that are compatible with the application protocol specified in the Listener's Protocol field. If an implementation does not support or recognize this resource type, it MUST set the \"ResolvedRefs\" condition to False for this Listener with the \"InvalidRouteKinds\" reason.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteGroupKind"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteGroupKind", "k8s.io/gateway-api/v1.RouteNamespaces"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_BackendObjectReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendObjectReference defines how an ObjectReference that is specific to BackendRef. It includes a few additional fields and features than a regular ObjectReference.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nThe API object must be valid in the cluster; the Group and Kind must be registered in the cluster for this reference to be valid.\n\nReferences to objects with invalid Group and Kind are not valid, and must be rejected by the implementation, with appropriate Conditions set on the containing object.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the Kubernetes resource kind of the referent. For example \"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live outside of the cluster and as such are difficult to reason about in terms of conformance. They also may not be safe to forward to (see CVE-2021-25740 for more information). Implementations SHOULD NOT support ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the backend. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port specifies the destination port number to use for this resource. Port is required when the referent is a Kubernetes Service. In this case, the port number is the service port number, not the target port. For other resources, destination port might be derived from the referent resource or this field.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_BackendRef(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendRef defines how a Route should forward a request to a Kubernetes resource.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the Kubernetes resource kind of the referent. For example \"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live outside of the cluster and as such are difficult to reason about in terms of conformance. They also may not be safe to forward to (see CVE-2021-25740 for more information). Implementations SHOULD NOT support ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the backend. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port specifies the destination port number to use for this resource. Port is required when the referent is a Kubernetes Service. In this case, the port number is the service port number, not the target port. For other resources, destination port might be derived from the referent resource or this field.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"weight": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Weight specifies the proportion of requests forwarded to the referenced backend. This is computed as weight/(sum of all weights in this BackendRefs list). For non-zero values, there may be some epsilon from the exact proportion defined here depending on the precision an implementation supports. Weight is not a percentage and the sum of weights does not need to equal 100.\n\nIf only one backend is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend. If weight is set to 0, no traffic should be forwarded for this entry. If unspecified, weight defaults to 1.\n\nSupport for this field varies based on the context where used.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_CommonRouteSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CommonRouteSpec defines the common attributes that all Routes MUST include within their spec.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent resources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\n<gateway:standard:validation:XValidation:message=\"sectionName must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '')) : true))\"> <gateway:standard:validation:XValidation:message=\"sectionName must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || (has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName))))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__)) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '') && (!has(p1.port) || p1.port == 0) == (!has(p2.port) || p2.port == 0)): true))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || ( has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName)) && (((!has(p1.port) || p1.port == 0) && (!has(p2.port) || p2.port == 0)) || (has(p1.port) && has(p2.port) && p1.port == p2.port))))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ParentReference"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.ParentReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_CookieConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "CookieConfig defines the configuration for cookie-based session persistence.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"lifetimeType": {
+						SchemaProps: spec.SchemaProps{
+							Description: "LifetimeType specifies whether the cookie has a permanent or session-based lifetime. A permanent cookie persists until its specified expiry time, defined by the Expires or Max-Age cookie attributes, while a session cookie is deleted when the current session ends.\n\nWhen set to \"Permanent\", AbsoluteTimeout indicates the cookie's lifetime via the Expires or Max-Age cookie attributes and is required.\n\nWhen set to \"Session\", AbsoluteTimeout indicates the absolute lifetime of the cookie tracked by the gateway and is optional.\n\nSupport: Core for \"Session\" type\n\nSupport: Extended for \"Permanent\" type",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_Fraction(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"numerator": {
+						SchemaProps: spec.SchemaProps{
+							Default: 0,
+							Type:    []string{"integer"},
+							Format:  "int32",
+						},
+					},
+					"denominator": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"integer"},
+							Format: "int32",
+						},
+					},
+				},
+				Required: []string{"numerator"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_FrontendTLSValidation(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "FrontendTLSValidation holds configuration information that can be used to validate the frontend initiating the TLS connection",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"caCertificateRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CACertificateRefs contains one or more references to Kubernetes objects that contain TLS certificates of the Certificate Authorities that can be used as a trust anchor to validate the certificates presented by the client.\n\nA single CA certificate reference to a Kubernetes ConfigMap has \"Core\" support. Implementations MAY choose to support attaching multiple CA certificates to a Listener, but this behavior is implementation-specific.\n\nSupport: Core - A single reference to a Kubernetes ConfigMap with the CA certificate in a key named `ca.crt`.\n\nSupport: Implementation-specific (More than one reference, or other kinds of resources).\n\nReferences to a resource in a different namespace are invalid UNLESS there is a ReferenceGrant in the target namespace that allows the certificate to be attached. If a ReferenceGrant does not allow this reference, the \"ResolvedRefs\" condition MUST be set to False for this listener with the \"RefNotPermitted\" reason.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ObjectReference"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.ObjectReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCBackendRef(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCBackendRef defines how a GRPCRoute forwards a gRPC request.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\n<gateway:experimental:description>\n\nWhen the BackendRef points to a Kubernetes Service, implementations SHOULD honor the appProtocol field if it is set for the target Service Port.\n\nImplementations supporting appProtocol SHOULD recognize the Kubernetes Standard Application Protocols defined in KEP-3726.\n\nIf a Service appProtocol isn't specified, an implementation MAY infer the backend protocol through its own means. Implementations MAY infer the protocol from the Route type referring to the backend Service.\n\nIf a Route is not able to send traffic to the backend using the specified protocol then the backend is considered invalid. Implementations MUST set the \"ResolvedRefs\" condition to \"False\" with the \"UnsupportedProtocol\" reason.\n\n</gateway:experimental:description>",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the Kubernetes resource kind of the referent. For example \"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live outside of the cluster and as such are difficult to reason about in terms of conformance. They also may not be safe to forward to (see CVE-2021-25740 for more information). Implementations SHOULD NOT support ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the backend. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port specifies the destination port number to use for this resource. Port is required when the referent is a Kubernetes Service. In this case, the port number is the service port number, not the target port. For other resources, destination port might be derived from the referent resource or this field.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"weight": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Weight specifies the proportion of requests forwarded to the referenced backend. This is computed as weight/(sum of all weights in this BackendRefs list). For non-zero values, there may be some epsilon from the exact proportion defined here depending on the precision an implementation supports. Weight is not a percentage and the sum of weights does not need to equal 100.\n\nIf only one backend is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend. If weight is set to 0, no traffic should be forwarded for this entry. If unspecified, weight defaults to 1.\n\nSupport for this field varies based on the context where used.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"filters": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Filters defined at this level MUST be executed if and only if the request is being forwarded to the backend defined here.\n\nSupport: Implementation-specific (For broader support of filters, use the Filters field in GRPCRouteRule.)",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCRouteFilter"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.GRPCRouteFilter"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCHeaderMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCHeaderMatch describes how to select a gRPC route by matching gRPC request headers.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against the value of the header.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the gRPC Header to be matched.\n\nIf multiple entries specify equivalent header names, only the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent header name MUST be ignored. Due to the case-insensitivity of header names, \"foo\" and \"Foo\" are considered equivalent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is the value of the gRPC Header to be matched.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name", "value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCMethodMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCMethodMatch describes how to select a gRPC route by matching the gRPC request service and/or method.\n\nAt least one of Service and Method MUST be a non-empty string.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against the service and/or method. Support: Core (Exact with service and method specified)\n\nSupport: Implementation-specific (Exact with method specified but no service specified)\n\nSupport: Implementation-specific (RegularExpression)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"service": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value of the service to match against. If left empty or omitted, will match any service.\n\nAt least one of Service and Method MUST be a non-empty string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"method": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value of the method to match against. If left empty or omitted, will match all services.\n\nAt least one of Service and Method MUST be a non-empty string.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRoute provides a way to route gRPC requests. This includes the capability to match requests by hostname, gRPC service, gRPC method, or HTTP/2 header. Filters can be used to specify additional processing steps. Backends specify where matching requests will be routed.\n\nGRPCRoute falls under extended support within the Gateway API. Within the following specification, the word \"MUST\" indicates that an implementation supporting GRPCRoute must conform to the indicated requirement, but an implementation not supporting this route type need not follow the requirement unless explicitly indicated.\n\nImplementations supporting `GRPCRoute` with the `HTTPS` `ProtocolType` MUST accept HTTP/2 connections without an initial upgrade from HTTP/1.1, i.e. via ALPN. If the implementation does not support this, then it MUST set the \"Accepted\" condition to \"False\" for the affected listener with a reason of \"UnsupportedProtocol\".  Implementations MAY also accept HTTP/2 connections with an upgrade from HTTP/1.\n\nImplementations supporting `GRPCRoute` with the `HTTP` `ProtocolType` MUST support HTTP/2 over cleartext TCP (h2c, https://www.rfc-editor.org/rfc/rfc7540#section-3.1) without an initial upgrade from HTTP/1.1, i.e. with prior knowledge (https://www.rfc-editor.org/rfc/rfc7540#section-3.4). If the implementation does not support this, then it MUST set the \"Accepted\" condition to \"False\" for the affected listener with a reason of \"UnsupportedProtocol\". Implementations MAY also accept HTTP/2 connections with an upgrade from HTTP/1, i.e. without prior knowledge.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of GRPCRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GRPCRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of GRPCRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GRPCRouteStatus"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.GRPCRouteSpec", "k8s.io/gateway-api/v1.GRPCRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRouteFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRouteFilter defines processing steps that must be completed during the request or response lifecycle. GRPCRouteFilters are meant as an extension point to express processing that may be done in Gateway implementations. Some examples include request or response modification, implementing authentication strategies, rate-limiting, and traffic shaping. API guarantee/conformance is defined based on the type of the filter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type identifies the type of filter to apply. As with other API fields, types are classified into three conformance levels:\n\n- Core: Filter types and their corresponding configuration defined by\n  \"Support: Core\" in this package, e.g. \"RequestHeaderModifier\". All\n  implementations supporting GRPCRoute MUST support core filters.\n\n- Extended: Filter types and their corresponding configuration defined by\n  \"Support: Extended\" in this package, e.g. \"RequestMirror\". Implementers\n  are encouraged to support extended filters.\n\n- Implementation-specific: Filters that are defined and supported by specific vendors.\n  In the future, filters showing convergence in behavior across multiple\n  implementations will be considered for inclusion in extended or core\n  conformance levels. Filter-specific configuration for such filters\n  is specified using the ExtensionRef field. `Type` MUST be set to\n  \"ExtensionRef\" for custom filters.\n\nImplementers are encouraged to define custom implementation types to extend the core API with implementation-specific behavior.\n\nIf a reference to a custom filter type cannot be resolved, the filter MUST NOT be skipped. Instead, requests that would have been processed by that filter MUST receive a HTTP error response.\n\n<gateway:experimental:validation:Enum=ResponseHeaderModifier;RequestHeaderModifier;RequestMirror;ExtensionRef>",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"requestHeaderModifier": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestHeaderModifier defines a schema for a filter that modifies request headers.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPHeaderFilter"),
+						},
+					},
+					"responseHeaderModifier": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ResponseHeaderModifier defines a schema for a filter that modifies response headers.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPHeaderFilter"),
+						},
+					},
+					"requestMirror": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestMirror defines a schema for a filter that mirrors requests. Requests are sent to the specified destination, but responses from that destination are ignored.\n\nThis filter can be used multiple times within the same rule. Note that not all implementations will be able to support mirroring to multiple backends.\n\nSupport: Extended\n\n\n<gateway:experimental:validation:XValidation:message=\"Only one of percent or fraction may be specified in HTTPRequestMirrorFilter\",rule=\"!(has(self.percent) && has(self.fraction))\">",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRequestMirrorFilter"),
+						},
+					},
+					"extensionRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtensionRef is an optional, implementation-specific extension to the \"filter\" behavior.  For example, resource \"myroutefilter\" in group \"networking.example.net\"). ExtensionRef MUST NOT be used for core and extended filters.\n\nSupport: Implementation-specific\n\nThis filter can be used multiple times within the same rule.",
+							Ref:         ref("k8s.io/gateway-api/v1.LocalObjectReference"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPHeaderFilter", "k8s.io/gateway-api/v1.HTTPRequestMirrorFilter", "k8s.io/gateway-api/v1.LocalObjectReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRouteList contains a list of GRPCRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1.GRPCRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRouteMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRouteMatch defines the predicate used to match requests to a given action. Multiple match types are ANDed together, i.e. the match will evaluate to true only if all conditions are satisfied.\n\nFor example, the match below will match a gRPC request only if its service is `foo` AND it contains the `version: v1` header:\n\n``` matches:\n  - method:\n    type: Exact\n    service: \"foo\"\n    headers:\n  - name: \"version\"\n    value \"v1\"\n\n```",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"method": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Method specifies a gRPC request service/method matcher. If this field is not specified, all services and methods will match.",
+							Ref:         ref("k8s.io/gateway-api/v1.GRPCMethodMatch"),
+						},
+					},
+					"headers": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Headers specifies gRPC request header matchers. Multiple match values are ANDed together, meaning, a request MUST match all the specified headers to select the route.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCHeaderMatch"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.GRPCHeaderMatch", "k8s.io/gateway-api/v1.GRPCMethodMatch"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRouteRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRouteRule defines the semantics for matching a gRPC request based on conditions (matches), processing it (filters), and forwarding the request to an API object (backendRefs).",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the route rule. This name MUST be unique within a Route if it is set.\n\nSupport: Extended <gateway:experimental>",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"matches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Matches define conditions used for matching the rule against incoming gRPC requests. Each match is independent, i.e. this rule will be matched if **any** one of the matches is satisfied.\n\nFor example, take the following matches configuration:\n\n``` matches: - method:\n    service: foo.bar\n  headers:\n    values:\n      version: 2\n- method:\n    service: foo.bar.v2\n```\n\nFor a request to match against this rule, it MUST satisfy EITHER of the two conditions:\n\n- service of foo.bar AND contains the header `version: 2` - service of foo.bar.v2\n\nSee the documentation for GRPCRouteMatch on how to specify multiple match conditions to be ANDed together.\n\nIf no matches are specified, the implementation MUST match every gRPC request.\n\nProxy or Load Balancer routing configuration generated from GRPCRoutes MUST prioritize rules based on the following criteria, continuing on ties. Merging MUST not be done between GRPCRoutes and HTTPRoutes. Precedence MUST be given to the rule with the largest number of:\n\n* Characters in a matching non-wildcard hostname. * Characters in a matching hostname. * Characters in a matching service. * Characters in a matching method. * Header matches.\n\nIf ties still exist across multiple Routes, matching precedence MUST be determined in order of the following criteria, continuing on ties:\n\n* The oldest Route based on creation timestamp. * The Route appearing first in alphabetical order by\n  \"{namespace}/{name}\".\n\nIf ties still exist within the Route that has been given precedence, matching precedence MUST be granted to the first matching rule meeting the above criteria.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCRouteMatch"),
+									},
+								},
+							},
+						},
+					},
+					"filters": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Filters define the filters that are applied to requests that match this rule.\n\nThe effects of ordering of multiple behaviors are currently unspecified. This can change in the future based on feedback during the alpha stage.\n\nConformance-levels at this level are defined based on the type of filter:\n\n- ALL core filters MUST be supported by all implementations that support\n  GRPCRoute.\n- Implementers are encouraged to support extended filters. - Implementation-specific custom filters have no API guarantees across\n  implementations.\n\nSpecifying the same filter multiple times is not supported unless explicitly indicated in the filter.\n\nIf an implementation can not support a combination of filters, it must clearly document that limitation. In cases where incompatible or unsupported filters are specified and cause the `Accepted` condition to be set to status `False`, implementations may use the `IncompatibleFilters` reason to specify this configuration error.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCRouteFilter"),
+									},
+								},
+							},
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs defines the backend(s) where matching requests should be sent.\n\nFailure behavior here depends on how many BackendRefs are specified and how many are invalid.\n\nIf *all* entries in BackendRefs are invalid, and there are also no filters specified in this route rule, *all* traffic which matches this rule MUST receive an `UNAVAILABLE` status.\n\nSee the GRPCBackendRef definition for the rules about what makes a single GRPCBackendRef invalid.\n\nWhen a GRPCBackendRef is invalid, `UNAVAILABLE` statuses MUST be returned for requests that would have otherwise been routed to an invalid backend. If multiple backends are specified, and some are invalid, the proportion of requests that would otherwise have been routed to an invalid backend MUST receive an `UNAVAILABLE` status.\n\nFor example, if two backends are specified with equal weights, and one is invalid, 50 percent of traffic MUST receive an `UNAVAILABLE` status. Implementations may choose how that 50 percent is determined.\n\nSupport: Core for Kubernetes Service\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCBackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"sessionPersistence": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SessionPersistence defines and configures session persistence for the route rule.\n\nSupport: Extended\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.SessionPersistence"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.GRPCBackendRef", "k8s.io/gateway-api/v1.GRPCRouteFilter", "k8s.io/gateway-api/v1.GRPCRouteMatch", "k8s.io/gateway-api/v1.SessionPersistence"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRouteSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRouteSpec defines the desired state of GRPCRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent resources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\n<gateway:standard:validation:XValidation:message=\"sectionName must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '')) : true))\"> <gateway:standard:validation:XValidation:message=\"sectionName must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || (has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName))))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__)) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '') && (!has(p1.port) || p1.port == 0) == (!has(p2.port) || p2.port == 0)): true))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || ( has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName)) && (((!has(p1.port) || p1.port == 0) && (!has(p2.port) || p2.port == 0)) || (has(p1.port) && has(p2.port) && p1.port == p2.port))))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ParentReference"),
+									},
+								},
+							},
+						},
+					},
+					"hostnames": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostnames defines a set of hostnames to match against the GRPC Host header to select a GRPCRoute to process the request. This matches the RFC 1123 definition of a hostname with 2 notable exceptions:\n\n1. IPs are not allowed. 2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label MUST appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and GRPCRoute, there MUST be at least one intersecting hostname for the GRPCRoute to be attached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches GRPCRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches GRPCRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `test.example.com` and `*.example.com` would both match. On the other\n  hand, `example.com` and `test.example.net` would not match.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted as a suffix match. That means that a match for `*.example.com` would match both `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nIf both the Listener and GRPCRoute have specified hostnames, any GRPCRoute hostnames that do not match the Listener hostname MUST be ignored. For example, if a Listener specified `*.example.com`, and the GRPCRoute specified `test.example.com` and `test.example.net`, `test.example.net` MUST NOT be considered for a match.\n\nIf both the Listener and GRPCRoute have specified hostnames, and none match with the criteria above, then the GRPCRoute MUST NOT be accepted by the implementation. The implementation MUST raise an 'Accepted' Condition with a status of `False` in the corresponding RouteParentStatus.\n\nIf a Route (A) of type HTTPRoute or GRPCRoute is attached to a Listener and that listener already has another Route (B) of the other type attached and the intersection of the hostnames of A and B is non-empty, then the implementation MUST accept exactly one of these two routes, determined by the following criteria, in order:\n\n* The oldest Route based on creation timestamp. * The Route appearing first in alphabetical order by\n  \"{namespace}/{name}\".\n\nThe rejected Route MUST raise an 'Accepted' condition with a status of 'False' in the corresponding RouteParentStatus.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of GRPC matchers, filters and actions.\n\n<gateway:experimental:validation:XValidation:message=\"Rule name must be unique within the route\",rule=\"self.all(l1, !has(l1.name) || self.exists_one(l2, has(l2.name) && l1.name == l2.name))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GRPCRouteRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.GRPCRouteRule", "k8s.io/gateway-api/v1.ParentReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GRPCRouteStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GRPCRouteStatus defines the observed state of GRPCRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parents": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteParentStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parents"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteParentStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_Gateway(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Gateway represents an instance of a service-traffic handling infrastructure by binding Listeners to a set of IP addresses.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of Gateway.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewaySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of Gateway.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.GatewaySpec", "k8s.io/gateway-api/v1.GatewayStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayAddress(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayAddress describes an address that can be bound to a Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type of the address.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value of the address. The validity of the values will depend on the type and support by the controller.\n\nExamples: `1.2.3.4`, `128::1`, `my-ip-address`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayBackendTLS(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayBackendTLS describes backend TLS configuration for gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"clientCertificateRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ClientCertificateRef is a reference to an object that contains a Client Certificate and the associated private key.\n\nReferences to a resource in different namespace are invalid UNLESS there is a ReferenceGrant in the target namespace that allows the certificate to be attached. If a ReferenceGrant does not allow this reference, the \"ResolvedRefs\" condition MUST be set to False for this listener with the \"RefNotPermitted\" reason.\n\nClientCertificateRef can reference to standard Kubernetes resources, i.e. Secret, or implementation-specific custom resources.\n\nThis setting can be overridden on the service level by use of BackendTLSPolicy.\n\nSupport: Core\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayClass(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayClass describes a class of Gateways available to the user for creating Gateway resources.\n\nIt is recommended that this resource be used as a template for Gateways. This means that a Gateway is based on the state of the GatewayClass at the time it was created and changes to the GatewayClass or associated parameters are not propagated down to existing Gateways. This recommendation is intended to limit the blast radius of changes to GatewayClass or associated parameters. If implementations choose to propagate GatewayClass changes to existing Gateways, that MUST be clearly documented by the implementation.\n\nWhenever one or more Gateways are using a GatewayClass, implementations SHOULD add the `gateway-exists-finalizer.gateway.networking.k8s.io` finalizer on the associated GatewayClass. This ensures that a GatewayClass associated with a Gateway is not deleted while in use.\n\nGatewayClass is a Cluster level resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of GatewayClass.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayClassSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of GatewayClass.\n\nImplementations MUST populate status on all GatewayClass resources which specify their controller name.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayClassStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.GatewayClassSpec", "k8s.io/gateway-api/v1.GatewayClassStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayClassList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayClassList contains a list of GatewayClass",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GatewayClass"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1.GatewayClass"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayClassSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayClassSpec reflects the configuration of a class of Gateways.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"controllerName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControllerName is the name of the controller that is managing Gateways of this class. The value of this field MUST be a domain prefixed path.\n\nExample: \"example.net/gateway-controller\".\n\nThis field is not mutable and cannot be empty.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"parametersRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParametersRef is a reference to a resource that contains the configuration parameters corresponding to the GatewayClass. This is optional if the controller does not require any additional configuration.\n\nParametersRef can reference a standard Kubernetes resource, i.e. ConfigMap, or an implementation-specific custom resource. The resource can be cluster-scoped or namespace-scoped.\n\nIf the referent cannot be found, refers to an unsupported kind, or when the data within that resource is malformed, the GatewayClass SHOULD be rejected with the \"Accepted\" status condition set to \"False\" and an \"InvalidParameters\" reason.\n\nA Gateway for this GatewayClass may provide its own `parametersRef`. When both are specified, the merging behavior is implementation specific. It is generally recommended that GatewayClass provides defaults that can be overridden by a Gateway.\n\nSupport: Implementation-specific",
+							Ref:         ref("k8s.io/gateway-api/v1.ParametersReference"),
+						},
+					},
+					"description": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Description helps describe a GatewayClass with more details.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"controllerName"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.ParametersReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayClassStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayClassStatus is the current status for the GatewayClass.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"conditions": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"type",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Conditions is the current status from the controller for this GatewayClass.\n\nControllers should prefer to publish conditions using values of GatewayClassConditionType for the type of each Condition.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.Condition"),
+									},
+								},
+							},
+						},
+					},
+					"supportedFeatures": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "SupportedFeatures is the set of features the GatewayClass support. It MUST be sorted in ascending alphabetical order by the Name key. <gateway:experimental>",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Ref: ref("k8s.io/gateway-api/v1.SupportedFeature"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Condition", "k8s.io/gateway-api/v1.SupportedFeature"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayInfrastructure(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayInfrastructure defines infrastructure level attributes about a Gateway instance.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"labels": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Labels that SHOULD be applied to any resources created in response to this Gateway.\n\nFor implementations creating other Kubernetes objects, this should be the `metadata.labels` field on resources. For other implementations, this refers to any relevant (implementation specific) \"labels\" concepts.\n\nAn implementation may chose to add additional implementation-specific labels as they see fit.\n\nIf an implementation maps these labels to Pods, or any other resource that would need to be recreated when labels change, it SHOULD clearly warn about this behavior in documentation.\n\nSupport: Extended",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"annotations": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Annotations that SHOULD be applied to any resources created in response to this Gateway.\n\nFor implementations creating other Kubernetes objects, this should be the `metadata.annotations` field on resources. For other implementations, this refers to any relevant (implementation specific) \"annotations\" concepts.\n\nAn implementation may chose to add additional implementation-specific annotations as they see fit.\n\nSupport: Extended",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"parametersRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParametersRef is a reference to a resource that contains the configuration parameters corresponding to the Gateway. This is optional if the controller does not require any additional configuration.\n\nThis follows the same semantics as GatewayClass's `parametersRef`, but on a per-Gateway basis\n\nThe Gateway's GatewayClass may provide its own `parametersRef`. When both are specified, the merging behavior is implementation specific. It is generally recommended that GatewayClass provides defaults that can be overridden by a Gateway.\n\nSupport: Implementation-specific",
+							Ref:         ref("k8s.io/gateway-api/v1.LocalParametersReference"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.LocalParametersReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayList contains a list of Gateways.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.Gateway"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1.Gateway"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewaySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewaySpec defines the desired state of Gateway.\n\nNot all possible combinations of options specified in the Spec are valid. Some invalid configurations can be caught synchronously via CRD validation, but there are many cases that will require asynchronous signaling via the GatewayStatus block.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"gatewayClassName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "GatewayClassName used for this Gateway. This is the name of a GatewayClass resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"listeners": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Listeners associated with this Gateway. Listeners define logical endpoints that are bound on this Gateway's addresses. At least one Listener MUST be specified.\n\nEach Listener in a set of Listeners (for example, in a single Gateway) MUST be _distinct_, in that a traffic flow MUST be able to be assigned to exactly one listener. (This section uses \"set of Listeners\" rather than \"Listeners in a single Gateway\" because implementations MAY merge configuration from multiple Gateways onto a single data plane, and these rules _also_ apply in that case).\n\nPractically, this means that each listener in a set MUST have a unique combination of Port, Protocol, and, if supported by the protocol, Hostname.\n\nSome combinations of port, protocol, and TLS settings are considered Core support and MUST be supported by implementations based on their targeted conformance profile:\n\nHTTP Profile\n\n1. HTTPRoute, Port: 80, Protocol: HTTP 2. HTTPRoute, Port: 443, Protocol: HTTPS, TLS Mode: Terminate, TLS keypair provided\n\nTLS Profile\n\n1. TLSRoute, Port: 443, Protocol: TLS, TLS Mode: Passthrough\n\n\"Distinct\" Listeners have the following property:\n\nThe implementation can match inbound requests to a single distinct Listener. When multiple Listeners share values for fields (for example, two Listeners with the same Port value), the implementation can match requests to only one of the Listeners using other Listener fields.\n\nFor example, the following Listener scenarios are distinct:\n\n1. Multiple Listeners with the same Port that all use the \"HTTP\"\n   Protocol that all have unique Hostname values.\n2. Multiple Listeners with the same Port that use either the \"HTTPS\" or\n   \"TLS\" Protocol that all have unique Hostname values.\n3. A mixture of \"TCP\" and \"UDP\" Protocol Listeners, where no Listener\n   with the same Protocol has the same Port value.\n\nSome fields in the Listener struct have possible values that affect whether the Listener is distinct. Hostname is particularly relevant for HTTP or HTTPS protocols.\n\nWhen using the Hostname value to select between same-Port, same-Protocol Listeners, the Hostname value must be different on each Listener for the Listener to be distinct.\n\nWhen the Listeners are distinct based on Hostname, inbound request hostnames MUST match from the most specific to least specific Hostname values to choose the correct Listener and its associated set of Routes.\n\nExact matches must be processed before wildcard matches, and wildcard matches must be processed before fallback (empty Hostname value) matches. For example, `\"foo.example.com\"` takes precedence over `\"*.example.com\"`, and `\"*.example.com\"` takes precedence over `\"\"`.\n\nAdditionally, if there are multiple wildcard entries, more specific wildcard entries must be processed before less specific wildcard entries. For example, `\"*.foo.example.com\"` takes precedence over `\"*.example.com\"`. The precise definition here is that the higher the number of dots in the hostname to the right of the wildcard character, the higher the precedence.\n\nThe wildcard character will match any number of characters _and dots_ to the left, however, so `\"*.example.com\"` will match both `\"foo.bar.example.com\"` _and_ `\"bar.example.com\"`.\n\nIf a set of Listeners contains Listeners that are not distinct, then those Listeners are Conflicted, and the implementation MUST set the \"Conflicted\" condition in the Listener Status to \"True\".\n\nImplementations MAY choose to accept a Gateway with some Conflicted Listeners only if they only accept the partial Listener set that contains no Conflicted Listeners. To put this another way, implementations may accept a partial Listener set only if they throw out *all* the conflicting Listeners. No picking one of the conflicting listeners as the winner. This also means that the Gateway must have at least one non-conflicting Listener in this case, otherwise it violates the requirement that at least one Listener must be present.\n\nThe implementation MUST set a \"ListenersNotValid\" condition on the Gateway Status when the Gateway contains Conflicted Listeners whether or not they accept the Gateway. That Condition SHOULD clearly indicate in the Message which Listeners are conflicted, and which are Accepted. Additionally, the Listener status for those listeners SHOULD indicate which Listeners are conflicted and not Accepted.\n\nA Gateway's Listeners are considered \"compatible\" if:\n\n1. They are distinct. 2. The implementation can serve them in compliance with the Addresses\n   requirement that all Listeners are available on all assigned\n   addresses.\n\nCompatible combinations in Extended support are expected to vary across implementations. A combination that is compatible for one implementation may not be compatible for another.\n\nFor example, an implementation that cannot serve both TCP and UDP listeners on the same address, or cannot mix HTTPS and generic TLS listens on the same port would not consider those cases compatible, even though they are distinct.\n\nNote that requests SHOULD match at most one Listener. For example, if Listeners are defined for \"foo.example.com\" and \"*.example.com\", a request to \"foo.example.com\" SHOULD only be routed using routes attached to the \"foo.example.com\" Listener (and not the \"*.example.com\" Listener). This concept is known as \"Listener Isolation\". Implementations that do not support Listener Isolation MUST clearly document this.\n\nImplementations MAY merge separate Gateways onto a single set of Addresses if all Listeners across all Gateways are compatible.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.Listener"),
+									},
+								},
+							},
+						},
+					},
+					"addresses": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Addresses requested for this Gateway. This is optional and behavior can depend on the implementation. If a value is set in the spec and the requested address is invalid or unavailable, the implementation MUST indicate this in the associated entry in GatewayStatus.Addresses.\n\nThe Addresses field represents a request for the address(es) on the \"outside of the Gateway\", that traffic bound for this Gateway will use. This could be the IP address or hostname of an external load balancer or other networking infrastructure, or some other address that traffic will be sent to.\n\nIf no Addresses are specified, the implementation MAY schedule the Gateway in an implementation-specific manner, assigning an appropriate set of Addresses.\n\nThe implementation MUST bind all Listeners to every GatewayAddress that it assigns to the Gateway and add a corresponding entry in GatewayStatus.Addresses.\n\nSupport: Extended\n\n<gateway:validateIPAddress>",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GatewayAddress"),
+									},
+								},
+							},
+						},
+					},
+					"infrastructure": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Infrastructure defines infrastructure level attributes about this Gateway instance.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayInfrastructure"),
+						},
+					},
+					"backendTLS": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendTLS configures TLS settings for when this Gateway is connecting to backends with TLS.\n\nSupport: Core\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayBackendTLS"),
+						},
+					},
+				},
+				Required: []string{"gatewayClassName", "listeners"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.GatewayAddress", "k8s.io/gateway-api/v1.GatewayBackendTLS", "k8s.io/gateway-api/v1.GatewayInfrastructure", "k8s.io/gateway-api/v1.Listener"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayStatus defines the observed state of Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"addresses": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Addresses lists the network addresses that have been bound to the Gateway.\n\nThis list may differ from the addresses provided in the spec under some conditions:\n\n  * no addresses are specified, all addresses are dynamically assigned\n  * a combination of specified and dynamic addresses are assigned\n  * a specified address was unusable (e.g. already in use)\n\n<gateway:validateIPAddress>",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.GatewayStatusAddress"),
+									},
+								},
+							},
+						},
+					},
+					"conditions": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"type",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Conditions describe the current conditions of the Gateway.\n\nImplementations should prefer to express Gateway conditions using the `GatewayConditionType` and `GatewayConditionReason` constants so that operators and tools can converge on a common vocabulary to describe Gateway state.\n\nKnown condition types are:\n\n* \"Accepted\" * \"Programmed\" * \"Ready\"",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.Condition"),
+									},
+								},
+							},
+						},
+					},
+					"listeners": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Listeners provide status for each unique listener port defined in the Spec.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ListenerStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Condition", "k8s.io/gateway-api/v1.GatewayStatusAddress", "k8s.io/gateway-api/v1.ListenerStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayStatusAddress(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayStatusAddress describes a network address that is bound to a Gateway.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type of the address.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value of the address. The validity of the values will depend on the type and support by the controller.\n\nExamples: `1.2.3.4`, `128::1`, `my-ip-address`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_GatewayTLSConfig(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayTLSConfig describes a TLS configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"mode": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Mode defines the TLS behavior for the TLS session initiated by the client. There are two possible modes:\n\n- Terminate: The TLS session between the downstream client and the\n  Gateway is terminated at the Gateway. This mode requires certificates\n  to be specified in some way, such as populating the certificateRefs\n  field.\n- Passthrough: The TLS session is NOT terminated by the Gateway. This\n  implies that the Gateway can't decipher the TLS stream except for\n  the ClientHello message of the TLS protocol. The certificateRefs field\n  is ignored in this mode.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"certificateRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CertificateRefs contains a series of references to Kubernetes objects that contains TLS certificates and private keys. These certificates are used to establish a TLS handshake for requests that match the hostname of the associated listener.\n\nA single CertificateRef to a Kubernetes Secret has \"Core\" support. Implementations MAY choose to support attaching multiple certificates to a Listener, but this behavior is implementation-specific.\n\nReferences to a resource in different namespace are invalid UNLESS there is a ReferenceGrant in the target namespace that allows the certificate to be attached. If a ReferenceGrant does not allow this reference, the \"ResolvedRefs\" condition MUST be set to False for this listener with the \"RefNotPermitted\" reason.\n\nThis field is required to have at least one element when the mode is set to \"Terminate\" (default) and is optional otherwise.\n\nCertificateRefs can reference to standard Kubernetes resources, i.e. Secret, or implementation-specific custom resources.\n\nSupport: Core - A single reference to a Kubernetes Secret of type kubernetes.io/tls\n\nSupport: Implementation-specific (More than one reference or other resource types)",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.SecretObjectReference"),
+									},
+								},
+							},
+						},
+					},
+					"frontendValidation": {
+						SchemaProps: spec.SchemaProps{
+							Description: "FrontendValidation holds configuration information for validating the frontend (client). Setting this field will require clients to send a client certificate required for validation during the TLS handshake. In browsers this may result in a dialog appearing that requests a user to specify the client certificate. The maximum depth of a certificate chain accepted in verification is Implementation specific.\n\nSupport: Extended\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.FrontendTLSValidation"),
+						},
+					},
+					"options": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Options are a list of key/value pairs to enable extended TLS configuration for each implementation. For example, configuring the minimum TLS version or supported cipher suites.\n\nA set of common keys MAY be defined by the API in the future. To avoid any ambiguity, implementation-specific definitions MUST use domain-prefixed names, such as `example.com/my-custom-option`. Un-prefixed names are reserved for key names defined by Gateway API.\n\nSupport: Implementation-specific",
+							Type:        []string{"object"},
+							AdditionalProperties: &spec.SchemaOrBool{
+								Allows: true,
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.FrontendTLSValidation", "k8s.io/gateway-api/v1.SecretObjectReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPBackendRef(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPBackendRef defines how a HTTPRoute should forward an HTTP request.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the Kubernetes resource kind of the referent. For example \"Service\".\n\nDefaults to \"Service\" when not specified.\n\nExternalName services can refer to CNAME DNS records that may live outside of the cluster and as such are difficult to reason about in terms of conformance. They also may not be safe to forward to (see CVE-2021-25740 for more information). Implementations SHOULD NOT support ExternalName Services.\n\nSupport: Core (Services with a type other than ExternalName)\n\nSupport: Implementation-specific (Services with type ExternalName)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the backend. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port specifies the destination port number to use for this resource. Port is required when the referent is a Kubernetes Service. In this case, the port number is the service port number, not the target port. For other resources, destination port might be derived from the referent resource or this field.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"weight": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Weight specifies the proportion of requests forwarded to the referenced backend. This is computed as weight/(sum of all weights in this BackendRefs list). For non-zero values, there may be some epsilon from the exact proportion defined here depending on the precision an implementation supports. Weight is not a percentage and the sum of weights does not need to equal 100.\n\nIf only one backend is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend. If weight is set to 0, no traffic should be forwarded for this entry. If unspecified, weight defaults to 1.\n\nSupport for this field varies based on the context where used.",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"filters": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Filters defined at this level should be executed if and only if the request is being forwarded to the backend defined here.\n\nSupport: Implementation-specific (For broader support of filters, use the Filters field in HTTPRouteRule.)",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPRouteFilter"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPRouteFilter"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPHeader(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the HTTP Header to be matched. Name matching MUST be case insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent header name MUST be ignored. Due to the case-insensitivity of header names, \"foo\" and \"Foo\" are considered equivalent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is the value of HTTP Header to be matched.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name", "value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPHeaderFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPHeaderFilter defines a filter that modifies the headers of an HTTP request or response.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"set": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Set overwrites the request with the given header (name, value) before the action.\n\nInput:\n  GET /foo HTTP/1.1\n  my-header: foo\n\nConfig:\n  set:\n  - name: \"my-header\"\n    value: \"bar\"\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header: bar",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPHeader"),
+									},
+								},
+							},
+						},
+					},
+					"add": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Add adds the given header(s) (name, value) to the request before the action. It appends to any existing values associated with the header name.\n\nInput:\n  GET /foo HTTP/1.1\n  my-header: foo\n\nConfig:\n  add:\n  - name: \"my-header\"\n    value: \"bar,baz\"\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header: foo,bar,baz",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPHeader"),
+									},
+								},
+							},
+						},
+					},
+					"remove": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-type": "set",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Remove the given header(s) from the HTTP request before the action. The value of Remove is a list of HTTP header names. Note that the header names are case-insensitive (see https://datatracker.ietf.org/doc/html/rfc2616#section-4.2).\n\nInput:\n  GET /foo HTTP/1.1\n  my-header1: foo\n  my-header2: bar\n  my-header3: baz\n\nConfig:\n  remove: [\"my-header1\", \"my-header3\"]\n\nOutput:\n  GET /foo HTTP/1.1\n  my-header2: bar",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPHeader"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPHeaderMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPHeaderMatch describes how to select a HTTP route by matching HTTP request headers.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against the value of the header.\n\nSupport: Core (Exact)\n\nSupport: Implementation-specific (RegularExpression)\n\nSince RegularExpression HeaderMatchType has implementation-specific conformance, implementations can support POSIX, PCRE or any other dialects of regular expressions. Please read the implementation's documentation to determine the supported dialect.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the HTTP Header to be matched. Name matching MUST be case insensitive. (See https://tools.ietf.org/html/rfc7230#section-3.2).\n\nIf multiple entries specify equivalent header names, only the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent header name MUST be ignored. Due to the case-insensitivity of header names, \"foo\" and \"Foo\" are considered equivalent.\n\nWhen a header is repeated in an HTTP request, it is implementation-specific behavior as to how this is represented. Generally, proxies should follow the guidance from the RFC: https://www.rfc-editor.org/rfc/rfc7230.html#section-3.2.2 regarding processing a repeated header, with special handling for \"Set-Cookie\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is the value of HTTP Header to be matched.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name", "value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPPathMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPPathMatch describes how to select a HTTP route by matching the HTTP request path.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against the path Value.\n\nSupport: Core (Exact, PathPrefix)\n\nSupport: Implementation-specific (RegularExpression)",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value of the HTTP path to match against.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPPathModifier(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPPathModifier defines configuration for path modifiers. <gateway:experimental>",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of path modifier. Additional types may be added in a future release of the API.\n\nNote that values may be added to this enum, implementations must ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"replaceFullPath": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ReplaceFullPath specifies the value with which to replace the full path of a request during a rewrite or redirect.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"replacePrefixMatch": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ReplacePrefixMatch specifies the value with which to replace the prefix match of a request during a rewrite or redirect. For example, a request to \"/foo/bar\" with a prefix match of \"/foo\" and a ReplacePrefixMatch of \"/xyz\" would be modified to \"/xyz/bar\".\n\nNote that this matches the behavior of the PathPrefix match type. This matches full path elements. A path element refers to the list of labels in the path split by the `/` separator. When specified, a trailing `/` is ignored. For example, the paths `/abc`, `/abc/`, and `/abc/def` would all match the prefix `/abc`, but the path `/abcd` would not.\n\nReplacePrefixMatch is only compatible with a `PathPrefix` HTTPRouteMatch. Using any other HTTPRouteMatch type on the same HTTPRouteRule will result in the implementation setting the Accepted Condition for the Route to `status: False`.\n\nRequest Path | Prefix Match | Replace Prefix | Modified Path -------------|--------------|----------------|---------- /foo/bar     | /foo         | /xyz           | /xyz/bar /foo/bar     | /foo         | /xyz/          | /xyz/bar /foo/bar     | /foo/        | /xyz           | /xyz/bar /foo/bar     | /foo/        | /xyz/          | /xyz/bar /foo         | /foo         | /xyz           | /xyz /foo/        | /foo         | /xyz           | /xyz/ /foo/bar     | /foo         | <empty string> | /bar /foo/        | /foo         | <empty string> | / /foo         | /foo         | <empty string> | / /foo/        | /foo         | /              | / /foo         | /foo         | /              | /",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPQueryParamMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPQueryParamMatch describes how to select a HTTP route by matching HTTP query parameters.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type specifies how to match against the value of the query parameter.\n\nSupport: Extended (Exact)\n\nSupport: Implementation-specific (RegularExpression)\n\nSince RegularExpression QueryParamMatchType has Implementation-specific conformance, implementations can support POSIX, PCRE or any other dialects of regular expressions. Please read the implementation's documentation to determine the supported dialect.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the HTTP query param to be matched. This must be an exact string match. (See https://tools.ietf.org/html/rfc7230#section-2.7.3).\n\nIf multiple entries specify equivalent query param names, only the first entry with an equivalent name MUST be considered for a match. Subsequent entries with an equivalent query param name MUST be ignored.\n\nIf a query param is repeated in an HTTP request, the behavior is purposely left undefined, since different data planes have different capabilities. However, it is *recommended* that implementations should match against the first value of the param if the data plane supports it, as this behavior is expected in other load balancing contexts outside of the Gateway API.\n\nUsers SHOULD NOT route traffic based on repeated query params to guard themselves against potential differences in the implementations.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"value": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Value is the value of HTTP query param to be matched.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name", "value"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRequestMirrorFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRequestMirrorFilter defines configuration for the RequestMirror filter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"backendRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRef references a resource where mirrored requests are sent.\n\nMirrored requests must be sent only to a single destination endpoint within this BackendRef, irrespective of how many endpoints are present within this BackendRef.\n\nIf the referent cannot be found, this BackendRef is invalid and must be dropped from the Gateway. The controller must ensure the \"ResolvedRefs\" condition on the Route status is set to `status: False` and not configure this backend in the underlying implementation.\n\nIf there is a cross-namespace reference to an *existing* object that is not allowed by a ReferenceGrant, the controller must ensure the \"ResolvedRefs\"  condition on the Route is set to `status: False`, with the \"RefNotPermitted\" reason and not configure this backend in the underlying implementation.\n\nIn either error case, the Message of the `ResolvedRefs` Condition should be used to provide more detail about the problem.\n\nSupport: Extended for Kubernetes Service\n\nSupport: Implementation-specific for any other resource",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.BackendObjectReference"),
+						},
+					},
+					"percent": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Percent represents the percentage of requests that should be mirrored to BackendRef. Its minimum value is 0 (indicating 0% of requests) and its maximum value is 100 (indicating 100% of requests).\n\nOnly one of Fraction or Percent may be specified. If neither field is specified, 100% of requests will be mirrored.\n\n<gateway:experimental>",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"fraction": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Fraction represents the fraction of requests that should be mirrored to BackendRef.\n\nOnly one of Fraction or Percent may be specified. If neither field is specified, 100% of requests will be mirrored.\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.Fraction"),
+						},
+					},
+				},
+				Required: []string{"backendRef"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.BackendObjectReference", "k8s.io/gateway-api/v1.Fraction"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRequestRedirectFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRequestRedirect defines a filter that redirects a request. This filter MUST NOT be used on the same Route rule as a HTTPURLRewrite filter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"scheme": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Scheme is the scheme to be used in the value of the `Location` header in the response. When empty, the scheme of the request is used.\n\nScheme redirects can affect the port of the redirect, for more information, refer to the documentation for the port field of this filter.\n\nNote that values may be added to this enum, implementations must ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"hostname": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostname is the hostname to be used in the value of the `Location` header in the response. When empty, the hostname in the `Host` header of the request is used.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path defines parameters used to modify the path of the incoming request. The modified path is then used to construct the `Location` header. When empty, the request path is used as-is.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPPathModifier"),
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port is the port to be used in the value of the `Location` header in the response.\n\nIf no port is specified, the redirect port MUST be derived using the following rules:\n\n* If redirect scheme is not-empty, the redirect port MUST be the well-known\n  port associated with the redirect scheme. Specifically \"http\" to port 80\n  and \"https\" to port 443. If the redirect scheme does not have a\n  well-known port, the listener port of the Gateway SHOULD be used.\n* If redirect scheme is empty, the redirect port MUST be the Gateway\n  Listener port.\n\nImplementations SHOULD NOT add the port number in the 'Location' header in the following cases:\n\n* A Location header that will use HTTP (whether that is determined via\n  the Listener protocol or the Scheme field) _and_ use port 80.\n* A Location header that will use HTTPS (whether that is determined via\n  the Listener protocol or the Scheme field) _and_ use port 443.\n\nSupport: Extended",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"statusCode": {
+						SchemaProps: spec.SchemaProps{
+							Description: "StatusCode is the HTTP status code to be used in response.\n\nNote that values may be added to this enum, implementations must ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`.\n\nSupport: Core",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPPathModifier"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRoute provides a way to route HTTP requests. This includes the capability to match requests by hostname, path, header, or query param. Filters can be used to specify additional processing steps. Backends specify where matching requests should be routed.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of HTTPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of HTTPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRouteStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.HTTPRouteSpec", "k8s.io/gateway-api/v1.HTTPRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteFilter defines processing steps that must be completed during the request or response lifecycle. HTTPRouteFilters are meant as an extension point to express processing that may be done in Gateway implementations. Some examples include request or response modification, implementing authentication strategies, rate-limiting, and traffic shaping. API guarantee/conformance is defined based on the type of the filter.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type identifies the type of filter to apply. As with other API fields, types are classified into three conformance levels:\n\n- Core: Filter types and their corresponding configuration defined by\n  \"Support: Core\" in this package, e.g. \"RequestHeaderModifier\". All\n  implementations must support core filters.\n\n- Extended: Filter types and their corresponding configuration defined by\n  \"Support: Extended\" in this package, e.g. \"RequestMirror\". Implementers\n  are encouraged to support extended filters.\n\n- Implementation-specific: Filters that are defined and supported by\n  specific vendors.\n  In the future, filters showing convergence in behavior across multiple\n  implementations will be considered for inclusion in extended or core\n  conformance levels. Filter-specific configuration for such filters\n  is specified using the ExtensionRef field. `Type` should be set to\n  \"ExtensionRef\" for custom filters.\n\nImplementers are encouraged to define custom implementation types to extend the core API with implementation-specific behavior.\n\nIf a reference to a custom filter type cannot be resolved, the filter MUST NOT be skipped. Instead, requests that would have been processed by that filter MUST receive a HTTP error response.\n\nNote that values may be added to this enum, implementations must ensure that unknown values will not cause a crash.\n\nUnknown values here must result in the implementation setting the Accepted Condition for the Route to `status: False`, with a Reason of `UnsupportedValue`.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"requestHeaderModifier": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestHeaderModifier defines a schema for a filter that modifies request headers.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPHeaderFilter"),
+						},
+					},
+					"responseHeaderModifier": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ResponseHeaderModifier defines a schema for a filter that modifies response headers.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPHeaderFilter"),
+						},
+					},
+					"requestMirror": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestMirror defines a schema for a filter that mirrors requests. Requests are sent to the specified destination, but responses from that destination are ignored.\n\nThis filter can be used multiple times within the same rule. Note that not all implementations will be able to support mirroring to multiple backends.\n\nSupport: Extended\n\n\n<gateway:experimental:validation:XValidation:message=\"Only one of percent or fraction may be specified in HTTPRequestMirrorFilter\",rule=\"!(has(self.percent) && has(self.fraction))\">",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRequestMirrorFilter"),
+						},
+					},
+					"requestRedirect": {
+						SchemaProps: spec.SchemaProps{
+							Description: "RequestRedirect defines a schema for a filter that responds to the request with an HTTP redirection.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRequestRedirectFilter"),
+						},
+					},
+					"urlRewrite": {
+						SchemaProps: spec.SchemaProps{
+							Description: "URLRewrite defines a schema for a filter that modifies a request during forwarding.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPURLRewriteFilter"),
+						},
+					},
+					"extensionRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ExtensionRef is an optional, implementation-specific extension to the \"filter\" behavior.  For example, resource \"myroutefilter\" in group \"networking.example.net\"). ExtensionRef MUST NOT be used for core and extended filters.\n\nThis filter can be used multiple times within the same rule.\n\nSupport: Implementation-specific",
+							Ref:         ref("k8s.io/gateway-api/v1.LocalObjectReference"),
+						},
+					},
+				},
+				Required: []string{"type"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPHeaderFilter", "k8s.io/gateway-api/v1.HTTPRequestMirrorFilter", "k8s.io/gateway-api/v1.HTTPRequestRedirectFilter", "k8s.io/gateway-api/v1.HTTPURLRewriteFilter", "k8s.io/gateway-api/v1.LocalObjectReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteList contains a list of HTTPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1.HTTPRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteMatch(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteMatch defines the predicate used to match requests to a given action. Multiple match types are ANDed together, i.e. the match will evaluate to true only if all conditions are satisfied.\n\nFor example, the match below will match a HTTP request only if its path starts with `/foo` AND it contains the `version: v1` header:\n\n``` match:\n\n\tpath:\n\t  value: \"/foo\"\n\theaders:\n\t- name: \"version\"\n\t  value \"v1\"\n\n```",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path specifies a HTTP request path matcher. If this field is not specified, a default prefix match on the \"/\" path is provided.",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPPathMatch"),
+						},
+					},
+					"headers": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Headers specifies HTTP request header matchers. Multiple match values are ANDed together, meaning, a request must match all the specified headers to select the route.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPHeaderMatch"),
+									},
+								},
+							},
+						},
+					},
+					"queryParams": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "QueryParams specifies HTTP query parameter matchers. Multiple match values are ANDed together, meaning, a request must match all the specified query parameters to select the route.\n\nSupport: Extended",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPQueryParamMatch"),
+									},
+								},
+							},
+						},
+					},
+					"method": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Method specifies HTTP method matcher. When specified, this route will be matched only if the request has the specified method.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPHeaderMatch", "k8s.io/gateway-api/v1.HTTPPathMatch", "k8s.io/gateway-api/v1.HTTPQueryParamMatch"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteRetry(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteRetry defines retry configuration for an HTTPRoute.\n\nImplementations SHOULD retry on connection errors (disconnect, reset, timeout, TCP failure) if a retry stanza is configured.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"codes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Codes defines the HTTP response status codes for which a backend request should be retried.\n\nSupport: Extended",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: 0,
+										Type:    []string{"integer"},
+										Format:  "int32",
+									},
+								},
+							},
+						},
+					},
+					"attempts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Attempts specifies the maxmimum number of times an individual request from the gateway to a backend should be retried.\n\nIf the maximum number of retries has been attempted without a successful response from the backend, the Gateway MUST return an error.\n\nWhen this field is unspecified, the number of times to attempt to retry a backend request is implementation-specific.\n\nSupport: Extended",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"backoff": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Backoff specifies the minimum duration a Gateway should wait between retry attempts and is represented in Gateway API Duration formatting.\n\nFor example, setting the `rules[].retry.backoff` field to the value `100ms` will cause a backend request to first be retried approximately 100 milliseconds after timing out or receiving a response code configured to be retryable.\n\nAn implementation MAY use an exponential or alternative backoff strategy for subsequent retry attempts, MAY cap the maximum backoff duration to some amount greater than the specified minimum, and MAY add arbitrary jitter to stagger requests, as long as unsuccessful backend requests are not retried before the configured minimum duration.\n\nIf a Request timeout (`rules[].timeouts.request`) is configured on the route, the entire duration of the initial request and any retry attempts MUST not exceed the Request timeout duration. If any retry attempts are still in progress when the Request timeout duration has been reached, these SHOULD be canceled if possible and the Gateway MUST immediately return a timeout error.\n\nIf a BackendRequest timeout (`rules[].timeouts.backendRequest`) is configured on the route, any retry attempts which reach the configured BackendRequest timeout duration without a response SHOULD be canceled if possible and the Gateway should wait for at least the specified backoff duration before attempting to retry the backend request again.\n\nIf a BackendRequest timeout is _not_ configured on the route, retry attempts MAY time out after an implementation default duration, or MAY remain pending until a configured Request timeout or implementation default duration for total request time is reached.\n\nWhen this field is unspecified, the time to wait between retry attempts is implementation-specific.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteRule defines semantics for matching an HTTP request based on conditions (matches), processing it (filters), and forwarding the request to an API object (backendRefs).",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the route rule. This name MUST be unique within a Route if it is set.\n\nSupport: Extended <gateway:experimental>",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"matches": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Matches define conditions used for matching the rule against incoming HTTP requests. Each match is independent, i.e. this rule will be matched if **any** one of the matches is satisfied.\n\nFor example, take the following matches configuration:\n\n``` matches: - path:\n    value: \"/foo\"\n  headers:\n  - name: \"version\"\n    value: \"v2\"\n- path:\n    value: \"/v2/foo\"\n```\n\nFor a request to match against this rule, a request must satisfy EITHER of the two conditions:\n\n- path prefixed with `/foo` AND contains the header `version: v2` - path prefix of `/v2/foo`\n\nSee the documentation for HTTPRouteMatch on how to specify multiple match conditions that should be ANDed together.\n\nIf no matches are specified, the default is a prefix path match on \"/\", which has the effect of matching every HTTP request.\n\nProxy or Load Balancer routing configuration generated from HTTPRoutes MUST prioritize matches based on the following criteria, continuing on ties. Across all rules specified on applicable Routes, precedence must be given to the match having:\n\n* \"Exact\" path match. * \"Prefix\" path match with largest number of characters. * Method match. * Largest number of header matches. * Largest number of query param matches.\n\nNote: The precedence of RegularExpression path matches are implementation-specific.\n\nIf ties still exist across multiple Routes, matching precedence MUST be determined in order of the following criteria, continuing on ties:\n\n* The oldest Route based on creation timestamp. * The Route appearing first in alphabetical order by\n  \"{namespace}/{name}\".\n\nIf ties still exist within an HTTPRoute, matching precedence MUST be granted to the FIRST matching rule (in list order) with a match meeting the above criteria.\n\nWhen no rules matching a request have been successfully attached to the parent a request is coming from, a HTTP 404 status code MUST be returned.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPRouteMatch"),
+									},
+								},
+							},
+						},
+					},
+					"filters": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Filters define the filters that are applied to requests that match this rule.\n\nWherever possible, implementations SHOULD implement filters in the order they are specified.\n\nImplementations MAY choose to implement this ordering strictly, rejecting any combination or order of filters that can not be supported. If implementations choose a strict interpretation of filter ordering, they MUST clearly document that behavior.\n\nTo reject an invalid combination or order of filters, implementations SHOULD consider the Route Rules with this configuration invalid. If all Route Rules in a Route are invalid, the entire Route would be considered invalid. If only a portion of Route Rules are invalid, implementations MUST set the \"PartiallyInvalid\" condition for the Route.\n\nConformance-levels at this level are defined based on the type of filter:\n\n- ALL core filters MUST be supported by all implementations. - Implementers are encouraged to support extended filters. - Implementation-specific custom filters have no API guarantees across\n  implementations.\n\nSpecifying the same filter multiple times is not supported unless explicitly indicated in the filter.\n\nAll filters are expected to be compatible with each other except for the URLRewrite and RequestRedirect filters, which may not be combined. If an implementation can not support other combinations of filters, they must clearly document that limitation. In cases where incompatible or unsupported filters are specified and cause the `Accepted` condition to be set to status `False`, implementations may use the `IncompatibleFilters` reason to specify this configuration error.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPRouteFilter"),
+									},
+								},
+							},
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs defines the backend(s) where matching requests should be sent.\n\nFailure behavior here depends on how many BackendRefs are specified and how many are invalid.\n\nIf *all* entries in BackendRefs are invalid, and there are also no filters specified in this route rule, *all* traffic which matches this rule MUST receive a 500 status code.\n\nSee the HTTPBackendRef definition for the rules about what makes a single HTTPBackendRef invalid.\n\nWhen a HTTPBackendRef is invalid, 500 status codes MUST be returned for requests that would have otherwise been routed to an invalid backend. If multiple backends are specified, and some are invalid, the proportion of requests that would otherwise have been routed to an invalid backend MUST receive a 500 status code.\n\nFor example, if two backends are specified with equal weights, and one is invalid, 50 percent of traffic must receive a 500. Implementations may choose how that 50 percent is determined.\n\nWhen a HTTPBackendRef refers to a Service that has no ready endpoints, implementations SHOULD return a 503 for requests to that backend instead. If an implementation chooses to do this, all of the above rules for 500 responses MUST also apply for responses that return a 503.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPBackendRef"),
+									},
+								},
+							},
+						},
+					},
+					"timeouts": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Timeouts defines the timeouts that can be configured for an HTTP request.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRouteTimeouts"),
+						},
+					},
+					"retry": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Retry defines the configuration for when to retry an HTTP request.\n\nSupport: Extended\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRouteRetry"),
+						},
+					},
+					"sessionPersistence": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SessionPersistence defines and configures session persistence for the route rule.\n\nSupport: Extended\n\n<gateway:experimental>",
+							Ref:         ref("k8s.io/gateway-api/v1.SessionPersistence"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPBackendRef", "k8s.io/gateway-api/v1.HTTPRouteFilter", "k8s.io/gateway-api/v1.HTTPRouteMatch", "k8s.io/gateway-api/v1.HTTPRouteRetry", "k8s.io/gateway-api/v1.HTTPRouteTimeouts", "k8s.io/gateway-api/v1.SessionPersistence"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteSpec defines the desired state of HTTPRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent resources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\n<gateway:standard:validation:XValidation:message=\"sectionName must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '')) : true))\"> <gateway:standard:validation:XValidation:message=\"sectionName must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || (has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName))))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__)) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '') && (!has(p1.port) || p1.port == 0) == (!has(p2.port) || p2.port == 0)): true))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || ( has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName)) && (((!has(p1.port) || p1.port == 0) && (!has(p2.port) || p2.port == 0)) || (has(p1.port) && has(p2.port) && p1.port == p2.port))))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ParentReference"),
+									},
+								},
+							},
+						},
+					},
+					"hostnames": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostnames defines a set of hostnames that should match against the HTTP Host header to select a HTTPRoute used to process the request. Implementations MUST ignore any port value specified in the HTTP Host header while performing a match and (absent of any applicable header modification configuration) MUST forward this header unmodified to the backend.\n\nValid values for Hostnames are determined by RFC 1123 definition of a hostname with 2 notable exceptions:\n\n1. IPs are not allowed. 2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and HTTPRoute, there must be at least one intersecting hostname for the HTTPRoute to be attached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches HTTPRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `*.example.com`, `test.example.com`, and `foo.test.example.com` would\n  all match. On the other hand, `example.com` and `test.example.net` would\n  not match.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted as a suffix match. That means that a match for `*.example.com` would match both `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nIf both the Listener and HTTPRoute have specified hostnames, any HTTPRoute hostnames that do not match the Listener hostname MUST be ignored. For example, if a Listener specified `*.example.com`, and the HTTPRoute specified `test.example.com` and `test.example.net`, `test.example.net` must not be considered for a match.\n\nIf both the Listener and HTTPRoute have specified hostnames, and none match with the criteria above, then the HTTPRoute is not accepted. The implementation must raise an 'Accepted' Condition with a status of `False` in the corresponding RouteParentStatus.\n\nIn the event that multiple HTTPRoutes specify intersecting hostnames (e.g. overlapping wildcard matching and exact matching hostnames), precedence must be given to rules from the HTTPRoute with the largest number of:\n\n* Characters in a matching non-wildcard hostname. * Characters in a matching hostname.\n\nIf ties exist across multiple Routes, the matching precedence rules for HTTPRouteMatches takes over.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of HTTP matchers, filters and actions.\n\n<gateway:experimental:validation:XValidation:message=\"Rule name must be unique within the route\",rule=\"self.all(l1, !has(l1.name) || self.exists_one(l2, has(l2.name) && l1.name == l2.name))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.HTTPRouteRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPRouteRule", "k8s.io/gateway-api/v1.ParentReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteStatus defines the observed state of HTTPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parents": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteParentStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parents"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteParentStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPRouteTimeouts(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteTimeouts defines timeouts that can be configured for an HTTPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"request": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Request specifies the maximum duration for a gateway to respond to an HTTP request. If the gateway has not been able to respond before this deadline is met, the gateway MUST return a timeout error.\n\nFor example, setting the `rules.timeouts.request` field to the value `10s` in an `HTTPRoute` will cause a timeout if a client request is taking longer than 10 seconds to complete.\n\nSetting a timeout to the zero duration (e.g. \"0s\") SHOULD disable the timeout completely. Implementations that cannot completely disable the timeout MUST instead interpret the zero duration as the longest possible value to which the timeout can be set.\n\nThis timeout is intended to cover as close to the whole request-response transaction as possible although an implementation MAY choose to start the timeout after the entire request stream has been received instead of immediately after the transaction is initiated by the client.\n\nThe value of Request is a Gateway API Duration string as defined by GEP-2257. When this field is unspecified, request timeout behavior is implementation-specific.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"backendRequest": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRequest specifies a timeout for an individual request from the gateway to a backend. This covers the time from when the request first starts being sent from the gateway to when the full response has been received from the backend.\n\nSetting a timeout to the zero duration (e.g. \"0s\") SHOULD disable the timeout completely. Implementations that cannot completely disable the timeout MUST instead interpret the zero duration as the longest possible value to which the timeout can be set.\n\nAn entire client HTTP transaction with a gateway, covered by the Request timeout, may result in more than one call from the gateway to the destination backend, for example, if automatic retries are supported.\n\nThe value of BackendRequest must be a Gateway API Duration string as defined by GEP-2257.  When this field is unspecified, its behavior is implementation-specific; when specified, the value of BackendRequest must be no more than the value of the Request timeout (since the Request timeout encompasses the BackendRequest timeout).\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_HTTPURLRewriteFilter(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPURLRewriteFilter defines a filter that modifies a request during forwarding. At most one of these filters may be used on a Route rule. This MUST NOT be used on the same Route rule as a HTTPRequestRedirect filter.\n\nSupport: Extended\n\n<gateway:experimental>",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"hostname": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostname is the value to be used to replace the Host header value during forwarding.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"path": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Path defines a path rewrite.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPPathModifier"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.HTTPPathModifier"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_Listener(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Listener embodies the concept of a logical endpoint where a Gateway accepts network connections.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the Listener. This name MUST be unique within a Gateway.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"hostname": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostname specifies the virtual hostname to match for protocol types that define this concept. When unspecified, all hostnames are matched. This field is ignored for protocols that don't require hostname based matching.\n\nImplementations MUST apply Hostname matching appropriately for each of the following protocols:\n\n* TLS: The Listener Hostname MUST match the SNI. * HTTP: The Listener Hostname MUST match the Host header of the request. * HTTPS: The Listener Hostname SHOULD match at both the TLS and HTTP\n  protocol layers as described above. If an implementation does not\n  ensure that both the SNI and Host header match the Listener hostname,\n  it MUST clearly document that.\n\nFor HTTPRoute and TLSRoute resources, there is an interaction with the `spec.hostnames` array. When both listener and route specify hostnames, there MUST be an intersection between the values for a Route to be accepted. For more information, refer to the Route specific Hostnames documentation.\n\nHostnames that are prefixed with a wildcard label (`*.`) are interpreted as a suffix match. That means that a match for `*.example.com` would match both `test.example.com`, and `foo.test.example.com`, but not `example.com`.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port is the network port. Multiple listeners may use the same port, subject to the Listener compatibility rules.\n\nSupport: Core",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"protocol": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Protocol specifies the network protocol this listener expects to receive.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"tls": {
+						SchemaProps: spec.SchemaProps{
+							Description: "TLS is the TLS configuration for the Listener. This field is required if the Protocol field is \"HTTPS\" or \"TLS\". It is invalid to set this field if the Protocol field is \"HTTP\", \"TCP\", or \"UDP\".\n\nThe association of SNIs to Certificate defined in GatewayTLSConfig is defined based on the Hostname field for this listener.\n\nThe GatewayClass MUST use the longest matching SNI out of all available certificates for any TLS handshake.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayTLSConfig"),
+						},
+					},
+					"allowedRoutes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AllowedRoutes defines the types of routes that MAY be attached to a Listener and the trusted namespaces where those Route resources MAY be present.\n\nAlthough a client request may match multiple route rules, only one rule may ultimately receive the request. Matching precedence MUST be determined in order of the following criteria:\n\n* The most specific match as defined by the Route type. * The oldest Route based on creation timestamp. For example, a Route with\n  a creation timestamp of \"2020-09-08 01:02:03\" is given precedence over\n  a Route with a creation timestamp of \"2020-09-08 01:02:04\".\n* If everything else is equivalent, the Route appearing first in\n  alphabetical order (namespace/name) should be given precedence. For\n  example, foo/bar is given precedence over foo/baz.\n\nAll valid rules within a Route attached to this Listener should be implemented. Invalid Route rules can be ignored (sometimes that will mean the full Route). If a Route rule transitions from valid to invalid, support for that Route rule should be dropped to ensure consistency. For example, even if a filter specified by a Route rule is invalid, the rest of the rules within that Route should still be supported.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.AllowedRoutes"),
+						},
+					},
+				},
+				Required: []string{"name", "port", "protocol"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.AllowedRoutes", "k8s.io/gateway-api/v1.GatewayTLSConfig"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_ListenerStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ListenerStatus is the status associated with a Listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the Listener that this status corresponds to.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"supportedKinds": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SupportedKinds is the list indicating the Kinds supported by this listener. This MUST represent the kinds an implementation supports for that Listener configuration.\n\nIf kinds are specified in Spec that are not supported, they MUST NOT appear in this list and an implementation MUST set the \"ResolvedRefs\" condition to \"False\" with the \"InvalidRouteKinds\" reason. If both valid and invalid Route kinds are specified, the implementation MUST reference the valid Route kinds that have been specified.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteGroupKind"),
+									},
+								},
+							},
+						},
+					},
+					"attachedRoutes": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AttachedRoutes represents the total number of Routes that have been successfully attached to this Listener.\n\nSuccessful attachment of a Route to a Listener is based solely on the combination of the AllowedRoutes field on the corresponding Listener and the Route's ParentRefs field. A Route is successfully attached to a Listener when it is selected by the Listener's AllowedRoutes field AND the Route has a valid ParentRef selecting the whole Gateway resource or a specific Listener as a parent resource (more detail on attachment semantics can be found in the documentation on the various Route kinds ParentRefs fields). Listener or Route status does not impact successful attachment, i.e. the AttachedRoutes field count MUST be set for Listeners with condition Accepted: false and MUST count successfully attached Routes that may themselves have Accepted: false conditions.\n\nUses for this field include troubleshooting Route attachment and measuring blast radius/impact of changes to a Listener.",
+							Default:     0,
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+					"conditions": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"type",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Conditions describe the current condition of this listener.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.Condition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"name", "supportedKinds", "attachedRoutes", "conditions"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Condition", "k8s.io/gateway-api/v1.RouteGroupKind"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_LocalObjectReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalObjectReference identifies an API object within the namespace of the referrer. The API object must be valid in the cluster; the Group and Kind must be registered in the cluster for this reference to be valid.\n\nReferences to objects with invalid Group and Kind are not valid, and must be rejected by the implementation, with appropriate Conditions set on the containing object.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the referent. For example \"HTTPRoute\" or \"Service\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_LocalParametersReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalParametersReference identifies an API object containing controller-specific configuration resource within the namespace.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_ObjectReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ObjectReference identifies an API object including its namespace.\n\nThe API object must be valid in the cluster; the Group and Kind must be registered in the cluster for this reference to be valid.\n\nReferences to objects with invalid Group and Kind are not valid, and must be rejected by the implementation, with appropriate Conditions set on the containing object.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the referent. For example \"ConfigMap\" or \"Service\".",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the referenced object. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_ParametersReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ParametersReference identifies an API object containing controller-specific configuration resource within the cluster.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the referent. This field is required when referring to a Namespace-scoped resource and MUST be unset when referring to a Cluster-scoped resource.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_ParentReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ParentReference identifies an API object (usually a Gateway) that can be considered a parent of this resource (usually a route). The only kind of parent resource with \"Core\" support is Gateway. This API may be extended in the future to support additional kinds of parent resources, such as HTTPRoute.\n\nNote that there are specific rules for ParentRefs which cross namespace boundaries. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example: Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable any other kind of cross-namespace reference.\n\nThe API object must be valid in the cluster; the Group and Kind must be registered in the cluster for this reference to be valid.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. When unspecified, \"gateway.networking.k8s.io\" is inferred. To set the core API group (such as for a \"Service\" kind referent), Group must be explicitly set to \"\" (empty string).\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the referent.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nSupport for other resources is Implementation-Specific.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the referent. When unspecified, this refers to the local namespace of the Route.\n\nNote that there are specific rules for ParentRefs which cross namespace boundaries. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example: Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable any other kind of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"sectionName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SectionName is the name of a section within the target resource. In the following resources, SectionName is interpreted as the following:\n\n* Gateway: Listener name. When both Port (experimental) and SectionName are specified, the name and port of the selected listener must match both specified values. * Service: Port name. When both Port (experimental) and SectionName are specified, the name and port of the selected listener must match both specified values.\n\nImplementations MAY choose to support attaching Routes to other resources. If that is the case, they MUST clearly document how SectionName is interpreted.\n\nWhen unspecified (empty string), this will reference the entire resource. For the purpose of status, an attachment is considered successful if at least one section in the parent resource accepts it. For example, Gateway listeners can restrict which Routes can attach to them by Route kind, namespace, or hostname. If 1 of 2 Gateway listeners accept attachment from the referencing Route, the Route MUST be considered successfully attached. If no Gateway listeners accept attachment from this Route, the Route MUST be considered detached from the Gateway.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"port": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Port is the network port this Route targets. It can be interpreted differently based on the type of parent resource.\n\nWhen the parent resource is a Gateway, this targets all listeners listening on the specified port that also support this kind of Route(and select this Route). It's not recommended to set `Port` unless the networking behaviors specified in a Route must apply to a specific port as opposed to a listener(s) whose port(s) may be changed. When both Port and SectionName are specified, the name and port of the selected listener must match both specified values.\n\n<gateway:experimental:description> When the parent resource is a Service, this targets a specific port in the Service spec. When both Port (experimental) and SectionName are specified, the name and port of the selected port must match both specified values. </gateway:experimental:description>\n\nImplementations MAY choose to support other parent resources. Implementations supporting other types of parent resources MUST clearly document how/if Port is interpreted.\n\nFor the purpose of status, an attachment is considered successful as long as the parent resource accepts it partially. For example, Gateway listeners can restrict which Routes can attach to them by Route kind, namespace, or hostname. If 1 of 2 Gateway listeners accept attachment from the referencing Route, the Route MUST be considered successfully attached. If no Gateway listeners accept attachment from this Route, the Route MUST be considered detached from the Gateway.\n\nSupport: Extended",
+							Type:        []string{"integer"},
+							Format:      "int32",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_RouteGroupKind(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RouteGroupKind indicates the group and kind of a Route resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the Route.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the kind of the Route.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"kind"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_RouteNamespaces(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RouteNamespaces indicate which namespaces Routes should be selected from.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"from": {
+						SchemaProps: spec.SchemaProps{
+							Description: "From indicates where Routes will be selected for this Gateway. Possible values are:\n\n* All: Routes in all namespaces may be used by this Gateway. * Selector: Routes in namespaces selected by the selector may be used by\n  this Gateway.\n* Same: Only Routes in the same namespace may be used by this Gateway.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"selector": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Selector must be specified when From is set to \"Selector\". In that case, only Routes in Namespaces matching this Selector will be selected by this Gateway. This field is ignored for other values of \"From\".\n\nSupport: Core",
+							Ref:         ref("k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_RouteParentStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RouteParentStatus describes the status of a route with respect to an associated Parent.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRef corresponds with a ParentRef in the spec that this RouteParentStatus struct describes the status of.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.ParentReference"),
+						},
+					},
+					"controllerName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControllerName is a domain/path string that indicates the name of the controller that wrote this status. This corresponds with the controllerName field on GatewayClass.\n\nExample: \"example.net/gateway-controller\".\n\nThe format of this field is DOMAIN \"/\" PATH, where DOMAIN and PATH are valid Kubernetes names (https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).\n\nControllers MUST populate this field when writing status. Controllers should ensure that entries to status populated with their ControllerName are cleaned up when they are no longer necessary.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"conditions": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"type",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Conditions describes the status of the route with respect to the Gateway. Note that the route's availability is also subject to the Gateway's own status conditions and listener status.\n\nIf the Route's ParentRef specifies an existing Gateway that supports Routes of this kind AND that Gateway's controller has sufficient access, then that Gateway's controller MUST set the \"Accepted\" condition on the Route, to indicate whether the route has been accepted or rejected by the Gateway, and why.\n\nA Route MUST be considered \"Accepted\" if at least one of the Route's rules is implemented by the Gateway.\n\nThere are a number of cases where the \"Accepted\" condition may not be set due to lack of controller visibility, that includes when:\n\n* The Route refers to a non-existent parent. * The Route is of a type that the controller does not support. * The Route is in a namespace the controller does not have access to.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.Condition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parentRef", "controllerName"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Condition", "k8s.io/gateway-api/v1.ParentReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_RouteStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "RouteStatus defines the common attributes that all Routes MUST include within their status.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parents": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteParentStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parents"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteParentStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_SecretObjectReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SecretObjectReference identifies an API object including its namespace, defaulting to Secret.\n\nThe API object must be valid in the cluster; the Group and Kind must be registered in the cluster for this reference to be valid.\n\nReferences to objects with invalid Group and Kind are not valid, and must be rejected by the implementation, with appropriate Conditions set on the containing object.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. For example, \"gateway.networking.k8s.io\". When unspecified or empty string, core API group is inferred.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the referent. For example \"Secret\".",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the referenced object. When unspecified, the local namespace is inferred.\n\nNote that when a namespace different than the local namespace is specified, a ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details.\n\nSupport: Core",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_SessionPersistence(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "SessionPersistence defines the desired state of SessionPersistence.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"sessionName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SessionName defines the name of the persistent session token which may be reflected in the cookie or the header. Users should avoid reusing session names to prevent unintended consequences, such as rejection or unpredictable behavior.\n\nSupport: Implementation-specific",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"absoluteTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AbsoluteTimeout defines the absolute timeout of the persistent session. Once the AbsoluteTimeout duration has elapsed, the session becomes invalid.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"idleTimeout": {
+						SchemaProps: spec.SchemaProps{
+							Description: "IdleTimeout defines the idle timeout of the persistent session. Once the session has been idle for more than the specified IdleTimeout duration, the session becomes invalid.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"type": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Type defines the type of session persistence such as through the use a header or cookie. Defaults to cookie based session persistence.\n\nSupport: Core for \"Cookie\" type\n\nSupport: Extended for \"Header\" type",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"cookieConfig": {
+						SchemaProps: spec.SchemaProps{
+							Description: "CookieConfig provides configuration settings that are specific to cookie-based session persistence.\n\nSupport: Core",
+							Ref:         ref("k8s.io/gateway-api/v1.CookieConfig"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.CookieConfig"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_SupportedFeature(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1_supportedFeatureInternal(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "This is solely for the purpose of ensuring backward compatibility and SHOULD NOT be used elsewhere.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Default: "",
+							Type:    []string{"string"},
+							Format:  "",
+						},
+					},
+				},
+				Required: []string{"name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_BackendLBPolicy(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendLBPolicy provides a way to define load balancing rules for a backend.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of BackendLBPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.BackendLBPolicySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of BackendLBPolicy.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.PolicyStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1alpha2.BackendLBPolicySpec", "k8s.io/gateway-api/v1alpha2.PolicyStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_BackendLBPolicyList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendLBPolicyList contains a list of BackendLBPolicies",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.BackendLBPolicy"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1alpha2.BackendLBPolicy"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_BackendLBPolicySpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "BackendLBPolicySpec defines the desired state of BackendLBPolicy. Note: there is no Override or Default policy configuration.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"targetRefs": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"group",
+									"kind",
+									"name",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "TargetRef identifies an API object to apply policy to. Currently, Backends (i.e. Service, ServiceImport, or any implementation-specific backendRef) are the only valid API target references.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReference"),
+									},
+								},
+							},
+						},
+					},
+					"sessionPersistence": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SessionPersistence defines and configures session persistence for the backend.\n\nSupport: Extended",
+							Ref:         ref("k8s.io/gateway-api/v1.SessionPersistence"),
+						},
+					},
+				},
+				Required: []string{"targetRefs"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.SessionPersistence", "k8s.io/gateway-api/v1alpha2.LocalPolicyTargetReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_GRPCRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of GRPCRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GRPCRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of GRPCRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GRPCRouteStatus"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.GRPCRouteSpec", "k8s.io/gateway-api/v1.GRPCRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_GRPCRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Type: []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.GRPCRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1alpha2.GRPCRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_LocalPolicyTargetReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalPolicyTargetReference identifies an API object to apply a direct or inherited policy to. This should be used as part of Policy resources that can target Gateway API resources. For more information on how this policy attachment model works, and a sample Policy resource, refer to the policy attachment documentation for Gateway API.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_LocalPolicyTargetReferenceWithSectionName(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "LocalPolicyTargetReferenceWithSectionName identifies an API object to apply a direct policy to. This should be used as part of Policy resources that can target single resources. For more information on how this policy attachment mode works, and a sample Policy resource, refer to the policy attachment documentation for Gateway API.\n\nNote: This should only be used for direct policy attachment when references to SectionName are actually needed. In all other cases, LocalPolicyTargetReference should be used.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"sectionName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SectionName is the name of a section within the target resource. When unspecified, this targetRef targets the entire resource. In the following resources, SectionName is interpreted as the following:\n\n* Gateway: Listener name * HTTPRoute: HTTPRouteRule name * Service: Port name\n\nIf a SectionName is specified, but does not exist on the targeted object, the Policy must fail to attach, and the policy implementation should record a `ResolvedRefs` or similar Condition in the Policy's status.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_NamespacedPolicyTargetReference(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "NamespacedPolicyTargetReference identifies an API object to apply a direct or inherited policy to, potentially in a different namespace. This should only be used as part of Policy resources that need to be able to target resources in different namespaces. For more information on how this policy attachment model works, and a sample Policy resource, refer to the policy attachment documentation for Gateway API.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is kind of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the target resource.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the referent. When unspecified, the local namespace is inferred. Even when policy targets a resource in a different namespace, it MUST only apply to traffic originating from the same namespace as the policy.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "name"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_PolicyAncestorStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "PolicyAncestorStatus describes the status of a route with respect to an associated Ancestor.\n\nAncestors refer to objects that are either the Target of a policy or above it in terms of object hierarchy. For example, if a policy targets a Service, the Policy's Ancestors are, in order, the Service, the HTTPRoute, the Gateway, and the GatewayClass. Almost always, in this hierarchy, the Gateway will be the most useful object to place Policy status on, so we recommend that implementations SHOULD use Gateway as the PolicyAncestorStatus object unless the designers have a _very_ good reason otherwise.\n\nIn the context of policy attachment, the Ancestor is used to distinguish which resource results in a distinct application of this policy. For example, if a policy targets a Service, it may have a distinct result per attached Gateway.\n\nPolicies targeting the same resource may have different effects depending on the ancestors of those resources. For example, different Gateways targeting the same Service may have different capabilities, especially if they have different underlying implementations.\n\nFor example, in BackendTLSPolicy, the Policy attaches to a Service that is used as a backend in a HTTPRoute that is itself attached to a Gateway. In this case, the relevant object for status is the Gateway, and that is the ancestor object referred to in this status.\n\nNote that a parent is also an ancestor, so for objects where the parent is the relevant object for status, this struct SHOULD still be used.\n\nThis struct is intended to be used in a slice that's effectively a map, with a composite key made up of the AncestorRef and the ControllerName.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"ancestorRef": {
+						SchemaProps: spec.SchemaProps{
+							Description: "AncestorRef corresponds with a ParentRef in the spec that this PolicyAncestorStatus struct describes the status of.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.ParentReference"),
+						},
+					},
+					"controllerName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ControllerName is a domain/path string that indicates the name of the controller that wrote this status. This corresponds with the controllerName field on GatewayClass.\n\nExample: \"example.net/gateway-controller\".\n\nThe format of this field is DOMAIN \"/\" PATH, where DOMAIN and PATH are valid Kubernetes names (https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).\n\nControllers MUST populate this field when writing status. Controllers should ensure that entries to status populated with their ControllerName are cleaned up when they are no longer necessary.",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"conditions": {
+						VendorExtensible: spec.VendorExtensible{
+							Extensions: spec.Extensions{
+								"x-kubernetes-list-map-keys": []interface{}{
+									"type",
+								},
+								"x-kubernetes-list-type": "map",
+							},
+						},
+						SchemaProps: spec.SchemaProps{
+							Description: "Conditions describes the status of the Policy with respect to the given Ancestor.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.Condition"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"ancestorRef", "controllerName"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.Condition", "k8s.io/gateway-api/v1.ParentReference"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_PolicyStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "PolicyStatus defines the common attributes that all Policies should include within their status.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"ancestors": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Ancestors is a list of ancestor resources (usually Gateways) that are associated with the policy, and the status of the policy with respect to each ancestor. When this policy attaches to a parent, the controller that manages the parent and the ancestors MUST add an entry to this list when the controller first sees the policy and SHOULD update the entry as appropriate when the relevant ancestor is modified.\n\nNote that choosing the relevant ancestor is left to the Policy designers; an important part of Policy design is designing the right object level at which to namespace this status.\n\nNote also that implementations MUST ONLY populate ancestor status for the Ancestor resources they are responsible for. Implementations MUST use the ControllerName field to uniquely identify the entries in this list that they are responsible for.\n\nNote that to achieve this, the list of PolicyAncestorStatus structs MUST be treated as a map with a composite key, made up of the AncestorRef and ControllerName fields combined.\n\nA maximum of 16 ancestors will be represented in this list. An empty list means the Policy is not relevant for any ancestors.\n\nIf this slice is full, implementations MUST NOT add further entries. Instead they MUST consider the policy unimplementable and signal that on any related resources such as the ancestor that would be referenced here. For example, if this list was full on BackendTLSPolicy, no additional Gateways would be able to reference the Service targeted by the BackendTLSPolicy.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.PolicyAncestorStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"ancestors"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1alpha2.PolicyAncestorStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_ReferenceGrant(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrant identifies kinds of resources in other namespaces that are trusted to reference the specified kinds of resources in the same namespace as the policy.\n\nEach ReferenceGrant can be used to represent a unique trust relationship. Additional Reference Grants can be used to add to the set of trusted sources of inbound references for the namespace they are defined within.\n\nA ReferenceGrant is required for all cross-namespace references in Gateway API (with the exception of cross-namespace Route-Gateway attachment, which is governed by the AllowedRoutes configuration on the Gateway, and cross-namespace Service ParentRefs on a \"consumer\" mesh Route, which defines routing rules applicable only to workloads in the Route namespace). ReferenceGrants allowing a reference from a Route to a Service are only applicable to BackendRefs.\n\nReferenceGrant is a form of runtime verification allowing users to assert which cross-namespace object references are permitted. Implementations that support ReferenceGrant MUST NOT permit cross-namespace references which have no grant, and MUST respond to the removal of a grant by revoking the access that the grant allowed.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of ReferenceGrant.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1beta1.ReferenceGrantSpec"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1beta1.ReferenceGrantSpec"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_ReferenceGrantList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrantList contains a list of ReferenceGrant.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.ReferenceGrant"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1alpha2.ReferenceGrant"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TCPRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPRoute provides a way to route TCP requests. When combined with a Gateway listener, it can be used to forward connections on the port specified by the listener to a set of backends specified by the TCPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of TCPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.TCPRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of TCPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.TCPRouteStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1alpha2.TCPRouteSpec", "k8s.io/gateway-api/v1alpha2.TCPRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TCPRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPRouteList contains a list of TCPRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.TCPRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1alpha2.TCPRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TCPRouteRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPRouteRule is the configuration for a given rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the route rule. This name MUST be unique within a Route if it is set.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs defines the backend(s) where matching requests should be sent. If unspecified or invalid (refers to a non-existent resource or a Service with no endpoints), the underlying implementation MUST actively reject connection attempts to this backend. Connection rejections must respect weight; if an invalid backend is requested to have 80% of connections, then 80% of connections must be rejected instead.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.BackendRef"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TCPRouteSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPRouteSpec defines the desired state of TCPRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent resources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\n<gateway:standard:validation:XValidation:message=\"sectionName must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '')) : true))\"> <gateway:standard:validation:XValidation:message=\"sectionName must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || (has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName))))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__)) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '') && (!has(p1.port) || p1.port == 0) == (!has(p2.port) || p2.port == 0)): true))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || ( has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName)) && (((!has(p1.port) || p1.port == 0) && (!has(p2.port) || p2.port == 0)) || (has(p1.port) && has(p2.port) && p1.port == p2.port))))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ParentReference"),
+									},
+								},
+							},
+						},
+					},
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of TCP matchers and actions.\n\n<gateway:experimental:validation:XValidation:message=\"Rule name must be unique within the route\",rule=\"self.all(l1, !has(l1.name) || self.exists_one(l2, has(l2.name) && l1.name == l2.name))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.TCPRouteRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"rules"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.ParentReference", "k8s.io/gateway-api/v1alpha2.TCPRouteRule"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TCPRouteStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TCPRouteStatus defines the observed state of TCPRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parents": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteParentStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parents"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteParentStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TLSRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "The TLSRoute resource is similar to TCPRoute, but can be configured to match against TLS-specific metadata. This allows more flexibility in matching streams for a given TLS listener.\n\nIf you need to forward traffic to a single target for a TLS listener, you could choose to use a TCPRoute with a TLS listener.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of TLSRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.TLSRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of TLSRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.TLSRouteStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1alpha2.TLSRouteSpec", "k8s.io/gateway-api/v1alpha2.TLSRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TLSRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TLSRouteList contains a list of TLSRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.TLSRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1alpha2.TLSRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TLSRouteRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TLSRouteRule is the configuration for a given rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the route rule. This name MUST be unique within a Route if it is set.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs defines the backend(s) where matching requests should be sent. If unspecified or invalid (refers to a non-existent resource or a Service with no endpoints), the rule performs no forwarding; if no filters are specified that would result in a response being sent, the underlying implementation must actively reject request attempts to this backend, by rejecting the connection or returning a 500 status code. Request rejections must respect weight; if an invalid backend is requested to have 80% of requests, then 80% of requests must be rejected instead.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.BackendRef"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TLSRouteSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TLSRouteSpec defines the desired state of a TLSRoute resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent resources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\n<gateway:standard:validation:XValidation:message=\"sectionName must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '')) : true))\"> <gateway:standard:validation:XValidation:message=\"sectionName must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || (has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName))))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__)) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '') && (!has(p1.port) || p1.port == 0) == (!has(p2.port) || p2.port == 0)): true))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || ( has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName)) && (((!has(p1.port) || p1.port == 0) && (!has(p2.port) || p2.port == 0)) || (has(p1.port) && has(p2.port) && p1.port == p2.port))))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ParentReference"),
+									},
+								},
+							},
+						},
+					},
+					"hostnames": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Hostnames defines a set of SNI names that should match against the SNI attribute of TLS ClientHello message in TLS handshake. This matches the RFC 1123 definition of a hostname with 2 notable exceptions:\n\n1. IPs are not allowed in SNI names per RFC 6066. 2. A hostname may be prefixed with a wildcard label (`*.`). The wildcard\n   label must appear by itself as the first label.\n\nIf a hostname is specified by both the Listener and TLSRoute, there must be at least one intersecting hostname for the TLSRoute to be attached to the Listener. For example:\n\n* A Listener with `test.example.com` as the hostname matches TLSRoutes\n  that have either not specified any hostnames, or have specified at\n  least one of `test.example.com` or `*.example.com`.\n* A Listener with `*.example.com` as the hostname matches TLSRoutes\n  that have either not specified any hostnames or have specified at least\n  one hostname that matches the Listener hostname. For example,\n  `test.example.com` and `*.example.com` would both match. On the other\n  hand, `example.com` and `test.example.net` would not match.\n\nIf both the Listener and TLSRoute have specified hostnames, any TLSRoute hostnames that do not match the Listener hostname MUST be ignored. For example, if a Listener specified `*.example.com`, and the TLSRoute specified `test.example.com` and `test.example.net`, `test.example.net` must not be considered for a match.\n\nIf both the Listener and TLSRoute have specified hostnames, and none match with the criteria above, then the TLSRoute is not accepted. The implementation must raise an 'Accepted' Condition with a status of `False` in the corresponding RouteParentStatus.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: "",
+										Type:    []string{"string"},
+										Format:  "",
+									},
+								},
+							},
+						},
+					},
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of TLS matchers and actions.\n\n<gateway:experimental:validation:XValidation:message=\"Rule name must be unique within the route\",rule=\"self.all(l1, !has(l1.name) || self.exists_one(l2, has(l2.name) && l1.name == l2.name))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.TLSRouteRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"rules"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.ParentReference", "k8s.io/gateway-api/v1alpha2.TLSRouteRule"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_TLSRouteStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "TLSRouteStatus defines the observed state of TLSRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parents": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteParentStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parents"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteParentStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_UDPRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDPRoute provides a way to route UDP traffic. When combined with a Gateway listener, it can be used to forward traffic on the port specified by the listener to a set of backends specified by the UDPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of UDPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.UDPRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of UDPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1alpha2.UDPRouteStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1alpha2.UDPRouteSpec", "k8s.io/gateway-api/v1alpha2.UDPRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_UDPRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDPRouteList contains a list of UDPRoute",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.UDPRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1alpha2.UDPRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_UDPRouteRule(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDPRouteRule is the configuration for a given rule.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the route rule. This name MUST be unique within a Route if it is set.\n\nSupport: Extended",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"backendRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "BackendRefs defines the backend(s) where matching requests should be sent. If unspecified or invalid (refers to a non-existent resource or a Service with no endpoints), the underlying implementation MUST actively reject connection attempts to this backend. Packet drops must respect weight; if an invalid backend is requested to have 80% of the packets, then 80% of packets must be dropped instead.\n\nSupport: Core for Kubernetes Service\n\nSupport: Extended for Kubernetes ServiceImport\n\nSupport: Implementation-specific for any other resource\n\nSupport for weight: Extended",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.BackendRef"),
+									},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.BackendRef"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_UDPRouteSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDPRouteSpec defines the desired state of UDPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parentRefs": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ParentRefs references the resources (usually Gateways) that a Route wants to be attached to. Note that the referenced parent resource needs to allow this for the attachment to be complete. For Gateways, that means the Gateway needs to allow attachment from Routes of this kind and namespace. For Services, that means the Service must either be in the same namespace for a \"producer\" route, or the mesh implementation must support and allow \"consumer\" routes for the referenced Service. ReferenceGrant is not applicable for governing ParentRefs to Services - it is not possible to create a \"producer\" route for a Service in a different namespace from the Route.\n\nThere are two kinds of parent resources with \"Core\" support:\n\n* Gateway (Gateway conformance profile) * Service (Mesh conformance profile, ClusterIP Services only)\n\nThis API may be extended in the future to support additional kinds of parent resources.\n\nParentRefs must be _distinct_. This means either that:\n\n* They select different objects.  If this is the case, then parentRef\n  entries are distinct. In terms of fields, this means that the\n  multi-part key defined by `group`, `kind`, `namespace`, and `name` must\n  be unique across all parentRef entries in the Route.\n* They do not select different objects, but for each optional field used,\n  each ParentRef that selects the same object must set the same set of\n  optional fields to different values. If one ParentRef sets a\n  combination of optional fields, all must set the same combination.\n\nSome examples:\n\n* If one ParentRef sets `sectionName`, all ParentRefs referencing the\n  same object must also set `sectionName`.\n* If one ParentRef sets `port`, all ParentRefs referencing the same\n  object must also set `port`.\n* If one ParentRef sets `sectionName` and `port`, all ParentRefs\n  referencing the same object must also set `sectionName` and `port`.\n\nIt is possible to separately reference multiple distinct objects that may be collapsed by an implementation. For example, some implementations may choose to merge compatible Gateway Listeners together. If that is the case, the list of routes attached to those resources should also be merged.\n\nNote that for ParentRefs that cross namespace boundaries, there are specific rules. Cross-namespace references are only valid if they are explicitly allowed by something in the namespace they are referring to. For example, Gateway has the AllowedRoutes field, and ReferenceGrant provides a generic way to enable other kinds of cross-namespace reference.\n\n<gateway:experimental:description> ParentRefs from a Route to a Service in the same namespace are \"producer\" routes, which apply default routing rules to inbound connections from any namespace to the Service.\n\nParentRefs from a Route to a Service in a different namespace are \"consumer\" routes, and these routing rules are only applied to outbound connections originating from the same namespace as the Route, for which the intended destination of the connections are a Service targeted as a ParentRef of the Route. </gateway:experimental:description>\n\n<gateway:standard:validation:XValidation:message=\"sectionName must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '')) : true))\"> <gateway:standard:validation:XValidation:message=\"sectionName must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || (has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName))))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be specified when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.all(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__)) ? ((!has(p1.sectionName) || p1.sectionName == '') == (!has(p2.sectionName) || p2.sectionName == '') && (!has(p1.port) || p1.port == 0) == (!has(p2.port) || p2.port == 0)): true))\"> <gateway:experimental:validation:XValidation:message=\"sectionName or port must be unique when parentRefs includes 2 or more references to the same parent\",rule=\"self.all(p1, self.exists_one(p2, p1.group == p2.group && p1.kind == p2.kind && p1.name == p2.name && (((!has(p1.__namespace__) || p1.__namespace__ == '') && (!has(p2.__namespace__) || p2.__namespace__ == '')) || (has(p1.__namespace__) && has(p2.__namespace__) && p1.__namespace__ == p2.__namespace__ )) && (((!has(p1.sectionName) || p1.sectionName == '') && (!has(p2.sectionName) || p2.sectionName == '')) || ( has(p1.sectionName) && has(p2.sectionName) && p1.sectionName == p2.sectionName)) && (((!has(p1.port) || p1.port == 0) && (!has(p2.port) || p2.port == 0)) || (has(p1.port) && has(p2.port) && p1.port == p2.port))))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.ParentReference"),
+									},
+								},
+							},
+						},
+					},
+					"rules": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Rules are a list of UDP matchers and actions.\n\n<gateway:experimental:validation:XValidation:message=\"Rule name must be unique within the route\",rule=\"self.all(l1, !has(l1.name) || self.exists_one(l2, has(l2.name) && l1.name == l2.name))\">",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1alpha2.UDPRouteRule"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"rules"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.ParentReference", "k8s.io/gateway-api/v1alpha2.UDPRouteRule"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1alpha2_UDPRouteStatus(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "UDPRouteStatus defines the observed state of UDPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"parents": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Parents is a list of parent resources (usually Gateways) that are associated with the route, and the status of the route with respect to each parent. When this route attaches to a parent, the controller that manages the parent must add an entry to this list when the controller first sees the route and should update the entry as appropriate when the route or gateway is modified.\n\nNote that parent references that cannot be resolved by an implementation of this API will not be added to this list. Implementations of this API can only populate Route status for the Gateways/parent resources they are responsible for.\n\nA maximum of 32 Gateways will be represented in this list. An empty list means the route has not been attached to any Gateway.",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1.RouteParentStatus"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"parents"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1.RouteParentStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_Gateway(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "Gateway represents an instance of a service-traffic handling infrastructure by binding Listeners to a set of IP addresses.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of Gateway.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewaySpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of Gateway.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.GatewaySpec", "k8s.io/gateway-api/v1.GatewayStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_GatewayClass(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayClass describes a class of Gateways available to the user for creating Gateway resources.\n\nIt is recommended that this resource be used as a template for Gateways. This means that a Gateway is based on the state of the GatewayClass at the time it was created and changes to the GatewayClass or associated parameters are not propagated down to existing Gateways. This recommendation is intended to limit the blast radius of changes to GatewayClass or associated parameters. If implementations choose to propagate GatewayClass changes to existing Gateways, that MUST be clearly documented by the implementation.\n\nWhenever one or more Gateways are using a GatewayClass, implementations SHOULD add the `gateway-exists-finalizer.gateway.networking.k8s.io` finalizer on the associated GatewayClass. This ensures that a GatewayClass associated with a Gateway is not deleted while in use.\n\nGatewayClass is a Cluster level resource.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of GatewayClass.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayClassSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of GatewayClass.\n\nImplementations MUST populate status on all GatewayClass resources which specify their controller name.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.GatewayClassStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.GatewayClassSpec", "k8s.io/gateway-api/v1.GatewayClassStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_GatewayClassList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayClassList contains a list of GatewayClass",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1beta1.GatewayClass"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1beta1.GatewayClass"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_GatewayList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "GatewayList contains a list of Gateways.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1beta1.Gateway"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1beta1.Gateway"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_HTTPRoute(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRoute provides a way to route HTTP requests. This includes the capability to match requests by hostname, path, header, or query param. Filters can be used to specify additional processing steps. Backends specify where matching requests should be routed.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of HTTPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRouteSpec"),
+						},
+					},
+					"status": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Status defines the current state of HTTPRoute.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1.HTTPRouteStatus"),
+						},
+					},
+				},
+				Required: []string{"spec"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1.HTTPRouteSpec", "k8s.io/gateway-api/v1.HTTPRouteStatus"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_HTTPRouteList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "HTTPRouteList contains a list of HTTPRoute.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1beta1.HTTPRoute"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1beta1.HTTPRoute"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_ReferenceGrant(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrant identifies kinds of resources in other namespaces that are trusted to reference the specified kinds of resources in the same namespace as the policy.\n\nEach ReferenceGrant can be used to represent a unique trust relationship. Additional Reference Grants can be used to add to the set of trusted sources of inbound references for the namespace they are defined within.\n\nAll cross-namespace references in Gateway API (with the exception of cross-namespace Gateway-route attachment) require a ReferenceGrant.\n\nReferenceGrant is a form of runtime verification allowing users to assert which cross-namespace object references are permitted. Implementations that support ReferenceGrant MUST NOT permit cross-namespace references which have no grant, and MUST respond to the removal of a grant by revoking the access that the grant allowed.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"),
+						},
+					},
+					"spec": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Spec defines the desired state of ReferenceGrant.",
+							Default:     map[string]interface{}{},
+							Ref:         ref("k8s.io/gateway-api/v1beta1.ReferenceGrantSpec"),
+						},
+					},
+				},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "k8s.io/gateway-api/v1beta1.ReferenceGrantSpec"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_ReferenceGrantFrom(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrantFrom describes trusted namespaces and kinds.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. When empty, the Kubernetes core API group is inferred.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the kind of the referent. Although implementations may support additional resources, the following types are part of the \"Core\" support level for this field.\n\nWhen used to permit a SecretObjectReference:\n\n* Gateway\n\nWhen used to permit a BackendObjectReference:\n\n* GRPCRoute * HTTPRoute * TCPRoute * TLSRoute * UDPRoute",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"namespace": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Namespace is the namespace of the referent.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind", "namespace"},
+			},
+		},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_ReferenceGrantList(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrantList contains a list of ReferenceGrant.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"apiVersion": {
+						SchemaProps: spec.SchemaProps{
+							Description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"metadata": {
+						SchemaProps: spec.SchemaProps{
+							Default: map[string]interface{}{},
+							Ref:     ref("k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"),
+						},
+					},
+					"items": {
+						SchemaProps: spec.SchemaProps{
+							Type: []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1beta1.ReferenceGrant"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"items"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "k8s.io/gateway-api/v1beta1.ReferenceGrant"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_ReferenceGrantSpec(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrantSpec identifies a cross namespace relationship that is trusted for Gateway API.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"from": {
+						SchemaProps: spec.SchemaProps{
+							Description: "From describes the trusted namespaces and kinds that can reference the resources described in \"To\". Each entry in this list MUST be considered to be an additional place that references can be valid from, or to put this another way, entries MUST be combined using OR.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1beta1.ReferenceGrantFrom"),
+									},
+								},
+							},
+						},
+					},
+					"to": {
+						SchemaProps: spec.SchemaProps{
+							Description: "To describes the resources that may be referenced by the resources described in \"From\". Each entry in this list MUST be considered to be an additional place that references can be valid to, or to put this another way, entries MUST be combined using OR.\n\nSupport: Core",
+							Type:        []string{"array"},
+							Items: &spec.SchemaOrArray{
+								Schema: &spec.Schema{
+									SchemaProps: spec.SchemaProps{
+										Default: map[string]interface{}{},
+										Ref:     ref("k8s.io/gateway-api/v1beta1.ReferenceGrantTo"),
+									},
+								},
+							},
+						},
+					},
+				},
+				Required: []string{"from", "to"},
+			},
+		},
+		Dependencies: []string{
+			"k8s.io/gateway-api/v1beta1.ReferenceGrantFrom", "k8s.io/gateway-api/v1beta1.ReferenceGrantTo"},
+	}
+}
+
+func schema_k8sio_gateway_api_v1beta1_ReferenceGrantTo(ref common.ReferenceCallback) common.OpenAPIDefinition {
+	return common.OpenAPIDefinition{
+		Schema: spec.Schema{
+			SchemaProps: spec.SchemaProps{
+				Description: "ReferenceGrantTo describes what Kinds are allowed as targets of the references.",
+				Type:        []string{"object"},
+				Properties: map[string]spec.Schema{
+					"group": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Group is the group of the referent. When empty, the Kubernetes core API group is inferred.\n\nSupport: Core",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"kind": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Kind is the kind of the referent. Although implementations may support additional resources, the following types are part of the \"Core\" support level for this field:\n\n* Secret when used to permit a SecretObjectReference * Service when used to permit a BackendObjectReference",
+							Default:     "",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+					"name": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Name is the name of the referent. When unspecified, this policy refers to all resources of the specified Group and Kind in the local namespace.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
+				},
+				Required: []string{"group", "kind"},
+			},
+		},
 	}
 }
 

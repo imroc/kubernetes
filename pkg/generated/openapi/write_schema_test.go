@@ -76,6 +76,8 @@ var APIs = map[string]string{
 	"k8s.io/client-go/pkg/apis/clientauthentication":                             "client.authentication.k8s.io",
 	"k8s.io/kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit":  "eventratelimit.admission.k8s.io",
 	"k8s.io/api/imagepolicy": "imagepolicy.k8s.io",
+	"k8s.io/envoygateway":    "gateway.envoyproxy.io",
+	"k8s.io/gateway-api":     "gateway-api.k8s.io",
 }
 
 func TestWriteSchema(t *testing.T) {
