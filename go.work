@@ -39,4 +39,7 @@ use (
 	./staging/src/k8s.io/sample-cli-plugin
 	./staging/src/k8s.io/sample-controller
 	./staging/src/k8s.io/streaming
+	./staging/src/agones
+	./staging/src/gateway.envoyproxy.io
+	./staging/src/sigs.k8s.io/gateway-api
 )

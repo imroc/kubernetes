@@ -30,12 +30,14 @@ import (
 var logRegistry = newLogFormatRegistry()
 
 // logFormatRegistry stores factories for all supported logging formats.
+// +k8s:openapi-gen=false
 type logFormatRegistry struct {
 	mutex    sync.Mutex
 	registry map[string]logFormat
 	frozen   bool
 }
 
+// +k8s:openapi-gen=false
 type logFormat struct {
 	factory LogFormatFactory
 	feature featuregate.Feature
@@ -48,6 +50,7 @@ type logFormat struct {
 type RuntimeControl struct {
 	// Flush ensures that all in-memory data is written.
 	// May be nil.
+	// +k8s:openapi-gen=false
 	Flush func()
 
 	// SetVerbosityLevel changes the level for all Logger instances
@@ -56,6 +59,7 @@ type RuntimeControl struct {
 	// The parameter is intentionally a plain uint32 instead of
 	// VerbosityLevel to enable implementations that don't need to import
 	// the API (helps avoid circular dependencies).
+	// +k8s:openapi-gen=false
 	SetVerbosityLevel func(v uint32) error
 }
 

@@ -23,4 +23,5 @@ limitations under the License.
 // +k8s:validation-gen=TypeMeta
 // +k8s:validation-gen-input=k8s.io/api/imagepolicy/v1alpha1
 
+// +k8s:openapi-gen=true
 package v1alpha1

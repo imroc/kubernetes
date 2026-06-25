@@ -1,0 +1,6 @@
+# External API versions used by genschema.
+# Format: <name>=<git ref (tag or commit)>
+# These versions are checked out by `make sync-code` to ensure reproducible schema generation.
+agones=v1.50.0
+envoygateway=v1.3.0
+gateway-api=v1.3.0

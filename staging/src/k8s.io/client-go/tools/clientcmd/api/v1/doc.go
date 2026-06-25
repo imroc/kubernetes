@@ -19,4 +19,5 @@ limitations under the License.
 // +k8s:defaulter-gen=Kind
 // +k8s:validation-gen=false
 
+// +k8s:openapi-gen=true
 package v1

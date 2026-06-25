@@ -25,7 +25,7 @@ import (
 type BootstrapToken struct {
 	// Token is used for establishing bidirectional trust between nodes and control-planes.
 	// Used for joining nodes in the cluster.
-	Token *BootstrapTokenString `json:"token" datapolicy:"token"`
+	Token string `json:"token" datapolicy:"token"`
 	// Description sets a human-friendly message why this token exists and what it's used
 	// for, so other administrators can know its purpose.
 	// +optional
@@ -46,13 +46,4 @@ type BootstrapToken struct {
 	// used for authentication
 	// +optional
 	Groups []string `json:"groups,omitempty"`
-}
-
-// BootstrapTokenString is a token of the format abcdef.abcdef0123456789 that is used
-// for both validation of the practically of the API server from a joining node's point
-// of view and as an authentication method for the node in the bootstrap phase of
-// "kubeadm join". This token is and should be short-lived
-type BootstrapTokenString struct {
-	ID     string `json:"-"`
-	Secret string `json:"-" datapolicy:"token"`
 }

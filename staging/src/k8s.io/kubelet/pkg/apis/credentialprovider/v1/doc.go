@@ -19,4 +19,5 @@ limitations under the License.
 // +k8s:defaulter-gen=TypeMeta
 // +groupName=credentialprovider.kubelet.k8s.io
 
+// +k8s:openapi-gen=true
 package v1
